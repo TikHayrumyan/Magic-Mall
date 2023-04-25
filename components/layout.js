@@ -1,6 +1,6 @@
-import Header from './header';
+import Header from './Header';
 import Head from 'next/head';
-import Footer from './footer';
+import Footer from './Footer';
 
 
 import { useRouter } from "next/router";
