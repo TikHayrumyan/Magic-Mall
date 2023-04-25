@@ -1,0 +1,356 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+
+
+.cardSubscribe{
+    width: get-vw(1440px,1440 );
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.container{
+    
+    width: get-vw(940px,1440 );
+    background-color: #F3EAE5;
+    display: flex;
+    position: absolute;
+    bottom: get-vw(-85px,1440 );
+}
+
+.cardBackground{
+    width: get-vw(434px,1440 );
+    height: get-vw(377px,1440 );
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-size: cover;
+
+    .title{
+        color: #FFFFFF;
+        width: get-vw(281px,1440 );
+        height: get-vw(41px,1440 );
+        margin-left: get-vw(35px,1440 );
+        margin-bottom: get-vw(70px,1440 );
+
+    }
+  
+}
+
+.cardMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .subscribe{
+        width: get-vw(362px,1440 );
+        max-height: get-vw(100px,1440 );
+        font-family: 'Bokonique-regular','montserrat-ru-semibold';
+        font-style: normal;
+        font-weight: 400;
+        font-size: get-vw(32px,1440 );
+        line-height: get-vw(38.4px,1440 );
+        text-align: center;
+        text-transform: uppercase;
+        color: #002D69;
+        margin-left: get-vw(60px,1440 );
+        margin-top: get-vw(80px,1440 );
+        display: flex;
+        justify-content: center;
+        margin-bottom: get-vw(10px,1440 );
+    }
+    .description{
+        font-family: 'Bokonique-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: get-vw(18px,1440 );
+        line-height: 140%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        color: #224660;
+        width: get-vw(362px,1440 );
+        max-height: get-vw(50px,1440 );
+        margin-left: get-vw(50px,1440 );
+    }
+    .inputBlock{
+        display: flex;
+        align-items: flex-end;
+        background: #FFFFFF;
+            border-radius: get-vw(1000px,1440 );
+            width: get-vw(355px,1440 );
+            height: get-vw(52px,1440 );
+            margin-top: get-vw(35px,1440 );
+            margin-left: get-vw(70px,1440 );
+        .input{
+            background: #FFFFFF;
+            border-radius: get-vw(1000px,1440 );
+            border: none;
+            width: get-vw(317px,1440 );
+            height: get-vw(52px,1440 );
+            padding-left: get-vw(25px,1440 );
+            outline: none;
+        }
+        .button{
+            width: 4vw;
+            height: 3.6vw;
+            border: none;
+            border-radius: get-vw(1000px,1440 );
+            background-color: #A6CCE5;
+            padding-top: get-vw(5px,1440 );
+            cursor: pointer;
+        }
+    }
+    .accessBlock{
+        display: flex;
+        margin-left: get-vw(100px,1440 );
+        margin-top: get-vw(15px,1440 );
+        align-items: center;
+        justify-content: flex-end;
+        input{
+            width: get-vw(15px,1440 );
+            height: get-vw(15px,1440 );
+            // margin-right: get-vw(7px,1440 );
+        }
+        .agree{
+            width: 25.5vw;
+            height: get-vw(15px,1440 );
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(12px,1440 );
+            line-height: get-vw(15px,1440 );
+            display: flex;
+            align-items: center;
+            color: #224660;
+        }
+        span{
+            text-decoration: underline;
+            margin-left: get-vw(3px,1440 );
+            font-weight: 800;
+        }
+    }
+}
+
+
+
+
+.invalidEmail{
+    width: 18vw;
+    margin-top: 0.6vw;
+    color: #EB5757;
+    font-family: "arm-regular",'montserrat-ru-regular';
+    font-size: get-vw(12px,1440 );
+}
+.checked{
+   border: #F3EAE5;
+}
+.notChecked{
+    width: get-vw(3px,1440 );
+    outline: max(2px, 0.15em) solid #EB5757;
+    outline-offset: -1px;
+}
+.success{
+    width: 24vw;
+    text-align: center;
+    margin-top: 0.6vw;
+    color: #27AE60;
+    font-family: "arm-regular",'montserrat-ru-regular';
+    margin-left: 2vw;
+    font-size: get-vw(12px,1440 )
+}
+
+
+@media only screen and (max-width: 600px){
+    
+    .cardSubscribe{
+    width: 100vw;
+    display: flex;
+   
+    }
+
+    .container{
+
+    width: 100vw;
+    background-color: #F3EAE5;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: get-vw(-85px,600 );
+    }
+
+    .cardBackground{
+        width: 100vw;
+    height: 40vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+        justify-content: flex-end;
+        gap: 0vw;
+    .title{
+        color: #FFFFFF;
+        width: 30vw;
+        height: 8vw;
+        margin-left: 10vw;
+        display: flex;
+        margin-bottom: 10vw;
+    }
+    // .info{
+    //     font-family: "arm-regular",'montserrat-ru-regular';
+    // font-style: normal;
+    // font-weight: 400;
+    // font-size: 6vw;
+    // line-height: 160%;
+    // display: flex;
+    // color: #FFFFFF;
+    
+    // margin-left: 10vw;
+    // }
+    }
+
+    .cardMain{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 40vw;
+    .subscribe{
+        width: 60vw;
+        min-height: get-vw(50px,414 );
+        font-family: "Bokonique-regular",'montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 5vw;
+        line-height: 120%;
+        text-align: center;
+        text-transform: uppercase;
+        color: #002D69;
+        margin-bottom: 1vw;
+        display: flex;
+        align-items: center;
+    }
+    .description{
+        font-family: 'Bokonique-regular','montserrat-ru-semibold';
+        font-style: normal;
+        font-weight: 400;
+        font-size: get-vw(12px,414 );
+        line-height: 140%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+        color: #224660;
+        width: get-vw(362px,414 );
+        height: get-vw(30px,414 );
+        margin-left: get-vw(15px,414 );
+    }
+    .news{        
+        width: 50vw;
+        height: 2.8333333333vw;
+        font-family: "arm-regular",'montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3vw;
+        line-height: 1.1805555556vw;
+        color: #224660;
+        margin-top: 5vw;
+    }
+    .inputBlock{
+        display: flex;
+        align-items: flex-end;
+        background: #FFFFFF;
+            border-radius: get-vw(1000px,600 );
+            width: get-vw(355px,600 );
+            height: get-vw(52px,600 );
+            margin-top: get-vw(15px,600 );
+            margin-left: get-vw(40px,600 );
+        .input{
+            background: #FFFFFF;
+            border-radius: get-vw(1000px,600 );
+            border: none;
+            width: get-vw(317px,600 );
+            height: get-vw(52px,600 );
+            padding-left: get-vw(25px,600 );
+            outline: none;
+        }
+        .button{
+            width: 8vw;
+            height: 8.6vw;
+            border: none;
+            border-radius: 166.6666666667vw;
+            background-color: #A6CCE5;
+            padding-top: 0.8333333333vw;
+            cursor: pointer;
+        }
+    }
+    .accessBlock{
+        display: flex;
+        margin-left: get-vw(70px,600 );
+        margin-top: get-vw(15px,600 );
+        align-items: center;
+        width: get-vw(350px,414 );
+        height: get-vw(26px,414 );
+        input{
+            width: get-vw(15px,600 );
+            height: get-vw(15px,600 );
+            margin-right: get-vw(4px,600 );
+        }
+        .agree{
+            width: get-vw(300px,414 );
+            height: get-vw(25px,600 );
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(12px,600 );
+            line-height: get-vw(15px,600 );
+            display: flex;
+            align-items: center;
+            color: #224660;
+            gap: 0vw;
+        }
+        span{
+            display: flex;
+            max-width: get-vw(180px,414 );
+            height: get-vw(15px,414 );
+            text-decoration: underline;
+            margin-left: get-vw(0px,600 );
+            font-weight: 800;
+            align-items: center;
+            justify-content: center;
+            font-size: get-vw(12px,600 );
+            margin-left: 1.5vw;
+        }
+    }
+    }
+
+    .invalidEmail{
+    width: 18vw;
+    margin-top: 0.6vw;
+    color: #EB5757;
+    font-family: "arm-regular",'montserrat-ru-regular';
+    font-size: 12px;
+    }
+    .checked{
+    border: #F3EAE5;
+    }
+    .notChecked{
+    width: 2px;
+    outline: max(2px, 0.15em) solid #EB5757;
+    outline-offset: -1px;
+    }
+    .success{
+    width: 24vw;
+    text-align: center;
+    margin-top: 0.6vw;
+    color: #27AE60;
+    font-family: "arm-regular",'montserrat-ru-regular';
+    margin-left: 2vw;
+    font-size: 12px
+    }
+
+}

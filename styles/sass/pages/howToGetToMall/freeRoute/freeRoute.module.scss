@@ -1,0 +1,227 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+
+.freeRoute{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+}
+
+.container{
+    width: 90.6vw;
+}
+.pattern{
+    width: get-vw(91px,1440 );
+}
+.bus{
+    width: get-vw(65px,1440 );
+}
+.patternsArrow{
+    width: get-vw(40px,1440 );
+}
+.title{
+    font-family: 'Bokonique-regular','montserrat-ru-semibold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.34375vw;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #224660;
+    margin-top: 4vw;
+}
+.description{
+    margin-top: 2vw;
+    width: 46vw;
+    font-family: 'arm-regular','montserrat-ru-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.171875vw;
+    line-height: 160%;
+    color: #224660;
+}
+.routeTitleBlock{
+    display: flex;
+    align-items: center;
+    margin-top: 5vw;
+    gap: 1vw;
+    .routeTitle{
+        margin-left: 2vw;
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: get-vw(24px,1440 );
+        line-height: get-vw(29px,1440 );
+        color: #224660;
+        cursor: pointer;
+    }
+}
+
+.routeData{
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    margin-top: 5vw;
+    .routeDataBlock{
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+        width: 77vw;
+        flex-wrap: wrap;
+
+        .data{
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+
+            .route{
+                font-family: 'arm-regular','montserrat-ru-regular';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.171875vw;
+                line-height: 160%;
+                color: #000000;
+            }
+        }
+    }
+}
+
+.minus{
+    font-size: xxx-large;
+    display: flex;
+    padding-bottom: get-vw(6px,1440 );
+    margin-left: 1vw;
+    font-weight: 400;
+    color: #224660;
+    cursor: pointer;
+}
+.minusNone{
+    display: none;
+}
+
+.plus{
+    font-size: xxx-large;
+    display: flex;
+    padding-bottom: get-vw(6px,1440 );
+    margin-left: 0.8vw;
+    font-weight: 400;
+    color: #224660;
+    cursor: pointer;
+}
+.plusNone{
+    display: none;
+}
+.routeTitleBlockMobile{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+
+    .freeRoute{
+        width: get-vw(414px,414 );
+        display: flex;
+        justify-content: center;
+    
+    }
+    
+    .routeTitleBlock{
+        display: none;
+    }
+    .container{
+        width: get-vw(365px,414 );
+    }
+    
+    
+    .title{
+        font-family: 'Bokonique-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: get-vw(28px,414 );
+        line-height: get-vw(33px,414 );
+        text-transform: uppercase;
+        color: #224660;
+        margin-top: 8vw;
+    }
+    .description{
+        margin-top: 5vw;
+        width: get-vw(365px,414 );
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: get-vw(16px,414 );
+        line-height: get-vw(24px,414 );
+        color: #224660;
+    }
+    
+    .pattern{
+        margin-right: get-vw(10px,414 );
+    }
+    .routeTitleBlock{
+        display: flex;
+        align-items: center;
+        margin-top: 5vw;
+        gap: 0vw;
+        flex-wrap: wrap;
+        .routeTitle{
+            margin-left: 2vw;
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 22px;
+            line-height: 29px;
+            color: #224660;
+            cursor: pointer;
+            width: get-vw(300px,414 );
+        }
+    }
+
+    .routeTitle{
+        margin-top: 10vw;
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: get-vw(22px,414 );
+        line-height: get-vw(37px,414 );
+        color: #224660;
+        cursor: pointer;
+    }
+    
+    .routeData{
+        display: flex;
+        gap: 1vw;
+        justify-content: center;
+        margin-top: 5vw;
+        width: get-vw(365px,414 );
+        .routeDataBlock{
+            display: flex;
+            align-items: center;
+            gap: 2vw;
+            width: 77vw;
+            flex-wrap: wrap;
+    
+            .data{
+                display: flex;
+                align-items: center;
+                gap: 2vw;
+                
+                .route{
+                    width: get-vw(365px,414 );
+                    font-family: 'arm-regular','montserrat-ru-regular';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: get-vw(18px,414 );
+                    line-height: get-vw(28px,414 );
+                    color: #224660;
+                    margin-top: 4vw;
+                }
+            }
+        }
+        
+    
+    }
+}
+

@@ -1,0 +1,247 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+.darkBackground{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: opacity .2s ease;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.dark{
+    width: 100vw;
+    height: 100vw;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    transition: opacity .2s ease;
+    overflow-y: scroll;
+}
+
+.SuccessAppForm{
+    position: fixed;
+    z-index: 12;
+    width: 36.9140625vw;
+    height: 24.283854166666668vw;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 1.3020833333333333vw 1.953125vw rgba(0, 0, 0, 0.1);
+    border-radius: 0.6510416666666666vw;
+    z-index: 111;
+    position: relative;
+    align-items: center;
+    // position: relative;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+}
+
+.container{
+    width: 32vw;
+    height: 20vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.thanks{
+    width: 26.3671875vw;
+    height: 3.2552083333333335vw;
+    font-family: 'Bokonique-regular','montserrat-ru-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.34375vw;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #224660;
+    margin-top: 1vw;
+    text-align: center;
+}
+.MessageSend{
+    width: 19.466145833333332vw;
+    height: 1.4322916666666667vw;
+    font-family: 'arm-regular','montserrat-ru-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.0416666666666667vw;
+    line-height: 140%;
+    color: #224660;
+    margin-top: 2vw;
+    text-align: center;
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.78125vw 3.90625vw;
+    gap: 0.78125vw;
+    width: 10.611979166666666vw;
+    height: 2.8645833333333335vw;
+    background: #A6CCE5;
+    border-radius: 26.041666666666668vw;
+    border: none;
+    margin-top: 2vw;
+    font-family: 'arm-regular','montserrat-ru-regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9114583333333334vw;
+    line-height: 1.3020833333333333vw;
+    color: #224660;
+
+    &:hover{
+        background-color: #fff;
+        border: #224660 1px solid;
+    }
+}
+
+.close{
+    position: absolute;
+    color: #828282;
+    font-style: normal;
+    font-size: 3.6vw;
+    cursor: pointer;
+    position: absolute;
+    top: -0.8vw;
+    right: 1vw;
+}
+
+@media only screen and (max-width: 600px){
+    
+    .darkBackground{
+        width: get-vw(414px,414 );
+        height: 100%;
+        position: fixed;
+        z-index: 9;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        transition: opacity .2s ease;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .dark{
+        width: get-vw(414px,414 );
+        height: 100%;
+        position: fixed;
+        z-index: 15;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: rgba(0, 0, 0, .5);
+        transition: opacity .2s ease;
+        overflow-y: scroll;
+    }
+    
+    .SuccessAppForm{
+        position: fixed;
+        z-index: 12;
+        width: get-vw(350px,414 );
+        height: get-vw(330px,414 );
+        display: flex;
+        justify-content: center;
+        background-color: #fff;
+        box-shadow: 0px 1.3020833333333333vw 1.953125vw rgba(0, 0, 0, 0.1);
+        border-radius: 0.6510416666666666vw;
+        z-index: 111;
+        position: relative;
+        align-items: center;
+        // position: relative;
+        bottom: 0;
+        left: 0;
+        top: 0;
+        right: 0;
+        margin: auto;
+    }
+    
+    .container{
+        width: get-vw(350px,414 );
+        height: get-vw(300px,414 );
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    .successImg{
+        margin-top: 5vw;
+        width: get-vw(70px,414 );
+        height: get-vw(75px,414 );
+        margin-bottom: 5vw;
+    }
+    .thanks{
+        width: get-vw(270px,414 );
+        height: get-vw(40px,414 );
+        font-family: 'Bokonique-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: get-vw(24px,414 );
+        line-height: get-vw(33px,414 );
+        text-transform: uppercase;
+        color: #224660;
+        margin-top: 1vw;
+    }
+    .MessageSend{
+        width: get-vw(300px,414 );
+        height: get-vw(50px,414 );
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: get-vw(16px,414 );
+        line-height: get-vw(24px,414 );
+        color: #224660;
+        margin-top: 2vw;
+    }
+    .button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.78125vw 3.90625vw;
+        gap: 0.78125vw;
+        width: get-vw(280px,414 );
+        height: get-vw(44px,414 );
+        background: #A6CCE5;
+        border-radius: 26.041666666666668vw;
+        border: none;
+        margin-top: 2vw;
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: get-vw(16px,414 );
+        line-height: 1.3020833333333333vw;
+        color: #224660;
+    
+        &:hover{
+            background-color: #fff;
+            border: #224660 1px solid;
+        }
+    }
+    
+    .close{
+        position: absolute;
+        color: #828282;
+        font-style: normal;
+        font-size: get-vw(30px,414 );
+        cursor: pointer;
+        position: absolute;
+        top: -0.8vw;
+        right: 1vw;
+    }
+}

@@ -1,0 +1,19 @@
+import Image from "next/Image"
+import styles from "../../../styles/sass/pages/foodSinglePage/secMap/secMap.module.scss"
+import map from "../../../public/img/foodSinglePage/secMap/map.svg"
+
+
+const SecMap = () =>{
+
+    return(
+        <div className={styles.SecMap}>
+            <div className={styles.container}>
+                <div><Image alt="map" src={map}/></div>
+            </div>
+        </div>
+    )
+}
+
+
+
+export default SecMap

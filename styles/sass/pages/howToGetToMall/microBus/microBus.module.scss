@@ -1,0 +1,238 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+
+
+.microBus{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35vw;
+}
+.pattern{
+    width: get-vw(91px,1440 );
+}
+.bus{
+    width: get-vw(65px,1440 );
+}
+.patternsArrow{
+    width: get-vw(40px,1440 );
+}
+.container{
+    width: 90.6vw;
+}
+
+
+.title{
+    font-family: 'Bokonique-regular','montserrat-ru-semibold';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.34375vw;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #224660;
+    margin-top: 5vw;
+}
+
+.routeTitleBlock{
+    display: flex;
+    align-items: center;
+    margin-top: 5vw;
+    gap: 1vw;
+    .routeTitle{
+        margin-left: 2vw;
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 24px;
+        line-height: 29px;
+        color: #224660;
+        cursor: pointer;
+    }
+}
+
+.routeData{
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    margin-top: 5vw;
+    .routeDataBlock{
+        display: flex;
+        align-items: center;
+        gap: 2vw;
+        width: 84vw;
+        flex-wrap: wrap;
+
+        .data{
+            display: flex;
+            align-items: center;
+            gap: 1vw;
+
+            .route{
+                font-family: 'arm-regular','montserrat-ru-regular';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.171875vw;
+                line-height: 160%;
+                color: #224660;
+            }
+            .routeMultiOutletMall{
+                font-family: 'arm-regular','montserrat-ru-regular';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.171875vw;
+                line-height: 160%;
+                color: #C7A28C;
+            }
+        }
+    }
+}
+
+.minus{
+    font-size: xxx-large;
+    display: flex;
+    padding-bottom: 6px;
+    margin-left: 1vw;
+    font-weight: 400;
+    color: #224660;
+    cursor: pointer;
+}
+.minusNone{
+    display: none;
+}
+
+.plus{
+    font-size: xxx-large;
+    display: flex;
+    padding-bottom: 6px;
+    margin-left: 0.8vw;
+    font-weight: 400;
+    color: #224660;
+    cursor: pointer;
+}
+.plusNone{
+    display: none;
+}
+
+
+.mapBlock{
+    margin-top: 15vw;
+    width: 90.6vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media only screen and (max-width:600px){
+ 
+    .SecBus{
+        width: get-vw(414px,414 );
+        display: flex;
+        justify-content: center;
+    }
+    
+    
+    .container{
+        width:get-vw(365px,414 );
+    }
+    
+    
+    .title{
+        font-family: 'Bokonique-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: get-vw(28px,414 );
+        line-height: get-vw(33px,414 );
+        text-transform: uppercase;
+        color: #224660;
+        margin-top: 5vw;
+        margin-bottom: 10vw;
+    }
+    
+    .routeTitleBlock{
+        display: flex;
+        align-items: center;
+        margin-top: 1vw;
+        gap: 0vw;
+        flex-wrap: wrap;
+        .routeTitle{
+            margin-top: 10vw;
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 700;
+            font-size: get-vw(22px,414 );
+            line-height: get-vw(37px,414 );
+            color: #224660;
+            width: get-vw(300px,414 );
+        }
+    }
+    
+    .pattern{
+        margin-right: get-vw(10px,414 );
+    }
+
+    .minus{
+        padding: 0px;
+        margin: 0px;
+        padding-top: 23px;
+    }
+    .plus{
+        padding: 0px;
+        margin: 0px;
+        padding-top: 23px;
+    }
+    .routeData{
+        display: flex;
+        gap: 1vw;
+        justify-content: center;
+        margin-top: 5vw;
+        margin-bottom: 10vw;
+        width: get-vw(365px,414 );
+        .routeDataBlock{
+            display: flex;
+            align-items: center;
+            gap: 2vw;
+            width: 77vw;
+            flex-wrap: wrap;
+    
+            .data{
+                display: flex;
+                align-items: center;
+                gap: 2vw;
+                margin-top: 4vw;
+                .route{
+                    width: get-vw(365px,414 );
+                    font-family: 'arm-regular','montserrat-ru-regular';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: get-vw(18px,414 );
+                    line-height: get-vw(28px,414 );
+                    color: #224660;
+                    margin-top: 0vw;
+                }
+                .routeMultiOutletMall{
+                    width: get-vw(365px,414 );
+                    font-family: 'arm-regular','montserrat-ru-regular';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: get-vw(18px,414 );
+                    line-height: get-vw(28px,414 );
+                    color: #C7A28C;
+                }
+                .patternsArrow{
+                    width: get-vw(24px,414 );
+                }
+            }
+        }
+    }
+
+    .mapBlock{
+        width: get-vw(365px,414 );
+        margin-bottom: 60vw;
+
+    }
+}

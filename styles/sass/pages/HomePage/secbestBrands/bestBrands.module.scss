@@ -1,0 +1,118 @@
+// @import "../../../core//fonts.scss";
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+
+
+.bestBrands{
+    width: get-vw(1440px,1440 );
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: get-vw(1289px,1440 );
+    margin-top: get-vw(90px,1440 );
+    margin-left: get-vw(50px,1440 );
+}
+
+.descAndPatter{
+    display: flex;
+}
+.pattern{
+    width: 12vw;
+    height: 12vw;
+}
+.descBlock{
+    max-width: 50vw;
+    width: auto;
+    margin-top: 5vw;
+    margin-bottom: 5.924479166666667vw;
+    gap: 0.8vw;
+    div{        
+        width: get-vw(705px,1440 );
+        height: auto;
+        max-height: get-vw(90px,1440 );
+        font-family: 'Bokonique-regular','montserrat-ru-semibold';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3vw;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #224660;
+    }
+    p{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: get-vw(18px,1440 );
+        line-height: 160%;
+        color: #224660;
+        width: get-vw(580px,1440 );
+    }
+}
+.descAndPatterMobile{
+    display: none;
+}
+
+@media only screen and (max-width: 600px){
+    .bestBrands{
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 6vw;
+    }
+    
+    .container{
+        width: 100vw;
+        margin: 0px;
+    }
+    
+    .descAndPatter{
+       display: none;
+    }
+    .descAndPatterMobile{
+        display: flex;
+        flex-direction: column;
+        .patternAndTitleMobile{
+            display: flex;
+            width: 100vw;
+            margin-left: 5vw;
+            .patternMobile{
+                width: 20vw;
+                height: 20vw;
+                margin-left: 3vw;
+            }
+            .mobileTitle{
+
+                font-family: 'Bokonique-regular','montserrat-ru-semibold';
+                font-style: normal;
+                font-weight: 400;
+                line-height: 140%;
+                text-transform: uppercase;
+                color: #224660;
+                width: 56vw;
+                font-size: 7vw;
+                height: 27vw;
+                display: flex;
+                align-items: flex-end;
+            }
+        }
+        .descBlockMobile{
+            font-family: "arm-regular",'montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 4vw;
+            line-height: 160%;
+            color: #224660;
+            width: 95vw;
+            margin-left: 7vw;
+            margin-top: 10vw;
+        }
+    }
+    
+    
+}

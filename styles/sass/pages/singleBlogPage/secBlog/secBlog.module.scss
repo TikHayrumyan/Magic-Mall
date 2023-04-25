@@ -1,0 +1,617 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+.singleBlogs{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.SecBlogFirst{
+    width: 94vw;
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-end;
+    margin-bottom: 0vw;
+
+    .contents{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .leftContent{
+            width: get-vw(585px,1440 );
+            height: auto;
+            color: #224660;
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(18px,1440 );
+            line-height: get-vw(28.8px,1440 );
+        }
+        .RightContent{
+            width: 50vw;
+            height: 30vw;
+
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+    }
+
+    
+}
+
+.secPics{
+    width: 100vw;
+    display: flex;  
+}
+.LeftPicsContainer{
+    display: flex;
+    width: 50vw;
+    justify-content: space-between;
+    margin-top: 5vw;
+
+    .LeftPicsContainerFirst{
+        width: 30vw;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+    .LeftPicsContainerSecond{
+        width: 19vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1vw;
+        img{
+            width: 100%;
+            height: 50%;
+            object-fit: cover;
+        }
+    }
+}
+
+.RightPicsContainer{
+    width: 50vw;
+    margin-top: 5vw;
+    display: flex;
+    justify-content: flex-end;
+    img{
+        width: 95%;
+        height: 100%;
+        object-fit: cover;
+    }
+}
+.SecBlogSecond{
+    width: 94vw;
+    display: flex;
+    flex-direction: column;
+    // align-items: flex-end;
+    margin-bottom: 0vw;
+}
+
+.container{
+    width: 90vw;
+    margin-bottom: 5vw;
+    
+}
+
+.goBackBlock{
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 4vw;
+    margin-top: 6vw;
+    
+}
+.goBack{
+    font-family: 'arm-semiBold','montserrat-ru-regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.78125vw;
+    line-height: 1.3020833333333333vw;
+    color: #224660;
+}
+.forHover{
+    display: flex;
+    gap: 1vw;
+    cursor: pointer;
+   
+}
+.forHover:hover .arrow{
+    transform: translateX(-10px);
+    transition: 1s;
+}
+
+.title{
+    font-family: 'arm-regular','montserrat-ru-regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.34375vw;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #224660;
+    width: 55.924479166666664vw;
+}
+
+.blogImg{
+    width: 48.111979166666664vw;
+    height: 37.630208333333336vw;
+}
+
+.dateBlock{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    margin-top: 2vw;
+    margin-bottom: 2vw;
+    .date{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.78125vw;
+        line-height: 0.9765625vw;
+        color: #828282;
+    }
+}
+
+
+.descripAndImg{
+    display: flex;
+    justify-content: space-between;
+   
+}
+.collage{
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+
+.content{
+    color: #224660;
+    font-family: 'arm-regular','montserrat-ru-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.171875vw;
+    line-height: 160%;
+    color: #224660;
+    width: 90vw;
+    & table{
+        width: 100px!important;
+
+        & tbody{
+            width: 100px!important;
+            & tr {
+                width: 100%;
+                & td {
+                    width: 100%;
+                    & p {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+      }
+   
+}
+
+
+.line{
+    width: 90vw;
+    height: 2px;
+    background-color: #B0B2B6;
+    margin-top: 7vw;
+    margin-bottom: 4vw;
+}
+
+.shareBlock{
+    margin-top: 2vw;
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    .share{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.9114583333333334vw;
+        line-height: 140%;
+        color: #224660;
+    }
+}
+
+
+
+
+
+
+.containerTrendColors{
+    width: 95vw;
+}
+
+.titleBlock{
+    margin-bottom: 10vw;
+    margin-top: 10vw;
+    .title{
+        font-family: 'Bokonique-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.34375vw;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #224660;
+        margin-bottom: 3vw;
+    }
+    .description{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.171875vw;
+        line-height: 160%;
+        color: #224660;
+        width: 85vw;
+    }
+}
+
+.collageBlock{
+    display: flex;
+    gap: 5vw;
+    margin-bottom: 10vw;
+    width: 85vw;
+    .collagePics{
+        display: flex;
+        flex-direction: column;
+        width: 42vw;
+        height: 40vw;
+        gap: 1vw;
+        .TopCollageBlock{
+            display: flex;
+            gap: 1vw;
+
+            img{
+                width: 20vw;
+                object-fit: cover;
+            }
+        }
+        .bottomCollageBlock{
+            width: 41vw;
+
+            img{
+                width: 41vw;
+                height: 20vw;
+                object-fit: cover;
+            }
+        }
+    }
+    .descrip{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.171875vw;
+        line-height: 160%;
+        color: #224660;
+        width: 41.796875vw;
+    }
+}
+
+.line{
+    width: 90.6vw;
+    height: 2px;
+    background: #B0B2B6;
+    opacity: 0.16;
+    margin-bottom: 3vw;
+}
+
+
+.shareBlock{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    .share{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 0.9114583333333334vw;
+        line-height: 140%;
+        color: #224660;
+    }
+    .network{
+        display: flex;
+        gap: 1vw;
+    }
+}
+  
+@media only screen and (max-width:600px){
+
+
+        
+    .SecBlog{
+        width: get-vw(414px,414 );
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 13vw;
+    }
+
+    .container{
+        width: get-vw(365px,414 );
+        margin-bottom: 5vw;
+    }
+
+    .goBackBlock{
+        display: flex;
+        gap: 1vw;
+        margin-bottom: 8vw;
+        margin-top: 10vw;
+        
+    }
+    .goBack{
+        font-family: 'arm-semiBold','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 600;
+        font-size: get-vw(12px,414 );
+        line-height: get-vw(15px,414 );
+        color: #224660;
+    }
+    .forHover{
+        display: flex;
+        gap: 1vw;
+        cursor: pointer;
+    
+    }
+    .forHover:hover .arrow{
+        transform: translateX(-10px);
+        transition: 1s;
+    }
+
+    .title{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 600;
+        font-size: get-vw(28px,414 );
+        line-height: get-vw(33px,414 );
+        text-transform: uppercase;
+        color: #224660;
+        width: get-vw(365px,414 );
+    }
+
+    .blogImg{
+        width: 48.111979166666664vw;
+        height: 37.630208333333336vw;
+    }
+
+    .dateBlock{
+        display: flex;
+        align-items: center;
+        margin-top: 4vw;
+        margin-bottom: 4vw;
+        .date{
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-size: get-vw(12px,414 );
+            line-height: get-vw(15px,414 );
+            line-height: 0.9765625vw;
+            color: #828282;
+            margin-left: 3vw;
+        }
+    }
+
+    .collage{
+        display: flex;
+        width: 100vw;
+        justify-content: space-between;
+    }
+
+
+    .content{
+        color: #224660;
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: get-vw(16px,414 );
+        line-height: get-vw(24px,414 );
+        color: #224660;
+        width: get-vw(365px,414 );
+        // overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .content{
+        & p > img{
+            width: get-vw(365px,414 );
+            height: auto;
+        }
+        & img {
+            width: get-vw(365px,414 );
+            height: auto;
+        }
+        & td {
+            display: block;
+            width: get-vw(365px,414 );
+        }
+        & table {
+            width: get-vw(365px,414 );
+            
+        }
+    }
+
+        
+    .shareBlock{
+        margin-top: 2vw;
+        display: flex;
+        gap: 2vw;
+        align-items: center;
+        .share{
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(15px,414 );
+            line-height: get-vw(20px,414 );
+            color: #224660;
+            margin-right: 3vw;
+        }
+    }
+
+    .containerTrendColors{
+        width: get-vw(365px,414 );
+    }
+    .singleBlogs{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .SecBlogFirst{
+        width: get-vw(365px,414 );
+        display: flex;
+        flex-direction: column;
+        // align-items: flex-end;
+        margin-bottom: 0vw;
+    
+    .contents{
+        display: flex;
+        width: get-vw(365px,414 );
+        justify-content: space-between;
+        flex-direction: column-reverse;
+        .leftContent{
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 300;
+            font-size: get-vw(16px,414 );
+            line-height: get-vw(24px,414 );
+            color: #224660;
+            width: get-vw(365px,414 );
+            height: 80vh;
+        }
+        .RightContent{
+            width: get-vw(365px,414 );
+            height: get-vw(300px,414 );
+
+            img{
+                width: 100%;
+                height: 80%;
+                object-fit: cover;
+            }
+        }
+    }
+    }
+    
+
+
+    .secPics{
+        width: get-vw(365px,414 );
+        display: flex;  
+        flex-direction: column-reverse;
+    }
+    .LeftPicsContainer{
+        display: flex;
+        width: get-vw(365px,414 );
+        justify-content: space-between;
+        margin-top: 5vw;
+    
+        .LeftPicsContainerFirst{
+            width: get-vw(180px,414 );
+            img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+        }
+        .LeftPicsContainerSecond{
+            width: get-vw(180px,414 );
+            display: flex;
+            flex-direction: column;
+            gap: 1vw;
+            img{
+                width: 100%;
+                height: 50%;
+                object-fit: cover;
+            }
+        }
+    }
+    
+    .RightPicsContainer{
+        width: get-vw(365px,414 );
+        margin-top: 5vw;
+        display: flex;
+        justify-content: flex-end;
+        img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+
+    
+.titleBlock{
+    margin-bottom: 10vw;
+    margin-top: 10vw;
+    .title{
+        font-family: 'Bokonique-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 300;
+        font-size: get-vw(16px,414 );
+        line-height: get-vw(24px,414 );
+        color: #224660;
+        width: get-vw(365px,414 );
+        margin-bottom: 3vw;
+    }
+    .description{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 300;
+        font-size: get-vw(16px,414 );
+        line-height: get-vw(24px,414 );
+        color: #224660;
+        width: get-vw(365px,414 );
+    }
+}
+    
+    .collageBlock{
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 5vw;
+        margin-bottom: 10vw;
+        width: get-vw(365px,414 );
+        .collagePics{
+            display: flex;
+            flex-direction: column;
+            width: get-vw(365px,414 );
+            height: 80vw;
+            gap: 1vw;
+            .TopCollageBlock{
+                display: flex;
+                gap: 1vw;  
+
+                img{
+                    width: get-vw(180px,414 );
+                    object-fit: cover;
+                }
+            }
+            .bottomCollageBlock{
+                width: get-vw(365px,414 );
+
+                img{
+                    width: get-vw(365px,414 );
+                    height: 40vw;
+                    object-fit: cover;
+                }
+            }
+        }
+        .descrip{
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 300;
+            font-size: get-vw(16px,414 );
+            line-height: get-vw(24px,414 );
+            color: #224660;
+            width: get-vw(365px,414 );
+        }
+    }
+}

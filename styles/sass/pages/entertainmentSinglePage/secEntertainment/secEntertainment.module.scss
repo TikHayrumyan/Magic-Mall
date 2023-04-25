@@ -1,0 +1,254 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+
+.SecEntertainment{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container{
+    width: 84.36848958333334vw;
+}
+
+.goBackBlock{
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 4vw;
+    margin-top: 6vw;
+    
+}
+.goBack{
+    font-family: 'arm-semiBold','montserrat-ru-regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.78125vw;
+    line-height: 1.3020833333333333vw;
+    color: #224660;
+}
+.forHover{
+    display: flex;
+    gap: 1vw;
+    cursor: pointer;
+   
+}
+.forHover:hover .arrow{
+    transform: translateX(-10px);
+    transition: 1s;
+}
+
+
+
+.infoBlock{
+
+
+    .description{
+        margin-top: 3vw;
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 160%;
+        color: #224660;
+        margin-bottom: 6vw;
+        
+    }
+}
+
+
+.imgBlock{
+    display: flex;
+    gap: 0.8vw;
+    justify-content: space-between;
+    .forFlex{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+
+.MobileSecMain{
+    display: none;
+}
+
+
+.contactBlock{
+    display: flex;
+    margin-top: 1vw;
+    // justify-content: space-between;
+    gap: 1.5vw;
+        .numberBlock{
+        
+            display: flex;
+            align-items: center;
+            gap: 0.5vw;
+            .number{
+                font-family: 'arm-bold','montserrat-ru-regular';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 14px;
+                line-height: 20px;
+                color: #224660;
+            }
+            .phoneIcon{
+                width: get-vw(24px,1440 );
+                height: get-vw(24px,1440 );
+            }
+    }
+}
+.networkBlock{
+    display: flex;
+    gap: 0.8vw;
+}
+
+// MOBILE
+@media only screen and (max-width: 600px){
+    
+    .SecEntertainment{
+        width: get-vw(414px,414 );
+        display: flex;
+        justify-content: center;
+        margin-bottom: 22vw;
+    }
+    
+    
+    .container{
+        width:get-vw(365px,414 );
+    }
+    
+    .goBackBlock{
+        display: flex;
+        gap: 1vw;
+        margin-bottom: 4vw;
+        margin-top: 6vw;
+        
+    }
+    .goBack{
+        font-family: 'arm-semiBold','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 600;
+        font-size: get-vw(12px,414 );
+        line-height: get-vw(15px,414 );
+        color: #224660;
+        margin-left: 2vw;
+    }
+    .forHover{
+        display: flex;
+        gap: 1vw;
+        cursor: pointer;
+       
+    }
+    .forHover:hover .arrow{
+        transform: translateX(-10px);
+        transition: 1s;
+    }
+    
+    
+    
+    .infoBlock{
+    
+        .description{
+            margin-top: 3vw;
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(16px,414 );
+            line-height: get-vw(24px,414 );
+            color: #224660;
+            margin-bottom: 6vw;
+            width: get-vw(365px,414 );
+            overflow: hidden;
+        }
+    }
+    
+    
+    .imgBlock{
+        display: flex;
+        gap: 0.8vw;
+        justify-content: space-between;
+        width: get-vw(365px,414 );
+        .forFlex{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+    }
+    
+
+    .MobileSecMain{
+        display: flex;
+        flex-direction: column;
+        width: get-vw(365px,414 );
+        margin-top: get-vw(40px,414 );
+        margin-bottom: get-vw(40px,414 );
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: get-vw(300px,414 );
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        .MobileTitleAndPattern{
+            display: flex;
+            align-items: flex-end;
+            // width: get-vw(250px,414 );
+            // height: get-vw(15px,414 );
+        }
+
+        .mobileTitle{
+            font-family: 'arm-bold','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 700;
+            font-size: get-vw(24px,414 );
+            line-height: get-vw(29px,414 );
+            color: #FFF;
+            margin-bottom: 2vw;
+            z-index: 1;
+        }
+
+        .MobileBackground{
+            margin-top: get-vw(30px,414 );
+        }
+        .mobilePattern{
+            width: get-vw(75px,414 );
+        }
+    }
+    .numberBlock{
+        width: get-vw(160px,414 );
+    }
+    .contactBlock{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .networkBlock{
+        display: flex;
+        gap: get-vw(0px,414 );
+        margin-top: 3vw;
+        .Linkdin{
+            margin-right: 1vw;
+        }
+        .Facebook{
+            margin-right: 1vw;
+        }
+    }
+    .phoneIcon{
+        width: get-vw(30px,414)!important;
+        height: get-vw(30px,414)!important;
+        margin-right: get-vw(10px,414 );
+    }
+    .gradientt{
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 99.23%);
+        height: get-vw(300px,414 );
+        width: 100vw;
+        opacity: 0.7;
+    }
+}

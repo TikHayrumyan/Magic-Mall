@@ -1,0 +1,47 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+
+.brandsSlide{
+    width: get-vw(1440px,1440 );
+    height: get-vw(144px,1440 );
+    display: flex;
+    align-items: center;
+    background-color: #224660;
+    
+    .sliderContainer{
+        width: get-vw(1292px,1440);
+        height: get-vw(68px,1440 );
+        margin-left: get-vw(73.5px,1440);
+        // display: flex;
+        // align-items: center;
+
+        
+    }
+}
+
+.brandImg{
+   min-height: max-content;
+   max-height: min-content;
+   cursor: pointer;
+}
+
+@media only screen and (max-width: 600px){
+    
+    .brandsSlide{
+        width: 100vw;
+        height: 26vw;
+        display: flex;
+        align-items: center;
+        background-color: #224660;
+        
+        .sliderContainer{
+            width: 100vw;
+            height: 15vw;
+            margin: 0px;
+        }
+    }
+}

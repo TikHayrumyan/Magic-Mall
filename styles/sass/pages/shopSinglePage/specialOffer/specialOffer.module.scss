@@ -1,0 +1,137 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+.SpecialOffer{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vw;
+    flex-direction: column;
+    align-items: center;
+}
+
+.title{
+    width: 87vw; 
+    margin-bottom: 5vw;
+    font-family: 'Bokonique-regular','montserrat-ru-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.4vw;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #224660;
+}
+.container{
+    width: 87vw;    
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+}
+
+
+.item{
+    display: flex;
+    .background{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        width: 43vw;
+        height: 46.55vw;
+        padding-top: 2vw;
+        padding-left: 1.5vw;
+        .logoBlock{
+            display: flex;
+            align-items: center;
+            gap: 1.5vw;
+    
+            .BrandName{
+            font-family: 'arm-bold','montserrat-ru-bold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.5625vw;
+            line-height: 1.8880208333333333vw;
+            color: #224660;
+            }
+            .logo{
+                width: 5.8vw;
+                height: 5.8vw;
+            }
+        }
+    }
+}
+
+
+.mobileContainer{
+    display: none;
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .container{
+        display: none;
+    }
+
+    .title{
+        font-family: 'Bokonique-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: get-vw(28px,414 );
+        line-height: get-vw(33px,414 );
+        text-transform: uppercase;
+        color: #224660;
+    }
+    .SpecialOffer{
+        width: get-vw(414px,414 );
+        display: flex;
+        justify-content: center;
+        margin-bottom: 10vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    .mobileContainer{
+        width: get-vw(365px,414 );    
+        display: flex;
+        align-items: center;
+        
+
+                
+        .itemMobile{
+            display: flex;
+            width: get-vw(365px,414 );
+            height: get-vw(270px,414 );
+            .backgroundMobile{
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                width: get-vw(365px,414 );
+                height: get-vw(270px,414 );
+                padding-top: 6vw;
+                padding-left: 4.5vw;
+                .logoBlockMobile{
+                    display: flex;
+                    align-items: center;
+                    gap: 1.5vw;
+                    
+                    .BrandNameMobile{
+                    font-family: 'arm-bold','montserrat-ru-bold';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size:get-vw(13px,414 );
+                    line-height: get-vw(16px,414 );
+                    }
+                    .logoMobile{
+                        width: get-vw(45px,414 );
+                        height: get-vw(45px,414 );
+                    }
+                }
+            }
+        }
+
+    }
+}

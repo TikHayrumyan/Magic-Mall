@@ -1,0 +1,137 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+.forCardSubscribe{
+    margin-bottom: 40vw;
+}
+.forCardSubscribeNotResult{
+    margin-top: 35vw;
+}
+
+.SearchResult {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 90.6vw;
+}
+
+.titleResult{
+    display: flex;
+    margin-top: 5vw;
+    margin-bottom: 4vw;
+    .title{
+        font-family: 'Bokonique-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 32px;
+        line-height: 140%;
+        color: #224660;
+
+    }
+    .result{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 160%;
+        color: #224660;
+    }
+}
+
+.searchResult{
+    width: 90.6vw;
+    margin-top: 5vw;
+    margin-bottom: 8vw;
+    .notResult{
+        width: 90.6vw;
+        display: flex;
+        justify-content: center;
+        margin-top: 5vw;
+        
+        p{
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 18px;
+            line-height: 160%;
+            color: #224660;
+        }
+    }
+}
+
+
+// Mobile
+
+
+
+@media only screen and (max-width:600px) and (hover: none){
+
+ 
+.SearchResult {
+    width: get-vw(414px,414 );
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: get-vw(414px,414 );
+}
+
+.titleResult{
+    display: flex;
+    margin-top: 5vw;
+    margin-bottom: 4vw;
+    margin-left: 9vw;
+    .title{
+        font-family: 'Bokonique-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: get-vw(20px,414 );
+        line-height: get-vw(28px,414 );
+        color: #224660;
+
+    }
+    .result{
+        font-family: 'Montserrat arm','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(18px,414 );
+            line-height: get-vw(28px,414 );
+            color: #224660;
+    }
+}
+
+.searchResult{
+    width: get-vw(365px,414 );
+    margin-top: 5vw;
+    margin-bottom: 8vw;
+    .notResult{
+        width:get-vw(365px,414 );
+        display: flex;
+        justify-content: center;
+        margin-top: 5vw;
+        margin-left: 8vw;
+        p{
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(18px,414 );
+            line-height: get-vw(28px,414 );
+            color: #224660;
+        }
+    }
+}
+.forCardSubscribe{
+    margin-bottom: get-vw(350px,414 );
+}
+.forCardSubscribeNotResult{
+    margin-top: get-vw(300px,414 );
+}
+
+}

@@ -1,0 +1,202 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+
+.giftCard{
+    width: get-vw(1440px,1440 );
+    display: flex;
+    margin-bottom: get-vw(100px,1440 );
+    justify-content: center;
+}
+
+
+.container{
+    width: get-vw(1210px,1440 );
+    position: relative;
+    display: flex;
+    margin-left: get-vw(50px,1440 );
+    gap: 10vw;
+    align-items: center;
+
+}
+
+.aboutBlock{
+    display: flex;
+    flex-direction: column;
+    width: get-vw(743px,1440 );
+    
+    .titleBlock{
+        display: flex;
+        gap: get-vw(60px,1440 );
+        align-items: flex-end;
+        margin-top: get-vw(60px,1440 );
+        margin-bottom: 2vw;
+        .title{
+            font-family: 'Bokonique-regular','montserrat-ru-semibold';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(36px,1440 );
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #224660;
+            margin: 0px;
+        }
+    }
+    .descrip{
+        width: get-vw(395px,1440 );
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: get-vw(18px,1440 );
+        line-height: 160%;
+        color: #224660;
+        margin-bottom: get-vw(58px,1440 );
+    }
+    .button{
+        display: flex;
+        width: get-vw(140px,1440 );
+        height: get-vw(17px,1440 );
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: get-vw(14px,1440 );
+        line-height: get-vw(17px,1440 );
+        color: #224660;
+        background: transparent;
+        border: none;
+        padding: 0px;
+        cursor: pointer;
+        
+        .buttonIcon{
+            width: get-vw(8px,1440 );
+            height: get-vw(15px, 1440);
+            margin-left: get-vw(8px,1440 );
+            cursor: pointer;
+        }
+    }
+}
+.hoverBlock{
+    display: flex;
+    margin-right: get-vw(220px,1440 );
+}
+.hoverBlock:hover > .buttonIcon{
+    transform: translate(100%);
+    transition: 0.5s;
+}
+
+.pattern{
+    position: absolute;
+    right: -10%;
+    z-index: -1;
+}
+
+.hoverBlockMobile{
+    display: none;
+}
+.giftCardImg{
+    height: 45vw;
+}
+
+
+@media only screen and (max-width: 600px){
+    .giftCard{
+        width: 100vw;
+        display: flex;
+        margin-bottom: 10vw;
+        justify-content: center;
+        margin-top: 10vw;
+    }
+    
+    .giftCardImg{
+        width: 43vw;
+        height: 56vw;
+        margin-left: 20vw;
+    }
+    .container{
+        width: 85vw;
+        position: relative;
+        display: flex;
+        // margin-left: get-vw(50px,1440 );
+        gap: 0vw;
+        flex-direction: column-reverse;
+    }
+   
+    .aboutBlock{
+        display: flex;
+        flex-direction: column;
+        width:84vw;
+    
+        .titleBlock{
+            display: flex;
+            flex-direction: row-reverse;
+            width: 60vw;
+            gap: 0px;
+            justify-content: flex-end;
+            .title{
+                font-family: 'Bokonique-regular','montserrat-ru-semibold';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 6vw;
+                line-height: 140%;
+                text-transform: uppercase;
+                color: #224660;
+                margin-top: 4vw;
+            }
+            .secondPattern{
+                width: 20vw;
+                height: 24vw;
+            }
+        }
+        .descrip{
+            width: 85vw;
+            min-height: 50vw;
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(16px,414 );
+            line-height: 160%;
+            color: #252B42;
+    
+        }
+        
+    }
+    
+    .hoverBlock{
+        display: none;
+    }
+    .pattern{
+        position: absolute;
+        right: -10%;
+        z-index: -1;
+    }
+    .mobileButton{
+        margin-left: 27vw;
+        display: flex;
+        align-items: center;
+        width: 30vw;
+        // height: get-vw(17px,1440 );
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3vw;
+        line-height: 3vw;
+        color: #224660;
+        background: transparent;
+        border: none;
+        padding: 0px;
+        cursor: pointer;
+    }
+
+    .hoverBlockMobile{
+        display: flex;
+        margin-right: get-vw(220px,1440 );
+    }
+    .hoverBlockMobile:hover > .buttonIconMobile{
+        transform: translate(100%);
+        transition: 0.5s;
+    }
+    
+}

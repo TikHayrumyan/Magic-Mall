@@ -1,0 +1,187 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+
+.img{
+    width: 23.8vw;
+    height: 26.302083333333332vw;
+    object-fit: cover;
+}
+.slide{
+    margin-left: 1.7vw;
+    width: 26.041666666666668vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 40vw;
+    background: #FFFFFF;
+
+    &:hover{
+        box-shadow: 0px get-vw(20px,1440 ) get-vw(30px,1440 ) rgba(0, 0, 0, 0.1);
+    }
+}
+
+.description{
+    width: get-vw(350px,1440 );
+    height: get-vw(42px,1440 );
+    font-family: 'arm-bold','montserrat-ru-bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: get-vw(14px,1440 );
+    line-height: 150%;
+    color: #224660;
+    text-align: start;
+}
+
+.dateBlock{
+    display: flex;
+    margin-bottom: get-vw(30px,1440 );
+    width: 24.169792vw;
+}
+
+.calendarIcon{
+    margin-right: get-vw(13px,1440 );
+}
+.date{
+    width: get-vw(80px,1440 );
+    height: get-vw(15px,1440 );
+    font-family: 'arm-regular','montserrat-ru-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: get-vw(12px,1440 );
+    line-height: get-vw(15px,1440 );
+    color: #828282;
+}
+
+.button{
+    display: flex;
+    width: 4.555556vw;
+    height: get-vw(17px,1440 );
+    font-family: 'arm-regular','montserrat-ru-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: get-vw(14px,1440 );
+    line-height: get-vw(17px,1440 );
+    color: #224660;
+    background: transparent;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+    
+    :hover .buttonIcon{
+        background-color: black;
+    }
+    .buttonIco{
+        width: get-vw(28px,1440 );
+        height: get-vw(15px, 1440);
+        margin-left: get-vw(8px,1440 );
+        cursor: pointer;
+    }
+}
+.hoverBlock{
+    display: flex;
+    align-items: center;
+    width: 24.4140625vw;  
+   
+}
+.hoverBlock:hover > .buttonIcon{
+    transform: translate(50%);
+    transition: 0.5s;
+}
+
+
+
+
+@media only screen and (max-width: 600px){
+
+    .blogSLider{
+        min-height: 70vw;
+    }
+    .img{
+       width: 80vw;
+       height: 60vw;
+       
+    }
+    .slide{
+        // margin-left: 2vw;
+        width: 81vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80vw;
+        background: #FFFFFF;
+        min-height: max-content;
+        &:hover{
+            box-shadow: none;
+        }
+    }
+    
+    .description{
+        width: 80vw;
+        height: 15vw;
+        font-family: "arm-bold",'montserrat-ru-bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3vw;
+        line-height: 150%;
+        color: #224660;
+        text-align: start;
+    }
+    
+    .dateBlock{
+        display: flex;
+        margin-bottom: 3vw;
+        width: 79vw;
+        align-items: center;
+    }
+    
+    .calendarIcon{
+        margin-right: 1.5vw;
+    }
+    .date{
+        width: 14vw;
+        height: 2vw;
+        font-family: "arm-regular",'montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2vw;
+        line-height: 1.0416666667vw;
+        color: #828282;
+    }
+    
+    .button{
+        display: flex;
+        width: 12.555556vw;
+        font-family: "arm-regular",'montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3vw;
+        line-height: 1.1805555556vw;
+        color: #224660;
+        background: transparent;
+        border: none;
+        padding: 0px;
+        :hover .buttonIcon{
+            background-color: black;
+        }
+        .buttonIco{
+            width: get-vw(28px,1440 );
+            height: get-vw(15px, 1440);
+            margin-left: get-vw(8px,1440 );
+            cursor: pointer;
+        }
+    }
+    .hoverBlock{
+        display: flex;
+        align-items: center;
+        width: 79vw; 
+       
+    }
+    .hoverBlock:hover > .buttonIcon{
+        transform: translate(50%);
+        transition: 0.5s;
+    }
+}

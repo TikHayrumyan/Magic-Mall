@@ -1,0 +1,234 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+
+.OnlineRent{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 35vw;
+}
+
+
+.container{
+    width: 79vw;
+}
+
+.descrip{
+    width: 42.643229166666664vw;
+    margin-bottom: 7vw;
+    font-family: 'arm-regular','montserrat-ru-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.171875vw;
+    line-height: 160%;
+    color: #224660;
+}
+
+.title{
+    font-family: 'arm-bold','montserrat-ru-bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5625vw;
+    line-height: 1.8880208333333333vw;
+    color: #224660;
+}
+
+
+.pdfBlock{
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    margin-top: 1.5vw;
+    cursor: pointer;
+    .applicationPaper{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.0416666666666667vw;
+        line-height: 140%;
+        color: #224660;
+    }
+}
+.AttachApplicationBlock{
+    margin-top: 2vw;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    .AttachApplication{
+        border: 1px solid rgba(130, 130, 130, 0.8);
+        border-radius: 26.041666666666668vw;
+        width: 13.151041666666666vw;
+        height: 3.125vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 1vw;
+        cursor: pointer;
+        .attach{
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.0416666666666667vw;
+            line-height: 140%;
+            color: #224660;
+        }
+    }
+    .fileName{
+        display: flex;
+        align-items: center;
+        gap: 0.3vw;
+        color: #224660;
+    }
+    .close{
+        display: flex;
+        cursor: pointer;
+    }
+}
+
+.button{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.78125vw 3.90625vw;
+    gap: 0.78125vw;
+    width: 17.630vw;
+    height: 2.8645833333333335vw;
+    background: #A6CCE5;
+    border-radius: 26.041666666666668vw;
+    border: none;
+    font-family: 'arm-bold','montserrat-ru-bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9114583333333334vw;
+    line-height: 1.3020833333333333vw;
+    margin-top: 2.5vw;
+    cursor: pointer;
+    color: #224660;
+    &:hover{
+        background-color: #fff;
+        border: #224660 1px solid;
+    }
+}
+
+
+@media only screen and (max-width:600px){
+
+            
+        .OnlineRent{
+            width: get-vw(414px,414 );
+            display: flex;
+            justify-content: center;
+            margin-bottom: 90vw;
+        }
+
+
+        .container{
+            width: get-vw(365px,414 );
+        }
+
+        .descrip{
+            width: get-vw(365px,414 );
+            margin-bottom: 7vw;
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(16px,414 );
+            line-height: get-vw(24px,414 );
+            color: #224660;
+            text-align:center;
+        }
+
+        .title{
+            font-family: 'arm-bold','montserrat-ru-bold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: get-vw(24px,414 );
+            line-height: get-vw(29px,414 );
+            color: #224660;
+            margin-top: 10vw;
+        }
+
+
+        .pdfBlock{
+            display: flex;
+            gap: 1vw;
+            align-items: center;
+            margin-top: 5vw;
+            cursor: pointer;
+            .applicationPaper{
+                font-family: 'arm-regular','montserrat-ru-regular';
+                font-style: normal;
+                font-weight: 400;
+                font-size: get-vw(12px,414 );
+                line-height: get-vw(14px,414 );
+                color: #224660;
+            }
+        }
+        .AttachApplicationBlock{
+            margin-top: 2vw;
+            display: flex;
+            gap: 2vw;
+            align-items: center;
+            .AttachApplication{
+                border: 1px solid rgba(130, 130, 130, 0.8);
+                border-radius: 26.041666666666668vw;
+                width: get-vw(175px,414 );
+                height: get-vw(45px,414 );
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1vw;
+                cursor: pointer;
+                .attach{
+                    font-family: 'arm-regular','montserrat-ru-regular';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: get-vw(14px,414 );
+                    line-height: get-vw(19px,414 );
+                    color: #224660;
+                }
+            }
+            .fileName{
+                display: flex;
+                align-items: center;
+                gap: 0.3vw;
+                color: #224660;
+            }
+            .close{
+                display: flex;
+                cursor: pointer;
+            }
+        }
+
+        .button{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 0.78125vw 3.90625vw;
+            gap: 0.78125vw;
+            width:get-vw(365px,414 );
+            height: get-vw(48px,414 );
+            background: #A6CCE5;
+            border-radius: 26.041666666666668vw;
+            border: none;
+            font-family: 'arm-bold','montserrat-ru-bold';
+            font-style: normal;
+            font-weight: 700;
+            font-size: get-vw(16px,414);
+            line-height: get-vw(20px,414 );
+            margin-top: 10vw;
+            cursor: pointer;
+            color: #224660;
+            &:hover{
+                background-color: #fff;
+                border: #224660 1px solid;
+            }
+        }
+
+}

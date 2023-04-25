@@ -1,0 +1,303 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+  }
+  
+
+
+
+.singleShop{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+.container{
+    width: 84.36848958333334vw;
+}
+
+
+.goBackBlock{
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 4vw;
+    margin-top: 6vw;
+    
+}
+.goBack{
+    font-family: 'arm-semiBold','montserrat-ru-regular';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.78125vw;
+    line-height: 1.3020833333333333vw;
+    color: #224660;
+}
+.forHover{
+    display: flex;
+    gap: 1vw;
+    cursor: pointer;
+   
+}
+.forHover:hover .arrow{
+    transform: translateX(-10px);
+    transition: 1s;
+}
+
+
+// MAIN
+
+.mainBlock{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.logoBlock{
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.5vw;
+    .Logo{
+        width: 11.067708333333334vw;
+        height: 11.067708333333334vw;
+    }
+    .brandName{
+        font-family: 'arm-bold','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 2.0833333333333335vw;
+        line-height: 2.5390625vw;
+        color: #224660;
+        margin-top: 2vw;
+    }
+}
+
+.descripBlock{
+    width: 38.671875vw;
+    margin-bottom: 3.5vw;
+    .description{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.171875vw;
+        line-height: 160%;
+        color: #224660;
+    }
+}
+
+.contactBlock{
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+
+    .number{
+        font-family: 'arm-bold','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 0.9114583333333334vw;
+        line-height: 1.3020833333333333vw;  
+        color: #224660;
+    }
+}
+
+.imgs{
+    width: 41.796875vw;
+    height: 44.986979166666664vw;
+
+    .imgsBlock{
+        position: relative;
+
+        
+    }
+    
+}
+.pattern{
+    position: absolute;
+    width: 27.5390625vw;
+    height: 22.981770833333332vw;
+}
+.globing{
+    position: absolute;
+    right: 0px;
+    margin-top: 6vw;
+    z-index: 1;
+    width: 31.380208333333332vw;
+    height: 33.203125vw;
+}
+.brandLogo{
+    position: absolute;
+    right: 0px;
+    max-width: 10.546875vw;
+    max-height: 5.2734375vw;
+    width: auto;
+    height: auto;
+}
+.accessories{
+    z-index: 2;
+    position: absolute;
+    margin-top: 22vw;
+    width: 16.927083333333332vw;
+    height: 22.8515625vw;
+}
+
+
+.imgsMobile{
+    display: none;
+}
+
+.mobileLine{
+    display: none;
+}
+
+// Mobile
+
+@media only screen and (max-width:600px){
+    
+        
+    .singleShop{
+        width: get-vw(414px,414);
+        display: flex;
+        justify-content: center;
+    }
+
+
+    .container{
+        width: get-vw(365px,414 );
+    }
+
+
+    .goBackBlock{
+        display: flex;
+        gap: 1vw;
+        margin-bottom: 4vw;
+        margin-top: 10vw;
+        
+    }
+    .goBack{
+        font-family: 'arm-semiBold','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 600;
+        font-size: get-vw(12px,414 );
+        line-height: get-vw(15px,414 );
+        color: #224660;
+        margin-left: 2vw;
+    }
+    
+    // MAIN
+
+    .mainBlock{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 10vw;
+    }
+
+    .forMobileContainer{
+        width: get-vw(365px,414 );
+
+    }
+
+    .logoBlock{
+        display: flex;
+        align-items: center;
+        margin-bottom: 3.5vw;
+        width: get-vw(365px,414 );
+        .Logo{
+            width: get-vw(94px,414 );
+            height: get-vw(94px,414 );
+        }
+        .brandName{
+            font-family: 'arm-bold','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 700;
+            font-size: get-vw(24px,414 );
+            line-height: get-vw(29px,414 );
+            color: #224660;
+            margin-top: get-vw(20px,414 );
+        }
+    }
+
+    .descripBlock{
+        width: get-vw(365px,414 );
+        margin-bottom: 3.5vw;
+        margin-top: get-vw(190px,414 );
+        .description{
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(16px,414 );
+            line-height: get-vw(24px,414 );
+            color: #224660;
+        }
+    }
+
+    .contactBlock{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        width: get-vw(150px,414 );
+        margin-left: get-vw(100px,414 );
+        justify-content: center;
+        .number{
+            margin-left: 1.5vw;
+            font-family: 'arm-bold','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 700;
+            font-size: get-vw(14px,414 );
+            line-height: get-vw(19px,414 );  
+            color: #224660;
+        }
+    }
+
+    .imgs{
+        display: none;
+    }
+    .imgsMobile{
+        width: get-vw(365px,414 );
+        height: 44.986979166666664vw;
+        display: block;
+        .imgsBlockMobile{
+            position: relative;
+        }
+        
+    }
+    .Linkedin{
+        margin-right: 1vw;
+    }
+    .Facebook{
+        margin-right: 1vw;
+    }
+    .patternMobile{
+        position: absolute;
+        width: get-vw(232px,414 );
+        height: get-vw(192px,414 );
+    }
+  
+    .brandLogoMobile{
+        position: absolute;
+        right: 0px;
+        width: get-vw(98px,414 );
+        height: get-vw(44px,414 );
+    }
+    
+    .globingMobile{
+        position: absolute;
+        right: 0px;
+        margin-top: get-vw(50px,414 );
+        z-index: 1;
+        width: get-vw(263px,414 );
+        height: get-vw(278px,414 );
+    }
+
+    .mobileLine{
+        display: block;
+        width: get-vw(365px,414 );
+        background: #224660;
+        mix-blend-mode: normal;
+        opacity: 0.5;
+        height: get-vw(2px,414 );
+        margin-top: get-vw(50px,414 );
+    }
+}

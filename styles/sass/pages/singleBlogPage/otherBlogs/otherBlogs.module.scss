@@ -1,0 +1,216 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+
+
+
+.OtherBlogs{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 7vw;
+    margin-bottom: 35vw;
+}
+
+
+
+.container{
+    width: 90.6vw;
+}
+
+.title{
+    font-family: 'Bokonique-regular','montserrat-ru-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #224660;
+}
+.blogContainer{
+    width: 90.6vw;
+    display: flex;
+    // justify-content: space-between;
+    gap: 2.5vw;
+    margin-top: 4vw;
+}
+
+.blogs{
+    height: 40.0625vw;
+    width: 27vw;
+    padding: 1vw;
+    background: #FFFFFF;
+    
+    .description{
+        margin-top: 2vw;
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 700;
+        width: 25.869792vw;
+        font-size: 0.9114583333333334vw;
+        line-height: 150%;
+        color: #224660;
+    }
+    .dateBlock{
+        display: flex;
+        gap: 1vw;
+        margin-top: 2vw;
+        align-items: center;
+        .date{
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.78125vw;
+            line-height: 0.9765625vw;
+            color: #828282;
+        }
+    }
+    .btnBlock{
+        display: flex;
+        width: 11vw;
+        margin-top: 1vw;
+        cursor: pointer;
+        .button{
+            width: 5vw;
+            display: flex;
+            height: 1.3020833333333333vw;
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.9114583333333334vw;
+            line-height: 140%;
+            color: #224660;
+            border: none;
+            background-color: transparent;
+            cursor: pointer;
+            padding: 0px;
+    
+        }
+        .arrow{
+            width: 2vw;
+        }
+    
+    }
+    .btnBlock:hover .arrow{
+        transform: translateX(1vw);
+        transition: 0.8s;
+    }
+}
+.blogs:hover{
+    box-shadow: 0px 20px 30px rgba(21, 0, 0, 0.1);
+    transition: 0.5s;
+}
+.img{
+    width: 25vw;
+    height: 27vw;
+}
+.mobileContainer{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+    .mobileContainer{
+        display: block;
+    }
+
+    .OtherBlogs{
+        width: get-vw(414px,414 );
+        display: flex;
+        justify-content: center;
+        margin-top: 7vw;
+        margin-bottom: 95vw;
+    }
+    
+    
+    
+    .container{
+        width: get-vw(365px,414 );
+    }
+    
+    .title{
+        font-family: 'Bokonique-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: get-vw(28px,414 );
+        line-height: get-vw(33px,414 );
+        text-transform: uppercase;
+        color: #224660;
+        margin-bottom: 5vw;
+    }
+    .blogContainer{
+        display: none;
+    }
+    
+    .blogsMobile{
+        height: get-vw(500px,414 );
+        width: get-vw(365px,414 );
+        padding: 0vw;
+        background: #FFFFFF;
+        
+        .descriptionMobile{
+            margin-top: 4vw;
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 700;
+            width: get-vw(365px,414 );
+            font-size: get-vw(14px,414 );
+            line-height: get-vw(21px,414 );
+            color: #224660;
+            text-align: start;
+        }
+        .dateBlockMobile{
+            display: flex;
+            gap: 1vw;
+            margin-top: 4vw;
+            align-items: center;
+            .dateMobile{
+                font-family: 'arm-regular','montserrat-ru-regular';
+                font-style: normal;
+                font-weight: 400;
+                font-size: get-vw(12px,414 );
+                line-height: get-vw(15px,414 );
+                color: #828282;
+                margin-left: 2vw;
+            }
+        }
+        .btnBlockMobile{
+            display: flex;
+            width: get-vw(90px,414 );
+            margin-top: 4vw;
+            cursor: pointer;
+            .buttonMobile{
+                width: get-vw(80px,414 );
+                display: flex;
+                height:get-vw(20px,414 );
+                font-family: 'arm-regular','montserrat-ru-regular';
+                font-style: normal;
+                font-weight: 400;
+                font-size: get-vw(14px,414 );
+                line-height: get-vw(19.5px,414 );
+                color: #224660;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                padding: 0px;
+        
+            }
+            .arrowMobile{
+                width: 2vw;
+            }
+        
+        }
+       
+    }
+    .blogs:hover{
+        box-shadow: 0px 20px 30px rgba(21, 0, 0, 0.1);
+        transition: 0.5s;
+    }
+    .imgMobile{
+        width: get-vw(365px,414 );
+        height: get-vw(365px,414 );
+    }
+    
+}

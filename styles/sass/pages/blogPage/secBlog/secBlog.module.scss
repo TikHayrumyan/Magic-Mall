@@ -1,0 +1,244 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+
+.SecBlog{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 90.6vw;
+}
+
+
+
+.titleBlock{
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+    width: get-vw(859px,1440 );
+    .title{
+        font-family: 'Bokonique-regular','montserrat-ru-semibold';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.34375vw;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #224660;
+        margin-bottom: 3vw;
+    }
+    .description{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.171875vw;
+        line-height: 160%;
+        color: #224660;
+        width: 56.0546875vw;
+    }
+}
+
+.summerTrend{
+    display: flex;
+    justify-content: space-between;
+    .aboutTrends{
+        width: 30vw;
+
+
+        .title{
+        font-family: 'Bokonique-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.34375vw;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #224660;
+        margin-bottom: 1vw;
+        }
+        .dateBLock{
+            display: flex;
+            gap: 1vw;
+            margin-bottom: 1vw;
+            align-items: center;
+            .date{
+                font-family: 'arm-regular','montserrat-ru-regular';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 0.78125vw;
+                line-height: 0.9765625vw;
+                color: #828282;
+            }
+        }
+        .descrip{
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1.171875vw;
+            line-height: 160%;
+            color: #224660;
+        }
+        .btnBlock{
+            display: flex;
+            width: 11vw;
+            margin-top: 2vw;
+            cursor: pointer;
+            .button{
+                width: 5vw;
+                display: flex;
+                height: 1.3020833333333333vw;
+                font-family: 'arm-regular','montserrat-ru-regular';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 0.9114583333333334vw;
+                line-height: 140%;
+                color: #224660;
+                border: none;
+                background-color: transparent;
+                cursor: pointer;
+                padding: 0px;
+        
+            }
+            .arrow{
+                width: 2vw;
+            }
+        
+        }
+        .btnBlock:hover .arrow{
+            transform: translateX(1vw);
+            transition: 0.8s;
+        }
+        .pattern{
+            display: flex;
+            justify-content: flex-end;
+        }
+    }
+    .img{
+        width: get-vw(740px,1440 );
+        height: get-vw(471px,1440 );
+    }
+}
+
+
+@media only screen and (max-width:600px){
+
+
+    .SecBlog{
+        width: get-vw(414px,414 );
+        display: flex;
+        justify-content: center;
+    }
+    
+    .container{
+        width: get-vw(365px,414 );
+        overflow: hidden;
+    }
+    
+    
+    
+    .titleBlock{
+        margin-top: 5vw;
+        margin-bottom: 5vw;
+        .title{
+            font-family: 'Bokonique-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(28px,414 );
+            line-height: get-vw(33px,414 );
+            text-transform: uppercase;
+            color: #224660;
+            margin-bottom: 3vw;
+        }
+        .description{
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(16px,414 );
+            line-height: get-vw(24px,414 );
+            color: #224660;
+            width: get-vw(365px, 414);
+        }
+    }
+    
+    .summerTrend{
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        
+        .img{
+            width: get-vw(365px,414 );
+            height: get-vw(335px,414 );
+        }
+        .aboutTrends{
+            width: get-vw(365px,414 );
+    
+    
+            .title{
+            font-family: 'Bokonique-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(16px,414 );
+            line-height: 140%;
+            text-transform: uppercase;
+            color: #224660;
+            margin-bottom: 3vw;
+            }
+            .dateBLock{
+                display: flex;
+                // gap: 3vw;
+                margin-bottom: 1vw;
+                align-items: center;
+                .date{
+                    font-family: 'arm-regular','montserrat-ru-regular';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: get-vw(12px,414 );
+                    line-height: get-vw(15px,414 );
+                    color: #828282;
+                    margin-left: 3vw;
+                }
+            }
+            .descrip{
+                
+                display: none;
+            }
+            .btnBlock{
+                display: flex;
+                width: get-vw(90px,414 );
+                margin-top: 2vw;
+                cursor: pointer;
+                .button{
+                    width: get-vw(80px,414 );
+                    display: flex;
+                    height:get-vw(20px,414 );
+                    font-family: 'arm-regular','montserrat-ru-regular';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: get-vw(14px,414 );
+                    line-height: get-vw(19.5px,414 );
+                    color: #224660;
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    padding: 0px;
+            
+                }
+                .arrow{
+                    width: 2vw;
+                }
+            
+            }
+            .btnBlock:hover .arrow{
+                transform: translateX(1vw);
+                transition: 0.8s;
+            }
+            .pattern{
+                display: none;
+            }
+        }
+    }
+    
+}

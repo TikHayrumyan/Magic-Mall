@@ -1,0 +1,296 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+
+.SecContact{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15vw;
+}
+
+.locationIcon{
+    width: get-vw(32px,1440 );
+    height: get-vw(40px,1440 );
+}
+.phoneIcon{
+    width: get-vw(32px,1440 );
+    height: get-vw(32px,1440 );
+}
+.messageIcon{
+    width: get-vw(32px,1440 );
+    height: get-vw(25px,1440 );
+}
+.clockIcon{
+    width: get-vw(32px,1440 );
+    height: get-vw(25px,1440 );
+}
+.facebookIcon{
+    width: get-vw(32px,1440 );
+    height: get-vw(32px,1440 );
+}
+.linkedinIcon{
+    width: get-vw(32px,1440 );
+    height: get-vw(32px,1440 );
+}
+.instagram{
+    width: get-vw(32px,1440 );
+    height: get-vw(32px,1440 );
+}
+.container{
+    width: 90.6vw;
+}
+
+.titleBlock{
+    margin-top: 7vw;
+
+    .title{
+        font-family: 'Bokonique-regular','montserrat-ru-semibold';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.34375vw;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #224660;
+    }
+}
+
+.contact{   
+    margin-top: 5vw;
+    
+}
+.locationBlock{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-bottom: 3vw;
+    .location{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3020833333333333vw;
+        line-height: 160%;
+        color: #224660;
+    }
+}
+.phoneBlock{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-bottom: 3vw;
+
+    .number{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3020833333333333vw;
+        line-height: 160%;
+        color: #224660;
+    }
+}
+.mailBlock{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-bottom: 3vw;
+
+    .mail{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3020833333333333vw;
+        line-height: 160%;
+        color: #224660;
+    }
+}
+.clockBlock{
+    display: flex;
+    align-items: center;
+    gap: 1vw;
+    margin-bottom: 3vw;
+
+    .clock{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.3020833333333333vw;
+        line-height: 160%;
+        color: #224660;
+    }
+}
+.network{
+    display: flex;
+    gap: 1vw;
+}
+
+.contactContainer{
+    display: flex;
+    justify-content: space-between;
+    gap: 5vw;
+    align-items: center;
+}
+
+
+
+
+
+@media only screen and (max-width:600px){
+    
+    .SecContact{
+        width: get-vw(414px,414 );
+        display: flex;
+        justify-content: center;
+        margin-bottom: 15vw;
+    }
+    
+    
+    .container{
+        width: get-vw(365px,414 );
+    }
+    
+    .titleBlock{
+        margin-top: 7vw;
+    
+        .title{
+            font-family: 'Bokonique-regular','montserrat-ru-semibold';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(28px,414 );
+            line-height: get-vw(33px,414 );
+            text-transform: uppercase;
+            color: #224660;
+        }
+    }
+    
+    .contact{   
+        margin-top: 5vw;
+        
+    }
+
+    .infoBlock{
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 3vw;
+    }
+    .locationBlock{
+        display: flex;
+        align-items: center;
+        margin-bottom: 3vw;
+        .location{
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(20px,414 );
+            line-height: get-vw(32px,414 );
+            color: #224660;
+            margin-left: 3vw;
+        }
+    }
+    .phoneBlock{
+        display: flex;
+        align-items: center;
+        // gap: 3vw;
+        margin-bottom: 3vw;
+    
+        .number{
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(20px,414 );
+            line-height: get-vw(32px,414 );
+            color: #224660;
+            margin-left: 3vw;
+        }
+    }
+    .mailBlock{
+        display: flex;
+        align-items: center;
+        // gap: 3vw;
+        margin-bottom: 3vw;
+    
+        .mail{
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(20px,414 );
+            line-height: get-vw(32px,414 );
+            color: #224660;
+            margin-left: 3vw;
+        }
+    }
+    .clockBlock{
+        display: flex;
+        align-items: center;
+        // gap: 3vw;
+        margin-bottom: 3vw;
+    
+        .clock{
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(20px,414 );
+            line-height: get-vw(32px,414 );
+            color: #224660;
+            margin-left: 3vw;
+        }
+    }
+    .network{
+        display: flex;
+        // gap: 3vw;
+        width: get-vw(365px,414 );
+        height: get-vw(40px,1440 );
+        margin-top: get-vw(20px,414 );
+        .instagram{
+            margin-left: 3vw;
+            margin-right: 3vw;
+           
+        }
+    }
+    
+    .contactContainer{
+        display: flex;
+        justify-content: space-between;
+        gap: 10vw;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    
+    .mapBlock{
+        width: get-vw(414px,414 );
+        .Map{
+            width: get-vw(365px,414 )!important;
+            height: get-vw(414px,414 )!important;
+        }
+    }
+    .locationIcon{
+        width: get-vw(22px,414 );
+        height: get-vw(30px,414 );
+    }
+    .phoneIcon{
+        width: get-vw(22px,414 );
+        height: get-vw(22px,414 );
+    }
+    .messageIcon{
+        width: get-vw(22px,414 );
+        height: get-vw(25px,414 );
+    }
+    .clockIcon{
+        width: get-vw(22px,414 );
+        height: get-vw(25px,414 );
+    }
+    .facebookIcon{
+        width: get-vw(22px,414 );
+        height: get-vw(32px,414 );
+    }
+    .linkedinIcon{
+        width: get-vw(22px,414 );
+        height: get-vw(32px,414 );
+    }
+    .instagram{
+        width: get-vw(22px,414 );
+        height: get-vw(32px,414 );
+    }
+}

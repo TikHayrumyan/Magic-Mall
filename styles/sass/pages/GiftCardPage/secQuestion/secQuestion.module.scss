@@ -1,0 +1,207 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+
+.SecQuestion{
+    display: flex;
+    width: 100vw;
+    justify-content: center;
+    position: relative;
+    padding-bottom: 30vw;
+}
+
+.Logo{
+    position: absolute;
+    right: 0vw;
+    opacity: 0.3;
+}
+
+
+.container{
+    width: 90.6vw;
+    min-height: 60vw;    
+}
+
+
+.questionsBlock{
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    padding-left: 1vw;
+    margin-top: 7vw;
+}
+.mapBlock{
+    display: flex;
+    gap: 1vw;
+    // align-items: center;
+}
+.imgPatternBlock{
+    position: relative;
+    .pattern{
+        width: 6.0546875vw;
+        height: 6.0546875vw;
+    }
+    .plus{
+        position: absolute;
+        z-index: 2;
+        font-size: 1.7578125vw;
+        right: 0.7vw;
+        top: 0.2vw;
+        font-weight: 600;
+        height: 1.953125vw;
+        color: #224660;
+        display: flex;
+        align-items: flex-end;
+        cursor: pointer;
+    }
+    .minus{
+        position: absolute;
+        z-index: 2;
+        font-size: 1.7578125vw;
+        right: 0.9vw;
+        top: 0.2vw;
+        font-weight: 600;
+        height: 1.953125vw;
+        color: #224660;
+        display: flex;
+        align-items: flex-end;
+        cursor: pointer;
+    }
+   
+
+}
+.ask{
+    width: 66vw;
+    // height: 4.65vw;  
+    padding-top: 0.8vw;
+    padding-bottom: 1vw;
+    font-family: 'arm-bold','montserrat-ru-bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5625vw;
+    line-height: 1.8880208333333333vw;
+    color: #224660;
+    display: flex;
+    // align-items: flex-end;
+    cursor: pointer;
+}
+.descrip{
+    width: 46vw;
+    height: 2.8645833333333335vw;
+    font-family: 'arm-regular','montserrat-ru-regular';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.0416666666666667vw;
+    line-height: 140%;
+    color: #224660;
+    display: block;
+}
+.descripNone{
+    display: none;
+}
+
+@media only screen and (max-width:600px){
+
+    .SecQuestion{
+        display: flex;
+        width: get-vw(414px,414 );
+        justify-content: center;
+        position: relative;
+        margin-bottom: 90vw;
+    }
+    
+    .Logo{
+       display: none;
+        
+    }
+    
+    
+    .container{
+        width: get-vw(365px,414 );
+        min-height: 60vw;    
+    }
+    
+    
+    .questionsBlock{
+        display: flex;
+        flex-direction: column;
+        gap: 15vw;
+        padding-left: 1vw;
+        margin-top: 7vw;
+    }
+    .mapBlock{
+        display: flex;
+        gap: 3vw;
+        // align-items: center;
+        margin-bottom: get-vw(20px,414 );
+    }
+    .imgPatternBlock{
+        position: relative;
+        .pattern{
+            width:get-vw(91px,414 );
+            height:get-vw(91px,414 );
+        }
+        .plus{
+            position: absolute;
+            z-index: 2;
+            font-size: get-vw(35px,414 );
+            right: 1vw;
+            top: 6.8vw;
+            font-weight: 600;
+            height: 1.953125vw;
+            color: #224660;
+            display: flex;
+            align-items: flex-end;
+            cursor: pointer;
+        }
+        .minus{
+            position: absolute;
+            z-index: 2;
+            font-size: get-vw(35px,414 );
+            right: 2vw;
+            top: 6.8vw;
+            font-weight: 600;
+            height: 1.953125vw;
+            color: #224660;
+            display: flex;
+            align-items: flex-end;
+            cursor: pointer;
+        }
+       
+    
+    }
+    .ask{
+        width: get-vw(233px,414 );
+        min-height: get-vw(89px,414 );  
+        height: auto;
+        padding-top: 0.8vw;
+        padding-bottom: 1vw;
+        font-family: 'arm-bold','montserrat-ru-bold';
+        font-style: normal;
+        font-weight: 700;
+        font-size: get-vw(24px,414 );
+        line-height: get-vw(29px,414 );
+        color: #224660;
+        display: flex;
+        // align-items: flex-end;
+        cursor: pointer;
+    }
+    .descrip{
+        width: get-vw(258px,414 );
+        min-height: get-vw(96px,414 );  
+        height: auto;
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: get-vw(16px,414 );
+        line-height: get-vw(24px,414 );
+        color: #224660;
+        display: block;
+    }
+    .descripNone{
+        display: none;
+    }
+}

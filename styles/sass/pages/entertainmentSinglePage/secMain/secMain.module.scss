@@ -1,0 +1,75 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+
+.secMain{
+    width: 100vw;
+    position: relative;
+}
+.gradientt{
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 99.23%);
+    height: 32.552083333333336vw;
+    width: 100vw;
+    opacity: 0.7;
+}
+
+.background{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 32.552083333333336vw;
+    display: flex;
+    justify-content: center;
+    gap: 2vw;
+    flex-direction: column;
+}
+
+.patternAndTitle{
+    display: flex;
+    margin-left: 4.557291666666667vw;
+    align-items: center;
+    z-index: 5;
+
+    .title{
+        font-family: 'arm-bold','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 28px;
+        line-height: 140%;
+        color: #FFFFFF;
+        margin-top: 5vw;
+    }
+}
+
+.infoCard{
+    width: 94vw;
+    display: flex;
+    justify-content: flex-end;
+
+    .backgroundCard{
+        background-color: rgba(166, 204, 229, 0.8);
+        width: 38.28125vw;
+        height: 10.221354166666666vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 6;
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+        
+    .secMain{
+        display: none;
+    }
+}

@@ -1,0 +1,40 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+}
+
+.SecMap{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+}
+
+
+.container{
+    width: 84.36848958333334vw;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+    
+    .SecMap{
+        width: get-vw(414px,414 );
+        display: flex;
+        justify-content: center;
+        margin-top: 10vw;
+        margin-bottom: 10vw;
+    }
+    
+    
+    .container{
+        width: get-vw(365px,414 );
+        display: flex;
+        justify-content: center;
+    }
+}

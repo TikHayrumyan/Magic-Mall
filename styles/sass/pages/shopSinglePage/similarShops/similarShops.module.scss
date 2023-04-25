@@ -1,0 +1,411 @@
+@function get-vw($size, $width){
+    $vw-context: $width * 0.01 * 1px;
+    @return $size / $vw-context * 1vw;
+    @return $size;
+  }
+  
+
+
+.SimilarShop{
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40vw;
+}
+
+
+.container{
+    width: 84.36848958333334vw;    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.titleBlock{
+    width: 84.36848958333334vw;
+    margin-bottom: 4vw;
+    .title{
+
+        font-family: 'Bokonique-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 2.34375vw;
+        line-height: 140%;
+        text-transform: uppercase;
+        color: #224660;
+    }
+}
+
+.similarBrands{
+    display: flex;
+    // justify-content: space-between;
+    width: 84.36848958333334vw;
+    gap: 2.5vw;
+}
+
+
+.first{
+    width: 19.270833333333332vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 25vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    
+    .patternBlock{
+        width: 19.270833333333332vw;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .patternBackground{
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 4.4921875vw;
+        height: 4.4921875vw;
+        text-align: center;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        .number{
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.3625vw;
+            line-height: 1.8880208333333333vw;
+            text-align: center;
+            color: #FFFFFF;
+        }
+        .floor{
+            font-family: "arm-regular",'montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 0.7765625vw;
+            line-height: 0.78125vw;
+            text-align: center;
+            color: #FFFFFF;
+        }
+    }
+}
+
+.brandBook{
+    height: 6.510416666666667vw;
+    width: 14.583333333333334vw;
+    margin-left: 1.3020833333333333vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.3671875vw;
+    .brand{
+        width: 14.583333333333334vw;
+        height: 1.8880208333333333vw;
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.5625vw;
+        line-height: 1.8880208333333333vw;
+        color: #FFFFFF;
+        text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
+    }
+}
+.iconBook{
+    cursor: pointer;
+}
+
+
+
+// add sale 
+.salePatternMobile{
+    display: none;
+}
+.salePattern{
+    width: 4.9vw;
+    height: 4.9vw;
+    display: flex;
+    justify-content: center;
+    margin-right: 10vw;
+    background-color: transparent;
+    background-repeat: no-repeat;
+}
+.titleSale{
+    display: block;
+    width: 3.5vw;
+    text-align: center;
+    .sale{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #FFFFFF;
+        margin-bottom: 0.3vw;
+        margin-top: 0.5vw;
+    }
+    .saleUntil{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: .65vw;
+        line-height: 0.9vw;
+        color: #FFFFFF;
+    }
+}
+
+
+// hover
+
+@media only screen and (min-width: 900px){
+.first:hover{
+    background-image: none!important;
+    transition: 2s;
+    box-shadow: 0px 1.3020833333333333vw 1.953125vw rgba(0, 0, 0, 0.1);
+    .brandBook{
+        justify-content: center;
+    }
+    .brand{
+        display: none;
+    }
+    .hoverBlock{
+        
+        display: flex;
+    }
+    .title{
+        display: flex;
+        flex-direction: column;
+        margin-left: 15px;
+        .number{
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 1.5625vw;
+            line-height: 1.8880208333333333vw;
+            text-align: center;
+            color: #224660;
+            transition: 2s;
+        }
+        .floor{
+            font-family: "arm-regular",'montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 0.7765625vw;
+            line-height: 0.78125vw;
+            text-align: center;
+            color: #224660;
+            transition: 2s;
+        }
+    }
+}
+
+.hoverBlock{
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    
+}
+
+.logoBackground{
+    width: 12.36vw;
+    max-height: 8.83vw;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phonBlock{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    .number{
+        font-family: 'Bokonique-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 205.4%;
+        text-transform: uppercase;
+        color: #224660;
+    }
+}
+.number:hover{
+    color: #C7A28C;
+}
+
+
+.networkBlock{
+    display: flex;
+    gap: 20px;
+}
+}
+
+    
+@media only screen and (max-width: 600px) {
+    
+            
+
+    .SimilarShop{
+        width: get-vw(414px,414 );
+        display: flex;
+        justify-content: center;
+        margin-bottom: get-vw(380px,414 );
+
+    }
+
+
+    .container{
+        width: get-vw(365px,414 );    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .titleBlock{
+        width: get-vw(365px,414 );
+        margin-bottom: 4vw;
+        
+        .title{
+            font-family: 'Bokonique-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 400;
+            font-size: get-vw(28px,414 );
+            line-height: get-vw(33px,414 );
+            text-transform: uppercase;
+            color: #224660;
+        }
+    }
+    .hoverBlock{
+        display: none;
+        
+    }
+
+    .similarBrands{
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: space-between;
+        width: get-vw(365px,414 );
+        // gap: get-vw(30px,414 );
+    }
+    
+    
+    .first{
+        width: get-vw(165px,414 );
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: get-vw(211px,414 );
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: get-vw(10px,414 );
+        margin-bottom: get-vw(10px,414 );
+        
+        .patternBlock{
+            width: get-vw(165px,414 );
+            display: flex;
+            justify-content: flex-end;
+        }
+        .patternBackground{
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            width: get-vw(38px,414 );
+            height: get-vw(38px,414 );
+            text-align: center;
+        }
+        .title{
+        
+            display: flex;
+            flex-direction: column;
+            margin-left: 5px;
+            .number{
+                font-family: 'arm-regular','montserrat-ru-regular';
+                font-style: normal;
+                font-weight: 700;
+                font-size: get-vw(8px,414 );
+                line-height:get-vw(10px,414 );
+                text-align: center;
+                color: #FFFFFF;
+            }
+            .floor{
+                font-family: "arm-regular",'montserrat-ru-regular';
+                font-style: normal;
+                font-weight: 700;
+                font-size: get-vw(8px,414 );
+                line-height:get-vw(10px,414 );
+                text-align: center;
+                color: #FFFFFF;
+            }
+        }
+    }
+    
+    .brandBook{
+        height:get-vw(50px,414 );
+        width: get-vw(15px,414 );
+        margin-left: 1.3020833333333333vw;
+        display: flex;
+        flex-direction: column;
+        gap: 3vw;
+        .brand{
+            width: get-vw(300px,414 );
+            height: 1.8880208333333333vw;
+            font-family: 'arm-regular','montserrat-ru-regular';
+            font-style: normal;
+            font-weight: 700;
+            font-size: get-vw(16px,414 );
+            line-height: get-vw(19.5px,414 );
+            color: #FFFFFF;
+        }
+    }
+  
+    // add sale 
+    .salePatternMobile{
+        width: get-vw(63px,414 );
+        height: get-vw(54px,414 );
+        display: flex;
+        justify-content: start;
+        margin-right: get-vw(70px,414);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+        .salePattern{
+        display: none;
+        }
+    .titleSaleMobile{
+        display: flex;
+        flex-direction: column;
+        height: get-vw(30px,414 );
+        padding-bottom: 0vw;
+        padding: 1px;
+        margin-left: get-vw(10px,414 );
+    .saleMobile{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: get-vw(9px,414 );
+        line-height: get-vw(10px,414 );
+        color: #FFFFFF;
+        text-align: center;
+        margin-bottom: 2px;
+        margin-top: 1px;
+        margin-left: get-vw(0px,414 );
+    }
+    .saleUntilMobile{
+        font-family: 'arm-regular','montserrat-ru-regular';
+        font-style: normal;
+        font-weight: 700;
+        font-size: get-vw(8px,414 );
+        line-height: get-vw(10px,414 );
+        color: #FFFFFF;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    
+}
+}
