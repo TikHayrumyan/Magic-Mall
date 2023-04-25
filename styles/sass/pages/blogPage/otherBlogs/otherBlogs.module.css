@@ -1,0 +1,225 @@
+.loading {
+  width: 84vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 3vw;
+}
+
+.OtherBlogs {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 10vw;
+  margin-bottom: 35vw;
+}
+
+.container {
+  width: 90.6vw;
+}
+.container .otherBlogContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7.8vw;
+}
+
+.blogs {
+  width: 27vw;
+  padding: 1vw;
+  background: #FFFFFF;
+}
+.blogs .description {
+  margin-top: 2vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  width: 25.66vw;
+  font-size: 0.9114583333vw;
+  line-height: 150%;
+  color: #224660;
+  height: 3vw;
+}
+.blogs .dateBlock {
+  display: flex;
+  gap: 1vw;
+  margin-top: 2vw;
+  align-items: center;
+}
+.blogs .dateBlock .date {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  color: #828282;
+}
+.blogs .btnBlock {
+  display: flex;
+  width: 11vw;
+  margin-top: 2vw;
+  cursor: pointer;
+}
+.blogs .btnBlock .button {
+  width: 5vw;
+  display: flex;
+  height: 1.3020833333vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9114583333vw;
+  line-height: 140%;
+  color: #224660;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0px;
+}
+.blogs .btnBlock .arrow {
+  width: 2vw;
+}
+.blogs .btnBlock:hover .arrow {
+  transform: translateX(1vw);
+  transition: 0.8s;
+}
+
+.blogs:hover {
+  box-shadow: 0px 20px 30px rgba(21, 0, 0, 0.1);
+  transition: 0.5s;
+  min-height: 34vw;
+}
+
+.img {
+  width: 25vw;
+  height: 20vw;
+}
+
+.buttonBlock {
+  width: 90.6vw;
+  margin-top: 5.3vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 13.671875vw;
+}
+.buttonBlock .button {
+  background-color: transparent;
+  border-radius: 3.2552083333vw;
+  width: 8.1380208333vw;
+  height: 2.1484375vw;
+  border: 1px solid #A6CCE5;
+  color: #224660;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  cursor: pointer;
+}
+.buttonBlock .button:hover {
+  background-color: #A6CCE5;
+  transition: 0.5s;
+}
+
+.mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .OtherBlogs {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+    margin-bottom: 95vw;
+  }
+  .container {
+    width: 88.1642512077vw;
+  }
+  .container .otherBlogContainer {
+    display: none;
+  }
+  .blogsMobile {
+    width: 88.1642512077vw;
+    padding: 0vw;
+    background: #FFFFFF;
+    margin-bottom: 20vw;
+  }
+  .blogsMobile .img {
+    width: 88.1642512077vw;
+    height: 80.9178743961vw;
+  }
+  .blogsMobile .description {
+    margin-top: 4vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    width: 88.1642512077vw;
+    font-size: 3.8647342995vw;
+    line-height: 5.7971014493vw;
+    color: #224660;
+  }
+  .blogsMobile .dateBlock {
+    display: flex;
+    margin-top: 4vw;
+    align-items: center;
+  }
+  .blogsMobile .dateBlock .date {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+    margin-left: 3vw;
+  }
+  .blogsMobile .btnBlock {
+    display: flex;
+    width: 21.7391304348vw;
+    margin-top: 4vw;
+    cursor: pointer;
+  }
+  .blogsMobile .btnBlock .button {
+    width: 19.3236714976vw;
+    display: flex;
+    height: 4.8309178744vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 4.7101449275vw;
+    color: #224660;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0px;
+  }
+  .blogsMobile .btnBlock .arrow {
+    width: 2vw;
+  }
+  .blogsMobile .btnBlock:hover .arrow {
+    transform: translateX(1vw);
+    transition: 0.8s;
+  }
+  .blogs:hover {
+    box-shadow: 0px 20px 30px rgba(21, 0, 0, 0.1);
+    transition: 0.5s;
+    min-height: 34vw;
+  }
+  .img {
+    width: 25vw;
+    height: 20vw;
+  }
+  .buttonBlock {
+    display: none;
+  }
+  .mobile {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .loading {
+    width: 88.1642512077vw;
+    display: flex;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=otherBlogs.module.css.map */

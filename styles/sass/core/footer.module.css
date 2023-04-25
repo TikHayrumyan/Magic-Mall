@@ -1,0 +1,153 @@
+.container {
+  width: 100vw;
+  height: 31.25vw;
+  background-color: #A6CCE5;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.logoTitle {
+  display: flex;
+}
+
+.logoBlock {
+  width: 10.2777777778vw;
+  height: 10.2777777778vw;
+  margin-left: 4.5138888889vw;
+  margin-right: 4.8611111111vw;
+  cursor: pointer;
+}
+
+.mapTitle {
+  font-family: "Bokonique-regular", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+  width: 30.5555555556vw;
+  height: 3.4722222222vw;
+  margin-bottom: 1.7361111111vw;
+}
+
+.footerLine {
+  width: 100vw;
+  height: 0.1388888889vw;
+  background: #FFFFFF;
+  opacity: 0.3;
+  margin-top: 2.7777777778vw;
+  margin-bottom: 28px;
+}
+
+.developBlock {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5277777778vw;
+  margin-left: 5vw;
+  margin-right: 5vw;
+}
+
+.multiOutletMall {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9722222222vw;
+  line-height: 1.1805555556vw;
+  color: #224660;
+  opacity: 0.65;
+  width: 12.5vw;
+  height: 1.1805555556vw;
+}
+
+.developed {
+  width: 17.3611111111vw;
+  height: 1.1805555556vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9722222222vw;
+  line-height: 1.1805555556vw;
+  color: #224660;
+  opacity: 0.65;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    width: 100vw;
+    min-height: 169.0821256039vw;
+    background-color: #A6CCE5;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .logoTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .logoBlock {
+    width: 24.6666666667vw;
+    height: 26.3333333333vw;
+    margin-left: 0vw;
+    margin-right: 0vw;
+    cursor: pointer;
+  }
+  .logoBlock img {
+    filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(303deg) brightness(103%) contrast(101%);
+  }
+  .mapTitle {
+    margin-top: 2.4154589372vw;
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.6666666667vw;
+    line-height: 9.4202898551vw;
+    text-transform: uppercase;
+    color: #224660;
+    width: 73.3333333333vw;
+    height: 8.3333333333vw;
+    margin-bottom: 4.1666666667vw;
+  }
+  .footerLine {
+    width: 100vw;
+    height: 0.3333333333vw;
+    background: #FFFFFF;
+    opacity: 0.3;
+    margin-top: 6.6666666667vw;
+    margin-bottom: 28px;
+  }
+  .developBlock {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 2vw;
+    margin-bottom: 3.6666666667vw;
+    margin-left: 12vw;
+    margin-right: 12vw;
+  }
+  .multiOutletMall {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.3333333333vw;
+    line-height: 2.8333333333vw;
+    color: #224660;
+    opacity: 0.65;
+    width: 41.6666666667vw;
+    height: 2.8333333333vw;
+  }
+  .developed {
+    width: 50vw;
+    height: 2.8333333333vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.3333333333vw;
+    line-height: 2.8333333333vw;
+    color: #224660;
+    opacity: 0.65;
+  }
+}/*# sourceMappingURL=footer.module.css.map */

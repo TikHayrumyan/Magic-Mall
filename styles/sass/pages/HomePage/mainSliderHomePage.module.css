@@ -1,0 +1,185 @@
+.backgroundImage {
+  height: 49.7222222222vw;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: absolute;
+  z-index: -1;
+}
+
+.itemOne {
+  height: 49.7222222222vw;
+  width: 100vw;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  position: relative;
+}
+.itemOne .gradient {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 99.23%);
+  height: 49.7222222222vw;
+  width: 100vw;
+  opacity: 0.7;
+}
+
+.blockData {
+  margin-left: 10.4166666667vw;
+  margin-top: 14.5833333333vw;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  position: absolute;
+}
+.blockData .name {
+  width: 10.3472222222vw;
+  height: 2.0138888889vw;
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6666666667vw;
+  line-height: 2.0138888889vw;
+  color: #FFFFFF;
+}
+.blockData .title {
+  width: 69.4444444444vw;
+  height: auto;
+  font-family: "Bokonique-regular", "montserrat-ru-SemiBold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 4.4444444444vw;
+  line-height: 5.3472222222vw;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  margin-bottom: 2.4305555556vw;
+  margin-top: 2.4305555556vw;
+  text-align: start;
+}
+.blockData .info {
+  width: 29.5138888889vw;
+  height: 4.0277777778vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25vw;
+  line-height: 160%;
+  color: #FFFFFF;
+  text-align: start;
+  margin-bottom: 2.0833333333vw;
+}
+.blockData .button {
+  width: 12.2222222222vw;
+  height: 2.7777777778vw;
+  background: #FFFFFF;
+  border-radius: 27.7777777778vw;
+  border: none;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.1111111111vw;
+  line-height: 140%;
+  cursor: pointer;
+  color: #224660;
+}
+.blockData .button:hover {
+  background-color: #224660;
+  color: #FFFFFF;
+  transition: 0.5s;
+}
+
+@media only screen and (max-width: 600px) {
+  .backgroundImage {
+    height: 80vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    z-index: -1;
+    width: auto !important;
+  }
+  .itemOne {
+    height: 80vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  .itemOne .gradient {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 99.23%);
+    height: 80vh;
+    width: 100vw;
+    opacity: 0.7;
+  }
+  .blockData {
+    display: flex;
+    margin: 0px;
+    width: 100vw;
+    flex-direction: column;
+    z-index: 999;
+    position: absolute;
+    align-items: center;
+    justify-content: flex-end;
+    height: 110vw;
+    margin: 0px;
+  }
+  .blockData .title {
+    max-width: 63vw;
+    width: auto;
+    height: auto;
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7vw;
+    line-height: 120%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: start;
+    margin-bottom: 4.8309178744vw;
+  }
+  .blockData .info {
+    max-width: 80vw;
+    width: auto;
+    height: auto;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 160%;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 2vw;
+    margin-bottom: 4.8309178744vw;
+  }
+  .blockData .button {
+    width: 40vw;
+    height: 8vw;
+    background: #FFFFFF;
+    border-radius: 27.7777777778vw;
+    border: none;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.5vw;
+    line-height: 140%;
+    cursor: pointer;
+    color: #224660;
+    margin-top: 25vw;
+  }
+  .blockData .button:hover {
+    background-color: #224660;
+    color: #FFFFFF;
+    transition: 0.5s;
+  }
+}/*# sourceMappingURL=mainSliderHomePage.module.css.map */

@@ -1,7 +1,7 @@
 import style from "../styles/sass/core/footer.module.scss"
 import logo from "../public/img/icons/footerLogo.svg"
 import Image from "next/Image"
-import FooterAboutMap from "./footerComponents/footerAboutMap"
+import FooterAboutMap from "./FooterComponents/footerAboutMap"
 import Link from "next/link"
 import { translate } from "../translations"
 import { useGlobalProvider } from "./Providers/GlobalProvider"

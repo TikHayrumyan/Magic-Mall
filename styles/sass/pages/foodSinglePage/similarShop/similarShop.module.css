@@ -1,0 +1,283 @@
+.SimilarShop {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30vw;
+}
+
+.container {
+  width: 84.3684895833vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titleBlock {
+  width: 84.3684895833vw;
+  margin-bottom: 4vw;
+}
+.titleBlock .title {
+  font-family: "Bokonique-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.34375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+}
+
+.similarBrands {
+  display: flex;
+  width: 84.3684895833vw;
+  gap: 2.5vw;
+}
+
+.first {
+  width: 19.2708333333vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.first .patternBlock {
+  width: 19.2708333333vw;
+  display: flex;
+  justify-content: flex-end;
+}
+.first .patternBackground {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 4.4921875vw;
+  height: 4.4921875vw;
+  text-align: center;
+}
+.first .title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.first .title .number {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3625vw;
+  line-height: 1.8880208333vw;
+  text-align: center;
+  color: #FFFFFF;
+}
+.first .title .floor {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.7765625vw;
+  line-height: 0.78125vw;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.brandBook {
+  height: 6.5104166667vw;
+  width: 14.5833333333vw;
+  margin-left: 1.3020833333vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3671875vw;
+}
+.brandBook .brand {
+  width: 14.5833333333vw;
+  height: 1.8880208333vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  line-height: 1.8880208333vw;
+  color: #FFFFFF;
+  text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+.iconBook {
+  cursor: pointer;
+}
+
+@media screen and (min-width: 600px) {
+  .first:hover {
+    background-image: none !important;
+    transition: 2s;
+    box-shadow: 0px 1.3020833333vw 1.953125vw rgba(0, 0, 0, 0.1);
+  }
+  .first:hover .brandBook {
+    justify-content: center;
+  }
+  .first:hover .brand {
+    display: none;
+  }
+  .first:hover .hoverBlock {
+    display: flex;
+  }
+  .first:hover .title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  .first:hover .title .number {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5625vw;
+    line-height: 1.8880208333vw;
+    text-align: center;
+    color: #224660;
+    transition: 2s;
+  }
+  .first:hover .title .floor {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.7765625vw;
+    line-height: 0.78125vw;
+    text-align: center;
+    color: #224660;
+    transition: 2s;
+  }
+  .hoverBlock {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .logoBackground {
+    width: 190px;
+    height: auto;
+    max-height: 7.11vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFFFFF;
+  }
+  .phonBlock {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .phonBlock .number {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 205.4%;
+    text-transform: uppercase;
+    color: #224660;
+  }
+  .number:hover {
+    color: #C7A28C;
+  }
+  .networkBlock {
+    display: flex;
+    gap: 20px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .SimilarShop {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 91.7874396135vw;
+  }
+  .container {
+    width: 88.1642512077vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titleBlock {
+    width: 88.1642512077vw;
+    margin-bottom: 4vw;
+  }
+  .titleBlock .title {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.7632850242vw;
+    line-height: 7.9710144928vw;
+    text-transform: uppercase;
+    color: #224660;
+  }
+  .hoverBlock {
+    display: none;
+  }
+  .similarBrands {
+    display: flex;
+    flex-wrap: wrap;
+    width: 88.1642512077vw;
+  }
+  .first {
+    width: 39.8550724638vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50.9661835749vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 2.4154589372vw;
+    margin-bottom: 2.4154589372vw;
+  }
+  .first .patternBlock {
+    width: 39.1304347826vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .first .patternBackground {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 9.1787439614vw;
+    height: 9.1787439614vw;
+    text-align: center;
+  }
+  .first .title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  .first .title .number {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9323671498vw;
+    line-height: 2.4154589372vw;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .first .title .floor {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9323671498vw;
+    line-height: 2.4154589372vw;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .brandBook {
+    height: 12.077294686vw;
+    width: 3.6231884058vw;
+    margin-left: 1.3020833333vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+  }
+  .brandBook .brand {
+    width: 72.4637681159vw;
+    height: 1.8880208333vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8647342995vw;
+    line-height: 4.7101449275vw;
+    color: #FFFFFF;
+  }
+}/*# sourceMappingURL=similarShop.module.css.map */

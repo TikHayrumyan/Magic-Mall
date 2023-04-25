@@ -1,0 +1,420 @@
+.loading {
+  width: 80vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 3vw;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.6875vw;
+}
+
+.container {
+  width: 84.375vw;
+}
+
+.CardSubscribe {
+  margin-top: 35vw;
+  width: 84vw;
+  display: flex;
+  justify-content: center;
+}
+
+.foods {
+  display: flex;
+  gap: 2.4088541667vw;
+  flex-wrap: wrap;
+  margin-bottom: 4.6875vw;
+  overflow: hidden;
+}
+
+.first {
+  width: 19.2708333333vw;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 25vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.first .patternBlock {
+  width: 19.2708333333vw;
+  display: flex;
+  justify-content: flex-end;
+}
+.first .patternBackground {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 4.4921875vw;
+  height: 4.4921875vw;
+  text-align: center;
+}
+.first .title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.0416666667vw;
+}
+.first .title .number {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3625vw;
+  line-height: 1.8880208333vw;
+  text-align: center;
+  color: #FFFFFF;
+}
+.first .title .floor {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.7765625vw;
+  line-height: 0.78125vw;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.brandBook {
+  height: 6.5104166667vw;
+  width: 14.5833333333vw;
+  margin-left: 1.3020833333vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.3671875vw;
+}
+.brandBook .brand {
+  width: 14.5833333333vw;
+  height: 1.8880208333vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  line-height: 1.8880208333vw;
+  color: #FFFFFF;
+  text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+.iconBook {
+  cursor: pointer;
+  width: 2.0833333333vw;
+  height: 2.0833333333vw;
+}
+
+.buttonBlock {
+  width: 84.375vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 13.671875vw;
+}
+.buttonBlock .button {
+  background-color: transparent;
+  border-radius: 3.2552083333vw;
+  width: 8.1380208333vw;
+  height: 2.1484375vw;
+  border: 1px solid #A6CCE5;
+  color: #224660;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  cursor: pointer;
+}
+.buttonBlock .button:hover {
+  background-color: #A6CCE5;
+  transition: 0.5s;
+}
+
+.logoBackground {
+  width: 12.4vw;
+  height: auto;
+  max-height: 7.11vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.phonBlock {
+  display: flex;
+  gap: 0.65vw;
+  align-items: center;
+  width: 10.4166666667vw;
+  height: 2.5694444444vw;
+}
+.phonBlock .number {
+  font-family: "Bokonique-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.171875vw;
+  line-height: 205.4%;
+  text-transform: uppercase;
+  color: #224660;
+}
+
+.networkBlock {
+  display: flex;
+  gap: 20px;
+  width: 5.7638888889vw;
+  height: 2.5694444444vw;
+}
+.networkBlock div {
+  width: 2.2222222222vw;
+  height: 2.2222222222vw;
+}
+
+@media screen and (min-width: 650px) {
+  .first:hover {
+    background-image: none !important;
+    transition: 2s;
+    box-shadow: 0px 1.3020833333vw 1.953125vw rgba(0, 0, 0, 0.1);
+  }
+  .first:hover .brandBook {
+    justify-content: center;
+  }
+  .first:hover .brand {
+    display: none;
+  }
+  .first:hover .hoverBlock {
+    display: flex;
+  }
+  .first:hover .title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.9765625vw;
+  }
+  .first:hover .title .number {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5625vw;
+    line-height: 1.8880208333vw;
+    text-align: center;
+    color: #224660;
+    transition: 2s;
+  }
+  .first:hover .title .floor {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.7765625vw;
+    line-height: 0.78125vw;
+    text-align: center;
+    color: #224660;
+    transition: 2s;
+  }
+  .hoverBlock {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.35vw;
+    min-height: 14.35vw;
+    justify-content: space-between;
+  }
+  .logoBackground {
+    width: 12.4vw;
+    height: auto;
+    max-height: 7.11vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .phonBlock {
+    display: flex;
+    gap: 0.65vw;
+    align-items: center;
+  }
+  .phonBlock .number {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.171875vw;
+    line-height: 205.4%;
+    text-transform: uppercase;
+    color: #224660;
+  }
+  .number:hover {
+    color: #C7A28C;
+  }
+  .networkBlock {
+    display: flex;
+    gap: 20px;
+  }
+}
+.searchResult {
+  font-family: "Bokonique-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.2vw;
+  line-height: 140%;
+  color: #224660;
+}
+.searchResult span {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4vw;
+  line-height: 160%;
+  color: #224660;
+}
+
+.searchResultNotFound {
+  margin-top: 8vw;
+  width: 84vw;
+  display: flex;
+  justify-content: center;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 160%;
+  color: #224660;
+}
+
+@media only screen and (max-width: 600px) and (hover: none) {
+  .filter {
+    display: flex;
+    justify-content: center;
+    margin-top: 4.6875vw;
+  }
+  .container {
+    width: 83.3333333333vw;
+  }
+  .CardSubscribe {
+    margin-top: 105vw;
+    width: 83.3333333333vw;
+    display: flex;
+    justify-content: center;
+  }
+  .foods {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 4.6875vw;
+  }
+  .first {
+    width: 39.1304347826vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 50.9661835749vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 3vw;
+  }
+  .first .patternBlock {
+    width: 39.1304347826vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .first .patternBackground {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 9.1787439614vw;
+    height: 9.1787439614vw;
+    text-align: center;
+  }
+  .first .title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  .first .title .number {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9323671498vw;
+    line-height: 2.4154589372vw;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .first .title .floor {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9323671498vw;
+    line-height: 2.4154589372vw;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .brandBook {
+    height: 12.077294686vw;
+    width: 3.6231884058vw;
+    margin-left: 1.3020833333vw;
+    display: flex;
+    flex-direction: column;
+    gap: 3vw;
+  }
+  .brandBook .brand {
+    width: 72.4637681159vw;
+    height: 1.8880208333vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8647342995vw;
+    line-height: 4.7101449275vw;
+    color: #FFFFFF;
+  }
+  .iconBook {
+    cursor: pointer;
+  }
+  .buttonBlock {
+    width: 84.375vw;
+    display: none;
+    justify-content: center;
+    margin-bottom: 13.671875vw;
+  }
+  .buttonBlock .button {
+    background-color: transparent;
+    border-radius: 3.2552083333vw;
+    width: 8.1380208333vw;
+    height: 2.1484375vw;
+    border: 1px solid #A6CCE5;
+    color: #224660;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.78125vw;
+    line-height: 0.9765625vw;
+    cursor: pointer;
+  }
+  .buttonBlock .button:hover {
+    background-color: #A6CCE5;
+    transition: 0.5s;
+  }
+  .hoverBlock {
+    display: none;
+  }
+  .searchResult {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.8309178744vw;
+    line-height: 140%;
+    color: #224660;
+  }
+  .searchResult span {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.6231884058vw;
+    line-height: 160%;
+    color: #224660;
+  }
+  .searchResultNotFound {
+    margin-top: 8vw;
+    width: 84vw;
+    display: flex;
+    justify-content: center;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 160%;
+    color: #224660;
+  }
+}/*# sourceMappingURL=filter.module.css.map */

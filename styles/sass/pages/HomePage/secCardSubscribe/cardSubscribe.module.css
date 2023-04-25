@@ -1,0 +1,323 @@
+.cardSubscribe {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.container {
+  width: 65.2777777778vw;
+  background-color: #F3EAE5;
+  display: flex;
+  position: absolute;
+  bottom: -5.9027777778vw;
+}
+
+.cardBackground {
+  width: 30.1388888889vw;
+  height: 26.1805555556vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-size: cover;
+}
+.cardBackground .title {
+  color: #FFFFFF;
+  width: 19.5138888889vw;
+  height: 2.8472222222vw;
+  margin-left: 2.4305555556vw;
+  margin-bottom: 4.8611111111vw;
+}
+
+.cardMain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.cardMain .subscribe {
+  width: 25.1388888889vw;
+  max-height: 6.9444444444vw;
+  font-family: "Bokonique-regular", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.2222222222vw;
+  line-height: 2.6666666667vw;
+  text-align: center;
+  text-transform: uppercase;
+  color: #002D69;
+  margin-left: 4.1666666667vw;
+  margin-top: 5.5555555556vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.6944444444vw;
+}
+.cardMain .description {
+  font-family: "Bokonique-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25vw;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  color: #224660;
+  width: 25.1388888889vw;
+  max-height: 3.4722222222vw;
+  margin-left: 3.4722222222vw;
+}
+.cardMain .inputBlock {
+  display: flex;
+  align-items: flex-end;
+  background: #FFFFFF;
+  border-radius: 69.4444444444vw;
+  width: 24.6527777778vw;
+  height: 3.6111111111vw;
+  margin-top: 2.4305555556vw;
+  margin-left: 4.8611111111vw;
+}
+.cardMain .inputBlock .input {
+  background: #FFFFFF;
+  border-radius: 69.4444444444vw;
+  border: none;
+  width: 22.0138888889vw;
+  height: 3.6111111111vw;
+  padding-left: 1.7361111111vw;
+  outline: none;
+}
+.cardMain .inputBlock .button {
+  width: 4vw;
+  height: 3.6vw;
+  border: none;
+  border-radius: 69.4444444444vw;
+  background-color: #A6CCE5;
+  padding-top: 0.3472222222vw;
+  cursor: pointer;
+}
+.cardMain .accessBlock {
+  display: flex;
+  margin-left: 6.9444444444vw;
+  margin-top: 1.0416666667vw;
+  align-items: center;
+  justify-content: flex-end;
+}
+.cardMain .accessBlock input {
+  width: 1.0416666667vw;
+  height: 1.0416666667vw;
+}
+.cardMain .accessBlock .agree {
+  width: 25.5vw;
+  height: 1.0416666667vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8333333333vw;
+  line-height: 1.0416666667vw;
+  display: flex;
+  align-items: center;
+  color: #224660;
+}
+.cardMain .accessBlock span {
+  text-decoration: underline;
+  margin-left: 0.2083333333vw;
+  font-weight: 800;
+}
+
+.invalidEmail {
+  width: 18vw;
+  margin-top: 0.6vw;
+  color: #EB5757;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-size: 0.8333333333vw;
+}
+
+.checked {
+  border: #F3EAE5;
+}
+
+.notChecked {
+  width: 0.2083333333vw;
+  outline: max(2px, 0.15em) solid #EB5757;
+  outline-offset: -1px;
+}
+
+.success {
+  width: 24vw;
+  text-align: center;
+  margin-top: 0.6vw;
+  color: #27AE60;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  margin-left: 2vw;
+  font-size: 0.8333333333vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .cardSubscribe {
+    width: 100vw;
+    display: flex;
+  }
+  .container {
+    width: 100vw;
+    background-color: #F3EAE5;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: -14.1666666667vw;
+  }
+  .cardBackground {
+    width: 100vw;
+    height: 40vw;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    justify-content: flex-end;
+    gap: 0vw;
+  }
+  .cardBackground .title {
+    color: #FFFFFF;
+    width: 30vw;
+    height: 8vw;
+    margin-left: 10vw;
+    display: flex;
+    margin-bottom: 10vw;
+  }
+  .cardMain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 40vw;
+  }
+  .cardMain .subscribe {
+    width: 60vw;
+    min-height: 12.077294686vw;
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5vw;
+    line-height: 120%;
+    text-align: center;
+    text-transform: uppercase;
+    color: #002D69;
+    margin-bottom: 1vw;
+    display: flex;
+    align-items: center;
+  }
+  .cardMain .description {
+    font-family: "Bokonique-regular", "montserrat-ru-semibold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    color: #224660;
+    width: 87.4396135266vw;
+    height: 7.2463768116vw;
+    margin-left: 3.6231884058vw;
+  }
+  .cardMain .news {
+    width: 50vw;
+    height: 2.8333333333vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 1.1805555556vw;
+    color: #224660;
+    margin-top: 5vw;
+  }
+  .cardMain .inputBlock {
+    display: flex;
+    align-items: flex-end;
+    background: #FFFFFF;
+    border-radius: 166.6666666667vw;
+    width: 59.1666666667vw;
+    height: 8.6666666667vw;
+    margin-top: 2.5vw;
+    margin-left: 6.6666666667vw;
+  }
+  .cardMain .inputBlock .input {
+    background: #FFFFFF;
+    border-radius: 166.6666666667vw;
+    border: none;
+    width: 52.8333333333vw;
+    height: 8.6666666667vw;
+    padding-left: 4.1666666667vw;
+    outline: none;
+  }
+  .cardMain .inputBlock .button {
+    width: 8vw;
+    height: 8.6vw;
+    border: none;
+    border-radius: 166.6666666667vw;
+    background-color: #A6CCE5;
+    padding-top: 0.8333333333vw;
+    cursor: pointer;
+  }
+  .cardMain .accessBlock {
+    display: flex;
+    margin-left: 11.6666666667vw;
+    margin-top: 2.5vw;
+    align-items: center;
+    width: 84.5410628019vw;
+    height: 6.2801932367vw;
+  }
+  .cardMain .accessBlock input {
+    width: 2.5vw;
+    height: 2.5vw;
+    margin-right: 0.6666666667vw;
+  }
+  .cardMain .accessBlock .agree {
+    width: 72.4637681159vw;
+    height: 4.1666666667vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2vw;
+    line-height: 2.5vw;
+    display: flex;
+    align-items: center;
+    color: #224660;
+    gap: 0vw;
+  }
+  .cardMain .accessBlock span {
+    display: flex;
+    max-width: 43.4782608696vw;
+    height: 3.6231884058vw;
+    text-decoration: underline;
+    margin-left: 0vw;
+    font-weight: 800;
+    align-items: center;
+    justify-content: center;
+    font-size: 2vw;
+    margin-left: 1.5vw;
+  }
+  .invalidEmail {
+    width: 18vw;
+    margin-top: 0.6vw;
+    color: #EB5757;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-size: 12px;
+  }
+  .checked {
+    border: #F3EAE5;
+  }
+  .notChecked {
+    width: 2px;
+    outline: max(2px, 0.15em) solid #EB5757;
+    outline-offset: -1px;
+  }
+  .success {
+    width: 24vw;
+    text-align: center;
+    margin-top: 0.6vw;
+    color: #27AE60;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    margin-left: 2vw;
+    font-size: 12px;
+  }
+}/*# sourceMappingURL=cardSubscribe.module.css.map */

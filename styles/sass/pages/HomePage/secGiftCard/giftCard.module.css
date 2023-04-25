@@ -1,0 +1,183 @@
+.giftCard {
+  width: 100vw;
+  display: flex;
+  margin-bottom: 6.9444444444vw;
+  justify-content: center;
+}
+
+.container {
+  width: 84.0277777778vw;
+  position: relative;
+  display: flex;
+  margin-left: 3.4722222222vw;
+  gap: 10vw;
+  align-items: center;
+}
+
+.aboutBlock {
+  display: flex;
+  flex-direction: column;
+  width: 51.5972222222vw;
+}
+.aboutBlock .titleBlock {
+  display: flex;
+  gap: 4.1666666667vw;
+  align-items: flex-end;
+  margin-top: 4.1666666667vw;
+  margin-bottom: 2vw;
+}
+.aboutBlock .titleBlock .title {
+  font-family: "Bokonique-regular", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+  margin: 0px;
+}
+.aboutBlock .descrip {
+  width: 27.4305555556vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25vw;
+  line-height: 160%;
+  color: #224660;
+  margin-bottom: 4.0277777778vw;
+}
+.aboutBlock .button {
+  display: flex;
+  width: 9.7222222222vw;
+  height: 1.1805555556vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9722222222vw;
+  line-height: 1.1805555556vw;
+  color: #224660;
+  background: transparent;
+  border: none;
+  padding: 0px;
+  cursor: pointer;
+}
+.aboutBlock .button .buttonIcon {
+  width: 0.5555555556vw;
+  height: 1.0416666667vw;
+  margin-left: 0.5555555556vw;
+  cursor: pointer;
+}
+
+.hoverBlock {
+  display: flex;
+  margin-right: 15.2777777778vw;
+}
+
+.hoverBlock:hover > .buttonIcon {
+  transform: translate(100%);
+  transition: 0.5s;
+}
+
+.pattern {
+  position: absolute;
+  right: -10%;
+  z-index: -1;
+}
+
+.hoverBlockMobile {
+  display: none;
+}
+
+.giftCardImg {
+  height: 45vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .giftCard {
+    width: 100vw;
+    display: flex;
+    margin-bottom: 10vw;
+    justify-content: center;
+    margin-top: 10vw;
+  }
+  .giftCardImg {
+    width: 43vw;
+    height: 56vw;
+    margin-left: 20vw;
+  }
+  .container {
+    width: 85vw;
+    position: relative;
+    display: flex;
+    gap: 0vw;
+    flex-direction: column-reverse;
+  }
+  .aboutBlock {
+    display: flex;
+    flex-direction: column;
+    width: 84vw;
+  }
+  .aboutBlock .titleBlock {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 60vw;
+    gap: 0px;
+    justify-content: flex-end;
+  }
+  .aboutBlock .titleBlock .title {
+    font-family: "Bokonique-regular", "montserrat-ru-semibold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6vw;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #224660;
+    margin-top: 4vw;
+  }
+  .aboutBlock .titleBlock .secondPattern {
+    width: 20vw;
+    height: 24vw;
+  }
+  .aboutBlock .descrip {
+    width: 85vw;
+    min-height: 50vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8647342995vw;
+    line-height: 160%;
+    color: #252B42;
+  }
+  .hoverBlock {
+    display: none;
+  }
+  .pattern {
+    position: absolute;
+    right: -10%;
+    z-index: -1;
+  }
+  .mobileButton {
+    margin-left: 27vw;
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 3vw;
+    color: #224660;
+    background: transparent;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+  }
+  .hoverBlockMobile {
+    display: flex;
+    margin-right: 15.2777777778vw;
+  }
+  .hoverBlockMobile:hover > .buttonIconMobile {
+    transform: translate(100%);
+    transition: 0.5s;
+  }
+}/*# sourceMappingURL=giftCard.module.css.map */

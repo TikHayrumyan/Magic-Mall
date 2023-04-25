@@ -1,0 +1,240 @@
+.loading {
+  width: 84vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 3vw;
+}
+
+.filter {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 6vw;
+}
+
+.container {
+  width: 94vw;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom: 28.3vw;
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 46.4192708333vw;
+  height: 40.5598958333vw;
+  margin-bottom: 0.9114583333vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.cardContent {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 34.5703125vw;
+  height: 13.1510416667vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.cardContent .cardContentContainer {
+  width: 32vw;
+  height: 12.3vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.cardContent .cardContentContainer .title {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8229166667vw;
+  line-height: 2.2135416667vw;
+  color: #FFFFFF;
+  margin-bottom: 0.8463541667vw;
+}
+.cardContent .cardContentContainer .description {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9114583333vw;
+  line-height: 140%;
+  color: #224660;
+  width: 20vw;
+  margin-bottom: 0.5859375vw;
+  height: 4.1vw;
+  overflow: hidden;
+}
+.cardContent .cardContentContainer .arrowBlock {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 25vw;
+  margin-bottom: 1vw;
+}
+
+.buttonBlock {
+  width: 100vw;
+  margin-top: 5.3vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 13.671875vw;
+}
+.buttonBlock .button {
+  background-color: transparent;
+  border-radius: 3.2552083333vw;
+  width: 8.1380208333vw;
+  height: 2.1484375vw;
+  border: 1px solid #A6CCE5;
+  color: #224660;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  cursor: pointer;
+}
+.buttonBlock .button:hover {
+  background-color: #A6CCE5;
+  transition: 0.5s;
+}
+
+.arrowBlock {
+  width: 5.9027777778vw;
+}
+
+@media screen and (min-width: 650px) {
+  .cardContent:hover .arrowBlock {
+    transform: translate(3vw);
+    transition: 0.7s;
+  }
+}
+.searchResult {
+  font-family: "Bokonique-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.2vw;
+  line-height: 140%;
+  color: #224660;
+}
+.searchResult span {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4vw;
+  line-height: 160%;
+  color: #224660;
+}
+
+.searchResultNotFound {
+  margin-top: 8vw;
+  width: 84vw;
+  display: flex;
+  justify-content: center;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 160%;
+  color: #224660;
+}
+
+@media screen and (max-width: 600px) {
+  .filter {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 6vw;
+    margin-bottom: 65vw;
+  }
+  .container {
+    width: 90.5797101449vw;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 20vw;
+  }
+  .background {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 43.4782608696vw;
+    height: 50.7246376812vw;
+    margin-bottom: 4vw;
+    margin-right: 1vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .cardContent {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 48.309178744vw;
+    height: 24.154589372vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .cardContent .cardContentContainer {
+    width: 36.231884058vw;
+    height: 12vw;
+  }
+  .cardContent .cardContentContainer .title {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.347826087vw;
+    line-height: 5.0724637681vw;
+    color: #FFFFFF;
+    margin-bottom: 0vw;
+    min-height: 9.6618357488vw;
+  }
+  .cardContent .cardContentContainer .description {
+    display: none;
+  }
+  .cardContent .cardContentContainer .arrowBlock {
+    display: flex;
+    justify-content: flex-start;
+    width: 9.6618357488vw;
+    margin-left: 18.115942029vw;
+  }
+  .buttonBlock {
+    display: none;
+  }
+  .searchResult {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.8309178744vw;
+    line-height: 140%;
+    color: #224660;
+  }
+  .searchResult span {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.6231884058vw;
+    line-height: 160%;
+    color: #224660;
+  }
+  .searchResultNotFound {
+    margin-top: 8vw;
+    width: 84vw;
+    display: flex;
+    justify-content: center;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 160%;
+    color: #224660;
+  }
+}/*# sourceMappingURL=filter.module.css.map */

@@ -1,0 +1,672 @@
+.PremisesRent {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 8vw;
+}
+
+.titleBlock {
+  width: 90.6vw;
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+}
+.titleBlock .title {
+  font-family: "Bokonique-regular", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.34375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+}
+
+.container {
+  width: 79vw;
+}
+
+.description {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.171875vw;
+  line-height: 160%;
+  color: #224660;
+  margin-bottom: 4vw;
+}
+
+.companyInfo {
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  line-height: 1.8880208333vw;
+  color: #224660;
+}
+
+.inputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: space-between;
+  margin-top: 3vw;
+}
+.inputs div {
+  display: flex;
+  flex-direction: column;
+}
+.inputs div .warning {
+  width: 9.5703125vw;
+  height: 0.9765625vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  text-align: center;
+  color: #CE3F23;
+  margin-top: 0.3vw;
+}
+.inputs input {
+  width: 37.546875vw;
+  height: 3.125vw;
+  border: 1px solid rgba(130, 130, 130, 0.8);
+  border-radius: 26.0416666667vw;
+  padding: 1.5vw;
+  outline: none;
+}
+.inputs input::-moz-placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8vw;
+  line-height: 140%;
+  color: #828282;
+}
+.inputs input::placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8vw;
+  line-height: 140%;
+  color: #828282;
+}
+
+.wantToRent {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0416666667vw;
+  line-height: 140%;
+  color: #224660;
+  margin-top: 2vw;
+  margin-bottom: 1vw;
+}
+
+.inputsFromTo {
+  display: flex;
+  gap: 1.5vw;
+  margin-bottom: 2vw;
+}
+.inputsFromTo input {
+  width: 14.2578125vw;
+  height: 3.125vw;
+  border: 1px solid rgba(130, 130, 130, 0.8);
+  border-radius: 26.0416666667vw;
+  padding: 1.5vw;
+  outline: none;
+}
+.inputsFromTo input::-moz-placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8vw;
+  line-height: 140%;
+  color: #828282;
+}
+.inputsFromTo input::placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8vw;
+  line-height: 140%;
+  color: #828282;
+}
+.inputsFromTo input::-webkit-outer-spin-button,
+.inputsFromTo input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inputsFromTo input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.chekboxBLock {
+  display: flex;
+  gap: 2vw;
+}
+.chekboxBLock div {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9114583333vw;
+  line-height: 140%;
+  display: flex;
+  align-items: center;
+  color: #224660;
+  display: flex;
+  align-items: center;
+  gap: 0.3vw;
+}
+.chekboxBLock div input {
+  width: 1.0416666667vw;
+  height: 1.0416666667vw;
+}
+
+.textarea {
+  width: 79vw;
+  height: 11.71875vw;
+  border: 1px solid rgba(130, 130, 130, 0.8);
+  border-radius: 2.6041666667vw;
+  padding: 1.5vw;
+  margin-top: 2vw;
+  outline: none;
+  resize: none;
+  font-size: 1vw;
+}
+
+.textarea::-moz-placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 140%;
+  color: #828282;
+}
+
+.textarea::placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 140%;
+  color: #828282;
+}
+
+.contactInfoTitle {
+  margin-top: 7vw;
+  font-family: "arm-bold" "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  line-height: 1.8880208333vw;
+  color: #224660;
+}
+
+.contactInputs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2vw;
+  justify-content: space-between;
+  margin-top: 3vw;
+}
+.contactInputs div {
+  display: flex;
+  flex-direction: column;
+}
+.contactInputs div .warning {
+  width: 9.5703125vw;
+  height: 0.9765625vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  text-align: center;
+  color: #CE3F23;
+  margin-top: 0.3vw;
+}
+.contactInputs div .success {
+  display: none;
+}
+.contactInputs input {
+  width: 37.546875vw;
+  height: 3.125vw;
+  border: 1px solid rgba(130, 130, 130, 0.8);
+  border-radius: 26.0416666667vw;
+  padding: 1.5vw;
+  outline: none;
+}
+.contactInputs input::-moz-placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8vw;
+  line-height: 140%;
+  color: #828282;
+}
+.contactInputs input::placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.8vw;
+  line-height: 140%;
+  color: #828282;
+}
+.contactInputs input::-webkit-outer-spin-button,
+.contactInputs input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.contactInputs input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.checkBlock {
+  display: flex;
+  align-items: center;
+  margin-top: 1.5vw;
+  gap: 0.5vw;
+}
+.checkBlock input {
+  width: 1.0416666667vw;
+  height: 1.0416666667vw;
+}
+
+.agree {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  color: #224660;
+}
+.agree span {
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  color: #224660;
+  width: 20.8984375vw;
+  height: 0.9765625vw;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+
+.btnBlock {
+  width: 79vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 3vw;
+}
+.btnBlock .button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.78125vw 3.90625vw;
+  gap: 0.78125vw;
+  width: 18vw;
+  height: 2.8645833333vw;
+  background: #A6CCE5;
+  border-radius: 26.0416666667vw;
+  border: none;
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9114583333vw;
+  line-height: 1.3020833333vw;
+  margin-top: 2.5vw;
+  cursor: pointer;
+  color: #224660;
+}
+.btnBlock .button:hover {
+  background-color: #fff;
+  border: #224660 1px solid;
+}
+
+.checked {
+  border: #F3EAE5;
+}
+
+.notChecked {
+  width: 2px;
+  outline: max(2px, 0.15em) solid #EB5757;
+  outline-offset: -1px;
+}
+
+@media only screen and (max-width: 600px) {
+  .PremisesRent {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 8vw;
+  }
+  .titleBlock {
+    width: 88.1642512077vw;
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+  .titleBlock .title {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.7632850242vw;
+    line-height: 7.9710144928vw;
+    text-transform: uppercase;
+    color: #224660;
+  }
+  .container {
+    width: 88.1642512077vw;
+  }
+  .description {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8647342995vw;
+    line-height: 5.7971014493vw;
+    color: #224660;
+    margin-bottom: 8vw;
+  }
+  .companyInfo {
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.7971014493vw;
+    line-height: 7.0048309179vw;
+    color: #224660;
+  }
+  .inputs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 3vw;
+  }
+  .inputs div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vw;
+  }
+  .inputs div .warning {
+    width: 36.231884058vw;
+    height: 3.6231884058vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    text-align: center;
+    color: #CE3F23;
+    margin-top: 0.3vw;
+  }
+  .inputs input {
+    width: 88.1642512077vw;
+    height: 10.8695652174vw;
+    border: 1px solid rgba(130, 130, 130, 0.8);
+    border-radius: 96.6183574879vw;
+    padding: 3.5vw;
+    outline: none;
+  }
+  .inputs input::-moz-placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .inputs input::placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .wantToRent {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8647342995vw;
+    line-height: 140%;
+    color: #224660;
+    margin-top: 4vw;
+    margin-bottom: 3vw;
+  }
+  .inputsFromTo {
+    display: flex;
+    margin-bottom: 2vw;
+    flex-direction: column;
+  }
+  .inputsFromTo input {
+    width: 52.8985507246vw;
+    height: 10.8695652174vw;
+    border: 1px solid rgba(130, 130, 130, 0.8);
+    border-radius: 26.0416666667vw;
+    padding: 3.5vw;
+    outline: none;
+    margin-bottom: 2vw;
+  }
+  .inputsFromTo input::-moz-placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .inputsFromTo input::placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .inputsFromTo input::-webkit-outer-spin-button,
+  .inputsFromTo input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .inputsFromTo input[type=number] {
+    -moz-appearance: textfield;
+  }
+  .chekboxBLock {
+    display: flex;
+  }
+  .chekboxBLock div {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 140%;
+    display: flex;
+    align-items: center;
+    color: #224660;
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    margin-left: 2vw;
+  }
+  .chekboxBLock div input {
+    width: 3.8647342995vw;
+    height: 3.8647342995vw;
+  }
+  .textarea {
+    width: 88.1642512077vw;
+    height: 72.4637681159vw;
+    border: 1px solid rgba(130, 130, 130, 0.8);
+    border-radius: 9.6618357488vw;
+    padding: 4.5vw;
+    margin-top: 2vw;
+    outline: none;
+    resize: none;
+  }
+  .textarea::-moz-placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .textarea::placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .contactInfoTitle {
+    margin-top: 7vw;
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.7971014493vw;
+    line-height: 7.0048309179vw;
+    color: #224660;
+    margin-bottom: 2vw;
+  }
+  .contactInputs {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-top: 3vw;
+  }
+  .contactInputs div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2vw;
+  }
+  .contactInputs div .warning {
+    width: 36.231884058vw;
+    height: 3.6231884058vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    text-align: center;
+    color: #CE3F23;
+    margin-top: 0.3vw;
+  }
+  .contactInputs div .success {
+    display: none;
+  }
+  .contactInputs input {
+    width: 88.1642512077vw;
+    height: 10.8695652174vw;
+    border: 1px solid rgba(130, 130, 130, 0.8);
+    border-radius: 96.6183574879vw;
+    padding: 3.5vw;
+    outline: none;
+  }
+  .contactInputs input::-moz-placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .contactInputs input::placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .contactInputs input::-webkit-outer-spin-button,
+  .contactInputs input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .contactInputs input[type=number] {
+    -moz-appearance: textfield;
+  }
+  .checkBlock {
+    display: flex;
+    align-items: center;
+    margin-top: 1.5vw;
+    gap: 0.5vw;
+    width: 88.1642512077vw;
+  }
+  .checkBlock input {
+    width: 3.8647342995vw;
+    height: 3.8647342995vw;
+  }
+  .agree {
+    display: flex;
+    align-items: center;
+    width: 84.5410628019vw;
+    gap: 0vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.6570048309vw;
+    line-height: 3.3816425121vw;
+    color: #224660;
+  }
+  .agree span {
+    display: flex;
+    max-width: 59.1787439614vw;
+    height: 6.038647343vw;
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.6570048309vw;
+    line-height: 3.3816425121vw;
+    color: #224660;
+    align-items: center;
+    text-decoration-line: underline;
+    justify-content: center;
+    width: auto;
+    margin-left: 1.5vw;
+  }
+  .btnBlock {
+    width: 88.1642512077vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+  }
+  .btnBlock .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.78125vw 3.90625vw;
+    gap: 0.78125vw;
+    width: 88.1642512077vw;
+    height: 11.5942028986vw;
+    background: #A6CCE5;
+    border-radius: 26.0416666667vw;
+    border: none;
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8647342995vw;
+    line-height: 4.8309178744vw;
+    margin-top: 2.5vw;
+    cursor: pointer;
+    color: #224660;
+  }
+  .btnBlock .button:hover {
+    background-color: #fff;
+    border: #224660 1px solid;
+  }
+  .checked {
+    border: #F3EAE5;
+  }
+  .notChecked {
+    width: 2px;
+    outline: max(2px, 0.15em) solid #EB5757;
+    outline-offset: -1px;
+  }
+}/*# sourceMappingURL=premisesRent.module.css.map */

@@ -1,0 +1,167 @@
+.firstOutletMall {
+  width: 100vw;
+  display: flex;
+  margin-bottom: 10.4166666667vw;
+  justify-content: center;
+}
+
+.FirstOutletMallImage {
+  width: 70vw;
+}
+
+.container {
+  width: 90.625vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.pattern {
+  width: 14.4927536232vw;
+  height: 14.4927536232vw;
+}
+
+.titleBlock {
+  display: flex;
+  width: 85.625vw;
+}
+.titleBlock .title {
+  width: 32.6388888889vw;
+  height: 6.25vw;
+  font-family: "Bokonique-regular", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.5vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+  margin-top: 5.5555555556vw;
+}
+
+.descriptionContainer {
+  margin-top: 2.0833333333vw;
+}
+
+.titleDescripBlock {
+  display: flex;
+  flex-direction: column;
+  gap: 4vw;
+}
+
+.descrip {
+  width: 56.9444444444vw;
+  height: 11.1111111111vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25vw;
+  line-height: 160%;
+  color: #224660;
+  text-align: start;
+}
+
+.descriptionMobile {
+  display: none;
+}
+
+.hoverBlock {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .firstOutletMall {
+    width: 100vw;
+    display: flex;
+    margin-bottom: 20vw;
+    justify-content: center;
+  }
+  .container {
+    width: 88.1642512077vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .pattern {
+    width: 19.3236714976vw;
+    height: 19.3236714976vw;
+  }
+  .titleBlock {
+    display: flex;
+    width: 88.1642512077vw;
+  }
+  .titleBlock .title {
+    width: 50.7246376812vw;
+    max-width: -moz-max-content;
+    max-width: max-content;
+    /* height: 21vw; */
+    max-height: -moz-max-content;
+    max-height: max-content;
+    font-family: "Bokonique-regular", "montserrat-ru-semibold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6vw;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #224660;
+    margin-top: 9vw;
+  }
+  .descriptionContainer {
+    margin-top: 2.0833333333vw;
+    width: 100vw;
+  }
+  .FirstOutletMallImage {
+    width: 100vw;
+  }
+  .titleDescripBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 20vw;
+  }
+  .descrip {
+    display: none;
+  }
+  .descriptionMobile {
+    margin-top: 25vw;
+    display: flex;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8647342995vw;
+    line-height: 5.7971014493vw;
+    color: #224660;
+    text-align: start;
+  }
+  .button {
+    margin-left: 27vw;
+    display: flex;
+    align-items: center;
+    width: 30vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3vw;
+    line-height: 3vw;
+    color: #224660;
+    background: transparent;
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+  }
+  .button .buttonIcon {
+    width: 0.5555555556vw;
+    height: 1.0416666667vw;
+    margin-left: 0.5555555556vw;
+    cursor: pointer;
+  }
+  .hoverBlock {
+    display: flex;
+    margin-right: 20vw;
+    margin-top: 10vw;
+  }
+  .hoverBlock:hover > .buttonIcon {
+    transform: translate(100%);
+    transition: 0.5s;
+  }
+}/*# sourceMappingURL=firstOutletMall.module.css.map */

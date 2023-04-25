@@ -1,0 +1,462 @@
+.ContactUs {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35vw;
+}
+
+.container {
+  width: 90.6vw;
+}
+
+.titleBlock {
+  margin-bottom: 5vw;
+}
+.titleBlock .title {
+  font-family: "Bokonique-regular", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.34375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+}
+
+.inputsBlock {
+  margin-bottom: 4vw;
+  display: flex;
+  justify-content: space-between;
+}
+.inputsBlock .inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5vw;
+}
+.inputsBlock .inputs div {
+  display: flex;
+  flex-direction: column;
+}
+.inputsBlock .inputs .userName {
+  width: 34.7005208333vw;
+  height: 3.125vw;
+  border: 1px solid rgba(130, 130, 130, 0.8);
+  border-radius: 26.0416666667vw;
+  padding: 1.5vw;
+  outline: none;
+}
+.inputsBlock .inputs .userName::-moz-placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 140%;
+  color: #828282;
+}
+.inputsBlock .inputs .userName::placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 140%;
+  color: #828282;
+}
+.inputsBlock .inputs .number {
+  width: 34.7005208333vw;
+  height: 3.125vw;
+  border: 1px solid rgba(130, 130, 130, 0.8);
+  border-radius: 26.0416666667vw;
+  padding: 1.5vw;
+  outline: none;
+}
+.inputsBlock .inputs input::-webkit-outer-spin-button,
+.inputsBlock .inputs input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.inputsBlock .inputs input[type=number] {
+  -moz-appearance: textfield;
+}
+.inputsBlock .inputs .number::-moz-placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 140%;
+  color: #828282;
+}
+.inputsBlock .inputs .number::placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 140%;
+  color: #828282;
+}
+.inputsBlock .inputs .email {
+  width: 34.7005208333vw;
+  height: 3.125vw;
+  border: 1px solid rgba(130, 130, 130, 0.8);
+  border-radius: 26.0416666667vw;
+  padding: 1.5vw;
+  outline: none;
+}
+.inputsBlock .inputs .email::-moz-placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 140%;
+  color: #828282;
+}
+.inputsBlock .inputs .email::placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1vw;
+  line-height: 140%;
+  color: #828282;
+}
+
+.textAreas .textArea {
+  width: 44.7916666667vw;
+  height: 14.5833333333vw;
+  resize: none;
+  border: 1px solid rgba(130, 130, 130, 0.8);
+  border-radius: 2.6041666667vw;
+  outline: none;
+  padding: 1.5vw;
+  font-size: 1vw;
+}
+.textAreas .textArea::-moz-placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0416666667vw;
+  line-height: 140%;
+  color: #828282;
+}
+.textAreas .textArea::placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0416666667vw;
+  line-height: 140%;
+  color: #828282;
+}
+
+.buttonAndChekbox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.buttonAndChekbox .checkBlock {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+}
+.buttonAndChekbox .checkBlock input {
+  width: 1.0416666667vw;
+  height: 1.0416666667vw;
+}
+.buttonAndChekbox .checkBlock .agree {
+  display: flex;
+  align-items: center;
+  gap: 0.5vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  color: #224660;
+}
+.buttonAndChekbox .checkBlock .agree .span {
+  font-family: "arm-bold", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  color: #224660;
+  width: 20.8984375vw;
+  height: 0.9765625vw;
+  text-decoration-line: underline;
+  cursor: pointer;
+}
+.buttonAndChekbox .send {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.78125vw 3.90625vw;
+  width: 12.6302083333vw;
+  height: 2.8645833333vw;
+  background: #A6CCE5;
+  border-radius: 26.0416666667vw;
+  border: none;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9114583333vw;
+  line-height: 1.3020833333vw;
+  color: #224660;
+  cursor: pointer;
+}
+.buttonAndChekbox .send:hover {
+  background-color: #fff;
+  border: #224660 1px solid;
+}
+
+.warning {
+  width: 9.5703125vw;
+  height: 0.9765625vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  text-align: center;
+  color: #CE3F23;
+  margin-top: 0.3vw;
+}
+
+.success {
+  display: none;
+}
+
+.checked {
+  border: #F3EAE5;
+}
+
+.notChecked {
+  width: 2px;
+  outline: max(2px, 0.15em) solid #EB5757;
+  outline-offset: -1px;
+}
+
+@media only screen and (max-width: 600px) {
+  .ContactUs {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 95vw;
+  }
+  .container {
+    width: 88.1642512077vw;
+  }
+  .titleBlock {
+    margin-bottom: 5vw;
+  }
+  .titleBlock .title {
+    font-family: "Bokonique-regular", "montserrat-ru-semibold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.7632850242vw;
+    line-height: 7.9710144928vw;
+    text-transform: uppercase;
+    color: #224660;
+  }
+  .inputsBlock {
+    margin-bottom: 4vw;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .inputsBlock .inputs {
+    display: flex;
+    flex-direction: column;
+  }
+  .inputsBlock .inputs div {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3.5vw;
+  }
+  .inputsBlock .inputs .userName {
+    width: 88.1642512077vw;
+    height: 11.5942028986vw;
+    border: 1px solid rgba(130, 130, 130, 0.8);
+    border-radius: 26.0416666667vw;
+    padding: 4vw;
+    outline: none;
+  }
+  .inputsBlock .inputs .userName::-moz-placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .inputsBlock .inputs .userName::placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .inputsBlock .inputs .number {
+    width: 88.1642512077vw;
+    height: 11.5942028986vw;
+    border: 1px solid rgba(130, 130, 130, 0.8);
+    border-radius: 26.0416666667vw;
+    padding: 4vw;
+    outline: none;
+  }
+  .inputsBlock .inputs input::-webkit-outer-spin-button,
+  .inputsBlock .inputs input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  .inputsBlock .inputs input[type=number] {
+    -moz-appearance: textfield;
+  }
+  .inputsBlock .inputs .number::-moz-placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .inputsBlock .inputs .number::placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .inputsBlock .inputs .email {
+    width: 88.1642512077vw;
+    height: 11.5942028986vw;
+    border: 1px solid rgba(130, 130, 130, 0.8);
+    border-radius: 26.0416666667vw;
+    padding: 4vw;
+    outline: none;
+  }
+  .inputsBlock .inputs .email::-moz-placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .inputsBlock .inputs .email::placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .textAreas {
+    margin-top: 5vw;
+  }
+  .textAreas .textArea {
+    width: 88.1642512077vw;
+    height: 66.4251207729vw;
+    resize: none;
+    border: 1px solid rgba(130, 130, 130, 0.8);
+    border-radius: 9.6618357488vw;
+    outline: none;
+    padding: 5vw;
+  }
+  .textAreas .textArea::-moz-placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .textAreas .textArea::placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .buttonAndChekbox {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
+  .buttonAndChekbox .checkBlock {
+    display: flex;
+    align-items: center;
+    gap: 0.5vw;
+    width: 96.6183574879vw;
+    height: 4.8309178744vw;
+    margin-bottom: 10vw;
+  }
+  .buttonAndChekbox .checkBlock input {
+    width: 3.8647342995vw;
+    height: 3.8647342995vw;
+  }
+  .buttonAndChekbox .checkBlock .agree {
+    display: flex;
+    align-items: center;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    width: 96.6183574879vw;
+    gap: 0vw;
+  }
+  .buttonAndChekbox .checkBlock .agree .span {
+    font-family: "arm-bold", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #224660;
+    max-width: 65.2173913043vw;
+    height: 3.8647342995vw;
+    text-decoration-line: underline;
+    cursor: pointer;
+    text-align: center;
+    width: auto;
+    margin-left: 1.5vw;
+  }
+  .buttonAndChekbox .send {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.78125vw 3.90625vw;
+    width: 82.3671497585vw;
+    height: 11.5942028986vw;
+    background: #A6CCE5;
+    border-radius: 26.0416666667vw;
+    border: none;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8647342995vw;
+    line-height: 4.8309178744vw;
+    color: #224660;
+    cursor: pointer;
+  }
+  .buttonAndChekbox .send:hover {
+    background-color: #fff;
+    border: #224660 1px solid;
+  }
+  .warning {
+    width: 36.231884058vw;
+    height: 3.6231884058vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    text-align: center;
+    color: #CE3F23;
+    margin-top: 1.3vw;
+  }
+  .success {
+    display: none;
+  }
+}/*# sourceMappingURL=contactUs.module.css.map */

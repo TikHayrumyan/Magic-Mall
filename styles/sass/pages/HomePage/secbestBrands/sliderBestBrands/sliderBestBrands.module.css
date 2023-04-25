@@ -1,0 +1,349 @@
+.itemsBlock {
+  display: flex;
+  min-width: -moz-max-content;
+  min-width: max-content;
+}
+
+.sliderBestBrands {
+  margin-bottom: 9.5703125vw;
+}
+
+.itemOne {
+  width: 45.402778vw;
+  height: 40.4166666667vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.itemOne div {
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.9444444444vw;
+  line-height: 2.3611111111vw;
+  color: #FFFFFF;
+  padding-left: 0.6944444444vw;
+  padding-top: 1.7361111111vw;
+  text-align: start;
+  display: flex;
+}
+.itemOne :hover .arrRight {
+  transform: translate(20px);
+}
+.itemOne .arrRight {
+  margin-left: 21.5277777778vw;
+  opacity: 0.7;
+  transition: 0.4s;
+}
+.itemOne .nameBlock {
+  display: flex;
+  flex-direction: column;
+  width: 30.752604vw;
+  height: 13.1510416667vw;
+  padding-left: 0.6944444444vw;
+  padding-top: 1.0416666667vw;
+  padding-right: 0.3472222222vw;
+}
+.itemOne .nameBlock .nameBlockTitle {
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.9444444444vw;
+  line-height: 2.3611111111vw;
+  color: #FFFFFF;
+  overflow: hidden;
+  height: 2.4305555556vw;
+  display: block;
+  padding-top: 0px;
+  margin-top: 1vw;
+  margin-bottom: 2.5vw;
+}
+
+.items {
+  width: 39.8888888889vw;
+  height: 40.5vw;
+  margin-left: 1.1805555556vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8333333333vw;
+}
+.items .itemTwo {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  min-height: -moz-max-content;
+  min-height: max-content;
+  height: 20.09vw;
+}
+.items .itemTwo :hover .arrRight {
+  transform: translate(20px);
+}
+.items .itemTwo .arrRight {
+  margin-left: 15.2777777778vw;
+  opacity: 0.7;
+  transition: 0.4s;
+}
+.items .itemTwo div {
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.9444444444vw;
+  line-height: 2.3611111111vw;
+  color: #FFFFFF;
+  padding-left: 1.0416666667vw;
+  padding-top: 1.7361111111vw;
+  text-align: start;
+}
+.items .itemTwo .NameBlock {
+  width: 24.609375vw;
+  display: flex;
+  flex-direction: column;
+  height: 10vw;
+  padding-left: 0.6944444444vw;
+  padding-top: 0.6944444444vw;
+  padding-right: 0.3472222222vw;
+  text-align: start;
+}
+.items .itemTwo .NameBlock .nameBlockTitleTwo {
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.9444444444vw;
+  line-height: 2.3611111111vw;
+  color: #FFFFFF;
+  height: 2.4305555556vw;
+  padding: 0px;
+  overflow: hidden;
+  margin-top: 0.5vw;
+  margin-bottom: 0.5vw;
+  margin-left: 0.5v;
+}
+.items .itemThree {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  height: 20.09vw;
+}
+.items .itemThree :hover .arrRight {
+  transform: translate(20px);
+}
+.items .itemThree .arrRight {
+  margin-left: 15.2777777778vw;
+  opacity: 0.7;
+  transition: 0.4s;
+}
+.items .itemThree div {
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.9444444444vw;
+  line-height: 2.3611111111vw;
+  color: #FFFFFF;
+  padding-left: 1.0416666667vw;
+  padding-top: 1.7361111111vw;
+  text-align: start;
+}
+.items .NameBlock {
+  width: 24.609375vw;
+  display: flex;
+  flex-direction: column;
+  height: 10.41666vw;
+  padding-left: 0.6944444444vw;
+  padding-top: 0.6944444444vw;
+  padding-right: 0.3472222222vw;
+  text-align: start;
+}
+.items .NameBlock .nameBlockTitleThree {
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.9444444444vw;
+  line-height: 2.3611111111vw;
+  color: #FFFFFF;
+  overflow: hidden;
+  height: 2.4305555556vw;
+  padding: 0px;
+}
+
+@media only screen and (max-width: 600px) {
+  .itemsBlock {
+    display: flex;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    width: 100vw;
+  }
+  .sliderBestBrands {
+    margin-bottom: 9.5703125vw;
+  }
+  .itemOne {
+    width: 50vw;
+    height: 48.309178744vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    margin-right: 1.5vw;
+  }
+  .itemOne div {
+    width: 24.154589372vw;
+    height: 13.1510416667vw;
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.347826087vw;
+    line-height: 8.2125603865vw;
+    color: #FFFFFF;
+    padding-left: 4.8309178744vw;
+    padding-top: 3.6231884058vw;
+    text-align: start;
+    display: flex;
+  }
+  .itemOne :hover .arrRight {
+    transform: translate(6px);
+  }
+  .itemOne .arrRight {
+    width: 10.8695652174vw;
+    margin-left: 13.2850241546vw;
+    opacity: 0.7;
+    transition: 0.4s;
+    margin-bottom: 0.7246376812vw;
+  }
+  .itemOne .nameBlock {
+    width: 30.752604vw;
+    height: 12.077294686vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .itemOne .nameBlock .nameBlockTitle {
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4154589372vw;
+    line-height: 3.6111111111vw;
+    color: #FFFFFF;
+    overflow: hidden;
+    height: 8.4541062802vw;
+    display: block;
+    padding-top: 0px;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+  }
+  .items {
+    width: 46vw;
+    height: 48.309178744vw;
+    margin-left: 1.1805555556vw;
+    display: flex;
+    flex-direction: column;
+    gap: 0vw;
+  }
+  .items .itemTwo {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    height: 23.7vw;
+    margin-bottom: 1vw;
+  }
+  .items .itemTwo :hover .arrRight {
+    transform: translate(10px);
+  }
+  .items .itemTwo .arrRight {
+    width: 8.4541062802vw;
+    margin-left: 9.6618357488vw;
+    opacity: 0.7;
+    transition: 0.4s;
+    margin-bottom: 0.7246376812vw;
+  }
+  .items .itemTwo div {
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9444444444vw;
+    line-height: 2.3611111111vw;
+    color: #FFFFFF;
+    padding-left: 2.7777777778vw;
+    padding-top: 1.7361111111vw;
+    text-align: start;
+  }
+  .items .itemTwo .nameBlock {
+    width: 24.609375vw;
+    height: 10.4166666667vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .items .itemTwo .nameBlock .nameBlockTitleTwo {
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4154589372vw;
+    line-height: 3.6111111111vw;
+    color: #FFFFFF;
+    overflow: hidden;
+    height: 8.4541062802vw;
+    display: block;
+    padding-top: 0px;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+    margin-left: 1px;
+  }
+  .items .itemThree {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: flex-end;
+    height: 23.7vw;
+  }
+  .items .itemThree :hover .arrRight {
+    transform: translate(10px);
+  }
+  .items .itemThree .arrRight {
+    width: 8.4541062802vw;
+    margin-left: 9.6618357488vw;
+    opacity: 0.7;
+    transition: 0.4s;
+    margin-bottom: 0.7246376812vw;
+  }
+  .items .itemThree div {
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9444444444vw;
+    line-height: 2.3611111111vw;
+    color: #FFFFFF;
+    padding-left: 2.7777777778vw;
+    padding-top: 1.7361111111vw;
+    text-align: start;
+  }
+  .items .nameBlock {
+    width: 24.609375vw;
+    height: 10.4166666667vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .items .nameBlock .nameBlockTitleThree {
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 2.4154589372vw;
+    line-height: 3.6111111111vw;
+    color: #FFFFFF;
+    overflow: hidden;
+    height: 8.4541062802vw;
+    display: block;
+    padding-top: 0px;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
+  }
+}/*# sourceMappingURL=sliderBestBrands.module.css.map */

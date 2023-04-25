@@ -1,4 +1,4 @@
-import styles from "../../styles/sass/pages/footerComponents/footerAbout.module.scss"
+import styles from "../../styles/sass/pages/FooterComponents/footerAbout.module.scss"
 import Image from "next/Image"
 import location from "../../public/img/icons/location.svg"
 import phone from "../../public/img/icons/bluePhone.svg"

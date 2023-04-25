@@ -1,0 +1,264 @@
+.singleShop {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 84.3684895833vw;
+}
+
+.goBackBlock {
+  display: flex;
+  gap: 1vw;
+  margin-bottom: 4vw;
+  margin-top: 6vw;
+}
+
+.goBack {
+  font-family: "arm-semiBold", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.78125vw;
+  line-height: 1.3020833333vw;
+  color: #224660;
+}
+
+.forHover {
+  display: flex;
+  gap: 1vw;
+  cursor: pointer;
+}
+
+.forHover:hover .arrow {
+  transform: translateX(-10px);
+  transition: 1s;
+}
+
+.mainBlock {
+  display: flex;
+  justify-content: space-between;
+}
+
+.logoBlock {
+  display: flex;
+  align-items: center;
+  margin-bottom: 3.5vw;
+}
+.logoBlock .Logo {
+  width: 11.0677083333vw;
+  height: 11.0677083333vw;
+}
+.logoBlock .brandName {
+  font-family: "arm-bold", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.0833333333vw;
+  line-height: 2.5390625vw;
+  color: #224660;
+  margin-top: 2vw;
+}
+
+.descripBlock {
+  width: 38.671875vw;
+  margin-bottom: 3.5vw;
+}
+.descripBlock .description {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.171875vw;
+  line-height: 160%;
+  color: #224660;
+}
+
+.contactBlock {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+.contactBlock .number {
+  font-family: "arm-bold", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9114583333vw;
+  line-height: 1.3020833333vw;
+  color: #224660;
+}
+
+.imgs {
+  width: 41.796875vw;
+  height: 44.9869791667vw;
+}
+.imgs .imgsBlock {
+  position: relative;
+}
+
+.pattern {
+  position: absolute;
+  width: 27.5390625vw;
+  height: 22.9817708333vw;
+}
+
+.globing {
+  position: absolute;
+  right: 0px;
+  margin-top: 6vw;
+  z-index: 1;
+  width: 31.3802083333vw;
+  height: 33.203125vw;
+}
+
+.brandLogo {
+  position: absolute;
+  right: 0px;
+  max-width: 10.546875vw;
+  max-height: 5.2734375vw;
+  width: auto;
+  height: auto;
+}
+
+.accessories {
+  z-index: 2;
+  position: absolute;
+  margin-top: 22vw;
+  width: 16.9270833333vw;
+  height: 22.8515625vw;
+}
+
+.imgsMobile {
+  display: none;
+}
+
+.mobileLine {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .singleShop {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 88.1642512077vw;
+  }
+  .goBackBlock {
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 4vw;
+    margin-top: 10vw;
+  }
+  .goBack {
+    font-family: "arm-semiBold", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #224660;
+    margin-left: 2vw;
+  }
+  .mainBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10vw;
+  }
+  .forMobileContainer {
+    width: 88.1642512077vw;
+  }
+  .logoBlock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3.5vw;
+    width: 88.1642512077vw;
+  }
+  .logoBlock .Logo {
+    width: 22.7053140097vw;
+    height: 22.7053140097vw;
+  }
+  .logoBlock .brandName {
+    font-family: "arm-bold", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.7971014493vw;
+    line-height: 7.0048309179vw;
+    color: #224660;
+    margin-top: 4.8309178744vw;
+  }
+  .descripBlock {
+    width: 88.1642512077vw;
+    margin-bottom: 3.5vw;
+    margin-top: 45.8937198068vw;
+  }
+  .descripBlock .description {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8647342995vw;
+    line-height: 5.7971014493vw;
+    color: #224660;
+  }
+  .contactBlock {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 36.231884058vw;
+    margin-left: 24.154589372vw;
+    justify-content: center;
+  }
+  .contactBlock .number {
+    margin-left: 1.5vw;
+    font-family: "arm-bold", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.3816425121vw;
+    line-height: 4.5893719807vw;
+    color: #224660;
+  }
+  .imgs {
+    display: none;
+  }
+  .imgsMobile {
+    width: 88.1642512077vw;
+    height: 44.9869791667vw;
+    display: block;
+  }
+  .imgsMobile .imgsBlockMobile {
+    position: relative;
+  }
+  .Linkedin {
+    margin-right: 1vw;
+  }
+  .Facebook {
+    margin-right: 1vw;
+  }
+  .patternMobile {
+    position: absolute;
+    width: 56.038647343vw;
+    height: 46.3768115942vw;
+  }
+  .brandLogoMobile {
+    position: absolute;
+    right: 0px;
+    width: 23.6714975845vw;
+    height: 10.6280193237vw;
+  }
+  .globingMobile {
+    position: absolute;
+    right: 0px;
+    margin-top: 12.077294686vw;
+    z-index: 1;
+    width: 63.5265700483vw;
+    height: 67.1497584541vw;
+  }
+  .mobileLine {
+    display: block;
+    width: 88.1642512077vw;
+    background: #224660;
+    mix-blend-mode: normal;
+    opacity: 0.5;
+    height: 0.4830917874vw;
+    margin-top: 12.077294686vw;
+  }
+}/*# sourceMappingURL=singlePage.module.css.map */

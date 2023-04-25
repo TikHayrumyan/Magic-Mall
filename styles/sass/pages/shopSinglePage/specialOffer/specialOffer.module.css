@@ -1,0 +1,119 @@
+.SpecialOffer {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10vw;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title {
+  width: 87vw;
+  margin-bottom: 5vw;
+  font-family: "Bokonique-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+}
+
+.container {
+  width: 87vw;
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+
+.item {
+  display: flex;
+}
+.item .background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 43vw;
+  height: 46.55vw;
+  padding-top: 2vw;
+  padding-left: 1.5vw;
+}
+.item .background .logoBlock {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+.item .background .logoBlock .BrandName {
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  line-height: 1.8880208333vw;
+  color: #224660;
+}
+.item .background .logoBlock .logo {
+  width: 5.8vw;
+  height: 5.8vw;
+}
+
+.mobileContainer {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: none;
+  }
+  .title {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.7632850242vw;
+    line-height: 7.9710144928vw;
+    text-transform: uppercase;
+    color: #224660;
+  }
+  .SpecialOffer {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10vw;
+    flex-direction: column;
+    align-items: center;
+  }
+  .mobileContainer {
+    width: 88.1642512077vw;
+    display: flex;
+    align-items: center;
+  }
+  .mobileContainer .itemMobile {
+    display: flex;
+    width: 88.1642512077vw;
+    height: 65.2173913043vw;
+  }
+  .mobileContainer .itemMobile .backgroundMobile {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 88.1642512077vw;
+    height: 65.2173913043vw;
+    padding-top: 6vw;
+    padding-left: 4.5vw;
+  }
+  .mobileContainer .itemMobile .backgroundMobile .logoBlockMobile {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+  }
+  .mobileContainer .itemMobile .backgroundMobile .logoBlockMobile .BrandNameMobile {
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.1400966184vw;
+    line-height: 3.8647342995vw;
+  }
+  .mobileContainer .itemMobile .backgroundMobile .logoBlockMobile .logoMobile {
+    width: 10.8695652174vw;
+    height: 10.8695652174vw;
+  }
+}/*# sourceMappingURL=specialOffer.module.css.map */

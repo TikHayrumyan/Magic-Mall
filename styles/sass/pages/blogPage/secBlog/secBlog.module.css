@@ -1,0 +1,215 @@
+.SecBlog {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 90.6vw;
+}
+
+.titleBlock {
+  margin-top: 5vw;
+  margin-bottom: 5vw;
+  width: 59.6527777778vw;
+}
+.titleBlock .title {
+  font-family: "Bokonique-regular", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.34375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+  margin-bottom: 3vw;
+}
+.titleBlock .description {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.171875vw;
+  line-height: 160%;
+  color: #224660;
+  width: 56.0546875vw;
+}
+
+.summerTrend {
+  display: flex;
+  justify-content: space-between;
+}
+.summerTrend .aboutTrends {
+  width: 30vw;
+}
+.summerTrend .aboutTrends .title {
+  font-family: "Bokonique-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.34375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+  margin-bottom: 1vw;
+}
+.summerTrend .aboutTrends .dateBLock {
+  display: flex;
+  gap: 1vw;
+  margin-bottom: 1vw;
+  align-items: center;
+}
+.summerTrend .aboutTrends .dateBLock .date {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  color: #828282;
+}
+.summerTrend .aboutTrends .descrip {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.171875vw;
+  line-height: 160%;
+  color: #224660;
+}
+.summerTrend .aboutTrends .btnBlock {
+  display: flex;
+  width: 11vw;
+  margin-top: 2vw;
+  cursor: pointer;
+}
+.summerTrend .aboutTrends .btnBlock .button {
+  width: 5vw;
+  display: flex;
+  height: 1.3020833333vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9114583333vw;
+  line-height: 140%;
+  color: #224660;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0px;
+}
+.summerTrend .aboutTrends .btnBlock .arrow {
+  width: 2vw;
+}
+.summerTrend .aboutTrends .btnBlock:hover .arrow {
+  transform: translateX(1vw);
+  transition: 0.8s;
+}
+.summerTrend .aboutTrends .pattern {
+  display: flex;
+  justify-content: flex-end;
+}
+.summerTrend .img {
+  width: 51.3888888889vw;
+  height: 32.7083333333vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .SecBlog {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 88.1642512077vw;
+    overflow: hidden;
+  }
+  .titleBlock {
+    margin-top: 5vw;
+    margin-bottom: 5vw;
+  }
+  .titleBlock .title {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.7632850242vw;
+    line-height: 7.9710144928vw;
+    text-transform: uppercase;
+    color: #224660;
+    margin-bottom: 3vw;
+  }
+  .titleBlock .description {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8647342995vw;
+    line-height: 5.7971014493vw;
+    color: #224660;
+    width: 88.1642512077vw;
+  }
+  .summerTrend {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .summerTrend .img {
+    width: 88.1642512077vw;
+    height: 80.9178743961vw;
+  }
+  .summerTrend .aboutTrends {
+    width: 88.1642512077vw;
+  }
+  .summerTrend .aboutTrends .title {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8647342995vw;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #224660;
+    margin-bottom: 3vw;
+  }
+  .summerTrend .aboutTrends .dateBLock {
+    display: flex;
+    margin-bottom: 1vw;
+    align-items: center;
+  }
+  .summerTrend .aboutTrends .dateBLock .date {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+    margin-left: 3vw;
+  }
+  .summerTrend .aboutTrends .descrip {
+    display: none;
+  }
+  .summerTrend .aboutTrends .btnBlock {
+    display: flex;
+    width: 21.7391304348vw;
+    margin-top: 2vw;
+    cursor: pointer;
+  }
+  .summerTrend .aboutTrends .btnBlock .button {
+    width: 19.3236714976vw;
+    display: flex;
+    height: 4.8309178744vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 4.7101449275vw;
+    color: #224660;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0px;
+  }
+  .summerTrend .aboutTrends .btnBlock .arrow {
+    width: 2vw;
+  }
+  .summerTrend .aboutTrends .btnBlock:hover .arrow {
+    transform: translateX(1vw);
+    transition: 0.8s;
+  }
+  .summerTrend .aboutTrends .pattern {
+    display: none;
+  }
+}/*# sourceMappingURL=secBlog.module.css.map */

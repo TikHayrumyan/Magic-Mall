@@ -1,0 +1,236 @@
+.darkBackground {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 9;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  transition: opacity 0.2s ease;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.dark {
+  width: 100vw;
+  height: 100vw;
+  position: fixed;
+  z-index: 15;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: opacity 0.2s ease;
+  overflow-y: scroll;
+}
+
+.SuccessAppForm {
+  position: fixed;
+  z-index: 12;
+  width: 36.9140625vw;
+  height: 24.2838541667vw;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+  box-shadow: 0px 1.3020833333vw 1.953125vw rgba(0, 0, 0, 0.1);
+  border-radius: 0.6510416667vw;
+  z-index: 111;
+  position: relative;
+  align-items: center;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: auto;
+}
+
+.container {
+  width: 32vw;
+  height: 20vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.thanks {
+  width: 26.3671875vw;
+  height: 3.2552083333vw;
+  font-family: "Bokonique-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.34375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+  margin-top: 1vw;
+  text-align: center;
+}
+
+.MessageSend {
+  width: 19.4661458333vw;
+  height: 1.4322916667vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0416666667vw;
+  line-height: 140%;
+  color: #224660;
+  margin-top: 2vw;
+  text-align: center;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.78125vw 3.90625vw;
+  gap: 0.78125vw;
+  width: 10.6119791667vw;
+  height: 2.8645833333vw;
+  background: #A6CCE5;
+  border-radius: 26.0416666667vw;
+  border: none;
+  margin-top: 2vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9114583333vw;
+  line-height: 1.3020833333vw;
+  color: #224660;
+}
+.button:hover {
+  background-color: #fff;
+  border: #224660 1px solid;
+}
+
+.close {
+  position: absolute;
+  color: #828282;
+  font-style: normal;
+  font-size: 3.6vw;
+  cursor: pointer;
+  position: absolute;
+  top: -0.8vw;
+  right: 1vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .darkBackground {
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    z-index: 9;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    transition: opacity 0.2s ease;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+  }
+  .dark {
+    width: 100vw;
+    height: 100%;
+    position: fixed;
+    z-index: 15;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: opacity 0.2s ease;
+    overflow-y: scroll;
+  }
+  .SuccessAppForm {
+    position: fixed;
+    z-index: 12;
+    width: 84.5410628019vw;
+    height: 79.7101449275vw;
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+    box-shadow: 0px 1.3020833333vw 1.953125vw rgba(0, 0, 0, 0.1);
+    border-radius: 0.6510416667vw;
+    z-index: 111;
+    position: relative;
+    align-items: center;
+    bottom: 0;
+    left: 0;
+    top: 0;
+    right: 0;
+    margin: auto;
+  }
+  .container {
+    width: 84.5410628019vw;
+    height: 72.4637681159vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .successImg {
+    margin-top: 5vw;
+    width: 16.9082125604vw;
+    height: 18.115942029vw;
+    margin-bottom: 5vw;
+  }
+  .thanks {
+    width: 65.2173913043vw;
+    height: 9.6618357488vw;
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 5.7971014493vw;
+    line-height: 7.9710144928vw;
+    text-transform: uppercase;
+    color: #224660;
+    margin-top: 1vw;
+  }
+  .MessageSend {
+    width: 72.4637681159vw;
+    height: 12.077294686vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8647342995vw;
+    line-height: 5.7971014493vw;
+    color: #224660;
+    margin-top: 2vw;
+  }
+  .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.78125vw 3.90625vw;
+    gap: 0.78125vw;
+    width: 67.6328502415vw;
+    height: 10.6280193237vw;
+    background: #A6CCE5;
+    border-radius: 26.0416666667vw;
+    border: none;
+    margin-top: 2vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8647342995vw;
+    line-height: 1.3020833333vw;
+    color: #224660;
+  }
+  .button:hover {
+    background-color: #fff;
+    border: #224660 1px solid;
+  }
+  .close {
+    position: absolute;
+    color: #828282;
+    font-style: normal;
+    font-size: 7.2463768116vw;
+    cursor: pointer;
+    position: absolute;
+    top: -0.8vw;
+    right: 1vw;
+  }
+}/*# sourceMappingURL=SuccessAppForm.module.css.map */

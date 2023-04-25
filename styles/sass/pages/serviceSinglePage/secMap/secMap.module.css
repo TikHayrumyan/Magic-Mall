@@ -1,0 +1,28 @@
+.SecMap {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+}
+
+.container {
+  width: 84.3684895833vw;
+  display: flex;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .SecMap {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 10vw;
+    margin-bottom: 10vw;
+  }
+  .container {
+    width: 88.1642512077vw;
+    display: flex;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=secMap.module.css.map */

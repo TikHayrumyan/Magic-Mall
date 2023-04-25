@@ -1,0 +1,118 @@
+.secMain {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35vw;
+}
+
+.container {
+  width: 90vw;
+  margin-top: 5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  margin-bottom: 6vw;
+}
+.title .accounting {
+  font-family: "Bokonique-regular", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.34375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+}
+
+.dataContainer {
+  display: flex;
+  width: 90vw;
+  justify-content: center;
+}
+
+.dataBlock {
+  display: flex;
+  width: 80vw;
+  flex-wrap: wrap;
+  gap: 5vw;
+}
+
+.reportBlock {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  width: 35vw;
+  cursor: pointer;
+}
+
+.descrip {
+  max-width: 29vw;
+  height: 1.4322916667vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0416666667vw;
+  line-height: 140%;
+  color: #224660;
+}
+
+@media only screen and (max-width: 600px) {
+  .secMain {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90vw;
+  }
+  .container {
+    width: 88.1642512077vw;
+    margin-top: 5vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .title {
+    margin-bottom: 6vw;
+  }
+  .title .accounting {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.7632850242vw;
+    line-height: 7.9710144928vw;
+    text-transform: uppercase;
+    color: #224660;
+  }
+  .dataContainer {
+    display: flex;
+    width: 90vw;
+    justify-content: center;
+  }
+  .dataBlock {
+    display: flex;
+    flex-direction: column;
+    width: 88.1642512077vw;
+    justify-content: center;
+    align-items: center;
+  }
+  .reportBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1vw;
+    width: 88.1642512077vw;
+    cursor: pointer;
+    justify-content: center;
+    margin-bottom: 15vw;
+  }
+  .descrip {
+    width: 88.1642512077vw;
+    height: 7.2463768116vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8647342995vw;
+    line-height: 5.3140096618vw;
+    color: #224660;
+    text-align: center;
+  }
+}/*# sourceMappingURL=secMain.module.css.map */

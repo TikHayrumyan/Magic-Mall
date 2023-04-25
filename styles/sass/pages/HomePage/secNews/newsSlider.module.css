@@ -1,0 +1,94 @@
+.newsSlider {
+  width: 87vw;
+  display: flex;
+}
+
+.container {
+  width: 87vw;
+}
+
+.newSpecialOffers {
+  display: flex;
+  gap: 1vw;
+  justify-content: space-between;
+}
+
+.item {
+  display: flex;
+  width: 43vw;
+  height: 46.55vw;
+  cursor: pointer;
+}
+.item .background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 43vw;
+  height: 46.55vw;
+  padding-top: 2vw;
+  padding-left: 1.5vw;
+}
+.item .background .logoBlock {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw;
+}
+.item .background .logoBlock .BrandName {
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  line-height: 1.8880208333vw;
+  color: #224660;
+}
+.item .background .logoBlock .logo {
+  width: 5.8vw;
+  height: 5.8vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .newsSlider {
+    width: 100vw;
+    display: flex;
+    margin-bottom: 39vw;
+  }
+  .container {
+    width: 85vw;
+  }
+  .newSpecialOffers {
+    display: flex;
+    gap: 1vw;
+    justify-content: space-between;
+  }
+  .item {
+    display: flex;
+    width: 95vw;
+    height: 80vw;
+  }
+  .item .background {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 85vw;
+    height: 85vw;
+    padding-top: 2vw;
+    padding-left: 2.5vw;
+  }
+  .item .background .logoBlock {
+    display: flex;
+    align-items: center;
+    gap: 1.5vw;
+  }
+  .item .background .logoBlock .BrandName {
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5vw;
+    line-height: 1.8880208333vw;
+    color: #224660;
+  }
+  .item .background .logoBlock .logo {
+    width: 15vw;
+    height: 15vw;
+  }
+}/*# sourceMappingURL=newsSlider.module.css.map */

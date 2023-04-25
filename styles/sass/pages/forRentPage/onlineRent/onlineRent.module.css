@@ -1,0 +1,215 @@
+.OnlineRent {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35vw;
+}
+
+.container {
+  width: 79vw;
+}
+
+.descrip {
+  width: 42.6432291667vw;
+  margin-bottom: 7vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.171875vw;
+  line-height: 160%;
+  color: #224660;
+}
+
+.title {
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  line-height: 1.8880208333vw;
+  color: #224660;
+}
+
+.pdfBlock {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  margin-top: 1.5vw;
+  cursor: pointer;
+}
+.pdfBlock .applicationPaper {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0416666667vw;
+  line-height: 140%;
+  color: #224660;
+}
+
+.AttachApplicationBlock {
+  margin-top: 2vw;
+  display: flex;
+  gap: 2vw;
+  align-items: center;
+}
+.AttachApplicationBlock .AttachApplication {
+  border: 1px solid rgba(130, 130, 130, 0.8);
+  border-radius: 26.0416666667vw;
+  width: 13.1510416667vw;
+  height: 3.125vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+  cursor: pointer;
+}
+.AttachApplicationBlock .AttachApplication .attach {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0416666667vw;
+  line-height: 140%;
+  color: #224660;
+}
+.AttachApplicationBlock .fileName {
+  display: flex;
+  align-items: center;
+  gap: 0.3vw;
+  color: #224660;
+}
+.AttachApplicationBlock .close {
+  display: flex;
+  cursor: pointer;
+}
+
+.button {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.78125vw 3.90625vw;
+  gap: 0.78125vw;
+  width: 17.63vw;
+  height: 2.8645833333vw;
+  background: #A6CCE5;
+  border-radius: 26.0416666667vw;
+  border: none;
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9114583333vw;
+  line-height: 1.3020833333vw;
+  margin-top: 2.5vw;
+  cursor: pointer;
+  color: #224660;
+}
+.button:hover {
+  background-color: #fff;
+  border: #224660 1px solid;
+}
+
+@media only screen and (max-width: 600px) {
+  .OnlineRent {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 90vw;
+  }
+  .container {
+    width: 88.1642512077vw;
+  }
+  .descrip {
+    width: 88.1642512077vw;
+    margin-bottom: 7vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8647342995vw;
+    line-height: 5.7971014493vw;
+    color: #224660;
+    text-align: center;
+  }
+  .title {
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.7971014493vw;
+    line-height: 7.0048309179vw;
+    color: #224660;
+    margin-top: 10vw;
+  }
+  .pdfBlock {
+    display: flex;
+    gap: 1vw;
+    align-items: center;
+    margin-top: 5vw;
+    cursor: pointer;
+  }
+  .pdfBlock .applicationPaper {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.3816425121vw;
+    color: #224660;
+  }
+  .AttachApplicationBlock {
+    margin-top: 2vw;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+  }
+  .AttachApplicationBlock .AttachApplication {
+    border: 1px solid rgba(130, 130, 130, 0.8);
+    border-radius: 26.0416666667vw;
+    width: 42.270531401vw;
+    height: 10.8695652174vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    cursor: pointer;
+  }
+  .AttachApplicationBlock .AttachApplication .attach {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 4.5893719807vw;
+    color: #224660;
+  }
+  .AttachApplicationBlock .fileName {
+    display: flex;
+    align-items: center;
+    gap: 0.3vw;
+    color: #224660;
+  }
+  .AttachApplicationBlock .close {
+    display: flex;
+    cursor: pointer;
+  }
+  .button {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.78125vw 3.90625vw;
+    gap: 0.78125vw;
+    width: 88.1642512077vw;
+    height: 11.5942028986vw;
+    background: #A6CCE5;
+    border-radius: 26.0416666667vw;
+    border: none;
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8647342995vw;
+    line-height: 4.8309178744vw;
+    margin-top: 10vw;
+    cursor: pointer;
+    color: #224660;
+  }
+  .button:hover {
+    background-color: #fff;
+    border: #224660 1px solid;
+  }
+}/*# sourceMappingURL=onlineRent.module.css.map */

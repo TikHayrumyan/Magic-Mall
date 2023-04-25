@@ -1,0 +1,201 @@
+.titleBlock {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 4.6875vw;
+}
+.titleBlock .title {
+  display: flex;
+  width: 93.5vw;
+  font-family: "Bokonique-regular", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+}
+
+.secSelect {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 3vw;
+}
+
+.selectsContainer {
+  display: flex;
+  width: 93.5vw;
+  justify-content: space-between;
+}
+.selectsContainer .selectsContainerLeft {
+  display: flex;
+  gap: 1.3671875vw;
+}
+
+.floor {
+  display: flex;
+  gap: 0.5vw;
+  border: 1px solid gray;
+  border-radius: 2px;
+  width: 10.9739583333vw;
+  height: 2.34375vw;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.floor .allFloors {
+  width: 8.3171875vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9765625vw;
+  line-height: 140%;
+  color: rgba(130, 130, 130, 0.8);
+}
+.floor .dArr {
+  display: flex;
+  cursor: pointer;
+}
+.floor .upArr {
+  transform: rotate(180deg);
+  margin-top: 0.5859375vw;
+}
+
+.floorDropDown {
+  position: absolute;
+  z-index: 8;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+  width: 10.7421875vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.0416666667vw;
+  padding: 0.9765625vw;
+}
+.floorDropDown div {
+  width: 8.3vw;
+  height: 1.3671875vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9765625vw;
+  line-height: 140%;
+  color: #224660;
+  cursor: pointer;
+}
+.floorDropDown div:hover {
+  color: #C7A28C;
+  transition: 0.5s;
+}
+
+.floorDropDownClose {
+  display: none;
+}
+
+.selectsContainerRight {
+  display: flex;
+  width: 23.6328125vw;
+  height: 2.1484375vw;
+  padding-left: 1vw;
+  align-items: center;
+  margin-bottom: 9vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .titleBlock {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 4.6875vw;
+  }
+  .titleBlock .title {
+    display: flex;
+    width: 88.1642512077vw;
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.7632850242vw;
+    line-height: 7.9710144928vw;
+    text-transform: uppercase;
+    color: #224660;
+  }
+  .secSelect {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 3vw;
+  }
+  .selectsContainer {
+    display: flex;
+    width: 88.1642512077vw;
+    flex-direction: column;
+  }
+  .selectsContainer .selectsContainerLeft {
+    display: flex;
+    margin-bottom: 3vw;
+  }
+  .floor {
+    display: flex;
+    gap: 0.5vw;
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 88.1642512077vw;
+    height: 7.2463768116vw;
+    align-items: center;
+    justify-content: center;
+  }
+  .floor .allFloors {
+    width: 80.9178743961vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 4.8309178744vw;
+    color: rgba(130, 130, 130, 0.8);
+  }
+  .floor .dArr {
+    display: flex;
+  }
+  .floor .upArr {
+    transform: rotate(180deg);
+    margin-top: 2.4154589372vw;
+  }
+  .floorDropDown {
+    position: absolute;
+    z-index: 8;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+    width: 88.1642512077vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.7vw;
+    padding: 3vw;
+  }
+  .floorDropDown div {
+    width: 24.154589372vw;
+    height: 7.2463768116vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 4.8309178744vw;
+    color: #224660;
+    cursor: pointer;
+  }
+  .floorDropDown div:hover {
+    color: #C7A28C;
+    transition: 0.5s;
+  }
+  .floorDropDownClose {
+    display: none;
+  }
+  .selectsContainerRight {
+    display: flex;
+    width: 88.1642512077vw;
+    height: 7.2463768116vw;
+    padding-left: 3vw;
+    align-items: center;
+    margin-bottom: 10vw;
+  }
+}/*# sourceMappingURL=select.module.css.map */

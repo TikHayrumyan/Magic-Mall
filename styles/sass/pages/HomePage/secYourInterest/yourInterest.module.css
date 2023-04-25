@@ -1,0 +1,249 @@
+.yourInterest {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 9.765625vw;
+}
+
+.container {
+  width: 85.625vw;
+}
+
+.question {
+  font-family: "Bokonique-regular", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.34375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+  margin-bottom: 3.4722222222vw;
+}
+
+.firstBlock {
+  display: flex;
+  margin-bottom: 1.302083vw;
+}
+.firstBlock .firstPic {
+  width: 55vw;
+  height: 38.3333333333vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 1.3020833333vw;
+  padding: 3vw;
+}
+.firstBlock .firstPic:hover {
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+.firstBlock .secondPic {
+  width: 29.2361111111vw;
+  height: 38.3333333333vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3vw;
+}
+.firstBlock .secondPic:hover {
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+
+.secondBlock {
+  display: flex;
+  margin-bottom: 1.302083vw;
+}
+.secondBlock .thirdPic {
+  width: 29.2361111111vw;
+  height: 38.3333333333vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-right: 1.3020833333vw;
+  padding: 3vw;
+}
+.secondBlock .thirdPic:hover {
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+.secondBlock .fourPic {
+  width: 55vw;
+  height: 38.3333333333vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3vw;
+}
+.secondBlock .fourPic:hover {
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+
+.thirdBlock {
+  display: flex;
+  gap: 1.9020833333vw;
+}
+.thirdBlock .fivePic {
+  width: 54.8828125vw;
+  height: 17.6432291667vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 1.3020833333vw;
+  padding: 3vw;
+}
+.thirdBlock .fivePic:hover {
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+.thirdBlock .sixPic {
+  width: 54.8828125vw;
+  height: 17.6432291667vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3vw;
+}
+.thirdBlock .sixPic:hover {
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+.thirdBlock .sevenPic {
+  width: 28.7109375vw;
+  height: 36.6536458333vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 3vw;
+}
+.thirdBlock .sevenPic:hover {
+  filter: brightness(50%);
+  transition: 0.5s;
+}
+
+.title {
+  font-family: "Bokonique-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2.0833333333vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  text-shadow: 3px 4px 7px rgba(0, 0, 0, 0.8);
+}
+
+@media only screen and (max-width: 600px) {
+  .yourInterest {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 9.765625vw;
+  }
+  .container {
+    width: 85.625vw;
+  }
+  .question {
+    width: 60vw;
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 7vw;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #224660;
+    margin-bottom: 3.4722222222vw;
+  }
+  .secondBlock {
+    display: flex;
+    margin-bottom: 2.5vw;
+    justify-content: space-between;
+  }
+  .secondBlock .thirdPic {
+    width: 41vw;
+    height: 40vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin-right: 1vw;
+    padding: 3vw;
+    padding-top: 5vw;
+  }
+  .secondBlock .thirdPic:hover {
+    filter: brightness(50%);
+    transition: 0.5s;
+  }
+  .secondBlock .fourPic {
+    width: 41vw;
+    height: 40vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin-right: 1vw;
+    padding: 3vw;
+    padding-top: 5vw;
+  }
+  .secondBlock .fourPic:hover {
+    filter: brightness(50%);
+    transition: 0.5s;
+  }
+  .thirdBlock {
+    display: flex;
+    gap: 2.5vw;
+    flex-direction: column;
+  }
+  .thirdBlock .fiveAndSixBlock {
+    display: flex;
+    justify-content: space-between;
+  }
+  .thirdBlock .fivePic {
+    width: 41vw;
+    height: 40vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin-right: 1vw;
+    padding: 3vw;
+    padding-top: 5vw;
+  }
+  .thirdBlock .fivePic:hover {
+    filter: brightness(50%);
+    transition: 0.5s;
+  }
+  .thirdBlock .sixPic {
+    width: 41vw;
+    height: 40vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    margin-right: 1vw;
+    padding: 3vw;
+    padding-top: 5vw;
+  }
+  .thirdBlock .sixPic:hover {
+    filter: brightness(50%);
+    transition: 0.5s;
+  }
+  .thirdBlock .sevenPic {
+    width: 85vw;
+    height: 40vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 3vw;
+    padding-top: 5vw;
+  }
+  .thirdBlock .sevenPic:hover {
+    filter: brightness(50%);
+    transition: 0.5s;
+  }
+  .title {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3vw;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+  }
+}/*# sourceMappingURL=yourInterest.module.css.map */

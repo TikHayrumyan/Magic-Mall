@@ -1,0 +1,35 @@
+.brandsSlide {
+  width: 100vw;
+  height: 10vw;
+  display: flex;
+  align-items: center;
+  background-color: #224660;
+}
+.brandsSlide .sliderContainer {
+  width: 89.7222222222vw;
+  height: 4.7222222222vw;
+  margin-left: 5.1041666667vw;
+}
+
+.brandImg {
+  min-height: -moz-max-content;
+  min-height: max-content;
+  max-height: -moz-min-content;
+  max-height: min-content;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .brandsSlide {
+    width: 100vw;
+    height: 26vw;
+    display: flex;
+    align-items: center;
+    background-color: #224660;
+  }
+  .brandsSlide .sliderContainer {
+    width: 100vw;
+    height: 15vw;
+    margin: 0px;
+  }
+}/*# sourceMappingURL=BrandsSlide.module.css.map */

@@ -1,0 +1,95 @@
+.secMain {
+  width: 100vw;
+  position: relative;
+}
+
+.gradientt {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 99.23%);
+  height: 26.171875vw;
+  width: 100vw;
+  opacity: 0.7;
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 26.171875vw;
+  display: flex;
+  align-items: center;
+}
+
+.patternAndTitle {
+  display: flex;
+  margin-left: 4.5572916667vw;
+  align-items: center;
+  z-index: 5;
+}
+.patternAndTitle .title {
+  font-family: "Bokonique-regular", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.34375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  width: 20vw;
+  margin-top: 45px;
+}
+.patternAndTitle .pattern {
+  width: 11.4583333333vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .secMain {
+    width: 100vw;
+    height: 80vh;
+    position: relative;
+  }
+  .gradientt {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: linear-gradient(90deg, #000000 0%, rgba(0, 0, 0, 0) 99.23%);
+    height: 80vh;
+    width: 100vw;
+    opacity: 0.7;
+  }
+  .background {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .patternAndTitle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    margin-top: 12.077294686vw;
+  }
+  .patternAndTitle .pattern {
+    width: 21.7391304348vw;
+    height: 21.7391304348vw;
+  }
+  .patternAndTitle .title {
+    width: 72.4637681159vw;
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.038647343vw;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    text-align: center;
+  }
+}/*# sourceMappingURL=secMain.module.css.map */

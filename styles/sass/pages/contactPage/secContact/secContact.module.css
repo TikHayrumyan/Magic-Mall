@@ -1,0 +1,274 @@
+.SecContact {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15vw;
+}
+
+.locationIcon {
+  width: 2.2222222222vw;
+  height: 2.7777777778vw;
+}
+
+.phoneIcon {
+  width: 2.2222222222vw;
+  height: 2.2222222222vw;
+}
+
+.messageIcon {
+  width: 2.2222222222vw;
+  height: 1.7361111111vw;
+}
+
+.clockIcon {
+  width: 2.2222222222vw;
+  height: 1.7361111111vw;
+}
+
+.facebookIcon {
+  width: 2.2222222222vw;
+  height: 2.2222222222vw;
+}
+
+.linkedinIcon {
+  width: 2.2222222222vw;
+  height: 2.2222222222vw;
+}
+
+.instagram {
+  width: 2.2222222222vw;
+  height: 2.2222222222vw;
+}
+
+.container {
+  width: 90.6vw;
+}
+
+.titleBlock {
+  margin-top: 7vw;
+}
+.titleBlock .title {
+  font-family: "Bokonique-regular", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.34375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+}
+
+.contact {
+  margin-top: 5vw;
+}
+
+.locationBlock {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-bottom: 3vw;
+}
+.locationBlock .location {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3020833333vw;
+  line-height: 160%;
+  color: #224660;
+}
+
+.phoneBlock {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-bottom: 3vw;
+}
+.phoneBlock .number {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3020833333vw;
+  line-height: 160%;
+  color: #224660;
+}
+
+.mailBlock {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-bottom: 3vw;
+}
+.mailBlock .mail {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3020833333vw;
+  line-height: 160%;
+  color: #224660;
+}
+
+.clockBlock {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+  margin-bottom: 3vw;
+}
+.clockBlock .clock {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.3020833333vw;
+  line-height: 160%;
+  color: #224660;
+}
+
+.network {
+  display: flex;
+  gap: 1vw;
+}
+
+.contactContainer {
+  display: flex;
+  justify-content: space-between;
+  gap: 5vw;
+  align-items: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .SecContact {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15vw;
+  }
+  .container {
+    width: 88.1642512077vw;
+  }
+  .titleBlock {
+    margin-top: 7vw;
+  }
+  .titleBlock .title {
+    font-family: "Bokonique-regular", "montserrat-ru-semibold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.7632850242vw;
+    line-height: 7.9710144928vw;
+    text-transform: uppercase;
+    color: #224660;
+  }
+  .contact {
+    margin-top: 5vw;
+  }
+  .infoBlock {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 3vw;
+  }
+  .locationBlock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vw;
+  }
+  .locationBlock .location {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.8309178744vw;
+    line-height: 7.729468599vw;
+    color: #224660;
+    margin-left: 3vw;
+  }
+  .phoneBlock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vw;
+  }
+  .phoneBlock .number {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.8309178744vw;
+    line-height: 7.729468599vw;
+    color: #224660;
+    margin-left: 3vw;
+  }
+  .mailBlock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vw;
+  }
+  .mailBlock .mail {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.8309178744vw;
+    line-height: 7.729468599vw;
+    color: #224660;
+    margin-left: 3vw;
+  }
+  .clockBlock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 3vw;
+  }
+  .clockBlock .clock {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.8309178744vw;
+    line-height: 7.729468599vw;
+    color: #224660;
+    margin-left: 3vw;
+  }
+  .network {
+    display: flex;
+    width: 88.1642512077vw;
+    height: 2.7777777778vw;
+    margin-top: 4.8309178744vw;
+  }
+  .network .instagram {
+    margin-left: 3vw;
+    margin-right: 3vw;
+  }
+  .contactContainer {
+    display: flex;
+    justify-content: space-between;
+    gap: 10vw;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .mapBlock {
+    width: 100vw;
+  }
+  .mapBlock .Map {
+    width: 88.1642512077vw !important;
+    height: 100vw !important;
+  }
+  .locationIcon {
+    width: 5.3140096618vw;
+    height: 7.2463768116vw;
+  }
+  .phoneIcon {
+    width: 5.3140096618vw;
+    height: 5.3140096618vw;
+  }
+  .messageIcon {
+    width: 5.3140096618vw;
+    height: 6.038647343vw;
+  }
+  .clockIcon {
+    width: 5.3140096618vw;
+    height: 6.038647343vw;
+  }
+  .facebookIcon {
+    width: 5.3140096618vw;
+    height: 7.729468599vw;
+  }
+  .linkedinIcon {
+    width: 5.3140096618vw;
+    height: 7.729468599vw;
+  }
+  .instagram {
+    width: 5.3140096618vw;
+    height: 7.729468599vw;
+  }
+}/*# sourceMappingURL=secContact.module.css.map */

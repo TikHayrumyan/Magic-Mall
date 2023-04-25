@@ -1,0 +1,207 @@
+.SecBus {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.pattern {
+  width: 6.3194444444vw;
+}
+
+.bus {
+  width: 4.5138888889vw;
+}
+
+.container {
+  width: 90.6vw;
+}
+
+.patternsArrow {
+  width: 2.7777777778vw;
+}
+
+.title {
+  font-family: "Bokonique-regular", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.34375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+  margin-top: 5vw;
+}
+
+.routeTitleBlock {
+  display: flex;
+  align-items: center;
+  margin-top: 5vw;
+  gap: 1vw;
+}
+.routeTitleBlock .routeTitle {
+  margin-left: 2vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  color: #224660;
+  cursor: pointer;
+}
+
+.routeData {
+  display: flex;
+  gap: 1vw;
+  justify-content: center;
+  margin-top: 5vw;
+}
+.routeData .routeDataBlock {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  width: 84vw;
+  flex-wrap: wrap;
+}
+.routeData .routeDataBlock .data {
+  display: flex;
+  align-items: center;
+  gap: 1vw;
+}
+.routeData .routeDataBlock .data .route {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.171875vw;
+  line-height: 160%;
+  color: #224660;
+}
+.routeData .routeDataBlock .data .routeMultiOutletMall {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.171875vw;
+  line-height: 160%;
+  color: #C7A28C;
+}
+
+.minus {
+  font-size: xxx-large;
+  display: flex;
+  padding-bottom: 6px;
+  margin-left: 1vw;
+  font-weight: 400;
+  color: #224660;
+  cursor: pointer;
+}
+
+.minusNone {
+  display: none;
+}
+
+.plus {
+  font-size: xxx-large;
+  display: flex;
+  padding-bottom: 6px;
+  margin-left: 0.8vw;
+  font-weight: 400;
+  color: #224660;
+  cursor: pointer;
+}
+
+.plusNone {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .SecBus {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 88.1642512077vw;
+  }
+  .title {
+    font-family: "Bokonique-regular", "montserrat-ru-semibold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.7632850242vw;
+    line-height: 7.9710144928vw;
+    text-transform: uppercase;
+    color: #224660;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+  }
+  .routeTitleBlock {
+    display: flex;
+    align-items: center;
+    margin-top: 1vw;
+    gap: 0vw;
+    flex-wrap: wrap;
+  }
+  .routeTitleBlock .routeTitle {
+    margin-top: 10vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.3140096618vw;
+    line-height: 8.9371980676vw;
+    color: #224660;
+    width: 72.4637681159vw;
+  }
+  .pattern {
+    margin-right: 2.4154589372vw;
+  }
+  .minus {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 23px;
+  }
+  .plus {
+    padding: 0px;
+    margin: 0px;
+    padding-top: 23px;
+  }
+  .routeData {
+    display: flex;
+    gap: 1vw;
+    justify-content: center;
+    margin-top: 5vw;
+    margin-bottom: 10vw;
+    width: 88.1642512077vw;
+  }
+  .routeData .routeDataBlock {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    width: 77vw;
+    flex-wrap: wrap;
+  }
+  .routeData .routeDataBlock .data {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    margin-top: 4vw;
+  }
+  .routeData .routeDataBlock .data .route {
+    width: 88.1642512077vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.347826087vw;
+    line-height: 6.7632850242vw;
+    color: #224660;
+    margin-top: 0vw;
+  }
+  .routeData .routeDataBlock .data .routeMultiOutletMall {
+    width: 88.1642512077vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.347826087vw;
+    line-height: 6.7632850242vw;
+    color: #C7A28C;
+  }
+  .routeData .routeDataBlock .data .patternsArrow {
+    width: 5.7971014493vw;
+  }
+}/*# sourceMappingURL=secBus.module.css.map */

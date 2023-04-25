@@ -1,0 +1,208 @@
+.GiftCard {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 7vw;
+  margin-bottom: 10vw;
+}
+
+.container {
+  width: 90.6vw;
+}
+
+.title {
+  font-family: "cosi-arm", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.125vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+  display: flex;
+  gap: 2vw;
+}
+.title .titleCard {
+  font-family: "cosi-arm", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.125vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+}
+
+.titleForGift {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0416666667vw;
+  line-height: 140%;
+  color: #224660;
+  margin-top: 1vw;
+}
+
+.giftCardBlock {
+  display: flex;
+  justify-content: space-between;
+  gap: 8vw;
+}
+.giftCardBlock .descripBlock {
+  width: 41.6666666667vw;
+  margin-top: 5vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.171875vw;
+  line-height: 160%;
+  color: #224660;
+}
+.giftCardBlock .ImgBlock {
+  display: flex;
+  position: relative;
+  height: 27.4739583333vw;
+  width: 39.84375vw;
+}
+.giftCardBlock .ImgBlock .bag {
+  position: absolute;
+  top: 0vw;
+  left: 0vw;
+  width: 33.8541666667vw;
+  height: 25.4557291667vw;
+}
+.giftCardBlock .ImgBlock .card {
+  position: absolute;
+  bottom: 0vw;
+  right: 0vw;
+  width: 18.5546875vw;
+  height: 12.3697916667vw;
+}
+.giftCardBlock .ImgBlock .card img {
+  border-radius: 3px;
+  box-shadow: 0px 20px 30px rgba(10, 10, 10, 0.2);
+}
+
+.buttonBlock {
+  width: 90.6;
+  display: flex;
+  justify-content: center;
+  margin-top: 10vw;
+}
+.buttonBlock .btn {
+  background: #A6CCE5;
+  border-radius: 26.0416666667vw;
+  border: none;
+  padding: 0.78125vw 3.90625vw;
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.9114583333vw;
+  line-height: 1.3020833333vw;
+  display: flex;
+  align-items: center;
+  color: #224660;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .GiftCard {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 7vw;
+    margin-bottom: 10vw;
+  }
+  .container {
+    width: 88.1642512077vw;
+  }
+  .title {
+    font-family: "cosi-arm", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 7.4879227053vw;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #224660;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+  }
+  .title .titleCard {
+    font-family: "cosi-arm", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 7.4879227053vw;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #224660;
+  }
+  .titleForGift {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8647342995vw;
+    line-height: 5.7971014493vw;
+    color: #224660;
+    margin-top: 3vw;
+    width: 82.1256038647vw;
+  }
+  .giftCardBlock {
+    display: flex;
+    justify-content: space-between;
+    gap: 0vw;
+    flex-direction: column-reverse;
+  }
+  .giftCardBlock .descripBlock {
+    width: 88.1642512077vw;
+    margin-top: 5vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8647342995vw;
+    line-height: 5.7971014493vw;
+    color: #224660;
+  }
+  .giftCardBlock .ImgBlock {
+    display: flex;
+    position: relative;
+    height: 82.1256038647vw;
+    width: 88.1642512077vw;
+  }
+  .giftCardBlock .ImgBlock .bag {
+    position: absolute;
+    top: 0vw;
+    left: 0vw;
+    width: 88.1642512077vw;
+    height: 60.38647343vw;
+  }
+  .giftCardBlock .ImgBlock .card {
+    position: absolute;
+    bottom: 0vw;
+    right: 0vw;
+    width: 36.231884058vw;
+    height: 36.231884058vw;
+  }
+  .buttonBlock {
+    width: 88.1642512077vw;
+    height: 11.5942028986vw;
+    margin-top: 10vw;
+  }
+  .buttonBlock .btn {
+    display: flex;
+    justify-content: center;
+    background: #A6CCE5;
+    border-radius: 26.0416666667vw;
+    border: none;
+    padding: 0.78125vw 3.90625vw;
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.3816425121vw;
+    line-height: 4.5893719807vw;
+    display: flex;
+    align-items: center;
+    color: #224660;
+    cursor: pointer;
+    width: 88.1642512077vw;
+    height: 11.5942028986vw;
+  }
+}/*# sourceMappingURL=giftCard.module.css.map */

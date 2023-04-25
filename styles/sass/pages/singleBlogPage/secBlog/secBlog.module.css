@@ -1,0 +1,571 @@
+.singleBlogs {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.SecBlogFirst {
+  width: 94vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0vw;
+}
+.SecBlogFirst .contents {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.SecBlogFirst .contents .leftContent {
+  width: 40.625vw;
+  height: auto;
+  color: #224660;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.25vw;
+  line-height: 2vw;
+}
+.SecBlogFirst .contents .RightContent {
+  width: 50vw;
+  height: 30vw;
+}
+.SecBlogFirst .contents .RightContent img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.secPics {
+  width: 100vw;
+  display: flex;
+}
+
+.LeftPicsContainer {
+  display: flex;
+  width: 50vw;
+  justify-content: space-between;
+  margin-top: 5vw;
+}
+.LeftPicsContainer .LeftPicsContainerFirst {
+  width: 30vw;
+}
+.LeftPicsContainer .LeftPicsContainerFirst img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.LeftPicsContainer .LeftPicsContainerSecond {
+  width: 19vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+}
+.LeftPicsContainer .LeftPicsContainerSecond img {
+  width: 100%;
+  height: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.RightPicsContainer {
+  width: 50vw;
+  margin-top: 5vw;
+  display: flex;
+  justify-content: flex-end;
+}
+.RightPicsContainer img {
+  width: 95%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.SecBlogSecond {
+  width: 94vw;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 0vw;
+}
+
+.container {
+  width: 90vw;
+  margin-bottom: 5vw;
+}
+
+.goBackBlock {
+  display: flex;
+  gap: 1vw;
+  margin-bottom: 4vw;
+  margin-top: 6vw;
+}
+
+.goBack {
+  font-family: "arm-semiBold", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.78125vw;
+  line-height: 1.3020833333vw;
+  color: #224660;
+}
+
+.forHover {
+  display: flex;
+  gap: 1vw;
+  cursor: pointer;
+}
+
+.forHover:hover .arrow {
+  transform: translateX(-10px);
+  transition: 1s;
+}
+
+.title {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.34375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+  width: 55.9244791667vw;
+}
+
+.blogImg {
+  width: 48.1119791667vw;
+  height: 37.6302083333vw;
+}
+
+.dateBlock {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+}
+.dateBlock .date {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  color: #828282;
+}
+
+.descripAndImg {
+  display: flex;
+  justify-content: space-between;
+}
+
+.collage {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.content {
+  color: #224660;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.171875vw;
+  line-height: 160%;
+  color: #224660;
+  width: 90vw;
+}
+.content table {
+  width: 100px !important;
+}
+.content table tbody {
+  width: 100px !important;
+}
+.content table tbody tr {
+  width: 100%;
+}
+.content table tbody tr td {
+  width: 100%;
+}
+.content table tbody tr td p {
+  width: 100%;
+}
+
+.line {
+  width: 90vw;
+  height: 2px;
+  background-color: #B0B2B6;
+  margin-top: 7vw;
+  margin-bottom: 4vw;
+}
+
+.shareBlock {
+  margin-top: 2vw;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+.shareBlock .share {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9114583333vw;
+  line-height: 140%;
+  color: #224660;
+}
+
+.containerTrendColors {
+  width: 95vw;
+}
+
+.titleBlock {
+  margin-bottom: 10vw;
+  margin-top: 10vw;
+}
+.titleBlock .title {
+  font-family: "Bokonique-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.34375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+  margin-bottom: 3vw;
+}
+.titleBlock .description {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.171875vw;
+  line-height: 160%;
+  color: #224660;
+  width: 85vw;
+}
+
+.collageBlock {
+  display: flex;
+  gap: 5vw;
+  margin-bottom: 10vw;
+  width: 85vw;
+}
+.collageBlock .collagePics {
+  display: flex;
+  flex-direction: column;
+  width: 42vw;
+  height: 40vw;
+  gap: 1vw;
+}
+.collageBlock .collagePics .TopCollageBlock {
+  display: flex;
+  gap: 1vw;
+}
+.collageBlock .collagePics .TopCollageBlock img {
+  width: 20vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.collageBlock .collagePics .bottomCollageBlock {
+  width: 41vw;
+}
+.collageBlock .collagePics .bottomCollageBlock img {
+  width: 41vw;
+  height: 20vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.collageBlock .descrip {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.171875vw;
+  line-height: 160%;
+  color: #224660;
+  width: 41.796875vw;
+}
+
+.line {
+  width: 90.6vw;
+  height: 2px;
+  background: #B0B2B6;
+  opacity: 0.16;
+  margin-bottom: 3vw;
+}
+
+.shareBlock {
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+.shareBlock .share {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9114583333vw;
+  line-height: 140%;
+  color: #224660;
+}
+.shareBlock .network {
+  display: flex;
+  gap: 1vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .SecBlog {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 13vw;
+  }
+  .container {
+    width: 88.1642512077vw;
+    margin-bottom: 5vw;
+  }
+  .goBackBlock {
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 8vw;
+    margin-top: 10vw;
+  }
+  .goBack {
+    font-family: "arm-semiBold", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #224660;
+  }
+  .forHover {
+    display: flex;
+    gap: 1vw;
+    cursor: pointer;
+  }
+  .forHover:hover .arrow {
+    transform: translateX(-10px);
+    transition: 1s;
+  }
+  .title {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 6.7632850242vw;
+    line-height: 7.9710144928vw;
+    text-transform: uppercase;
+    color: #224660;
+    width: 88.1642512077vw;
+  }
+  .blogImg {
+    width: 48.1119791667vw;
+    height: 37.6302083333vw;
+  }
+  .dateBlock {
+    display: flex;
+    align-items: center;
+    margin-top: 4vw;
+    margin-bottom: 4vw;
+  }
+  .dateBlock .date {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    line-height: 0.9765625vw;
+    color: #828282;
+    margin-left: 3vw;
+  }
+  .collage {
+    display: flex;
+    width: 100vw;
+    justify-content: space-between;
+  }
+  .content {
+    color: #224660;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8647342995vw;
+    line-height: 5.7971014493vw;
+    color: #224660;
+    width: 88.1642512077vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .content p > img {
+    width: 88.1642512077vw;
+    height: auto;
+  }
+  .content img {
+    width: 88.1642512077vw;
+    height: auto;
+  }
+  .content td {
+    display: block;
+    width: 88.1642512077vw;
+  }
+  .content table {
+    width: 88.1642512077vw;
+  }
+  .shareBlock {
+    margin-top: 2vw;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+  }
+  .shareBlock .share {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.6231884058vw;
+    line-height: 4.8309178744vw;
+    color: #224660;
+    margin-right: 3vw;
+  }
+  .containerTrendColors {
+    width: 88.1642512077vw;
+  }
+  .singleBlogs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .SecBlogFirst {
+    width: 88.1642512077vw;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0vw;
+  }
+  .SecBlogFirst .contents {
+    display: flex;
+    width: 88.1642512077vw;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+  }
+  .SecBlogFirst .contents .leftContent {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.8647342995vw;
+    line-height: 5.7971014493vw;
+    color: #224660;
+    width: 88.1642512077vw;
+    height: 80vh;
+  }
+  .SecBlogFirst .contents .RightContent {
+    width: 88.1642512077vw;
+    height: 72.4637681159vw;
+  }
+  .SecBlogFirst .contents .RightContent img {
+    width: 100%;
+    height: 80%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .secPics {
+    width: 88.1642512077vw;
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .LeftPicsContainer {
+    display: flex;
+    width: 88.1642512077vw;
+    justify-content: space-between;
+    margin-top: 5vw;
+  }
+  .LeftPicsContainer .LeftPicsContainerFirst {
+    width: 43.4782608696vw;
+  }
+  .LeftPicsContainer .LeftPicsContainerFirst img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .LeftPicsContainer .LeftPicsContainerSecond {
+    width: 43.4782608696vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+  }
+  .LeftPicsContainer .LeftPicsContainerSecond img {
+    width: 100%;
+    height: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .RightPicsContainer {
+    width: 88.1642512077vw;
+    margin-top: 5vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .RightPicsContainer img {
+    width: 100%;
+    height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .titleBlock {
+    margin-bottom: 10vw;
+    margin-top: 10vw;
+  }
+  .titleBlock .title {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.8647342995vw;
+    line-height: 5.7971014493vw;
+    color: #224660;
+    width: 88.1642512077vw;
+    margin-bottom: 3vw;
+  }
+  .titleBlock .description {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.8647342995vw;
+    line-height: 5.7971014493vw;
+    color: #224660;
+    width: 88.1642512077vw;
+  }
+  .collageBlock {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 5vw;
+    margin-bottom: 10vw;
+    width: 88.1642512077vw;
+  }
+  .collageBlock .collagePics {
+    display: flex;
+    flex-direction: column;
+    width: 88.1642512077vw;
+    height: 80vw;
+    gap: 1vw;
+  }
+  .collageBlock .collagePics .TopCollageBlock {
+    display: flex;
+    gap: 1vw;
+  }
+  .collageBlock .collagePics .TopCollageBlock img {
+    width: 43.4782608696vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .collageBlock .collagePics .bottomCollageBlock {
+    width: 88.1642512077vw;
+  }
+  .collageBlock .collagePics .bottomCollageBlock img {
+    width: 88.1642512077vw;
+    height: 40vw;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .collageBlock .descrip {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 3.8647342995vw;
+    line-height: 5.7971014493vw;
+    color: #224660;
+    width: 88.1642512077vw;
+  }
+}/*# sourceMappingURL=secBlog.module.css.map */

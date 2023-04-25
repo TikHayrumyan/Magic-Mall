@@ -1,0 +1,194 @@
+.OtherBlogs {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 7vw;
+  margin-bottom: 35vw;
+}
+
+.container {
+  width: 90.6vw;
+}
+
+.title {
+  font-family: "Bokonique-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+}
+
+.blogContainer {
+  width: 90.6vw;
+  display: flex;
+  gap: 2.5vw;
+  margin-top: 4vw;
+}
+
+.blogs {
+  height: 40.0625vw;
+  width: 27vw;
+  padding: 1vw;
+  background: #FFFFFF;
+}
+.blogs .description {
+  margin-top: 2vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  width: 25.869792vw;
+  font-size: 0.9114583333vw;
+  line-height: 150%;
+  color: #224660;
+}
+.blogs .dateBlock {
+  display: flex;
+  gap: 1vw;
+  margin-top: 2vw;
+  align-items: center;
+}
+.blogs .dateBlock .date {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  color: #828282;
+}
+.blogs .btnBlock {
+  display: flex;
+  width: 11vw;
+  margin-top: 1vw;
+  cursor: pointer;
+}
+.blogs .btnBlock .button {
+  width: 5vw;
+  display: flex;
+  height: 1.3020833333vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9114583333vw;
+  line-height: 140%;
+  color: #224660;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0px;
+}
+.blogs .btnBlock .arrow {
+  width: 2vw;
+}
+.blogs .btnBlock:hover .arrow {
+  transform: translateX(1vw);
+  transition: 0.8s;
+}
+
+.blogs:hover {
+  box-shadow: 0px 20px 30px rgba(21, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+.img {
+  width: 25vw;
+  height: 27vw;
+}
+
+.mobileContainer {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobileContainer {
+    display: block;
+  }
+  .OtherBlogs {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 7vw;
+    margin-bottom: 95vw;
+  }
+  .container {
+    width: 88.1642512077vw;
+  }
+  .title {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.7632850242vw;
+    line-height: 7.9710144928vw;
+    text-transform: uppercase;
+    color: #224660;
+    margin-bottom: 5vw;
+  }
+  .blogContainer {
+    display: none;
+  }
+  .blogsMobile {
+    height: 120.7729468599vw;
+    width: 88.1642512077vw;
+    padding: 0vw;
+    background: #FFFFFF;
+  }
+  .blogsMobile .descriptionMobile {
+    margin-top: 4vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    width: 88.1642512077vw;
+    font-size: 3.3816425121vw;
+    line-height: 5.0724637681vw;
+    color: #224660;
+    text-align: start;
+  }
+  .blogsMobile .dateBlockMobile {
+    display: flex;
+    gap: 1vw;
+    margin-top: 4vw;
+    align-items: center;
+  }
+  .blogsMobile .dateBlockMobile .dateMobile {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+    margin-left: 2vw;
+  }
+  .blogsMobile .btnBlockMobile {
+    display: flex;
+    width: 21.7391304348vw;
+    margin-top: 4vw;
+    cursor: pointer;
+  }
+  .blogsMobile .btnBlockMobile .buttonMobile {
+    width: 19.3236714976vw;
+    display: flex;
+    height: 4.8309178744vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 4.7101449275vw;
+    color: #224660;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0px;
+  }
+  .blogsMobile .btnBlockMobile .arrowMobile {
+    width: 2vw;
+  }
+  .blogs:hover {
+    box-shadow: 0px 20px 30px rgba(21, 0, 0, 0.1);
+    transition: 0.5s;
+  }
+  .imgMobile {
+    width: 88.1642512077vw;
+    height: 88.1642512077vw;
+  }
+}/*# sourceMappingURL=otherBlogs.module.css.map */

@@ -1,0 +1,251 @@
+.container {
+  margin-top: 12vw;
+}
+
+.titleBlock {
+  margin-bottom: 5vw;
+}
+.titleBlock .title {
+  font-family: "Bokonique-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+}
+
+.fixedNewsBlock {
+  display: flex;
+  justify-content: center;
+}
+.fixedNewsBlock .fixedNewsContainer {
+  width: 80vw;
+  display: flex;
+  gap: 2.9vw;
+}
+
+.Block {
+  width: 24.65625vw;
+  height: 36.5703125vw;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.bottomBlock {
+  width: 15.9vw;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1vw;
+  margin-top: 1.4vw;
+}
+
+.dateBlock {
+  display: flex;
+  gap: 0.5vw;
+  align-items: center;
+}
+
+.descrip {
+  width: 16vw;
+  height: 8vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #224660;
+}
+
+.date {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  color: #828282;
+}
+
+.shop {
+  width: 24.5vw;
+  height: 20vw;
+}
+
+.btnBlock {
+  display: flex;
+  width: 11vw;
+  cursor: pointer;
+}
+.btnBlock .button {
+  width: 8.86vw;
+  display: flex;
+  height: 1.3020833333vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9114583333vw;
+  line-height: 140%;
+  color: #224660;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0px;
+}
+.btnBlock .arrow {
+  width: 2vw;
+}
+
+.btnBlock:hover .arrow {
+  transform: translateX(1vw);
+  transition: 0.8s;
+}
+
+.leftPattern {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+}
+
+.rightPattern {
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+}
+
+.forPattern {
+  position: relative;
+  width: 22.65625vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 34.5703125vw;
+}
+
+.mobileContainer {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    margin-top: 12vw;
+    margin-bottom: 65vw;
+  }
+  .titleBlock {
+    width: 88.1642512077vw;
+    margin-bottom: 5vw;
+  }
+  .titleBlock .title {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.7632850242vw;
+    line-height: 7.2463768116vw;
+    text-transform: uppercase;
+    color: #224660;
+  }
+  .fixedNewsBlock {
+    display: none;
+  }
+  .mobileContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 88.1642512077vw;
+    height: 124.154589372vw;
+  }
+  .BlockMobile {
+    width: 88.1642512077vw;
+    height: 100vw;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .bottomBlockMobile {
+    height: 60.38647343vw;
+    width: 62.8019323671vw;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    gap: 3vw;
+    margin-top: 3.4vw;
+  }
+  .dateBlockMobile {
+    display: flex;
+    gap: 0.5vw;
+    align-items: center;
+  }
+  .descripMobile {
+    width: 62.3188405797vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.347826087vw;
+    line-height: 6.7632850242vw;
+    color: #224660;
+    text-align: start;
+  }
+  .dateMobile {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .shopMobile {
+    width: 84.0579710145vw;
+    height: 72.4637681159vw;
+  }
+  .btnBlockMobile {
+    display: flex;
+    width: 86.9565217391vw;
+    cursor: pointer;
+  }
+  .btnBlockMobile .buttonMobile {
+    width: 33.8164251208vw;
+    display: flex;
+    height: 4.8309178744vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 4.5893719807vw;
+    color: #224660;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    padding: 0px;
+  }
+  .btnBlockMobile .arrowMobile {
+    width: 3vw;
+  }
+  .btnBlockMobile:hover .arrowMobile {
+    transform: translateX(1vw);
+    transition: 0.8s;
+  }
+  .leftPatternMobile {
+    position: absolute;
+    left: 0%;
+    top: 2%;
+  }
+  .rightPatternMobile {
+    position: absolute;
+    bottom: 0%;
+    right: 5%;
+  }
+  .forPatternMobile {
+    position: relative;
+    width: 88.1642512077vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vw;
+  }
+}/*# sourceMappingURL=otherNews.module.css.map */

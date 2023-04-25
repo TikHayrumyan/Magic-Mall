@@ -1,0 +1,118 @@
+.forCardSubscribe {
+  margin-bottom: 40vw;
+}
+
+.forCardSubscribeNotResult {
+  margin-top: 35vw;
+}
+
+.SearchResult {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 90.6vw;
+}
+
+.titleResult {
+  display: flex;
+  margin-top: 5vw;
+  margin-bottom: 4vw;
+}
+.titleResult .title {
+  font-family: "Bokonique-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 140%;
+  color: #224660;
+}
+.titleResult .result {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 160%;
+  color: #224660;
+}
+
+.searchResult {
+  width: 90.6vw;
+  margin-top: 5vw;
+  margin-bottom: 8vw;
+}
+.searchResult .notResult {
+  width: 90.6vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 5vw;
+}
+.searchResult .notResult p {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 160%;
+  color: #224660;
+}
+
+@media only screen and (max-width: 600px) and (hover: none) {
+  .SearchResult {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 100vw;
+  }
+  .titleResult {
+    display: flex;
+    margin-top: 5vw;
+    margin-bottom: 4vw;
+    margin-left: 9vw;
+  }
+  .titleResult .title {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.8309178744vw;
+    line-height: 6.7632850242vw;
+    color: #224660;
+  }
+  .titleResult .result {
+    font-family: "Montserrat arm", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.347826087vw;
+    line-height: 6.7632850242vw;
+    color: #224660;
+  }
+  .searchResult {
+    width: 88.1642512077vw;
+    margin-top: 5vw;
+    margin-bottom: 8vw;
+  }
+  .searchResult .notResult {
+    width: 88.1642512077vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 5vw;
+    margin-left: 8vw;
+  }
+  .searchResult .notResult p {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.347826087vw;
+    line-height: 6.7632850242vw;
+    color: #224660;
+  }
+  .forCardSubscribe {
+    margin-bottom: 84.5410628019vw;
+  }
+  .forCardSubscribeNotResult {
+    margin-top: 72.4637681159vw;
+  }
+}/*# sourceMappingURL=searchResult.module.css.map */

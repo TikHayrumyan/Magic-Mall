@@ -1,0 +1,459 @@
+.SecNews {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 8vw;
+}
+
+.container {
+  width: 90.5vw;
+}
+
+.titleBlock {
+  margin-bottom: 5vw;
+  margin-top: 4vw;
+}
+.titleBlock .title {
+  font-family: "Bokonique-regular", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.34375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+}
+
+.descripBlock {
+  margin-top: 2vw;
+  width: 36vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2vw;
+}
+
+.img {
+  width: 49.7395833333vw;
+  height: 38.3463541667vw;
+  display: block;
+}
+
+.dateBlock {
+  display: flex;
+  margin-bottom: 2vw;
+  gap: 1.5vw;
+  align-items: center;
+}
+.dateBlock .date {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  color: #828282;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 0.1953125vw;
+  width: 90vw;
+  margin-bottom: 5.2vw;
+}
+
+.PaginationContainer {
+  display: flex;
+  width: 89.9vw;
+  justify-content: space-between;
+  height: 38.3463541667vw;
+  flex-direction: row-reverse;
+}
+
+.PaginationContainerReverse {
+  display: flex;
+  width: 89.9vw;
+  justify-content: space-between;
+  height: 38.3463541667vw;
+}
+
+.descripTitleBlock {
+  width: 27.3vw;
+}
+.descripTitleBlock .descripTitle {
+  width: 27.0833333333vw;
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  line-height: 140%;
+  color: #224660;
+}
+
+.descriptionBlock {
+  width: 27.3vw;
+  margin-top: 2vw;
+}
+.descriptionBlock .description {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.171875vw;
+  line-height: 140%;
+  color: #224660;
+}
+
+.btnBlock {
+  display: flex;
+  margin-top: 2vw;
+  width: 11vw;
+  cursor: pointer;
+}
+.btnBlock .button {
+  width: 8.86vw;
+  display: flex;
+  height: 1.3020833333vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9114583333vw;
+  line-height: 140%;
+  color: #224660;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btnBlock .arrow {
+  width: 2vw;
+}
+
+.btnBlock:hover .arrow {
+  transform: translateX(1vw);
+  transition: 0.8s;
+}
+
+.pattern {
+  position: absolute;
+  bottom: 5%;
+  right: 0%;
+}
+
+.dropDownBlock {
+  margin-bottom: 5vw;
+}
+
+.floor {
+  display: flex;
+  gap: 0.5vw;
+  border: 1px solid gray;
+  border-radius: 2px;
+  width: 10.9739583333vw;
+  height: 2.34375vw;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.floor .allFloors {
+  width: 8.3171875vw;
+  height: 1.3671875vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9765625vw;
+  line-height: 140%;
+  color: rgba(130, 130, 130, 0.8);
+}
+.floor .dArr {
+  display: flex;
+  cursor: pointer;
+}
+.floor .upArr {
+  transform: rotate(180deg);
+  margin-top: 0.5859375vw;
+}
+
+.floorDropDown {
+  position: absolute;
+  z-index: 8;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+  width: 10.7421875vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.0416666667vw;
+  padding: 0.9765625vw;
+}
+.floorDropDown div {
+  width: 8.3vw;
+  height: 1.3671875vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9765625vw;
+  line-height: 140%;
+  color: #224660;
+  cursor: pointer;
+}
+.floorDropDown div:hover {
+  color: #C7A28C;
+  transition: 0.5s;
+}
+
+.floorDropDownClose {
+  display: none;
+}
+
+.paginationContainerNumbers {
+  display: flex;
+  width: 90.5vw;
+  justify-content: center;
+  align-items: center;
+  gap: 2vw;
+}
+.paginationContainerNumbers li {
+  list-style: none;
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  cursor: pointer;
+}
+
+.activePage {
+  color: #224660;
+}
+
+.ellipsis {
+  color: #A6CCE5;
+}
+
+.Li {
+  color: #A6CCE5;
+}
+
+.imgMobile {
+  display: none;
+}
+
+.patternMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .SecNews {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8vw;
+  }
+  .container {
+    width: 88.1642512077vw;
+  }
+  .titleBlock {
+    display: none;
+  }
+  .descripBlock {
+    margin-top: 4vw;
+    width: 88.1642512077vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0vw;
+  }
+  .imgMobile {
+    width: 88.1642512077vw;
+    height: 67.6328502415vw;
+    display: block;
+    margin-top: 6.038647343vw;
+    margin-bottom: 6.038647343vw;
+  }
+  .img {
+    display: none;
+  }
+  .dateBlock {
+    display: flex;
+    margin-bottom: 2vw;
+    gap: 1.5vw;
+    align-items: center;
+  }
+  .dateBlock .date {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: none;
+    width: 88.1642512077vw;
+    margin-bottom: 5.2vw;
+  }
+  .PaginationContainer {
+    display: flex;
+    width: 88.1642512077vw;
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 7.2463768116vw;
+  }
+  .PaginationContainerReverse {
+    display: flex;
+    width: 89.9vw;
+    justify-content: space-between;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .descripTitleBlock {
+    width: 88.1642512077vw;
+    margin-top: 6.038647343vw;
+  }
+  .descripTitleBlock .descripTitle {
+    width: 88.1642512077vw;
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.3140096618vw;
+    line-height: 7.2463768116vw;
+    color: #224660;
+  }
+  .descriptionBlock {
+    width: 88.1642512077vw;
+    margin-top: 6.038647343vw;
+  }
+  .descriptionBlock .description {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8647342995vw;
+    line-height: 7.0287539936vw;
+    color: #224660;
+  }
+  .btnBlock {
+    display: flex;
+    margin-top: 2vw;
+    width: 86.9565217391vw;
+    cursor: pointer;
+  }
+  .btnBlock .button {
+    width: 33.8164251208vw;
+    display: flex;
+    height: 4.8309178744vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 4.5893719807vw;
+    color: #224660;
+    border: none;
+    background-color: transparent;
+    margin-top: 7.2463768116vw;
+  }
+  .btnBlock .arrow {
+    width: 3vw;
+    margin-top: 7.2463768116vw;
+  }
+  .btnBlock:hover .arrow {
+    transform: translateX(1vw);
+    transition: 0.8s;
+  }
+  .pattern {
+    display: none;
+  }
+  .patternMobile {
+    display: flex;
+    margin-left: 26.5700483092vw;
+  }
+  .dropDownBlock {
+    margin-bottom: 5vw;
+    margin-top: 10vw;
+    width: 88.1642512077vw;
+  }
+  .floor {
+    display: flex;
+    gap: 0.5vw;
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 88.1642512077vw;
+    height: 8.6956521739vw;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    outline: none;
+  }
+  .floor .allFloors {
+    width: 60.38647343vw;
+    height: 4.8309178744vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 4.8309178744vw;
+    color: rgba(130, 130, 130, 0.8);
+  }
+  .floor .dArr {
+    display: flex;
+    cursor: pointer;
+  }
+  .floor .upArr {
+    transform: rotate(180deg);
+    margin-top: 0.5859375vw;
+  }
+  .floorDropDown {
+    position: absolute;
+    z-index: 8;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+    width: 88.1642512077vw;
+    height: 28.9855072464vw;
+    display: flex;
+    flex-direction: column;
+    padding: 3vw;
+  }
+  .floorDropDown div {
+    width: 48.309178744vw;
+    height: 4.8309178744vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 4.8309178744vw;
+    color: #224660;
+    cursor: pointer;
+    margin-bottom: 3vw;
+  }
+  .floorDropDown div:hover {
+    color: #C7A28C;
+    transition: 0.5s;
+  }
+  .floorDropDownClose {
+    display: none;
+  }
+  .paginationContainerNumbers {
+    display: flex;
+    width: 88.1642512077vw;
+    justify-content: space-between;
+    align-items: center;
+    gap: 0vw;
+    padding: 0px;
+  }
+  .paginationContainerNumbers li {
+    list-style: none;
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=secNews.module.css.map */

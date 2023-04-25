@@ -1,0 +1,174 @@
+.SimilarEntertainment {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 35vw;
+}
+
+.container {
+  width: 84.3684895833vw;
+}
+
+.titleBlock {
+  width: 84.3684895833vw;
+  margin-bottom: 4vw;
+}
+.titleBlock .title {
+  font-family: "Bokonique-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.34375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+}
+
+.imgBlock {
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+}
+
+.similarEntertainmentBlock {
+  display: flex;
+  width: 100vw;
+  justify-content: space-between;
+}
+
+.background {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 49.4192708333vw;
+  height: 40.5598958333vw;
+  margin-bottom: 0.9114583333vw;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+
+.cardContent {
+  background-color: rgba(166, 204, 229, 0.8);
+  width: 34.5703125vw;
+  height: 13.1510416667vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.cardContent .cardContentContainer {
+  width: 32vw;
+  height: 12vw;
+}
+.cardContent .cardContentContainer .title {
+  font-family: "arm-bold", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.8229166667vw;
+  line-height: 2.2135416667vw;
+  color: #FFFFFF;
+  margin-bottom: 0.8463541667vw;
+}
+.cardContent .cardContentContainer .description {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9114583333vw;
+  line-height: 140%;
+  color: #224660;
+  width: 20vw;
+  margin-bottom: 0.5859375vw;
+}
+.cardContent .cardContentContainer .arrowBlock {
+  display: flex;
+  justify-content: flex-end;
+  width: 25vw;
+}
+
+.cardContent:hover .arrowBlock {
+  transform: translate(3vw);
+  transition: 0.7s;
+}
+
+@media only screen and (max-width: 600px) {
+  .SimilarEntertainment {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 85vw;
+  }
+  .container {
+    width: 88.1642512077vw;
+  }
+  .titleBlock {
+    width: 88.1642512077vw;
+    margin-bottom: 4vw;
+  }
+  .titleBlock .title {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.7632850242vw;
+    line-height: 7.9710144928vw;
+    text-transform: uppercase;
+    color: #224660;
+  }
+  .imgBlock {
+    width: 88.1642512077vw;
+    display: flex;
+    flex-direction: column;
+  }
+  .similarEntertainmentBlock {
+    display: flex;
+    width: 88.1642512077vw;
+    justify-content: space-between;
+  }
+  .background {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 88.1642512077vw;
+    height: 73.6714975845vw;
+    margin-bottom: 4.8309178744vw;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .cardContent {
+    background-color: rgba(166, 204, 229, 0.8);
+    width: 88.1642512077vw;
+    height: 39.3719806763vw;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .cardContent .cardContentContainer {
+    width: 80.9178743961vw;
+    height: 33.8164251208vw;
+  }
+  .cardContent .cardContentContainer .title {
+    font-family: "arm-bold", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.7971014493vw;
+    line-height: 7.0048309179vw;
+    color: #FFFFFF;
+    margin-bottom: 0.8463541667vw;
+  }
+  .cardContent .cardContentContainer .description {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 4.5893719807vw;
+    color: #224660;
+    width: 80.9178743961vw;
+    margin-bottom: 0.5859375vw;
+  }
+  .cardContent .cardContentContainer .arrowBlock {
+    display: none;
+  }
+}/*# sourceMappingURL=similarEntertainment.module.css.map */

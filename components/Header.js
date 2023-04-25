@@ -1,5 +1,5 @@
-import MainHeader from "./headers/mainHeader/mainHeader"
-import MenuHeader from "./headers/menuHeader/MenuHeader"
+import MainHeader from "./Headers/mainHeader/mainHeader"
+import MenuHeader from "./Headers/menuHeader/MenuHeader"
 
 
 const Header = () => {

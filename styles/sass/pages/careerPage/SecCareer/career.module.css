@@ -1,0 +1,286 @@
+.Career {
+  width: 100vw;
+  position: relative;
+}
+
+.titleContainer {
+  width: 100vw;
+  height: 7.8125vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dis {
+  display: block;
+}
+
+.titleBlock {
+  width: 91vw;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.title {
+  font-family: "Bokonique-regular", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.34375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+}
+
+.careerMain {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 85vw;
+}
+.container .storage {
+  display: flex;
+  align-items: center;
+  gap: 1.9vw;
+}
+.container .storage .plus {
+  color: #224660;
+  font-size: 2.34375vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  display: block;
+  cursor: pointer;
+}
+.container .storage .plusNone {
+  display: none;
+}
+.container .storage .minus {
+  color: #224660;
+  font-size: 2.34375vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  display: block;
+  cursor: pointer;
+}
+.container .storage .minusNone {
+  display: none;
+}
+.container .storage .storageWorker {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  line-height: 1.8880208333vw;
+  color: #224660;
+  cursor: pointer;
+}
+
+.descriptionBlock {
+  width: 85vw;
+  display: flex;
+  justify-content: center;
+}
+
+.descriptionContainer {
+  width: 78vw;
+  color: #224660;
+  font-family: "arm-regular", "montserrat-ru-regular";
+}
+.descriptionContainer .descripTitle {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.0416666667vw;
+  line-height: 1.3020833333vw;
+  color: #224660;
+  margin-bottom: 1.9vw;
+}
+.descriptionContainer ul li {
+  width: 58vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #224660;
+}
+.descriptionContainer .buttonApply {
+  display: flex;
+  border: none;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 12px 60px;
+  gap: 12px;
+  width: 255px;
+  height: 40px;
+  background: #A6CCE5;
+  border-radius: 400px;
+  margin-top: 2vw;
+  cursor: pointer;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+  color: #224660;
+}
+.descriptionContainer .buttonApply:hover {
+  background-color: #fff;
+  border: 1px solid #224660;
+}
+
+.descriptionBlockNone {
+  display: none;
+}
+
+.backgroundPattern {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -11;
+}
+
+.notPosition {
+  display: flex;
+  width: 100vw;
+  height: 10vw;
+  justify-content: center;
+  align-items: flex-end;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 160%;
+  color: #224660;
+}
+
+@media only screen and (max-width: 600px) {
+  .Career {
+    width: 100vw;
+    position: relative;
+  }
+  .titleContainer {
+    width: 100vw;
+    height: 14.4927536232vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .titleBlock {
+    width: 88.1642512077vw;
+    display: flex;
+    justify-content: flex-start;
+  }
+  .title {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.7632850242vw;
+    line-height: 7.9710144928vw;
+    text-transform: uppercase;
+    color: #224660;
+  }
+  .careerMain {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 88.1642512077vw;
+  }
+  .container .storage {
+    display: flex;
+    align-items: center;
+    gap: 1.9vw;
+  }
+  .container .storage .plus {
+    color: #224660;
+    font-size: 8.4541062802vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    display: block;
+    cursor: pointer;
+  }
+  .container .storage .plusNone {
+    display: none;
+  }
+  .container .storage .minus {
+    color: #224660;
+    font-size: 8.4541062802vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    display: block;
+    cursor: pointer;
+  }
+  .container .storage .minusNone {
+    display: none;
+  }
+  .container .storage .storageWorker {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 4.8309178744vw;
+    line-height: 6.038647343vw;
+    color: #224660;
+    cursor: pointer;
+  }
+  .descriptionBlock {
+    width: 88.1642512077vw;
+    display: flex;
+    justify-content: center;
+  }
+  .descriptionContainer {
+    width: 78.5024154589vw;
+  }
+  .descriptionContainer .descripTitle {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8647342995vw;
+    line-height: 4.5893719807vw;
+    color: #224660;
+    margin-bottom: 1.9vw;
+  }
+  .descriptionContainer ul li {
+    width: 70.0483091787vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #224660;
+  }
+  .descriptionContainer .buttonApply {
+    display: flex;
+    border: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 12px 60px;
+    gap: 12px;
+    width: 80.9178743961vw;
+    height: 40px;
+    background: #A6CCE5;
+    border-radius: 400px;
+    margin-top: 2vw;
+    cursor: pointer;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.3816425121vw;
+    line-height: 4.8309178744vw;
+    color: #224660;
+  }
+  .descriptionContainer .buttonApply:hover {
+    background-color: #fff;
+    border: 1px solid #224660;
+  }
+  .descriptionBlockNone {
+    display: none;
+  }
+  .backgroundPattern {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -11;
+  }
+}/*# sourceMappingURL=career.module.css.map */

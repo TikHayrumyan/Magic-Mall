@@ -1,0 +1,358 @@
+.aboutMap {
+  width: 70vw;
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.aboutUs {
+  font-family: "arm-semiBold", "montserrat-ru-semiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8333333333vw;
+  line-height: 1.0416666667vw;
+  color: #224660;
+  width: 5.5555555556vw;
+  height: 1.0416666667vw;
+  cursor: pointer;
+  margin-bottom: 1vw;
+}
+
+.contact {
+  font-family: "arm-semiBold", "montserrat-ru-semiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8333333333vw;
+  line-height: 1.0416666667vw;
+  color: #224660;
+  width: 5.7638888889vw;
+  height: 1.0416666667vw;
+  cursor: pointer;
+}
+
+.career {
+  font-family: "arm-semiBold", "montserrat-ru-semiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8333333333vw;
+  line-height: 1.0416666667vw;
+  color: #224660;
+  width: 4.5138888889vw;
+  height: 1.0416666667vw;
+  margin-top: 0.9027777778vw;
+  margin-bottom: 0.9027777778vw;
+}
+
+.direction {
+  width: 9.7916666667vw;
+  height: 1.0416666667vw;
+  font-family: "arm-semiBold", "montserrat-ru-semiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8333333333vw;
+  line-height: 1.0416666667vw;
+  color: #224660;
+  cursor: pointer;
+}
+
+.questions {
+  width: 12.5vw;
+  height: 1.0416666667vw;
+  font-family: "arm-semiBold", "montserrat-ru-semiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8333333333vw;
+  line-height: 1.0416666667vw;
+  color: #224660;
+  cursor: pointer;
+}
+
+.forReserve {
+  width: 11.875vw;
+  height: 1.0416666667vw;
+  font-family: "arm-semiBold", "montserrat-ru-semiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8333333333vw;
+  line-height: 1.0416666667vw;
+  color: #224660;
+  margin-top: 0.9027777778vw;
+  margin-bottom: 0.9027777778vw;
+  cursor: pointer;
+}
+
+.finance {
+  width: 14.5138888889vw;
+  height: 1.0416666667vw;
+  font-family: "arm-semiBold", "montserrat-ru-semiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8333333333vw;
+  line-height: 1.0416666667vw;
+  color: #224660;
+  cursor: pointer;
+}
+
+.location {
+  display: flex;
+  align-items: center;
+  gap: 0.5555555556vw;
+  width: 25.6944444444vw;
+  height: auto;
+  cursor: pointer;
+}
+.location img {
+  width: 1.3194444444vw;
+  height: 1.3194444444vw;
+}
+
+.location_text {
+  font-family: "arm-semiBold", "montserrat-ru-semiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.7638888889vw;
+  line-height: 1.0416666667vw;
+  color: #224660;
+  display: flex;
+  align-items: center;
+  width: 90%;
+  height: 2.0833333333vw;
+}
+
+.phone {
+  display: flex;
+  align-items: center;
+  gap: 0.5555555556vw;
+  width: 10.4166666667vw;
+  height: 1.3888888889vw;
+  font-family: "arm-semiBold", "montserrat-ru-semiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8333333333vw;
+  line-height: 1.0416666667vw;
+  color: #224660;
+  margin-top: 0.9027777778vw;
+  margin-bottom: 0.9027777778vw;
+  cursor: pointer;
+}
+.phone img {
+  width: 1.3194444444vw;
+  height: 1.3194444444vw;
+}
+
+.oclock {
+  display: flex;
+  align-items: center;
+  gap: 0.5555555556vw;
+  width: 13.3333333333vw;
+  height: 1.0416666667vw;
+  font-family: "arm-semiBold", "montserrat-ru-semiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.8333333333vw;
+  line-height: 1.0416666667vw;
+  color: #224660;
+  cursor: pointer;
+}
+.oclock img {
+  width: 1.3888888889vw;
+  height: 1.3888888889vw;
+}
+
+.netwokTitle {
+  font-family: "arm-semiBold", "montserrat-ru-semiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  color: #224660;
+  cursor: pointer;
+}
+
+.network {
+  display: flex;
+  gap: 0.9722222222vw;
+  margin-top: 0.9722222222vw;
+}
+.network div {
+  width: 2.2222222222vw;
+  height: 2.2222222222vw;
+}
+
+.iconsBlock {
+  width: 20vw;
+}
+
+@media only screen and (max-width: 600px) {
+  .aboutMap {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 7.2463768116vw;
+  }
+  .blocks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 72.4637681159vw;
+    height: 19.3236714976vw;
+  }
+  .aboutUs {
+    font-family: "arm-semiBold", "montserrat-ru-semiBold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.6666666667vw;
+    line-height: 3.3333333333vw;
+    color: #224660;
+    width: 38.3333333333vw;
+    height: 3vw;
+    cursor: pointer;
+    margin-bottom: 1vw;
+  }
+  .contact {
+    font-family: "arm-semiBold", "montserrat-ru-semiBold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.6666666667vw;
+    line-height: 3.3333333333vw;
+    color: #224660;
+    width: 23.8333333333vw;
+    height: 3vw;
+    cursor: pointer;
+  }
+  .career {
+    font-family: "arm-semiBold", "montserrat-ru-semiBold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.6666666667vw;
+    line-height: 3.3333333333vw;
+    color: #224660;
+    width: 29.1666666667vw;
+    height: 3vw;
+    margin-top: 2.1666666667vw;
+    margin-bottom: 2.1666666667vw;
+  }
+  .direction {
+    width: 41.8333333333vw;
+    height: 3vw;
+    font-family: "arm-semiBold", "montserrat-ru-semiBold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.6666666667vw;
+    line-height: 3.3333333333vw;
+    color: #224660;
+    cursor: pointer;
+  }
+  .questions {
+    width: 43.3333333333vw;
+    height: 3vw;
+    font-family: "arm-semiBold", "montserrat-ru-semiBold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.6666666667vw;
+    line-height: 3.3333333333vw;
+    color: #224660;
+    cursor: pointer;
+  }
+  .forReserve {
+    width: 48.3333333333vw;
+    height: 3.3333333333vw;
+    font-family: "arm-semiBold", "montserrat-ru-semiBold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.6666666667vw;
+    line-height: 3.3333333333vw;
+    color: #224660;
+    margin-top: 2.1666666667vw;
+    margin-bottom: 2.1666666667vw;
+    cursor: pointer;
+  }
+  .finance {
+    width: 58.3333333333vw;
+    height: 3.3333333333vw;
+    font-family: "arm-semiBold", "montserrat-ru-semiBold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.6666666667vw;
+    line-height: 3.3333333333vw;
+    color: #224660;
+    cursor: pointer;
+  }
+  .location {
+    display: flex;
+    align-items: center;
+    gap: 1.3333333333vw;
+    width: 100%;
+    height: 5.8333333333vw;
+    font-family: "arm-semiBold", "montserrat-ru-semiBold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.6666666667vw;
+    line-height: 3.3333333333vw;
+    color: #224660;
+    cursor: pointer;
+    position: relative;
+  }
+  .location #forYouRafJan {
+    width: 109vw !important;
+    height: 19vw;
+  }
+  .phone {
+    display: flex;
+    align-items: center;
+    gap: 1.3333333333vw;
+    width: 33.3333333333vw;
+    height: 2.5vw;
+    font-family: "arm-semiBold", "montserrat-ru-semiBold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.6666666667vw;
+    line-height: 3.3333333333vw;
+    color: #224660;
+    margin-top: 2.1666666667vw;
+    margin-bottom: 2.1666666667vw;
+    cursor: pointer;
+  }
+  .phone img {
+    width: 3.1666666667vw;
+    height: 3.1666666667vw;
+  }
+  .phone span img {
+    min-height: 80% !important;
+  }
+  .oclock {
+    display: flex;
+    align-items: center;
+    gap: 1.3333333333vw;
+    width: 38.3333333333vw;
+    height: 5.8333333333vw;
+    font-family: "arm-semiBold", "montserrat-ru-semiBold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.6666666667vw;
+    line-height: 3.3333333333vw;
+    color: #224660;
+    cursor: pointer;
+  }
+  .netwokTitle {
+    display: none;
+  }
+  .network {
+    display: flex;
+    margin-top: 2.3333333333vw;
+    margin-left: 25vw;
+  }
+  .network div {
+    width: 5.3333333333vw;
+    height: 5.3333333333vw;
+    margin-right: 2.3333333333vw;
+  }
+  .iconsBlock {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    width: 72.4637681159vw;
+    height: 19.3236714976vw;
+    justify-content: center;
+  }
+}/*# sourceMappingURL=footerAbout.module.css.map */

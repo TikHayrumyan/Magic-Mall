@@ -1,0 +1,449 @@
+.selectsContainer {
+  display: flex;
+  justify-content: space-between;
+  border: 1px sold red;
+}
+.selectsContainer .selectsContainerLeft {
+  display: flex;
+  gap: 1.3671875vw;
+}
+
+.forSelect {
+  display: flex;
+  gap: 0.5vw;
+  border: 1px solid gray;
+  border-radius: 2px;
+  width: 14.9739583333vw;
+  height: 2.34375vw;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.forSelect .allCategory {
+  width: 11.84895833vw;
+  height: 1.3020833vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.91145833vw;
+  line-height: 140%;
+  color: rgba(130, 130, 130, 0.8);
+}
+.forSelect .dArr {
+  display: flex;
+  cursor: pointer;
+}
+.forSelect .uArr {
+  transform: rotate(180deg);
+  margin-top: 0.5859375vw;
+}
+
+.dropDownNo {
+  display: none;
+}
+
+.dropDown {
+  position: absolute;
+  z-index: 8;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+  width: 18.5546875vw;
+  height: 27.9296875vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.0416666667vw;
+  overflow-y: scroll;
+  padding: 0.9765625vw;
+}
+.dropDown::-webkit-scrollbar {
+  width: 13px;
+}
+.dropDown::-webkit-scrollbar-thumb {
+  background: rgba(130, 130, 130, 0.4);
+  border-radius: 11px;
+}
+.dropDown .miniSelect {
+  display: flex;
+  gap: 0.6510416667vw;
+}
+.dropDown .miniSelect div {
+  display: flex;
+}
+.dropDown .miniSelect .miniTitle {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #224660;
+  cursor: pointer;
+}
+.dropDown .miniSelect .miniTitle:hover {
+  color: #C7A28C;
+  transition: 0.5s;
+}
+
+.miniDropDownClose {
+  display: none;
+}
+
+.miniDropDown {
+  display: flex;
+  flex-direction: column;
+  gap: 1.0416666667vw;
+  padding-left: 2vw;
+}
+.miniDropDown div {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #224660;
+  cursor: pointer;
+}
+.miniDropDown div:hover {
+  color: #C7A28C;
+  transition: 0.5s;
+}
+
+.lArr {
+  display: flex;
+}
+
+.downArr {
+  transform: rotate(90deg);
+  display: flex;
+}
+
+.ShowAllCategory {
+  display: flex;
+  flex-direction: column;
+  gap: 1.0416666667vw;
+  margin-left: 1vw;
+}
+
+.ShowAllCategory div {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #224660;
+  cursor: pointer;
+}
+.ShowAllCategory div:hover {
+  color: #C7A28C;
+  transition: 0.5s;
+}
+
+.floor {
+  display: flex;
+  gap: 0.5vw;
+  border: 1px solid gray;
+  border-radius: 2px;
+  width: 10.9739583333vw;
+  height: 2.34375vw;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.floor .allFloors {
+  width: 8.3171875vw;
+  height: 1.3671875vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.91145833vw;
+  line-height: 140%;
+  color: rgba(130, 130, 130, 0.8);
+}
+.floor .dArr {
+  display: flex;
+  cursor: pointer;
+}
+.floor .upArr {
+  transform: rotate(180deg);
+  margin-top: 0.5859375vw;
+}
+
+.floorDropDown {
+  position: absolute;
+  z-index: 8;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+  width: 10.7421875vw;
+  max-height: 10.5vw;
+  display: flex;
+  flex-direction: column;
+  gap: 1.0416666667vw;
+  padding: 0.9765625vw;
+}
+.floorDropDown div {
+  width: 8.3vw;
+  height: 1.3671875vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9765625vw;
+  line-height: 140%;
+  color: #224660;
+  cursor: pointer;
+}
+.floorDropDown div:hover {
+  color: #C7A28C;
+  transition: 0.5s;
+}
+
+.floorDropDownClose {
+  display: none;
+}
+
+.selectsContainerRight {
+  display: flex;
+  width: 23.6328125vw;
+  height: 2.1484375vw;
+  border-bottom: 1px solid rgba(130, 130, 130, 0.8);
+  padding-left: 1vw;
+  align-items: center;
+  margin-bottom: 5.859375vw;
+}
+.selectsContainerRight .input {
+  border: none;
+  width: 21vw;
+  outline: none;
+  font-family: "arm-regular", "montserrat-ru-regular";
+}
+.selectsContainerRight .input::-moz-placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9114583333vw;
+  line-height: 140%;
+}
+.selectsContainerRight .input::placeholder {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9114583333vw;
+  line-height: 140%;
+}
+.selectsContainerRight .searchIcon {
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .selectsContainer {
+    display: flex;
+    flex-direction: column-reverse;
+    margin-bottom: 4.8309178744vw;
+  }
+  .selectsContainer .selectsContainerLeft {
+    display: flex;
+    flex-direction: column;
+  }
+  .forSelect {
+    display: flex;
+    gap: 0.5vw;
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 83.3333333333vw;
+    height: 8.6956521739vw;
+    align-items: center;
+    justify-content: center;
+  }
+  .forSelect .allCategory {
+    width: 76.0869565217vw;
+    height: 4.8309178744vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 140%;
+    color: rgba(130, 130, 130, 0.8);
+  }
+  .forSelect .dArr {
+    display: flex;
+  }
+  .forSelect .uArr {
+    transform: rotate(180deg);
+    margin-top: 0.5859375vw;
+  }
+  .dropDownNo {
+    display: none;
+  }
+  .dropDown {
+    position: absolute;
+    z-index: 8;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+    width: 83.3333333333vw;
+    min-height: 50.7246376812vw;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    padding: 4.8309178744vw;
+    padding-top: 2.4154589372vw;
+  }
+  .dropDown::-webkit-scrollbar {
+    width: 13px;
+  }
+  .dropDown::-webkit-scrollbar-thumb {
+    background: rgba(130, 130, 130, 0.4);
+    border-radius: 11px;
+  }
+  .dropDown .miniSelect {
+    display: flex;
+    gap: 2vw;
+  }
+  .dropDown .miniSelect div {
+    display: flex;
+  }
+  .dropDown .miniSelect .miniTitle {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 140%;
+    color: #224660;
+    cursor: pointer;
+  }
+  .dropDown .miniSelect .miniTitle:hover {
+    color: #C7A28C;
+    transition: 0.5s;
+  }
+  .miniDropDownClose {
+    display: none;
+  }
+  .miniDropDown {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0416666667vw;
+    padding-left: 2vw;
+  }
+  .miniDropDown div {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 140%;
+    color: #224660;
+  }
+  .miniDropDown div:hover {
+    color: #C7A28C;
+    transition: 0.5s;
+  }
+  .lArr {
+    display: flex;
+  }
+  .downArr {
+    transform: rotate(90deg);
+    display: flex;
+  }
+  .ShowAllCategory {
+    display: flex;
+    flex-direction: column;
+    gap: 1.0416666667vw;
+    margin-left: 1vw;
+  }
+  .subCategory {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 140%;
+    color: #224660;
+  }
+  .subCategory:hover {
+    color: #C7A28C;
+    transition: 0.5s;
+  }
+  .floor {
+    display: flex;
+    gap: 0.5vw;
+    border: 1px solid gray;
+    border-radius: 2px;
+    width: 83.3333333333vw;
+    height: 8.6956521739vw;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.8309178744vw;
+  }
+  .floor .allFloors {
+    width: 76.0869565217vw;
+    height: 4.8309178744vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 140%;
+    color: rgba(130, 130, 130, 0.8);
+  }
+  .floor .dArr {
+    display: flex;
+    cursor: pointer;
+  }
+  .floor .upArr {
+    transform: rotate(180deg);
+    margin-top: 0.5859375vw;
+  }
+  .floorDropDown {
+    position: absolute;
+    z-index: 8;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+    width: 83.3333333333vw;
+    min-height: 45.8937198068vw;
+    display: flex;
+    flex-direction: column;
+    padding: 5.3140096618vw;
+    outline: none;
+  }
+  .floorDropDown div {
+    width: 83.3333333333vw;
+    height: 36.231884058vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 140%;
+    color: #224660;
+    cursor: pointer;
+  }
+  .floorDropDown div:hover {
+    color: #C7A28C;
+    transition: 0.5s;
+  }
+  .floorDropDownClose {
+    display: none;
+  }
+  .selectsContainerRight {
+    display: flex;
+    width: 83.3333333333vw;
+    height: 7.2463768116vw;
+    border-bottom: 1px solid rgba(130, 130, 130, 0.8);
+    padding-left: 1vw;
+    align-items: center;
+    margin-bottom: 5.8vw;
+  }
+  .selectsContainerRight .input {
+    border: none;
+    width: 83.3333333333vw;
+    outline: none;
+    font-family: "arm-regular", "montserrat-ru-regular";
+  }
+  .selectsContainerRight .input::-moz-placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 140%;
+  }
+  .selectsContainerRight .input::placeholder {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 140%;
+  }
+}/*# sourceMappingURL=select.module.css.map */

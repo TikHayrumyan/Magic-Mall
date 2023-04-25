@@ -1,0 +1,78 @@
+.blog {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 82.902778vw;
+  position: relative;
+}
+
+.titleBlock {
+  display: flex;
+  position: relative;
+  margin-bottom: 7.6388888889vw;
+  margin-left: 2.0833333333vw;
+  gap: 0.8vw;
+}
+
+.patternTitle {
+  width: 11vw;
+}
+
+.title {
+  font-family: "Bokonique-regular", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+  margin-top: 5.8680555556vw;
+  width: 30vw;
+}
+
+.backPattern {
+  position: absolute;
+  right: -7%;
+}
+
+@media only screen and (max-width: 600px) {
+  .blog {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 83vw;
+    position: relative;
+  }
+  .titleBlock {
+    display: flex;
+    position: relative;
+    margin-bottom: 7vw;
+  }
+  .title {
+    font-family: "Bokonique-regular", "montserrat-ru-semibold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.5vw;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #224660;
+    margin-top: 2vw;
+    z-index: 1;
+    margin-top: 9vw;
+    width: 20vw;
+  }
+  .backPattern {
+    position: absolute;
+    right: -7%;
+    width: 60vw;
+  }
+  .patternTitle {
+    width: 15vw;
+    height: 15vw;
+  }
+}/*# sourceMappingURL=blog.module.css.map */

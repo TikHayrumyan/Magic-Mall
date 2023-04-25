@@ -1,0 +1,288 @@
+.news {
+  width: 100vw;
+}
+
+.container {
+  width: 100vw;
+}
+
+.titleNews {
+  font-family: "Bokonique-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+  margin-bottom: 5vw;
+}
+
+.descripBlock {
+  margin-top: 2vw;
+  width: 36vw;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 2vw;
+}
+
+.img {
+  width: 49.7395833333vw;
+  height: 38.3463541667vw;
+  display: block;
+}
+
+.dateBlock {
+  display: flex;
+  margin-bottom: 2vw;
+  gap: 1.5vw;
+  align-items: center;
+}
+.dateBlock .date {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  color: #828282;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  background: #FFFFFF;
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.1);
+  border-radius: 0.1953125vw;
+  width: 90vw;
+  margin-bottom: 5.2vw;
+}
+
+.PaginationContainer {
+  display: flex;
+  width: 89.9vw;
+  justify-content: space-between;
+  height: 38.3463541667vw;
+  flex-direction: row-reverse;
+}
+
+.PaginationContainerReverse {
+  display: flex;
+  width: 89.9vw;
+  justify-content: space-between;
+  height: 38.3463541667vw;
+}
+
+.descripTitleBlock {
+  width: 27.3vw;
+}
+.descripTitleBlock .descripTitle {
+  width: 27.0832vw;
+  font-family: "arm-bold", "montserrat-ru-bold";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  line-height: 140%;
+  color: #224660;
+}
+
+.descriptionBlock {
+  width: 27.3vw;
+  margin-top: 2vw;
+}
+.descriptionBlock .description {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.171875vw;
+  line-height: 140%;
+  color: #224660;
+}
+
+.btnBlock {
+  display: flex;
+  margin-top: 2vw;
+  width: 11vw;
+  cursor: pointer;
+}
+.btnBlock .button {
+  width: 8.86vw;
+  display: flex;
+  height: 1.3020833333vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9114583333vw;
+  line-height: 140%;
+  color: #224660;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.btnBlock .arrow {
+  width: 2vw;
+}
+
+.btnBlock:hover .arrow {
+  transform: translateX(1vw);
+  transition: 0.8s;
+}
+
+.pattern {
+  position: absolute;
+  bottom: 5%;
+  right: 0%;
+}
+
+.imgMobile {
+  display: none;
+}
+
+.patternMobile {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .SecNews {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 8vw;
+  }
+  .container {
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .titleNews {
+    font-family: "Bokonique-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.7632850242vw;
+    line-height: 7.729468599vw;
+    text-transform: uppercase;
+    color: #224660;
+    margin-bottom: 5vw;
+    display: flex;
+    width: 100vw;
+    margin-left: 12vw;
+  }
+  .descripBlock {
+    margin-top: 4vw;
+    width: 88.1642512077vw;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 0vw;
+  }
+  .imgMobile {
+    width: 88.1642512077vw;
+    height: 67.6328502415vw;
+    display: block;
+    margin-top: 6.038647343vw;
+    margin-bottom: 6.038647343vw;
+  }
+  .img {
+    display: none;
+  }
+  .dateBlock {
+    display: flex;
+    margin-bottom: 2vw;
+    gap: 1.5vw;
+    align-items: center;
+  }
+  .dateBlock .date {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .pagination {
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF;
+    box-shadow: none;
+    width: 88.1642512077vw;
+    margin-bottom: 5.2vw;
+  }
+  .PaginationContainer {
+    display: flex;
+    width: 88.1642512077vw;
+    height: -moz-fit-content;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 7.2463768116vw;
+  }
+  .PaginationContainerReverse {
+    display: flex;
+    width: 89.9vw;
+    justify-content: space-between;
+    height: -moz-fit-content;
+    height: fit-content;
+  }
+  .descripTitleBlock {
+    width: 88.1642512077vw;
+    margin-top: 6.038647343vw;
+  }
+  .descripTitleBlock .descripTitle {
+    width: 88.1642512077vw;
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 5.3140096618vw;
+    line-height: 7.2463768116vw;
+    color: #224660;
+  }
+  .descriptionBlock {
+    width: 88.1642512077vw;
+    margin-top: 6.038647343vw;
+  }
+  .descriptionBlock .description {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8647342995vw;
+    line-height: 7.0287539936vw;
+    color: #224660;
+  }
+  .btnBlock {
+    display: flex;
+    margin-top: 2vw;
+    width: 86.9565217391vw;
+    cursor: pointer;
+  }
+  .btnBlock .button {
+    width: 33.8164251208vw;
+    display: flex;
+    height: 4.8309178744vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.3816425121vw;
+    line-height: 4.5893719807vw;
+    color: #224660;
+    border: none;
+    background-color: transparent;
+    margin-top: 7.2463768116vw;
+  }
+  .btnBlock .arrow {
+    width: 3vw;
+    margin-top: 7.2463768116vw;
+  }
+  .btnBlock:hover .arrow {
+    transform: translateX(1vw);
+    transition: 0.8s;
+  }
+  .pattern {
+    display: none;
+  }
+  .patternMobile {
+    display: flex;
+    margin-left: 26.5700483092vw;
+  }
+}/*# sourceMappingURL=news.module.css.map */

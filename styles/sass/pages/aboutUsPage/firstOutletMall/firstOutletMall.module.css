@@ -1,0 +1,195 @@
+.firstOutletMall {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 11vw;
+  min-height: 50vw;
+}
+
+.container {
+  width: 85vw;
+}
+
+.title {
+  margin-top: 5vw;
+  font-family: "Bokonique-regular", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.875vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+  margin-bottom: 5vw;
+}
+
+.containerBlock {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30vw;
+}
+.containerBlock .content {
+  width: 85vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9375vw;
+  line-height: 160%;
+  color: #224660;
+  margin-bottom: 10vw;
+}
+
+.contentBlock {
+  width: 28.90625vw;
+}
+
+.name {
+  width: 25.6vw;
+  font-family: "cosi-arm", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 1.6666666667vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+  margin-bottom: 3vw;
+}
+
+.buttonsBlock {
+  display: flex;
+  gap: 4.1666666667vw;
+}
+.buttonsBlock .joinWithUs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8333333333vw 2.0833333333vw;
+  gap: 0.8333333333vw;
+  width: 20.2777777778vw;
+  height: 3.3333333333vw;
+  background: #A6CCE5;
+  border-radius: 27.7777777778vw;
+  border: none;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1111111111vw;
+  line-height: 1.3888888889vw;
+  display: flex;
+  align-items: center;
+  color: #224660;
+  cursor: pointer;
+}
+.buttonsBlock .workWithUs {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0.8333333333vw 2.0833333333vw;
+  gap: 0.8333333333vw;
+  width: 28.125vw;
+  height: 3.3333333333vw;
+  background: #A6CCE5;
+  border-radius: 27.7777777778vw;
+  border: none;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1111111111vw;
+  line-height: 1.3888888889vw;
+  display: flex;
+  align-items: center;
+  color: #224660;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 600px) {
+  .firstOutletMall {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 51vw;
+    min-height: 50vw;
+  }
+  .container {
+    width: 88.1642512077vw;
+    overflow: hidden;
+  }
+  .title {
+    margin-top: 5vw;
+    font-family: "Bokonique-regular", "montserrat-ru-semibold";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 6.7632850242vw;
+    line-height: 7.9710144928vw;
+    text-transform: uppercase;
+    color: #224660;
+    margin-bottom: 5vw;
+  }
+  .containerBlock {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30vw;
+  }
+  .containerBlock .content {
+    width: 88.1642512077vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.8647342995vw;
+    line-height: 8.4541062802vw;
+    color: #224660;
+  }
+  .buttonsBlock {
+    display: flex;
+    flex-direction: column;
+    width: 88.1642512077vw;
+    align-items: center;
+    gap: 0vw;
+  }
+  .buttonsBlock .joinWithUs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2.8985507246vw 7.2463768116vw;
+    width: 88.1642512077vw;
+    height: 11.5942028986vw;
+    background: #A6CCE5;
+    border-radius: 96.6183574879vw;
+    border: none;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8647342995vw;
+    line-height: 4.8309178744vw;
+    display: flex;
+    align-items: center;
+    color: #224660;
+    cursor: pointer;
+    margin-bottom: 2.4154589372vw;
+  }
+  .buttonsBlock .workWithUs {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 2.8985507246vw 7.2463768116vw;
+    width: 88.1642512077vw;
+    height: 11.5942028986vw;
+    background: #A6CCE5;
+    border-radius: 96.6183574879vw;
+    border: none;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 3.8647342995vw;
+    line-height: 4.8309178744vw;
+    display: flex;
+    align-items: center;
+    color: #224660;
+    cursor: pointer;
+  }
+}/*# sourceMappingURL=firstOutletMall.module.css.map */

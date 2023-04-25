@@ -1,0 +1,180 @@
+.SinglePage {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35vw;
+}
+
+.container {
+  width: 90.5vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.GoBackBlock {
+  margin-top: 8vw;
+  display: flex;
+  gap: 1vw;
+  margin-bottom: 5vw;
+}
+.GoBackBlock .goBack {
+  font-family: "arm-SemiBold", "montserrat-ru-SemiBold";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.78125vw;
+  line-height: 1.3020833333vw;
+  color: #224660;
+}
+
+.forHover {
+  display: flex;
+  gap: 1vw;
+  cursor: pointer;
+}
+
+.forHover:hover .arrow {
+  transform: translateX(-10px);
+  transition: 1s;
+}
+
+.descrip {
+  color: #224660;
+}
+
+.singlePageBlock .title {
+  width: 48.828125vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 2.34375vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+}
+.singlePageBlock .dateBlock {
+  display: flex;
+  gap: 1vw;
+  margin-top: 1.5vw;
+  align-items: center;
+}
+.singlePageBlock .dateBlock .date {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  color: #828282;
+}
+.singlePageBlock .shop {
+  margin-top: 1.5vw;
+}
+.singlePageBlock .bottomline {
+  height: 1px;
+  background: #B0B2B6;
+  opacity: 0.16;
+  margin-top: 4vw;
+}
+.singlePageBlock .shareBlock {
+  margin-top: 2vw;
+  display: flex;
+  gap: 1vw;
+  align-items: center;
+}
+.singlePageBlock .shareBlock .share {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.9114583333vw;
+  line-height: 140%;
+  color: #224660;
+}
+
+@media only screen and (max-width: 600px) {
+  .SinglePage {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 88.1642512077vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .GoBackBlock {
+    margin-top: 8vw;
+    display: flex;
+    gap: 1vw;
+    margin-bottom: 5vw;
+  }
+  .GoBackBlock .goBack {
+    font-family: "arm-SemiBold", "montserrat-ru-SemiBold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #224660;
+  }
+  .forHover {
+    display: flex;
+    gap: 1vw;
+    cursor: pointer;
+  }
+  .forHover:hover .arrow {
+    transform: translateX(-10px);
+    transition: 1s;
+  }
+  .descrip {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.8647342995vw;
+    line-height: 5.3140096618vw;
+    color: #224660;
+  }
+  .singlePageBlock .title {
+    width: 88.1642512077vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 4.347826087vw;
+    line-height: 5.7971014493vw;
+    text-transform: uppercase;
+    color: #224660;
+  }
+  .singlePageBlock .dateBlock {
+    display: flex;
+    gap: 3vw;
+    margin-top: 5vw;
+    align-items: center;
+  }
+  .singlePageBlock .dateBlock .date {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 3.6231884058vw;
+    color: #828282;
+  }
+  .singlePageBlock .shop {
+    margin-top: 1.5vw;
+  }
+  .singlePageBlock .bottomline {
+    display: none;
+  }
+  .singlePageBlock .shareBlock {
+    margin-top: 5vw;
+    display: flex;
+    gap: 5vw;
+    align-items: center;
+    margin-bottom: 45vw;
+  }
+  .singlePageBlock .shareBlock .share {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.3816425121vw;
+    line-height: 4.5893719807vw;
+    color: #224660;
+  }
+}/*# sourceMappingURL=singlePage.module.css.map */

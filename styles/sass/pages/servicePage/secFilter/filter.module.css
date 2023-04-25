@@ -1,0 +1,395 @@
+.loading {
+  width: 84vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 3vw;
+}
+
+.filter {
+  display: flex;
+  justify-content: center;
+  margin-top: 4.6875vw;
+}
+
+.container {
+  width: 84.375vw;
+}
+
+.CardSubscribe {
+  margin-top: 35vw;
+  width: 84vw;
+  display: flex;
+  justify-content: center;
+}
+
+.foods {
+  display: flex;
+  gap: 2.25vw;
+  flex-wrap: wrap;
+  margin-bottom: 4.6875vw;
+}
+
+.first {
+  width: 19.4vw;
+  height: 18.8vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0px 1.3020833333vw 1.953125vw rgba(0, 0, 0, 0.1);
+}
+.first .patternBlock {
+  display: flex;
+  justify-content: flex-end;
+}
+.first .patternBackground {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 4.4921875vw;
+  height: 4.4921875vw;
+  text-align: center;
+}
+.first .title {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1.0416666667vw;
+}
+.first .title .number {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.3625vw;
+  line-height: 1.8880208333vw;
+  text-align: center;
+  color: #FFFFFF;
+}
+.first .title .floor {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.7765625vw;
+  line-height: 0.78125vw;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+.bankLogoBlock {
+  display: flex;
+  justify-content: center;
+  height: 5vw;
+  align-items: center;
+}
+.bankLogoBlock .logo {
+  width: auto;
+  max-width: 11.8vw;
+  height: auto;
+  max-height: 4.6vw;
+}
+
+.brandBook {
+  height: 3vw;
+  width: 14.5833333333vw;
+  margin-left: 1.3020833333vw;
+  display: flex;
+}
+.brandBook .brand {
+  width: 12.5833333333vw;
+  height: 1.8880208333vw;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.5625vw;
+  line-height: 1.8880208333vw;
+  color: #FFFFFF;
+}
+
+.iconBook {
+  cursor: pointer;
+  width: 2.2222222222vw;
+}
+
+.buttonBlock {
+  width: 84.375vw;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 13.671875vw;
+}
+.buttonBlock .button {
+  background-color: transparent;
+  border-radius: 3.2552083333vw;
+  width: 8.1380208333vw;
+  height: 2.1484375vw;
+  border: 1px solid #A6CCE5;
+  color: #224660;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 0.78125vw;
+  line-height: 0.9765625vw;
+  cursor: pointer;
+}
+.buttonBlock .button:hover {
+  background-color: #A6CCE5;
+  transition: 0.5s;
+}
+
+.phonBlock {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.phonBlock .numberPhone {
+  font-family: "Bokonique-regular";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.1111111111vw;
+  line-height: 205.4%;
+  text-transform: uppercase;
+  color: #224660;
+}
+.phonBlock .phoneIcon {
+  width: 1.3888888889vw;
+}
+
+@media screen and (min-width: 650px) {
+  .first:hover {
+    transition: 1s;
+  }
+  .first:hover .bankLogoBlock {
+    align-items: flex-start;
+    transform: scale(0.9);
+    transition: 1s;
+  }
+  .first:hover .bankLogoBlock .bankLogo {
+    transform: translateY(-20px);
+    transition: 0.5s;
+  }
+  .first:hover .hoverBlock {
+    display: flex;
+    transform: translateY(-30px);
+    transition: 1.5s;
+  }
+  .first:hover .title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 15px;
+  }
+  .first:hover .title .number {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5625vw;
+    line-height: 1.8880208333vw;
+    text-align: center;
+    color: #224660;
+    transition: 1s;
+  }
+  .first:hover .title .floor {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.7765625vw;
+    line-height: 0.78125vw;
+    text-align: center;
+    color: #224660;
+    transition: 1s;
+  }
+  .hoverBlock {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    transition: 1s;
+    min-height: 6.5vw;
+    justify-content: flex-end;
+  }
+  .phonBlock {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+  }
+  .phonBlock .numberPhone {
+    font-family: "Bokonique-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.25vw;
+    line-height: 205.4%;
+    text-transform: uppercase;
+    color: #224660;
+  }
+  .phonBlock .phoneIcon {
+    width: 1.3888888889vw;
+  }
+  .number:hover {
+    color: #C7A28C;
+  }
+  .networkBlock {
+    display: flex;
+    gap: 20px;
+  }
+  .networkBlock div {
+    width: 2.4305555556vw;
+  }
+}
+.searchResult {
+  font-family: "Bokonique-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.2vw;
+  line-height: 140%;
+  color: #224660;
+}
+.searchResult span {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4vw;
+  line-height: 160%;
+  color: #224660;
+}
+
+.searchResultNotFound {
+  margin-top: 8vw;
+  width: 84vw;
+  display: flex;
+  justify-content: center;
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2vw;
+  line-height: 160%;
+  color: #224660;
+}
+
+@media only screen and (max-width: 600px) {
+  .filter {
+    display: flex;
+    justify-content: center;
+    margin-top: 15vw;
+  }
+  .container {
+    width: 83.3333333333vw;
+  }
+  .CardSubscribe {
+    margin-top: 105vw;
+    width: 83.3333333333vw;
+    display: flex;
+    justify-content: center;
+  }
+  .foods {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 4.6875vw;
+  }
+  .first {
+    width: 39.1304347826vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 36.231884058vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 3vw;
+  }
+  .first .patternBlock {
+    width: 39.1304347826vw;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .first .patternBackground {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 9.1787439614vw;
+    height: 9.1787439614vw;
+    text-align: center;
+  }
+  .first .title {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+  }
+  .first .title .number {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9323671498vw;
+    line-height: 2.4154589372vw;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .first .title .floor {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.9323671498vw;
+    line-height: 2.4154589372vw;
+    text-align: center;
+    color: #FFFFFF;
+  }
+  .brandBook {
+    height: 12.077294686vw;
+    width: 3.6231884058vw;
+    margin-left: 3vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .buttonBlock {
+    width: 84.375vw;
+    display: none;
+    justify-content: center;
+    margin-bottom: 13.671875vw;
+  }
+  .buttonBlock .button {
+    background-color: transparent;
+    border-radius: 3.2552083333vw;
+    width: 8.1380208333vw;
+    height: 2.1484375vw;
+    border: 1px solid #A6CCE5;
+    color: #224660;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 0.78125vw;
+    line-height: 0.9765625vw;
+    cursor: pointer;
+  }
+  .buttonBlock .button:hover {
+    background-color: #A6CCE5;
+    transition: 0.5s;
+  }
+  .hoverBlock {
+    display: none;
+  }
+  .searchResult {
+    font-family: "Bokonique-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4.8309178744vw;
+    line-height: 140%;
+    color: #224660;
+  }
+  .searchResult span {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.6231884058vw;
+    line-height: 160%;
+    color: #224660;
+  }
+  .searchResultNotFound {
+    margin-top: 8vw;
+    width: 84vw;
+    display: flex;
+    justify-content: center;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.8985507246vw;
+    line-height: 160%;
+    color: #224660;
+  }
+}/*# sourceMappingURL=filter.module.css.map */
