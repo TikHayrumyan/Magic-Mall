@@ -1,4 +1,5 @@
-import styles from "../../styles/sass/pages/newsPage/secMain/secMain.module.scss"
+import styles from "../../styles/sass/pages/NewsPage/secMain/secMain.module.scss"
+
 import background from "../../public/img/newsPage/secMain/background.jpeg"
 import pattern from "../../public/img/newsPage/secMain/pattern.svg"
 import Image from "next/image"

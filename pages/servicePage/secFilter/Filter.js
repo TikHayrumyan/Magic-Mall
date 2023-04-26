@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/servicePage/secFilter/filter.module.scss"
-import Select from "./Selectors/select"
+import Select from "./Selectors/Select"
 import cutPattern from "../../../public/img/servicePage/secFilter/cutPattern.svg"
 import Image from "next/image"
 import iconBook from "../../../public/img/servicePage/secFilter/iconBook.svg"

@@ -1,4 +1,3 @@
-import Layout from "../../components/Layout"
 import SecFilter from "./secFilter/Filter"
 import SecMain from "./SecMain"
 
