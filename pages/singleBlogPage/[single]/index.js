@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/singleBlogPage/secBlog/secBlog.module.scss"
 import Link from "next/link"
 import Image from "next/image"
@@ -29,26 +30,27 @@ const SecBlog = () => {
     })
 
     useEffect(() => {
-        GetSingleData(single)
-    },[single])
-
-    const GetSingleData = async(params) => {
-        try {
-            const response = await axios({
-                url: HOST_API+`blog/${params}`,
-                method:"GET"
-            })
-            if(Object.keys(response.data).length && response.status == 200){
-                SetActiveSinglePage({
-                    data:response.data,
-                    loading:true
+        const GetSingleData = async(params) => {
+            try {
+                const response = await axios({
+                    url: HOST_API+`blog/${params}`,
+                    method:"GET"
                 })
+                if(Object.keys(response.data).length && response.status == 200){
+                    SetActiveSinglePage({
+                        data:response.data,
+                        loading:true
+                    })
+                }
+            } catch (error) {
+                console.log(error);
             }
-        } catch (error) {
-            console.log(error);
+        
         }
+        GetSingleData(single)
+    },[HOST_API, single])
+
     
-    }
 
     function replaceForNewLine(txt) {
 

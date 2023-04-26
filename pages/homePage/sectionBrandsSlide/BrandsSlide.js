@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect } from "react";
 // import "owl.carousel/dist/assets/owl.carousel.css";
 // import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -74,7 +75,7 @@ const BrandsSlide = () => {
 
     useEffect(() => {
         GetBrandsSlider()
-    },[])
+    },[GetBrandsSlider])
     useEffect(() => {
 
     },[brandsSliderData.loading])

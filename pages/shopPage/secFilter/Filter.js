@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/shopPage/secFilter/filter.module.scss"
 import Select from "./Selectors/select"
 import cutPattern from "../../../public/img/shopPage/secFilter/cutPattern.svg"
@@ -26,7 +27,7 @@ const SecFilter = () => {
         setTimeout(() => {
             SetWaitData(true)
         }, 10000);
-      },[searchResult.loading])
+      },[SetWaitData, searchResult.loading])
     return(
         <div className={styles.filter}>
             <div className={styles.container}>

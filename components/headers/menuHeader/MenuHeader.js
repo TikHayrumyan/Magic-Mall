@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import styles from "../../../styles/sass/pages/menuHeader/menuHeader.module.scss"
 import Image from 'next/image';
 import Logo from "../../../public/img/icons/Logo.svg"

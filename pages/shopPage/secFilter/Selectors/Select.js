@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import styles from "../../../../styles/sass/pages/shopPage/secFilter/secSelect/select.module.scss"
 import dArr from "../../../../public/img/shopPage/secFilter/dArr.svg"
 import lArr from "../../../../public/img/shopPage/secFilter/lArr.svg"

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/serviceSinglePage/singlePage/singlePage.module.scss"
 import Link from "next/link"
 import RightArrow from "../../../public/img/serviceSinglePage/singlePage/Rarrow.svg"
@@ -28,27 +29,28 @@ const SinglePage = () => {
     })
 
     useEffect(() => {
-        GetSingleData(single)
-    },[single])
-
-    const GetSingleData = async(params) => {
-        try {
-            const response = await axios({
-                url: HOST_API+`services/${params}`,
-                method:"GET"
-            })
-            console.log(response,"datanaaa");
-            if(Object.keys(response.data).length && response.status == 200){
-                SetActiveSinglePage({
-                    data:response.data,
-                    loading:true
+        const GetSingleData = async(params) => {
+            try {
+                const response = await axios({
+                    url: HOST_API+`services/${params}`,
+                    method:"GET"
                 })
+                console.log(response,"datanaaa");
+                if(Object.keys(response.data).length && response.status == 200){
+                    SetActiveSinglePage({
+                        data:response.data,
+                        loading:true
+                    })
+                }
+            } catch (error) {
+                console.log(error);
             }
-        } catch (error) {
-            console.log(error);
+        
         }
+        GetSingleData(single)
+    },[HOST_API, single])
+
     
-    }
     console.log(single,"asas");
     
     return(<>

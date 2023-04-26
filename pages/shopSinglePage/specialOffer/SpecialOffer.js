@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/shopSinglePage/specialOffer/specialOffer.module.scss"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import { useEffect } from "react"
@@ -24,7 +25,7 @@ const SpecialOffer = ({SpecialOffer,loading}) => {
 
         useEffect(() => {
             GetSpecialOffersData()   
-        },[])
+        },[GetSpecialOffersData])
 
         useEffect(() => {
             

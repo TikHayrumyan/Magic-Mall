@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image"
 import styles from "../../../styles/sass/pages/HomePage/secFirstOutletMall/firstOutletMall.module.scss"
 import Pattern from "../../../public/img/homePage/secBlog/firstPattern.svg"
@@ -13,7 +14,7 @@ const FirstOutletMall = () => {
 
     useEffect(() => {
         GetFirstOutletMallData()
-    },[])
+    },[GetFirstOutletMallData])
     useEffect(() => {
         
     },[firstMallData.loading])

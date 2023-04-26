@@ -10,7 +10,7 @@ const YourInterest =() =>{
 
     useEffect(() => {
         GetInterested()
-    },[])
+    },[GetInterested])
 
     useEffect(() => {
 

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../styles/sass/pages/reportPage/secMain.module.scss"
 import adobeIcon from "../../public/img/reportPage/adobeIcon.svg"
 import { useGlobalProvider } from "../../components/Providers/GlobalProvider"
@@ -12,7 +13,7 @@ const SecMain = () => {
 
     useEffect(() => {
         GetFinancialReportData()
-    },[])
+    },[GetFinancialReportData])
     useEffect(() => {
 
     },[financialReportsData.loading])

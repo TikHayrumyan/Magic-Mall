@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/singleBlogPage/otherBlogs/otherBlogs.module.scss"
 import calendarIcon from "../../../public/img/singleBlogPage/otherBlogs/calendarIcon.svg"
 import arrow from "../../../public/img/singleBlogPage/otherBlogs/arrow.svg"

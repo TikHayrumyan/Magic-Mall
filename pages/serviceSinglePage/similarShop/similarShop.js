@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/serviceSinglePage/similarShop/similarShop.module.scss"
 import cutPattern from "../../../public/img/serviceSinglePage/similarShop/cutPattern.svg"
 import iconBook from "../../../public/img/serviceSinglePage/similarShop/iconBook.svg"

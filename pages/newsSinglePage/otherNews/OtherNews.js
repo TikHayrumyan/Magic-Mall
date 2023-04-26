@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image"
 import styles from "../../../styles/sass/pages/newsSinglePage/otherNews/otherNews.module.scss"
 import calendar from "../../../public/img/newsSinglePage/otherNews/calendar.svg"

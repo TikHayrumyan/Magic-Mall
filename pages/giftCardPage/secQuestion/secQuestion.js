@@ -11,7 +11,7 @@ const SecQuestion = () => {
 
     useEffect(() => {
         GetGiftCardData()
-    },[])
+    },[GetGiftCardData])
 
     useEffect(() => {
 

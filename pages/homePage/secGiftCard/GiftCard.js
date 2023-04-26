@@ -24,7 +24,7 @@ const GiftCard = () => {
 
     useEffect(() => {
         GetHomePageGiftCardData()
-    },[])
+    },[GetHomePageGiftCardData])
     useEffect(() => {
         
     },[giftCardHomePageData.loading])

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import React, { useEffect, useReducer, useState } from "react";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -23,7 +24,7 @@ const MainSlider = () => {
    
     useEffect(() => {
         GetMainSlider()
-    },[])
+    },[GetMainSlider])
     
     useEffect(() => {
         
@@ -38,7 +39,7 @@ const MainSlider = () => {
                 
                 return(
                     <div key={id}  className={styles.itemOne}><div className={styles.gradient}></div>
-                        <img className={styles.backgroundImage} src={lang == "en" ? HOST_API_IMG+image : lang == "ru" ? HOST_API_IMG+image_ru : HOST_API_IMG+image_am}/>
+                        <img alt="" className={styles.backgroundImage} src={lang == "en" ? HOST_API_IMG+image : lang == "ru" ? HOST_API_IMG+image_ru : HOST_API_IMG+image_am}/>
                         <div className={styles.blockData}>
                             <h2 className={styles.title}>{lang == "en" ? title : lang == "ru" ? title_ru : title_am}</h2>
                             <p className={styles.info}>{lang == "en" ? description : lang == "ru" ? description_ru : description_am}</p>

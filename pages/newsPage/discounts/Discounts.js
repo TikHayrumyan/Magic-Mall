@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/NewsPage/discounts/discounts.module.scss"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import Link from "next/link"

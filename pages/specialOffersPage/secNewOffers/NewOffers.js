@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/specialOffersPage/newOffers/newOffers.module.scss"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import { useEffect,useState } from "react"
@@ -44,7 +45,7 @@ const NewOffers = () => {
 
         useEffect(() => {
             GetSpecialOffersData()   
-        },[])
+        },[GetSpecialOffersData])
 
         useEffect(() => {
             

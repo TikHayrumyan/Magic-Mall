@@ -14,7 +14,7 @@ const GiftCard = () => {
 
     useEffect(() => {
         GetGiftCardData()
-    },[])
+    },[GetGiftCardData])
 
     useEffect(() => {
 
