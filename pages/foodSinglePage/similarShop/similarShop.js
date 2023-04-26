@@ -5,7 +5,6 @@ import iconBook from "../../../public/img/shopSinglePage/similarShops/iconBook.s
 import whitPhoneIcon from "../../../public/img/icons/whitPhoneIcon.svg"
 import Facebook from "../../../public/img/icons/Facebook.svg"
 import Instagram from "../../../public/img/icons/Instagram.svg"
-import Image from "next/Image"
 import Link from "next/link"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import { translate } from "../../../translations"
@@ -40,17 +39,17 @@ const SimilarShop = ({related,loading}) =>{
                                                 <img className={styles.logoBackground} alt="Logo" src={HOST_API_IMG+logo}/>
                                             </div>
                                             {phone && <div className={styles.phonBlock}>
-                                                <div className={styles.phoneIcon}><Image alt="phoneIcon" src={whitPhoneIcon}/></div>
+                                                <div className={styles.phoneIcon}><img alt="phoneIcon" src={whitPhoneIcon}/></div>
                                                 <div><a className={styles.number} href={`tel:${phone}`}>{phone}</a></div>
                                             </div>}
                                           {facebook && instagram && <div className={styles.networkBlock}>
-                                                <div className={styles.facebook}><Link href={facebook}><a target="_blank"><Image alt="facebook" src={Facebook}/></a></Link></div>
-                                                    <div className={styles.instagram}><Link href={instagram}><a  target="_blank"><Image alt="instagram" src={Instagram}/></a></Link></div>
+                                                <div className={styles.facebook}><Link href={facebook}><a target="_blank"><img alt="facebook" src={Facebook}/></a></Link></div>
+                                                    <div className={styles.instagram}><Link href={instagram}><a  target="_blank"><img alt="instagram" src={Instagram}/></a></Link></div>
                                             </div>}
                                         </div>
                                         <div className={styles.brandBook}>
                                                 <div className={styles.brand}>{lang == "en" ? name : lang == "ru" ? name_ru : name_am}</div>
-                                                <div className={styles.iconBook}><Image alt="iconBook" src={iconBook}/></div>
+                                                <div className={styles.iconBook}><img alt="iconBook" src={iconBook}/></div>
                                         </div>
                                     </div>
                                     </a></Link>

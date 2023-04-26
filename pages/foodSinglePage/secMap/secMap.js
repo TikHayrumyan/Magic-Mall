@@ -1,6 +1,7 @@
-import Image from "next/Image"
+/* eslint-disable @next/next/no-img-element */
+
 import styles from "../../../styles/sass/pages/foodSinglePage/secMap/secMap.module.scss"
-import map from "../../../public/img/foodSinglePage/secMap/map.svg"
+
 
 
 const SecMap = () =>{
@@ -8,7 +9,7 @@ const SecMap = () =>{
     return(
         <div className={styles.SecMap}>
             <div className={styles.container}>
-                <div><Image alt="map" src={map}/></div>
+                <div><img alt="map" src="/img/foodSinglePage/secMap/map.svg"/></div>
             </div>
         </div>
     )

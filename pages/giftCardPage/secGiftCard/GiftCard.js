@@ -1,5 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/GiftCardPage/secGiftCard/giftCard.module.scss"
-import Image from "next/Image"
+
 import bag from "../../../public/img/giftCardPage/secGiftCard/bag.png"
 import card from "../../../public/img/giftCardPage/secGiftCard/cardNew.png"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
@@ -31,8 +32,8 @@ const GiftCard = () => {
                 <div className={styles.giftCardBlock}>
                     <div className={styles.descripBlock}>{lang == "en" ? parse(giftCardData.data.content.content) : lang == "ru" ? parse(giftCardData.data.content.content_ru) : parse(giftCardData.data.content.content_am)}</div>
                     <div className={styles.ImgBlock}>
-                        <div className={styles.bag}><Image alt="bag" src={bag}/></div>
-                        <div className={styles.card}><Image alt="bag" src={card}/></div>
+                        <div className={styles.bag}><img alt="bag" src={bag}/></div>
+                        <div className={styles.card}><img alt="bag" src={card}/></div>
                     </div>
                 </div>
                 <div className={styles.buttonBlock}>
