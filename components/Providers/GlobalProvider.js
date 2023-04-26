@@ -2,73 +2,74 @@ import React, { createContext, useContext, useState } from "react";
 import axios from "axios";
 import Router, { withRouter } from 'next/router'
 import { useRouter } from "next/router";
+
 const GlobalContext = createContext({});
 
 // react html parser     .........CK EDITOR
 
-const GlobalProvider =({children})=>{
-    const [shopCategoryData,setShopCategoryData]=useState({data:[],loading:false});
-    const [activeCategoryName,SetActiveCategoryName] = useState("")
-    const [searchResult,setSearchResult]=useState({data:[],loading:false,initialData:false});
-    const [searchInputValue,SetSearchInputValue]=useState(null)
-    const [mainSliderData,SetMainSliderData] = useState({data:[],loading:false})
-    const [brandsSliderData,SetBrandsSliderData]= useState({data:[],loading:false})
-    const [bestBrandsSlider,SetBestBrandsSlider] = useState({data:[],loading:false})
-    const [interestedData , SetInterestedData] = useState({data:[],loading:false})
-    const [foodCategoryData ,SetFoodCategoryData] = useState({data:[],loading:false})
-    const [activeCategoryNameFood,SetActiveCategoryNameFood] = useState("")
-    const [searchInputValueFood,SetSearchInputValueFood]=useState(null)
-    const [searchFoodResult,SetSearchFoodResult] = useState({data:[],loading:false,initialData:false})
-    const [servicesData,SetServicesData] = useState({data:[],loading:false})
-    const [searchInputValueService,SetSearchInputValueService]=useState(null)
-    const [entertainmentData,SetEntertainmentData] = useState({data:[],loading:false})
-    const [searchInputValueEntertainment,SetSearchInputValueEntertainment]=useState(null)
-    const [blogSliderData,SetBlogSliderData] = useState({data:[],loading:false})
-    const [blogPageData,SetBlogPageData] = useState({data:[],loading:false,initialOffset:1})
-    const [FAQdata,SetFAQdata] = useState({data:[],loading:false})
-    const [AboutUsData,SetAboutUsData] = useState({data:{},loading:false})
-    const [specialOffersData,SetSpecialOffersData] = useState({data:[],loading:false,initialOffset:0})
-    const [specialOffersSliderData,SetSpecialOffersSliderData] = useState({data:[],loading:false})
-    const [financialReportsData,SetFinancialReportsData] = useState({data:[],loading:false})
-    const [careerData,SetCareerData] = useState({data:[],loading:false})
-    const [giftCardData,SetGiftCardData] = useState({data:{},loading:false})
-    const [giftCardHomePageData,SetGiftCardHomePageData] = useState({data:[],loading:false})
-    const [firstMallData,SetFirstMallData] = useState({data:{},loading:false})
-    const [globalSearchResult,SetGlobalSearchResult] = useState({data:{},loading:false,searchWord:""})
-    const HOST_API ="http://apimall.weflex.am/api/";
-    const HOST_API_IMG ="http://apimall.weflex.am";
+const GlobalProvider = ({ children }) => {
+    const [shopCategoryData, setShopCategoryData] = useState({ data: [], loading: false });
+    const [activeCategoryName, SetActiveCategoryName] = useState("")
+    const [searchResult, setSearchResult] = useState({ data: [], loading: false, initialData: false });
+    const [searchInputValue, SetSearchInputValue] = useState(null)
+    const [mainSliderData, SetMainSliderData] = useState({ data: [], loading: false })
+    const [brandsSliderData, SetBrandsSliderData] = useState({ data: [], loading: false })
+    const [bestBrandsSlider, SetBestBrandsSlider] = useState({ data: [], loading: false })
+    const [interestedData, SetInterestedData] = useState({ data: [], loading: false })
+    const [foodCategoryData, SetFoodCategoryData] = useState({ data: [], loading: false })
+    const [activeCategoryNameFood, SetActiveCategoryNameFood] = useState("")
+    const [searchInputValueFood, SetSearchInputValueFood] = useState(null)
+    const [searchFoodResult, SetSearchFoodResult] = useState({ data: [], loading: false, initialData: false })
+    const [servicesData, SetServicesData] = useState({ data: [], loading: false })
+    const [searchInputValueService, SetSearchInputValueService] = useState(null)
+    const [entertainmentData, SetEntertainmentData] = useState({ data: [], loading: false })
+    const [searchInputValueEntertainment, SetSearchInputValueEntertainment] = useState(null)
+    const [blogSliderData, SetBlogSliderData] = useState({ data: [], loading: false })
+    const [blogPageData, SetBlogPageData] = useState({ data: [], loading: false, initialOffset: 1 })
+    const [FAQdata, SetFAQdata] = useState({ data: [], loading: false })
+    const [AboutUsData, SetAboutUsData] = useState({ data: {}, loading: false })
+    const [specialOffersData, SetSpecialOffersData] = useState({ data: [], loading: false, initialOffset: 0 })
+    const [specialOffersSliderData, SetSpecialOffersSliderData] = useState({ data: [], loading: false })
+    const [financialReportsData, SetFinancialReportsData] = useState({ data: [], loading: false })
+    const [careerData, SetCareerData] = useState({ data: [], loading: false })
+    const [giftCardData, SetGiftCardData] = useState({ data: {}, loading: false })
+    const [giftCardHomePageData, SetGiftCardHomePageData] = useState({ data: [], loading: false })
+    const [firstMallData, SetFirstMallData] = useState({ data: {}, loading: false })
+    const [globalSearchResult, SetGlobalSearchResult] = useState({ data: {}, loading: false, searchWord: "" })
+    const HOST_API = "http://apimall.weflex.am/api/";
+    const HOST_API_IMG = "http://apimall.weflex.am";
     // this state serves for loading until data is received in Shops,Services,Entertainment and Food pages
-    const [waitData,SetWaitData] = useState(false)
+    const [waitData, SetWaitData] = useState(false)
 
-    const GetCategory = async()=>{
-       try{
-           const response = await axios({
-               url:HOST_API+"categories",
-               method:"GET",
-               
-           });
-         if(response.data.length && response.status==200){
-            setShopCategoryData({
-                data:response.data,
-                loading:true
-            })
-           }
-      }catch(err){
-          console.log(err);
-       }
+    const GetCategory = async () => {
+        try {
+            const response = await axios({
+                url: HOST_API + "categories",
+                method: "GET",
+
+            });
+            if (response.data.length && response.status == 200) {
+                setShopCategoryData({
+                    data: response.data,
+                    loading: true
+                })
+            }
+        } catch (err) {
+            console.log(err);
+        }
 
     };
 
-    const GetMainSlider = async() => {
+    const GetMainSlider = async () => {
         try {
-            const response  = await axios({
-                url: HOST_API+"slider",
+            const response = await axios({
+                url: HOST_API + "slider",
                 method: "GET",
             });
-            if(response.data.length && response.status == 200){
+            if (response.data.length && response.status == 200) {
                 SetMainSliderData({
-                    data:response.data,
-                    loading:true
+                    data: response.data,
+                    loading: true
                 })
             }
 
@@ -76,16 +77,16 @@ const GlobalProvider =({children})=>{
             console.log(err);
         }
     };
-    const GetBrandsSlider = async() => {
+    const GetBrandsSlider = async () => {
         try {
             const response = await axios({
-                url: HOST_API+"slider/logo",
-                method:"GET"
+                url: HOST_API + "slider/logo",
+                method: "GET"
             });
-            if(response.data.length && response.status == 200){
+            if (response.data.length && response.status == 200) {
                 SetBrandsSliderData({
-                    data:response.data,
-                    loading:true
+                    data: response.data,
+                    loading: true
                 })
             }
         } catch (error) {
@@ -93,13 +94,13 @@ const GlobalProvider =({children})=>{
         }
     }
     // home page brands slider
-    const GetBestBrandsSlider = async() => {
+    const GetBestBrandsSlider = async () => {
         try {
             const response = await axios({
-                url: HOST_API+"bestBrands",
-                method:"GET"
+                url: HOST_API + "bestBrands",
+                method: "GET"
             });
-            if(response.data.length && response.status == 200){
+            if (response.data.length && response.status == 200) {
                 SetBestBrandsSlider({
                     data: response.data,
                     loading: true
@@ -110,13 +111,13 @@ const GlobalProvider =({children})=>{
         }
     }
     // interested page
-    const GetInterested = async() => {
+    const GetInterested = async () => {
         try {
             const response = await axios({
-                url: HOST_API+"interested",
+                url: HOST_API + "interested",
                 method: "GET"
             });
-            if(response.data.length && response.status == 200){
+            if (response.data.length && response.status == 200) {
                 SetInterestedData({
                     data: response.data,
                     loading: true
@@ -127,17 +128,17 @@ const GlobalProvider =({children})=>{
         }
     }
     // food filter
-    const GetFoodCategory = async() => {
+    const GetFoodCategory = async () => {
         try {
             const response = await axios({
-                url:HOST_API + "categories/food ",
-                method:"GET"
+                url: HOST_API + "categories/food ",
+                method: "GET"
             });
-            
-            if(response.data.length && response.status == 200){
+
+            if (response.data.length && response.status == 200) {
                 SetFoodCategoryData({
                     data: response.data,
-                    loading:true
+                    loading: true
                 })
             }
         } catch (error) {
@@ -145,32 +146,32 @@ const GlobalProvider =({children})=>{
         }
     }
     // header menu for food
-    const GetHeaderMenuFoodFilter = async(id) => {
+    const GetHeaderMenuFoodFilter = async (id) => {
         try {
             const searchResponse = await axios({
                 url: HOST_API + "food",
-                method:"POST",
+                method: "POST",
                 headers: {
                     'content-type': 'application/json',
-                    
-                  },
-                  data:JSON.stringify({category:id})
+
+                },
+                data: JSON.stringify({ category: id })
             });
-            if(searchResponse.data.length && searchResponse.status == 200){
+            if (searchResponse.data.length && searchResponse.status == 200) {
                 SetSearchFoodResult({
                     data: searchResponse.data,
                     loading: true,
-                    initialData:true
+                    initialData: true
                 })
-                Router.push({ pathname: '/foodPage'});
+                Router.push({ pathname: '/foodPage' });
 
-            }else if(searchResponse.data.length == 0 && searchResponse.status == 200){
+            } else if (searchResponse.data.length == 0 && searchResponse.status == 200) {
                 SetSearchFoodResult({
                     data: [],
                     loading: true,
-                    initialData:false
+                    initialData: false
                 })
-                Router.push({ pathname: '/foodPage'});
+                Router.push({ pathname: '/foodPage' });
 
             }
         } catch (error) {
@@ -178,34 +179,34 @@ const GlobalProvider =({children})=>{
         }
     }
     // header menu for shops
-    
 
-    const GetHeaderMenuShopFilter = async(id) => {
+
+    const GetHeaderMenuShopFilter = async (id) => {
         try {
             const searchResponse = await axios({
                 url: HOST_API + "shops",
-                method:"POST",
+                method: "POST",
                 headers: {
                     'content-type': 'application/json',
-                    
-                  },
-                  data:JSON.stringify({category:id})
+
+                },
+                data: JSON.stringify({ category: id })
             });
-            if(searchResponse.data.length && searchResponse.status == 200){
+            if (searchResponse.data.length && searchResponse.status == 200) {
                 setSearchResult({
                     data: searchResponse.data,
                     loading: true,
-                    initialData:true
+                    initialData: true
                 }),
-                
-                Router.push({ pathname: '/shopPage'});
-            }else if(searchResponse.data.length == 0 && searchResponse.status == 200){
+
+                    Router.push({ pathname: '/shopPage' });
+            } else if (searchResponse.data.length == 0 && searchResponse.status == 200) {
                 setSearchResult({
                     data: [],
                     loading: true,
-                    initialData:false
+                    initialData: false
                 })
-                Router.push({ pathname: '/shopPage'});
+                Router.push({ pathname: '/shopPage' });
             }
         } catch (error) {
             console.log(error);
@@ -224,16 +225,16 @@ const GlobalProvider =({children})=>{
 
     // Blog  home page
 
-    const GetBlogSliderData = async() => {
+    const GetBlogSliderData = async () => {
         try {
             const response = await axios({
-                url: HOST_API+"home/blog",
-                method:"GET",
+                url: HOST_API + "home/blog",
+                method: "GET",
             })
-            if(response.data.length && response.status == 200){
+            if (response.data.length && response.status == 200) {
                 SetBlogSliderData({
                     data: response.data,
-                    loading:true
+                    loading: true
                 })
             }
         } catch (error) {
@@ -243,45 +244,45 @@ const GlobalProvider =({children})=>{
 
     // Blog Page Data
 
-    const GetBlogPageData = async() => {
+    const GetBlogPageData = async () => {
         try {
             const response = await axios({
                 url: HOST_API + "blog",
                 method: "POST",
                 headers: {
                     'content-type': 'application/json',
-                  },
+                },
                 // data:JSON.stringify({initialOffset : 0})
             })
-            console.log(response,"response");
-            if(response.data.blog.length && response.status == 200){
+            console.log(response, "response");
+            if (response.data.blog.length && response.status == 200) {
                 SetBlogPageData({
                     data: response.data.blog,
                     loading: true,
                     initialOffset: 1
                 })
-            }else if(response.data.blog.length == 0 && response.status == 200){
+            } else if (response.data.blog.length == 0 && response.status == 200) {
                 SetBlogPageData({
                     data: [],
                     loading: true,
                     initialOffset: 1
 
                 })
-            }     
+            }
         } catch (error) {
             console.log(error);
         }
     }
     // FAQ page
 
-    const GetFaqPageData = async() => {
+    const GetFaqPageData = async () => {
         try {
             const response = await axios({
-                url: HOST_API+"faq",
+                url: HOST_API + "faq",
                 method: "GET"
             })
-            console.log(response,"responseFaq");
-            if(response.data.length && response.status == 200){
+            console.log(response, "responseFaq");
+            if (response.data.length && response.status == 200) {
                 SetFAQdata({
                     data: response.data,
                     loading: true
@@ -293,18 +294,18 @@ const GlobalProvider =({children})=>{
     }
     // about Us
 
-    const GetAboutUsPageData = async() => {
+    const GetAboutUsPageData = async () => {
         try {
             const response = await axios({
-                url: HOST_API+"aboutUs",
+                url: HOST_API + "aboutUs",
                 method: "GET"
             })
-            console.log(response,"response AboutUss");
+            console.log(response, "response AboutUss");
 
-            if(response.data && response.status == 200){
+            if (response.data && response.status == 200) {
                 SetAboutUsData({
                     data: response.data,
-                    loading:true
+                    loading: true
                 })
             }
 
@@ -315,31 +316,31 @@ const GlobalProvider =({children})=>{
 
     // special offers
 
-    const GetSpecialOffersData = async() => {
+    const GetSpecialOffersData = async () => {
         try {
             const response = await axios({
                 url: HOST_API + "specialOffers",
                 method: "POST",
                 headers: {
                     'content-type': 'application/json',
-                  },
+                },
                 //   data:JSON.stringify({initialOffset : 0})
             })
-            console.log(response,"SpecialOffersData");
-            if(response.data.so.length && response.status == 200){
+            console.log(response, "SpecialOffersData");
+            if (response.data.so.length && response.status == 200) {
                 SetSpecialOffersData({
                     data: response.data.so,
                     loading: true,
                     initialOffset: 0
                 })
-            }else if(response.data.so.length == 0 && response.status == 200){
+            } else if (response.data.so.length == 0 && response.status == 200) {
                 SetSpecialOffersData({
                     data: [],
                     loading: true,
                     initialOffset: 0
 
                 })
-            }    
+            }
         } catch (error) {
             console.log(error);
         }
@@ -347,17 +348,17 @@ const GlobalProvider =({children})=>{
 
     // special offers homePage slider
 
-    const GetSpecialOffersSliderData = async() => {
+    const GetSpecialOffersSliderData = async () => {
         try {
             const response = await axios({
-                url: HOST_API+"home/specialOffers",
+                url: HOST_API + "home/specialOffers",
                 method: "GET"
             })
-            console.log(response,"specialOFferSLider");
-            if(response.data.length && response.status == 200){
+            console.log(response, "specialOFferSLider");
+            if (response.data.length && response.status == 200) {
                 SetSpecialOffersSliderData({
-                    data:response.data,
-                    loading:true
+                    data: response.data,
+                    loading: true
                 })
             }
         } catch (error) {
@@ -367,17 +368,17 @@ const GlobalProvider =({children})=>{
 
     // First Outlet Mall Data
 
-    const GetFirstOutletMallData = async() => {
+    const GetFirstOutletMallData = async () => {
         try {
             const response = await axios({
-                url: HOST_API+"home/firstMall",
+                url: HOST_API + "home/firstMall",
                 method: "GET"
             })
-            console.log(response,"firstOutletMall");
-            if(response.data && response.status == 200){
+            console.log(response, "firstOutletMall");
+            if (response.data && response.status == 200) {
                 SetFirstMallData({
-                    data:response.data,
-                    loading:true
+                    data: response.data,
+                    loading: true
                 })
             }
         } catch (error) {
@@ -387,17 +388,17 @@ const GlobalProvider =({children})=>{
 
     // financial Report Page
 
-    const GetFinancialReportData = async() => {
+    const GetFinancialReportData = async () => {
         try {
             const response = await axios({
-                url: HOST_API+"finance",
+                url: HOST_API + "finance",
                 method: "GET"
             })
-            console.log(response,"finance");
-            if(response.data.length && response.status == 200){
+            console.log(response, "finance");
+            if (response.data.length && response.status == 200) {
                 SetFinancialReportsData({
-                    data:response.data,
-                    loading:true
+                    data: response.data,
+                    loading: true
                 })
             }
         } catch (error) {
@@ -407,15 +408,15 @@ const GlobalProvider =({children})=>{
 
     // Career Page Data
 
-    const GetCareerPageData = async() => {
+    const GetCareerPageData = async () => {
         try {
             const response = await axios({
-                url:HOST_API + "career",
+                url: HOST_API + "career",
                 method: "GET"
             })
-            if(response.data.length && response.status == 200){
+            if (response.data.length && response.status == 200) {
                 SetCareerData({
-                    data:response.data,
+                    data: response.data,
                     loading: true
                 })
             }
@@ -426,14 +427,14 @@ const GlobalProvider =({children})=>{
 
     // gift card section
 
-    const GetGiftCardData = async() => {
+    const GetGiftCardData = async () => {
         try {
             const response = await axios({
                 url: HOST_API + "giftCard",
                 method: "GET"
             })
-            console.log(response,"giftCard");
-            if(response.data && response.status == 200){
+            console.log(response, "giftCard");
+            if (response.data && response.status == 200) {
                 SetGiftCardData({
                     data: response.data,
                     loading: true
@@ -448,20 +449,20 @@ const GlobalProvider =({children})=>{
     // translations
 
     const router = useRouter()
-    const {locale} = router
+    const { locale } = router
     const lang = locale === "en" ? "en" : locale === "ru" ? "ru" : "am"
 
 
     // homePage GiftCard Data
 
-    const GetHomePageGiftCardData = async() =>{
+    const GetHomePageGiftCardData = async () => {
         try {
             const response = await axios({
                 url: HOST_API + "home/giftCard",
                 method: "GET"
             })
-            console.log(response,"giftCardHomePage");
-            if(response.data && response.status == 200){
+            console.log(response, "giftCardHomePage");
+            if (response.data && response.status == 200) {
                 SetGiftCardHomePageData({
                     data: response.data,
                     loading: true
@@ -474,7 +475,7 @@ const GlobalProvider =({children})=>{
 
     // global search
 
-    const GlobalSearchData = async(word) => {
+    const GlobalSearchData = async (word) => {
 
         try {
             const response = await axios({
@@ -482,33 +483,33 @@ const GlobalProvider =({children})=>{
                 method: "POST",
                 headers: {
                     'content-type': 'application/json',
-                  },
-                data: JSON.stringify({search: word})
+                },
+                data: JSON.stringify({ search: word })
             })
-            console.log(response,"GlobalSearchData");
-            if(response.data && response.status == 200){
-               let filterResult = Object.values(response.data).filter((element) => element.length)
+            console.log(response, "GlobalSearchData");
+            if (response.data && response.status == 200) {
+                let filterResult = Object.values(response.data).filter((element) => element.length)
 
-               if(filterResult.length == 0){
-                SetGlobalSearchResult({
-                    data: {},
-                    loading: true,
-                    searchWord: word
-                })
-                Router.push({ pathname: '/Search'});
-                }else{
+                if (filterResult.length == 0) {
+                    SetGlobalSearchResult({
+                        data: {},
+                        loading: true,
+                        searchWord: word
+                    })
+                    Router.push({ pathname: '/Search' });
+                } else {
                     SetGlobalSearchResult({
                         data: response.data,
                         loading: true,
                         searchWord: word
                     })
-                Router.push({ pathname: '/Search'});
+                    Router.push({ pathname: '/Search' });
                 }
             }
-            
-            
+
+
         } catch (error) {
-            console.log(error);    
+            console.log(error);
         }
     }
     return <GlobalContext.Provider value={{
@@ -578,16 +579,16 @@ const GlobalProvider =({children})=>{
         firstMallData,
         GlobalSearchData,
         globalSearchResult,
-        waitData,SetWaitData
+        waitData, SetWaitData
     }}>
-      {children}
+        {children}
     </GlobalContext.Provider>
 }
 
 
-const useGlobalProvider =()=>{
+const useGlobalProvider = () => {
     return useContext(GlobalContext);
 }
 
-export {GlobalProvider,useGlobalProvider}
+export { GlobalProvider, useGlobalProvider }
 

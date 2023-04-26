@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/entertainmentPage/secFilter/filter.module.scss"
 import arrow from "../../../public/img/entertainmentPage/secFilter/Arrow.svg"
 import cardContent from "../../../public/img/entertainmentPage/secFilter/cardContent.svg"
@@ -27,7 +28,7 @@ const Filter = () => {
         setTimeout(() => {
             SetWaitData(true)
         }, 7000);
-      },[entertainmentData.loading])
+      },[SetWaitData, entertainmentData.loading])
 
     return(
          <div className={styles.filter}>

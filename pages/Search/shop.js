@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useGlobalProvider } from "../../components/Providers/GlobalProvider"
 import styles from "../../styles/sass/pages/Search/shop.module.scss"
 import { translate } from "../../translations"
@@ -52,7 +53,7 @@ const Shop = () => {
                                                 <img  className={styles.logoBackground} alt="logo" src={HOST_API_IMG+logo}/>
                                             </div>
                                             {phone && <div className={styles.phonBlock}>
-                                                <div className={styles.phoneIcon}><Image alt="phoneIcon" src={whitPhoneIcon}/></div>
+                                                <div className={styles.phoneIcon}><img alt="phoneIcon" src={whitPhoneIcon}/></div>
                                                <div><a className={styles.number} href={`tel:${phone}`}>{phone}</a></div>
                                             </div>}
                                             <div className={styles.networkBlock}>
@@ -63,7 +64,7 @@ const Shop = () => {
                                         </div>
                                         <div className={styles.brandBook}>
                                             <div className={styles.brand}>{name}</div>
-                                            <div className={styles.iconBook}><Image alt="iconBook" src={iconBook}/></div>
+                                            <div className={styles.iconBook}><img alt="iconBook" src={iconBook}/></div>
                                         </div>
                                     </div>
                                     </a>

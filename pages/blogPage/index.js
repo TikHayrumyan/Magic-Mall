@@ -15,7 +15,7 @@ const BlogPage = () => {
 
         useEffect(() => {
             GetBlogPageData()
-        },[])
+        },[GetBlogPageData])
 
         useEffect(() => {
             

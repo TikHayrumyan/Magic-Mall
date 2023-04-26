@@ -85,7 +85,7 @@ const ApplicationForm = props => {
             setPosition(props.inputsData?.position)
             
         }
-    },[props.inputsData?.position])
+    },[props.inputsData?.position, props?.writing])
    
     
     return(

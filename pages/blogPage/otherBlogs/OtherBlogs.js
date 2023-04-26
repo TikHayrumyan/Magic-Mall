@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/blogPage/otherBlogs/otherBlogs.module.scss"
 import calendarIcon from "../../../public/img/blogPage/otherBlog/calendarIcon.svg"
 import arrow from "../../../public/img/blogPage/otherBlog/arrow.svg"
@@ -116,12 +117,12 @@ const OtherBlogs = () => {
                                 <div><img className={styles.img} alt="blogImg" src={HOST_API_IMG+thumbnail}/></div>
                                 <div className={styles.description}>{lang == "en" ? shorten(title,79) : lang == "ru" ?shorten(title_ru,79) : shorten(title_am,79)}</div>
                                 <div className={styles.dateBlock}>
-                                    <div><Image alt="calendarIcon" src={calendarIcon}/></div>
+                                    <div><img alt="calendarIcon" src={calendarIcon}/></div>
                                     <div className={styles.date}>{date}</div>
                                 </div>
                                 <div className={styles.btnBlock}>
                                         <button className={styles.button}>{translate.buttonRead[lang]}</button>
-                                        <div className={styles.arrow}><Image alt="arrow" src={arrow}/></div>
+                                        <div className={styles.arrow}><img alt="arrow" src={arrow}/></div>
                                 </div>
                             </div>  
                             </a>
@@ -155,12 +156,12 @@ const OtherBlogs = () => {
                                         <div><img className={styles.img} alt="blogImg" src={HOST_API_IMG+thumbnail}/></div>
                                         <div className={styles.description}>{lang == "en" ? shorten(title,65) : lang == "ru" ?shorten(title_ru,65) : shorten(title_am,60)}</div>
                                         <div className={styles.dateBlock}>
-                                            <div><Image alt="calendarIcon" src={calendarIcon}/></div>
+                                            <div><img alt="calendarIcon" src={calendarIcon}/></div>
                                             <div className={styles.date}>{date}</div>
                                         </div>
                                         <div className={styles.btnBlock}>
                                                 <button className={styles.button}>{translate.buttonRead[lang]}</button>
-                                                <div className={styles.arrow}><Image alt="arrow" src={arrow}/></div>
+                                                <div className={styles.arrow}><img alt="arrow" src={arrow}/></div>
                                         </div>
                                     </div>  
                                     </a>

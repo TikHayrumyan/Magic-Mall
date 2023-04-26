@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/FoodPage/secFilter/filter.module.scss"
 import Select from "./Selectors/select"
 import cutPattern from "../../../public/img/FoodPage/secFilter/cutPattern.svg"
@@ -26,7 +27,7 @@ const SecFilter = () => {
         setTimeout(() => {
             SetWaitData(true)
         }, 7000);
-      },[searchFoodResult.loading])
+      },[SetWaitData, searchFoodResult.loading])
 
     
     return(

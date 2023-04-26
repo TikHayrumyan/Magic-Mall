@@ -21,7 +21,7 @@ const Select = () => {
 
     useEffect(() => {
         searchData()
-    },[])
+    },[searchData])
     useEffect(() => {
 
     },[entertainmentData.loading])

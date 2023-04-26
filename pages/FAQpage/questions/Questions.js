@@ -12,7 +12,7 @@ const Questions = () => {
 
     useEffect(() => {
         GetFaqPageData()
-    },[])
+    },[GetFaqPageData])
     useEffect(() => {
 
     },[FAQdata.loading])

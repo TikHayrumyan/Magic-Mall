@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import styles from "../../../../styles/sass/pages/FoodPage/secFilter/secSelect/select.module.scss"
 import dArr from "../../../../public/img/FoodPage/secFilter/dArr.svg"
 import Image from "next/image"

@@ -12,7 +12,8 @@ const FirstOutletMall = () =>{
     const {GetAboutUsPageData,AboutUsData,lang} = useGlobalProvider()
     useEffect(() => {
         GetAboutUsPageData()
-    },[])
+    },[GetAboutUsPageData])
+
     useEffect(() => {
 
     },[AboutUsData.loading])

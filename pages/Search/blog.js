@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../styles/sass/pages/Search/blog.module.scss"
 import { useGlobalProvider } from "../../components/Providers/GlobalProvider"
 import Image from "next/image"
@@ -27,15 +28,15 @@ const Blog = () => {
                                         <div className={styles.aboutTrends}>
                                             <div className={styles.title}>{lang == "en" ? title : lang == "ru" ? title_ru : title_am}</div>
                                             <div className={styles.dateBLock}>
-                                                <div><Image alt="calendarIcon" src={calendarIcon}/></div>
+                                                <div><img alt="calendarIcon" src={calendarIcon}/></div>
                                                 <div className={styles.date}>{date}</div>
                                             </div>
                                             <div className={styles.descrip}>{lang == "en" ? description : lang == "ru" ? description_ru : description_am}</div>
                                             <div className={styles.btnBlock}> 
                                                 <button className={styles.button}>{translate.buttonRead[lang]}</button>
-                                                <div className={styles.arrow}><Image alt="arrow" src={arrow}/></div>
+                                                <div className={styles.arrow}><img alt="arrow" src={arrow}/></div>
                                             </div>
-                                            <div className={styles.pattern}><Image className="pattern" src={pattern}/></div>
+                                            <div className={styles.pattern}><img className="pattern" src={pattern} alt="pattern"/></div>
                                         </div>
                                     </div>
                             </a>

@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../styles/sass/pages/FAQpage/secMain/secMain.module.scss"
 import background from "../../public/img/FAQpage/secMain/background.jpeg"
 import pattern from "../../public/img/FAQpage/secMain/pattern.svg"

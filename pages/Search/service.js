@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import { useGlobalProvider } from "../../components/Providers/GlobalProvider"
 import Image from "next/image"
 import { translate } from "../../translations"
@@ -42,17 +43,17 @@ const Services = () => {
                                 <div className={styles.hoverBlock}>
                                     
                                     {phone && <div className={styles.phonBlock}>
-                                        <div className={styles.phoneIcon}><Image alt="phoneIcon" src={whitPhoneIcon}/></div>
+                                        <div className={styles.phoneIcon}><img alt="phoneIcon" src={whitPhoneIcon}/></div>
                                         <div><a className={styles.number} href={`tel:${phone}`}>{phone}</a></div>
                                     </div>}
                                     <div className={styles.networkBlock}>
-                                        {facebook && <div className={styles.facebook}><Link href={facebook}><a target="_blank"><Image alt="facebook" src={Facebook}/></a></Link></div>}
-                                        {instagram && <div className={styles.instagram}><Link href={instagram}><a  target="_blank"><Image alt="instagram" src={Instagram}/></a></Link></div>}
+                                        {facebook && <div className={styles.facebook}><Link href={facebook}><a target="_blank"><img alt="facebook" src={Facebook}/></a></Link></div>}
+                                        {instagram && <div className={styles.instagram}><Link href={instagram}><a  target="_blank"><img alt="instagram" src={Instagram}/></a></Link></div>}
 
                                     </div>
                                 </div>
                                 <div className={styles.brandBook}>
-                                    <div className={styles.iconBook}><Image alt="iconBook" src={iconBook}/></div>
+                                    <div className={styles.iconBook}><img alt="iconBook" src={iconBook}/></div>
                                 </div>
                             </div>
                             </a>

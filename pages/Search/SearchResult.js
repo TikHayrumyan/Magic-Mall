@@ -17,7 +17,7 @@ const SearchResult = () => {
 
     useEffect(() => {
         console.log(globalSearchResult.data,'globalSearchResult');
-    },[globalSearchResult.loading])
+    },[globalSearchResult.data, globalSearchResult.loading])
 
 
     return(
