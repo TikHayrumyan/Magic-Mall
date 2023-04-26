@@ -1,14 +1,7 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 import styles from "../../../styles/sass/pages/menuHeader/menuHeader.module.scss"
 import Image from 'next/image';
-import Logo from "../../../public/img/icons/Logo.svg"
-import mobileClose from "../../../public/img/icons/mobileClose.svg"
-import search from "../../../public/img/icons/search.svg"
-import mobileMenuHeader from "../../../public/img/icons/mobileMenuHeader.svg"
 import Link from "next/link"
-import phoneIcon from "../../../public/img/icons/phoneIcon.svg"
-import oclock from "../../../public/img/icons/oclock.svg"
-import locationIcon from "../../../public/img/icons/locationIcon.svg"
 import { useGlobalProvider } from "../../Providers/GlobalProvider";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
@@ -105,7 +98,7 @@ const MenuHeader = () => {
             <div className={styles.blockLogo}>
                 <Link href="/">
                     <a>
-                        <Image className={styles.logo} alt="Logo" src={Logo}/>
+                        <Image className={styles.logo} alt="Logo" src="/img/icons/Logo.svg"/>
                     </a>
                 </Link>
             </div>
@@ -187,7 +180,7 @@ const MenuHeader = () => {
                     </li>
                 </ul>
             </div>
-            {!toggleMobileMenu ? <div className={styles.mobileMenuHeader} onClick={toggleMobile}><Image layout="fill" alt="mobileMenuHeader" src={mobileMenuHeader.src}/></div> : <div className={styles.MobileClosButton} onClick={toggleMobile}><Image  alt="mobileClose" layout="fill" src={mobileClose.src}/></div>}
+            {!toggleMobileMenu ? <div className={styles.mobileMenuHeader} onClick={toggleMobile}><Image layout="fill" alt="mobileMenuHeader" src="/img/icons/mobileMenuHeader.svg"/></div> : <div className={styles.MobileClosButton} onClick={toggleMobile}><Image  alt="mobileClose" layout="fill" src="/img/icons/mobileClose.svg"/></div>}
             
             <div className={toggleMobileMenu ? styles.MobileMenu : styles.mobileMenuHide}>
                 {/* Mobile */}
@@ -205,7 +198,7 @@ const MenuHeader = () => {
                             value={SearchValue} 
                             onChange={(e) => SetSearchValue(e.target.value)}
                             />
-                            <div className={styles.search}><Image alt="search" src={search} width={40} height={40} onClick={SearchInput}/></div>
+                            <div className={styles.search}><Image alt="search" src="/img/icons/search.svg" width={40} height={40} onClick={SearchInput}/></div>
                         </div>
                     </div>
                     <ul className={styles.ulMenuMobile} onClick={() => SetToggleMobileMenu(false)}>
@@ -263,18 +256,18 @@ const MenuHeader = () => {
                     <div className={styles.LineMobile}></div>
                     <div className={styles.leftContainer}>
                         <div className={styles.forFlex}>
-                            <div className={styles.iconPhone}><Image alt="Phone" src={phoneIcon}/></div> 
+                            <div className={styles.iconPhone}><Image alt="Phone" src="/img/icons/phoneIcon.svg"/></div> 
                             <div><a className={styles.number} href="tel:+374 11 880 888">+374 11 880 888</a></div>
                         </div>
                         <div className={styles.forFlex}>
-                            <div className={styles.iconOclock}><Image alt="O'clock" src={oclock}/></div>
+                            <div className={styles.iconOclock}><Image alt="O'clock" src="/img/icons/oclock.svg"/></div>
                             <div className={styles.oclock}>10:00 - 22:00</div>
                         </div>
                     </div>
                     <div className={styles.middleContainer} onClick={() => SetToggleMobileMenu(false)}>
                         <Link href="/howToGetToMall">
                             <a>
-                                <div className={styles.locationIcon}><Image alt="locationIcon" src={locationIcon}/></div>
+                                <div className={styles.locationIcon}><Image alt="locationIcon" src="/img/icons/locationIcon.svg"/></div>
                                 <div className={styles.direction}>{translate.mainHeaderHowToGetToMall[lang]}</div>
                             </a>
                         </Link>
