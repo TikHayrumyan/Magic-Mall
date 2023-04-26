@@ -1,4 +1,4 @@
-import FirstOutletMall from "./firstOutletMall/firstOutletMall"
+import FirstOutletMall from "../../components/AboutUsPage/firstOutletMall/FirstOutletMall"
 import CardSubscribe from "../homePage/secCardSubscribe/CardSubscribe"
 
 

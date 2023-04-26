@@ -1,10 +1,9 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../styles/sass/pages/map/map.module.scss";
-import Image from "next/image";
-import door from "../../public/img/map/map/door.svg";
-import stairs from "../../public/img/map/map/stairs.svg";
-import Escalator from "../../public/img/map/map/Escalator.svg";
-import WC from "../../public/img/map/map/WC.svg";
-import entry from "../../public/img/map/map/entry.svg";
+
+
+
+
 import { useState } from "react";
 import Link from "next/link";
 
@@ -63,10 +62,10 @@ const Map = ({ data, changeFloor }) => {
           <div className={styles.firstFloor}>
             <div className={styles.topIcons}>
               <div className={styles.door}>
-                <Image alt="door" src={door} />
+                <img alt="door" src="/img/map/map/door.svg" />
               </div>
               <div className={styles.stairs}>
-                <Image alt="stairs" src={stairs} />
+                <img alt="stairs" src="/img/map/map/stairs.svg" />
               </div>
             </div>
             <div className={styles.mapDesign}>
@@ -134,7 +133,7 @@ const Map = ({ data, changeFloor }) => {
                   <Link href={`/${getType(17)}SinglePage/${getDoorId(17)}`}><div className={styles.AA5}>{getDoorName(17)}</div></Link>
                   </div>
                   <div className={styles.middleEscalator}>
-                    <Image alt="Escalator" src={Escalator}/>
+                    <img alt="Escalator" src="/img/map/map/Escalator.svg"/>
                   </div>
                   <div className={styles.middleCenter}>
                     <div className={styles.MiddleCenterTop}>
@@ -162,7 +161,7 @@ const Map = ({ data, changeFloor }) => {
               <Link href={`/${getType(25)}SinglePage/${getDoorId(25)}`}>
                 <div className={styles.AA14}>
                   <div>
-                    <Image alt="backgroundEscalator" src={Escalator} />
+                    <img alt="backgroundEscalator" src="/img/map/map/Escalator.svg" />
                   </div>
                   {getDoorName(25)}
                 </div>
@@ -170,22 +169,22 @@ const Map = ({ data, changeFloor }) => {
               </div>
             </div>
             <div className={styles.escalatorBottom}>
-              <Image alt="escalator" src={Escalator} />
+              <img alt="escalator" src="/img/map/map/Escalator.svg" />
             </div>
             <div className={styles.bottomPart}>
               <div className={styles.WC}>
-                <Image alt="WC" src={WC} />
+                <img alt="WC" src="/img/map/map/WC.svg" />
               </div>
           
               <Link href={`/${getType(26)}SinglePage/${getDoorId(26)}`}><div className={styles.AA15}>{getDoorName(26)}</div></Link>
               <Link href={`/${getType(27)}SinglePage/${getDoorId(27)}`}><div className={styles.AA16}>{getDoorName(27)}</div></Link>
               <div className={styles.WCCenter}>
-                <Image alt="WC" src={WC} />
+                <img alt="WC" src="/img/map/map/WC.svg" />
               </div>
               <div className={styles.AA17ForColumn}>
                 <div className={styles.AA17Top}>
                   <div>
-                    <Image alt="door" src={door} />
+                    <img alt="door" src="/img/map/map/door.svg" />
                   </div>
                   <div className={styles.AA17T}></div>
                 </div>
@@ -197,25 +196,25 @@ const Map = ({ data, changeFloor }) => {
               <Link href={`/${getType(31)}SinglePage/${getDoorId(31)}`}><div className={styles.AA20Bottom}>{getDoorName(31)}</div></Link>
                 <div className={styles.AA20Top}>
                   <div>
-                    <Image alt="door" src={door} />
+                    <img alt="door" src="/img/map/map/door.svg" />
                   </div>
                   <div className={styles.AA20T}></div>
                 </div>
               </div>
               <div className={styles.WCRight}>
-                <Image alt="WC" src={WC} />
+                <img alt="WC" src="/img/map/map/WC.svg" />
               </div>
               <Link href={`/${getType(32)}SinglePage/${getDoorId(32)}`}><div className={styles.AA21}>{getDoorName(32)}</div></Link>
               <Link href={`/${getType(33)}SinglePage/${getDoorId(33)}`}><div className={styles.AA22}>{getDoorName(33)}</div></Link>
               <div className={styles.WCEnd}>
-                <Image alt="WC" src={WC} />
+                <img alt="WC" src="/img/map/map/WC.svg" />
               </div>
             </div>
             <div className={styles.EntryBlock}>
               <div className={styles.entryArm}>ՄՈՒՏՔ</div>
               <div className={styles.entryEng}>ENTRY</div>
               <div>
-                <Image alt="Entry" src={entry} />
+                <img alt="Entry" src="/img/map/map/entry.svg" />
               </div>
             </div>
           </div>
@@ -224,10 +223,10 @@ const Map = ({ data, changeFloor }) => {
           <div className={styles.secondFloor}>
             <div className={styles.topIcons}>
               <div className={styles.door}>
-                <Image alt="doors" src={door} />
+                <img alt="doors" src="/img/map/map/door.svg" />
               </div>
               <div className={styles.stairs}>
-                <Image alt="stairs" src={stairs} />
+                <img alt="stairs" src="stairs" />
               </div>
             </div>
             <div className={styles.mapSecondDesign}>
@@ -247,7 +246,7 @@ const Map = ({ data, changeFloor }) => {
                 <div className={styles.leftContainerBottom}>
                 <Link href={`/${getTypeTwo(41)}SinglePage/${getDoorIdTwo(41)}`}><div className={styles.S8}><span>{getDoorNameTwo(41)}</span></div></Link>
                   <div className={styles.LeftContainerBottomEscalator}>
-                    <Image alt="escalator" src={Escalator} />
+                    <img alt="escalator" src="/img/map/map/Escalator.svg" />
                   </div>
                 </div>
               </div>
@@ -271,7 +270,7 @@ const Map = ({ data, changeFloor }) => {
                   <Link href={`/${getTypeTwo(48)}SinglePage/${getDoorIdTwo(48)}`}><div className={styles.S15}><span>{getDoorNameTwo(48)}</span></div></Link>
                   <Link href={`/${getTypeTwo(49)}SinglePage/${getDoorIdTwo(49)}`}><div className={styles.S16}><span>{getDoorNameTwo(49)}</span></div></Link>  
                     <div className={styles.middleContainerBottomEscalator}>
-                      <Image alt="Escalator" src={Escalator} />
+                      <img alt="Escalator" src="/img/map/map/Escalator.svg" />
                     </div>
                   <Link href={`/${getTypeTwo(50)}SinglePage/${getDoorIdTwo(50)}`}><div className={styles.S17}><span>{getDoorNameTwo(50)}</span></div></Link>
                   </div>
@@ -284,14 +283,14 @@ const Map = ({ data, changeFloor }) => {
               </div>
               <div className={styles.rightContainer}>
                 <div>
-                  <Image alt="stairs" src={stairs} />
+                  <img alt="stairs" src="/img/map/map/stairs.svg" />
                 </div>
                 <div className={styles.rightBottom}>
                   <div className={styles.S21Right}></div>
                   <div className={styles.S21middleFlex}>
                   <Link href={`/${getTypeTwo(54)}SinglePage/${getDoorIdTwo(54)}`}><div className={styles.S21Middle}><span>{getDoorNameTwo(54)}</span></div></Link>
                     <div>
-                      <Image alt="escalator" src={Escalator} />
+                      <img alt="escalator" src="/img/map/map/Escalator.svg" />
                     </div>
                   </div>
                   <div className={styles.S21Left}></div>
@@ -302,7 +301,7 @@ const Map = ({ data, changeFloor }) => {
               <div className={styles.right}>
                 <div className={styles.S22flex}>
                   <div className={styles.S22doorsRight}>
-                    <Image alt="doors" src={door} />
+                    <img alt="doors" src="/img/map/map/door.svg" />
                   </div>
                   <div className={styles.S22left}></div>
                 </div>
@@ -313,7 +312,7 @@ const Map = ({ data, changeFloor }) => {
               <Link href={`/${getTypeTwo(56)}SinglePage/${getDoorIdTwo(56)}`}><div className={styles.S23Right}><span>{getDoorNameTwo(56)}</span></div></Link>
                 <div className={styles.S23flex}>
                   <div className={styles.S23doorsRight}>
-                    <Image alt="doors" src={door} />
+                    <img alt="doors" src="/img/map/map/door.svg" />
                   </div>
                   <div className={styles.S23left}></div>
                 </div>

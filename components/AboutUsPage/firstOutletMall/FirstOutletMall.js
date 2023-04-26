@@ -1,5 +1,5 @@
 import styles from "../../../styles/sass/pages/aboutUsPage/firstOutletMall/firstOutletMall.module.scss"
-import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
+import { useGlobalProvider } from "../../Providers/GlobalProvider"
 import { useEffect } from "react"
 import { translate } from "../../../translations"
 import Link from "next/link"
