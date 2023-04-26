@@ -51,7 +51,7 @@ const SinglePage = () => {
     },[HOST_API, single])
 
     
-    console.log(single,"asas");
+
     
     return(<>
               {activeSinglePage.loading && <div className={styles.singleShop}>

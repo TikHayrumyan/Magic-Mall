@@ -1,4 +1,4 @@
-/* eslint-disable @next/next/no-img-element */
+
 import styles from "../../../styles/sass/pages/shopSinglePage/singleShop/singleShop.module.scss"
 import Link from "next/link"
 import RightArrow from "../../../public/img/shopSinglePage/singleShop/Rarrow.svg"
@@ -22,39 +22,11 @@ import { translate } from "../../../translations"
 
 
 const SingleShop = () => {
-    const parse = require("html-react-parser")
-    const {HOST_API,HOST_API_IMG,lang} = useGlobalProvider()
-    const router = useRouter()
-    const {single} = router.query
-    const [activeSinglePage,SetActiveSinglePage] = useState({
-        data:{},
-        loading:false
-    })
-    useEffect(() => {
-        GetSingleData(single)
-    },[single])
-
-    const GetSingleData = async(params) => {
-        try {
-            const response = await axios({
-                url: HOST_API+`shops/${params}`,
-                method:"GET"
-            })
-            console.log(response,"datanaaaSingle");
-            if(Object.keys(response.data).length && response.status == 200){
-                SetActiveSinglePage({
-                    data:response.data,
-                    loading:true
-                })
-            }
-        } catch (error) {
-            console.log(error);
-        }
     
-    }
     return(
         <>
-        {activeSinglePage.loading && <HeaderOffer specialOfferData={activeSinglePage.data.shop}/>}
+        <h1>hi</h1>
+        {/* {activeSinglePage.loading && <HeaderOffer specialOfferData={activeSinglePage.data.shop}/>}
         {activeSinglePage.loading && <div className={styles.singleShop}>
             <div className={styles.container}>
                 <div className={styles.goBackBlock}>
@@ -107,10 +79,26 @@ const SingleShop = () => {
         <SecMap/>
         {activeSinglePage.loading && <SpecialOffer SpecialOffer={activeSinglePage.data?.specialOffers} loading={activeSinglePage.loading}/>}
         {activeSinglePage.loading && <SimilarShop related={activeSinglePage.data?.related} loading={activeSinglePage.loading}/>}
-        <CardSubscribe/>
+        <CardSubscribe/> */}
         </>
     )
 }
+
+export async function getStaticPaths() {
+    return {
+      paths: [],
+      fallback: 'blocking', // can also be true or 'blocking'
+    }
+  }
+  
+  // `getStaticPaths` requires using `getStaticProps`
+  export async function getStaticProps(context) {
+    return {
+      // Passed to the page component as props
+      props: {},
+    }
+  }
+  
 
 
 export default SingleShop

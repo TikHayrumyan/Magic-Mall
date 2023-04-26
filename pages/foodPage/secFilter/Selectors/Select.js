@@ -56,7 +56,7 @@ const Select = () => {
             searchForKeys.search=`${search}`;
            }
        
-        console.log(searchForKeys,"asasasa");
+        // console.log(searchForKeys,"asasasa");
         try {
             const searchResponse = await axios({
                 url: HOST_API + "food",

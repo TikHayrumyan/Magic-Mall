@@ -6,7 +6,7 @@ import styles from "../../../styles/sass/pages/shopSinglePage/headerOffer/Header
 const HeaderOffer = ({specialOfferData}) => {
 
     const {lang} = useGlobalProvider()
-    console.log(specialOfferData,'specialOfferData');
+
     return(<>
         {specialOfferData && specialOfferData.specialOfferText ? <div className={styles.HeaderOffer}>
             <div className={styles.container}>

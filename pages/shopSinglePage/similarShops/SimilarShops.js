@@ -17,7 +17,7 @@ const SimilarShop = ({related,loading}) =>{
 
     const {HOST_API_IMG,lang} = useGlobalProvider()
 
-    console.log(related,'related');
+
 
     return(
          <div className={styles.SimilarShop}>
