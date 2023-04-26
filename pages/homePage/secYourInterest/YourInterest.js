@@ -1,4 +1,4 @@
-import styles from "../../../styles/sass/pages/HomePage/secYourInterest/YourInterest.module.scss"
+import styles from "../../../styles/sass/pages/HomePage/secYourInterest/yourInterest.module.scss"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import { useEffect } from "react"
 import Link from "next/link"
