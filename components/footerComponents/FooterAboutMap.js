@@ -1,5 +1,5 @@
-import styles from "../../styles/sass/pages/FooterComponents/footerAbout.module.scss"
-import Image from "next/Image"
+/* eslint-disable @next/next/no-img-element */
+import styles from "../../styles/sass/pages/footerComponents/footerAbout.module.scss"
 import location from "../../public/img/icons/location.svg"
 import phone from "../../public/img/icons/bluePhone.svg"
 import oclock from "../../public/img/icons/blueTime.svg"
@@ -28,16 +28,16 @@ const FooterAboutMap = () => {
                     {/* <div className={styles.finance}><Link href="/reportPage"><a>{translate.FooterMenuReport[lang]}</a></Link></div> */}
                 </div>
                 <div className={styles.iconsBlock}>
-                    <div className={styles.location}><Image alt="locationIcon" src={location} width={20} height={20}/><p className={styles.location_text}>{translate.contactPageAddres[lang]}</p></div>
-                    <div className={styles.phone}><Image alt="phoneIcon" src={phone} width={20} height={20}/><a href="tel:+374 11 880 888">+374 11 880 888</a></div>
-                    <div className={styles.oclock}><Image alt="Oclock" src={oclock} width={20} height={20}/>10։00 - 22։00</div>
+                    <div className={styles.location}><img alt="locationIcon" src={location} width={20} height={20}/><p className={styles.location_text}>{translate.contactPageAddres[lang]}</p></div>
+                    <div className={styles.phone}><img alt="phoneIcon" src={phone} width={20} height={20}/><a href="tel:+374 11 880 888">+374 11 880 888</a></div>
+                    <div className={styles.oclock}><img alt="Oclock" src={oclock} width={20} height={20}/>10։00 - 22։00</div>
                 </div>
                 <div>
                     <div className={styles.netwokTitle}>{translate.FooterMenuSocialMedia[lang]}</div>
                     <div className={styles.network}>
-                        <div><Link href="https://www.facebook.com/multimagicmall"><a target="_blank"><Image alt="facebook" src={facebook}/></a></Link></div>
-                        <div><Link href="https://www.instagram.com/multimagic_mall/"><a  target="_blank"><Image alt="instagram" src={instagram}/></a></Link></div>
-                        <div><Link href="https://www.linkedin.com/company/multi-outlet-mall/"><a  target="_blank"><Image alt="Linkdin" src={linkdin}/></a></Link></div>
+                        <div><Link href="https://www.facebook.com/multimagicmall"><a target="_blank"><img alt="facebook" src={facebook}/></a></Link></div>
+                        <div><Link href="https://www.instagram.com/multimagic_mall/"><a  target="_blank"><img alt="instagram" src={instagram}/></a></Link></div>
+                        <div><Link href="https://www.linkedin.com/company/multi-outlet-mall/"><a  target="_blank"><img alt="Linkdin" src={linkdin}/></a></Link></div>
                     </div>
                 </div>
         </div>

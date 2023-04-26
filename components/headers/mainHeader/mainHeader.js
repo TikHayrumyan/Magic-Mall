@@ -1,6 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
 import phoneIcon from "../../../public/img/icons/phoneIcon.svg"
 import React, { useEffect, useState } from "react";
-import Image from "next/image";
 import oclock from "../../../public/img/icons/oclock.svg"
 import styles from "../../../styles/sass/pages/Mainheader/mainHeader.module.scss"
 import locationIcon from "../../../public/img/icons/locationIcon.svg"
@@ -43,14 +43,14 @@ const MainHeader = () => {
     return(
         <div className= {styles.container}>
             <div className={styles.leftContainer}>
-               <div className={styles.iconPhone}><Image alt="Phone" src={phoneIcon}/></div> 
+               <div className={styles.iconPhone}><img alt="Phone" src={phoneIcon}/></div> 
                 <div className={styles.numberDiv}><a className={styles.number} href="tel:+374 11 880 888">+374 11 880 888</a></div>
-               <div className={styles.iconOclock}><Image alt="O'clock" src={oclock}/></div>
+               <div className={styles.iconOclock}><img alt="O'clock" src={oclock}/></div>
                 <div className={styles.oclock}>10:00 - 22:00</div>
             </div>
             <div className={styles.middleContainer}>
                 <Link href="/howToGetToMall">
-                    <div className={styles.locationIcon}><Image alt="locationIcon" src={locationIcon}/></div>
+                    <div className={styles.locationIcon}><img alt="locationIcon" src={locationIcon}/></div>
                 </Link>
                 <Link href="/howToGetToMall">
                     <div className={styles.direction}>{translate.mainHeaderHowToGetToMall[lang]}</div>
@@ -66,13 +66,13 @@ const MainHeader = () => {
                         type="text" 
                         value={SearchValue} 
                         onChange={(e) => SetSearchValue(e.target.value)}/>
-                        <div className={styles.search}><Image alt="search" src={search} width={50} height={50} onClick={openInput} /></div>
+                        <div className={styles.search}><img alt="search" src={search} width={50} height={50} onClick={openInput} /></div>
                     </form>
                 <div className={styles.languageBlock}>
                     <div className={styles.language}>
                         {router.locale == "am" ? "ՀԱՅ" : router.locale == "ru" ? "РУС" : "ENG"}
                     </div>
-                    <div className={styles.dArr}><Image alt="downArr" src={dArr}/></div>
+                    <div className={styles.dArr}><img alt="downArr" src={dArr}/></div>
                     <div className={styles.hoverLanguageBlock}>
                         {/* <div className={styles.ru} onClick={() => {
                             changeLanguage(router.locale == "ru" ? "am" : "ru")
