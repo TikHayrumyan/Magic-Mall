@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import style from "../styles/sass/core/footer.module.scss"
 import logo from "../public/img/icons/footerLogo.svg"
-import Image from "next/Image"
-import FooterAboutMap from "./FooterComponents/footerAboutMap"
+import FooterAboutMap from "./footerComponents/FooterAboutMap"
 import Link from "next/link"
 import { translate } from "../translations"
 import { useGlobalProvider } from "./Providers/GlobalProvider"
@@ -17,7 +17,7 @@ const Footer = () => {
                 <div className={style.logoBlock}>
                         <Link href="/">
                             <a>
-                               <Image className={style.logo} alt="Logo" src={logo}/>
+                               <img className={style.logo} alt="Logo" src={logo}/>
                             </a>
                         </Link>
                     </div>
