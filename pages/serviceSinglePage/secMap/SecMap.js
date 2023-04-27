@@ -1,6 +1,6 @@
 import Image from "next/image"
 import styles from "../../../styles/sass/pages/serviceSinglePage/secMap/secMap.module.scss"
-import map from "../../../public"
+
 
 
 const SecMap = () =>{
