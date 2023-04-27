@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react-hooks/exhaustive-deps */
 import styles from "../../../../styles/sass/pages/servicePage/secFilter/secSelect/select.module.scss"
 import dArr from "../../../../public/img/servicePage/secFilter/dArr.svg"
@@ -107,7 +108,7 @@ const Select = () => {
                     <div  tabIndex={0} onBlur={blur}>
                         <div className={styles.floor} onClick={floorToggleModal}>
                             <div className={styles.allFloors}>{activeFloorName == "" || activeFloorName == null ? `${translate.ShopPageAllFloors[lang]}` : activeFloorName}</div>
-                            <div className={floorModal ? styles.upArr : styles.dArr}><Image alt="arrow" src={dArr}/></div>
+                            <div className={floorModal ? styles.upArr : styles.dArr}><img alt="arrow" src="/img/map/secSelect/dArr.svg"/></div>
                         </div>
                         <div className={floorModal ? styles.floorDropDown : styles.floorDropDownClose}>
                         <div onClick={() => searchByFloor(`${translate.ShopPageAllFloors[lang]}`)}>{translate.ShopPageAllFloors[lang]}</div>

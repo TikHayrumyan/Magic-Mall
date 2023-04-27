@@ -1,8 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/map/secSelect/select.module.scss"
-import dArr from "../../../public/img/map/secSelect/dArr.svg"
-import Image from "next/image"
-import Search from "../../../public/img/map/secSelect/Search.svg"
-import { useState } from "react"
 import { useGlobalProvider } from "../../Providers/GlobalProvider"
 import { translate } from "../../../translations"
 
@@ -34,7 +31,7 @@ const Select = ({setFloor,changeFloor,floorModal,SetFloorModal,data}) => {
                             <div tabIndex={0} onBlur={blur}>
                                 <div className={styles.floor} onClick={floorToggleModal}>
                                     <div className={styles.allFloors}>{changeFloor ?   `${translate.MallMapPageFloor[lang]}` + " " + changeFloor : "Բոլոր հարկերը"}</div>
-                                    <div className={floorModal ? styles.upArr : styles.dArr}><Image alt="arrow" src={dArr}/></div>
+                                    <div className={floorModal ? styles.upArr : styles.dArr}><img alt="arrow" src="/img/map/secSelect/dArr.svg"/></div>
                                 </div>
                                 <div className={floorModal ? styles.floorDropDown : styles.floorDropDownClose}>
                                     <div onClick={() => setFloor(keys[0])}>{translate.MallMapPageFloor[lang]} 1</div>

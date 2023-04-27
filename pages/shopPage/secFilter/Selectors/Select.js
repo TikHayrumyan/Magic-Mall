@@ -1,10 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react-hooks/exhaustive-deps */
 import styles from "../../../../styles/sass/pages/shopPage/secFilter/secSelect/select.module.scss"
-import dArr from "../../../../public/img/shopPage/secFilter/dArr.svg"
-import lArr from "../../../../public/img/shopPage/secFilter/lArr.svg"
-import Image from "next/image"
+
 import { useEffect, useState } from "react"
-import Search from "../../../../public/img/shopPage/secFilter/Search.svg"
 import { useGlobalProvider } from "../../../../components/Providers/GlobalProvider"
 import axios  from "axios"
 import { translate } from "../../../../translations"
@@ -145,7 +143,7 @@ const Select = () => {
                     <div className={styles.select} tabIndex={0} onBlur={blur}>
                         <div className={styles.forSelect} onClick={toggleModal}>
                         <div className={styles.allCategory}>{activeCategoryName == "" ? `${translate.ShopPageAllCategory[lang]}` : activeCategoryName + " " + activeSubElemName}</div>
-                            <div className={modal ? styles.uArr : styles.dArr}><Image alt="arrow" src={dArr}/></div>
+                            <div className={modal ? styles.uArr : styles.dArr}><img alt="arrow" src="/img/map/secSelect/dArr.svg"/></div>
                         </div>
                         <div className={modal ? styles.dropDown : styles.dropDownNo}>
                             <div className={styles.AllCaregoriesItem} onClick={() => {
@@ -174,7 +172,7 @@ const Select = () => {
                                                 }
                                             }}>
                                          <div className={styles.miniSelect}>
-                                         {item.sub_category?.length ? <div className={activeSubIndex==item.id ? styles.downArr : styles.lArr}><Image alt="arrow" src={lArr}/></div> : null }
+                                         {item.sub_category?.length ? <div className={activeSubIndex==item.id ? styles.downArr : styles.lArr}><img alt="arrow" src="/img/shopPage/secFilter/lArr.svg"/></div> : null }
                                          <p className={styles.miniTitle}>{lang == "en" ? item.name : lang == "ru" ? item.name_ru : item.name_am}</p>
 
                                          </div>
@@ -188,7 +186,7 @@ const Select = () => {
                                                    
                                                 }}>
                                                    <div className= {styles.miniDropDown}>
-                                                   {subelem.sub_category?.length ?<div><Image alt="arrow" src={lArr}/></div> : null}
+                                                   {subelem.sub_category?.length ?<div><img alt="arrow" src="/img/shopPage/secFilter/lArr.svg"/></div> : null}
                                                    <p className={styles.subCategory}>{lang == "en" ? subelem.name : lang == "ru" ? subelem.name_ru : subelem.name_am}</p>
                                                    </div> 
                                                 </div>
@@ -204,7 +202,7 @@ const Select = () => {
                     <div tabIndex={0} onBlur={blur}>
                         <div className={styles.floor} onClick={floorToggleModal}>
                             <div className={styles.allFloors}>{activeFloorName == "" || activeFloorName == null ? `${translate.ShopPageAllFloors[lang]}` : activeFloorName}</div>
-                            <div className={floorModal ? styles.upArr : styles.dArr}><Image alt="arrow" src={dArr}/></div>
+                            <div className={floorModal ? styles.upArr : styles.dArr}><img alt="arrow" src="/img/map/secSelect/dArr.svg"/></div>
                         </div>
                         <div className={floorModal ? styles.floorDropDown : styles.floorDropDownClose}>
                             <div onClick={()=>SearchByFloor(null)}>{translate.ShopPageAllFloors[lang]}</div>
@@ -227,7 +225,7 @@ const Select = () => {
                         onChange={(e)=>SetSearchInputValue(e.target.value)}
                          
                           />
-                        <div className={styles.searchIcon}><Image alt="search" src={Search} width={16.5} height={17.5}/></div>
+                        <div className={styles.searchIcon}><img alt="search" src="/img/shopPage/secFilter/Search.svg" width={16.5} height={17.5}/></div>
                 </div>
             </div> 
         </div>

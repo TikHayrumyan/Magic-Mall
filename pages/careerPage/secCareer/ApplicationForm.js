@@ -1,6 +1,5 @@
 import Image from "next/image"
 import styles from "../../../styles/sass/pages/careerPage/SecCareer/applicationForm.module.scss"
-import paperclip from "../../../public/img/entertainmentPage/ApplicationForm/paperclip.svg"
 import { useEffect, useRef, useState } from "react"
 import axios from "axios"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
@@ -129,7 +128,7 @@ const ApplicationForm = props => {
                 </div>
                 <textarea className={styles.textarea} placeholder={translate.applicationFormComment[lang]}  onChange={e => SetComment(e.target.value)}/>
                 <div className={styles.saveCvBLock}>
-                    <div onClick={addFIle} className={styles.saveIcon}><Image alt="paperclip" src={paperclip} width={23} height={23}/></div>
+                    <div onClick={addFIle} className={styles.saveIcon}><Image alt="paperclip" src="/img/entertainmentPage/ApplicationForm/paperclip.svg" width={23} height={23}/></div>
                     <div 
                       className={!fileError ? styles.saveCv : styles.saveCvError} 
                       onClick={addFIle}>{translate.attachResume[lang]} 

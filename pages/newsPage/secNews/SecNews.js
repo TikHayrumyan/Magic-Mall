@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image"
 import styles from "../../../styles/sass/pages/NewsPage/secNews/secNews.module.scss"
 import calendar from "../../../public/img/newsPage/secNews/calendar.svg"
@@ -118,7 +119,7 @@ const SecNews = () => {
                 <div tabIndex={0} onBlur={blur} className={styles.dropDownBlock} ref={myRef}>
                         <div className={styles.floor} onClick={floorToggleModal}>
                             <div className={styles.allFloors}>{activeCategoryName == "" ? `${translate.NewsPageSelectAll[lang]}` : activeCategoryName}</div>
-                            <div className={floorModal ? styles.upArr : styles.dArr}><Image alt="arrow" src={dArr}/></div>
+                            <div className={floorModal ? styles.upArr : styles.dArr}><img alt="arrow" src="/img/map/secSelect/dArr.svg"/></div>
                         </div>
                         <div className={floorModal ? styles.floorDropDown : styles.floorDropDownClose}>
                             <div onClick={() => {
@@ -144,9 +145,9 @@ const SecNews = () => {
                             <div className={styles.pagination} >
                                 <div className={index % 2 != 1 ? styles.PaginationContainerReverse : styles.PaginationContainer}>
                                     <div className={styles.descripBlock}>
-                                        <div className={styles.pattern}><Image alt="pattern" src={pattern}/></div>
+                                        <div className={styles.pattern}><img alt="pattern" src={pattern}/></div>
                                         <div className={styles.dateBlock}>
-                                            <div className={styles.calendar}><Image alt="calendar" src={calendar}/></div>
+                                            <div className={styles.calendar}><img alt="calendar" src={calendar}/></div>
                                             <div className={styles.date}>{date}</div>
                                         </div>
                                         <div className={styles.descripTitleBlock}>
@@ -158,8 +159,8 @@ const SecNews = () => {
                                         <div><img className={styles.imgMobile} alt="img" src={HOST_API_IMG+thumbnail} width={764} height={589}/></div>
                                         <div className={styles.btnBlock}>
                                             <button className={styles.button}>{translate.buttonSeeMore[lang]}</button>
-                                            <div className={styles.arrow}><Image alt="arrow" src={arrow}/></div>
-                                            <div className={styles.patternMobile}><Image alt="pattern" src={pattern}/></div>
+                                            <div className={styles.arrow}><img alt="arrow" src={arrow}/></div>
+                                            <div className={styles.patternMobile}><img alt="pattern" src={pattern}/></div>
                                         </div>
                                     </div>
                                     <div><img className={styles.img} alt="img" src={HOST_API_IMG+thumbnail} width={764} height={589}/></div>

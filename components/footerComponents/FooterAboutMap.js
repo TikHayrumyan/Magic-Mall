@@ -1,45 +1,89 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "../../styles/sass/pages/footerComponents/footerAbout.module.scss"
-import location from "../../public/img/icons/location.svg"
-import phone from "../../public/img/icons/bluePhone.svg"
-import oclock from "../../public/img/icons/blueTime.svg"
-import facebook from "../../public/img/icons/Facebook.svg"
-import instagram from "../../public/img/icons/Instagram.svg"
-import linkdin from "../../public/img/icons/Linkdin.svg"
 import Link from 'next/link'
 import { translate } from "../../translations"
 import { useGlobalProvider } from "../Providers/GlobalProvider"
 
 const FooterAboutMap = () => {
 
-    const {lang} = useGlobalProvider()
+    const { lang } = useGlobalProvider()
 
-    return(
+    return (
         <div className={styles.aboutMap}>
-                <div className={styles.blocks}>
-                    <div className={styles.aboutUs}><Link href="/AboutUsPage"><a>{translate.FooterMenuAboutUs[lang]}</a></Link></div>
-                    <div className={styles.contact}><Link href="/contactPage"><a>{translate.FooterMenuContactUs[lang]}</a></Link></div>
-                    <div className={styles.career}><Link href="/careerPage"><a>{translate.FooterMenuCareer[lang]}</a></Link></div>
-                    <div className={styles.direction}><Link href="/howToGetToMall"><a>{translate.FooterMenuHowToGetToMall[lang]}</a></Link></div>
+            <div className={styles.blocks}>
+                <div className={styles.aboutUs}>
+                    <Link href="/AboutUsPage">
+                        {translate.FooterMenuAboutUs[lang]}
+                    </Link>
                 </div>
-                <div className={styles.blocks}>
-                    <div className={styles.questions}><Link href="/FAQpage"><a>{translate.FooterMenuFAQ[lang]}</a></Link></div>
-                    <div className={styles.forReserve}><Link href="/forRentPage"><a>{translate.FooterMenuForRent[lang]}</a></Link></div>
-                    {/* <div className={styles.finance}><Link href="/reportPage"><a>{translate.FooterMenuReport[lang]}</a></Link></div> */}
+                <div className={styles.contact}>
+                    <Link href="/contactPage">
+                        {translate.FooterMenuContactUs[lang]}
+                    </Link>
                 </div>
-                <div className={styles.iconsBlock}>
-                    <div className={styles.location}><img alt="locationIcon" src={location} width={20} height={20}/><p className={styles.location_text}>{translate.contactPageAddres[lang]}</p></div>
-                    <div className={styles.phone}><img alt="phoneIcon" src={phone} width={20} height={20}/><a href="tel:+374 11 880 888">+374 11 880 888</a></div>
-                    <div className={styles.oclock}><img alt="Oclock" src={oclock} width={20} height={20}/>10։00 - 22։00</div>
+                <div className={styles.career}>
+                    <Link href="/careerPage">
+                        {translate.FooterMenuCareer[lang]}</Link>
                 </div>
-                <div>
-                    <div className={styles.netwokTitle}>{translate.FooterMenuSocialMedia[lang]}</div>
-                    <div className={styles.network}>
-                        <div><Link href="https://www.facebook.com/multimagicmall"><a target="_blank"><img alt="facebook" src={facebook}/></a></Link></div>
-                        <div><Link href="https://www.instagram.com/multimagic_mall/"><a  target="_blank"><img alt="instagram" src={instagram}/></a></Link></div>
-                        <div><Link href="https://www.linkedin.com/company/multi-outlet-mall/"><a  target="_blank"><img alt="Linkdin" src={linkdin}/></a></Link></div>
+                <div className={styles.direction}>
+                    <Link href="/howToGetToMall">
+                        {translate.FooterMenuHowToGetToMall[lang]}
+                    </Link>
+                </div>
+            </div>
+            <div className={styles.blocks}>
+                <div className={styles.questions}>
+                    <Link href="/FAQpage">
+                        {translate.FooterMenuFAQ[lang]}
+                    </Link>
+                </div>
+                <div className={styles.forReserve}>
+                    <Link href="/forRentPage">
+                        {translate.FooterMenuForRent[lang]}
+                    </Link>
+                </div>
+                {/* <div className={styles.finance}><Link href="/reportPage">{translate.FooterMenuReport[lang]}</Link></div> */}
+            </div>
+            <div className={styles.iconsBlock}>
+                <div className={styles.location}>
+                    <>
+                        <img alt="locationIcon" src="/img/icons/location.svg" width={20} height={20} />
+                        <p className={styles.location_text}>
+                            {translate.contactPageAddres[lang]}
+                        </p>
+                    </>
+                </div>
+                <div className={styles.phone}>
+                    <img alt="phoneIcon" src="/img/icons/bluePhone.svg" width={20} height={20} />
+                    <Link href="tel:+374 11 880 888">
+                        +374 11 880 888
+                    </Link>
+                </div>
+                <div className={styles.oclock}>
+                    <img alt="Oclock" src="/img/icons/blueTime.svg" width={20} height={20} />
+                    10։00 - 22։00
+                </div>
+            </div>
+            <div>
+                <div className={styles.netwokTitle}>{translate.FooterMenuSocialMedia[lang]}</div>
+                <div className={styles.network}>
+                    <div>
+                        <Link target="_blank" href="https://www.facebook.com/multimagicmall">
+                            <img alt="facebook" src="/img/icons/Facebook.svg" />
+                        </Link>
+                    </div>
+                    <div>
+                        <Link target="_blank" href="https://www.instagram.com/multimagic_mall/">
+                            <img alt="instagram" src="/img/icons/Instagram.svg" />
+                        </Link>
+                    </div>
+                    <div>
+                        <Link target="_blank" href="https://www.linkedin.com/company/multi-outlet-mall/">
+                            <img alt="Linkdin" src="/img/icons/Linkdin.svg" />
+                        </Link>
                     </div>
                 </div>
+            </div>
         </div>
     )
 }

@@ -88,9 +88,9 @@ const SingleFood = () => {
                         <div className={styles.contactBlock}>
                             {activeSinglePage.data?.food?.phone && <div className={styles.phoneIcon}><Image alt="phoneIcon" src={phoneIcon}/></div>}
                            {activeSinglePage.data?.food?.phone && <div><a className={styles.numberPhone} href={`tel:${activeSinglePage.data?.food?.phone}`}>{activeSinglePage.data.food?.phone}</a></div>}
-                        {activeSinglePage.data?.food?.linkedin && <div className={styles.Linkdin}><Link href={activeSinglePage.data?.food?.linkedin}><a  target="_blank"><Image alt="Linkdin" src={Linkdin}/></a></Link></div>}
-                        {activeSinglePage.data?.food?.facebook && <div className={styles.Facebook}><Link href={activeSinglePage.data?.food?.facebook}><a target="_blank"><Image alt="Facebook" src={Facebook}/></a></Link></div>}
-                        {activeSinglePage.data?.food?.instagram && <div className={styles.Instagram}><Link href={activeSinglePage.data?.food?.instagram}><a  target="_blank"><Image alt="Instagram" src={Instagram}/></a></Link></div>}
+                        {activeSinglePage.data?.food?.linkedin && <div className={styles.Linkdin}><Link href={activeSinglePage.data?.food?.linkedin}><a  target="_blank"><Image alt="Linkdin" src="/img/icons/Linkdin.svg"/></a></Link></div>}
+                        {activeSinglePage.data?.food?.facebook && <div className={styles.Facebook}><Link href={activeSinglePage.data?.food?.facebook}><a target="_blank"><Image alt="Facebook" src="/img/icons/Facebook.svg"/></a></Link></div>}
+                        {activeSinglePage.data?.food?.instagram && <div className={styles.Instagram}><Link href={activeSinglePage.data?.food?.instagram}><a  target="_blank"><Image alt="Instagram" src="/img/icons/Instagram.svg"/></a></Link></div>}
                         </div>
                     </div>
                     <div className={styles.imgs}>

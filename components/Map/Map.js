@@ -1,10 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "../../styles/sass/pages/map/map.module.scss";
-
-
-
-
-import { useState } from "react";
 import Link from "next/link";
 
 const Map = ({ data, changeFloor }) => {

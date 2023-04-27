@@ -85,9 +85,9 @@ const SecEntertainment = () =>{
                         {activeSinglePage.data?.entertainment.phone && <div className={styles.number}><a className={styles.number}href={`tel:${activeSinglePage.data.entertainment.phone}`}>{activeSinglePage.data.entertainment.phone}</a></div>}
                     </div>
                     <div className={styles.networkBlock}>
-                        {activeSinglePage.data.entertainment.linkedin && <div className={styles.Linkdin}><Link href={activeSinglePage.data.entertainment.linkedin}><a  target="_blank"><Image alt="Linkdin" src={Linkdin}/></a></Link></div>}
-                        {activeSinglePage.data?.entertainment.facebook && <div className={styles.Facebook}><Link href={activeSinglePage.data.entertainment.facebook}><a target="_blank"><Image alt="Facebook" src={facebook}/></a></Link></div>}
-                        {activeSinglePage.data?.entertainment.instagram &&  <div className={styles.Instagram}><Link href={activeSinglePage.data.entertainment.instagram}><a  target="_blank"><Image alt="Instagram" src={instagram}/></a></Link></div>}
+                        {activeSinglePage.data.entertainment.linkedin && <div className={styles.Linkdin}><Link href={activeSinglePage.data.entertainment.linkedin}><a  target="_blank"><Image alt="Linkdin" src="/img/icons/Linkdin.svg"/></a></Link></div>}
+                        {activeSinglePage.data?.entertainment.facebook && <div className={styles.Facebook}><Link href={activeSinglePage.data.entertainment.facebook}><a target="_blank"><Image alt="Facebook" src="/img/icons/Facebook.svg"/></a></Link></div>}
+                        {activeSinglePage.data?.entertainment.instagram &&  <div className={styles.Instagram}><Link href={activeSinglePage.data.entertainment.instagram}><a  target="_blank"><Image alt="Instagram" src="/img/icons/Instagram.svg"/></a></Link></div>}
                     </div>
                 </div>
             </div>

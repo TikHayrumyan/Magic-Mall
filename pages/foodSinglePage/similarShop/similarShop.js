@@ -43,8 +43,8 @@ const SimilarShop = ({related,loading}) =>{
                                                 <div><a className={styles.number} href={`tel:${phone}`}>{phone}</a></div>
                                             </div>}
                                           {facebook && instagram && <div className={styles.networkBlock}>
-                                                <div className={styles.facebook}><Link href={facebook}><a target="_blank"><img alt="facebook" src={Facebook}/></a></Link></div>
-                                                    <div className={styles.instagram}><Link href={instagram}><a  target="_blank"><img alt="instagram" src={Instagram}/></a></Link></div>
+                                                <div className={styles.facebook}><Link href={facebook}><a target="_blank"><img alt="facebook" src="/img/icons/Facebook.svg"/></a></Link></div>
+                                                    <div className={styles.instagram}><Link href={instagram}><a  target="_blank"><img alt="instagram" src="/img/icons/Instagram.svg"/></a></Link></div>
                                             </div>}
                                         </div>
                                         <div className={styles.brandBook}>

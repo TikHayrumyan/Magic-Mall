@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 /* eslint-disable react-hooks/exhaustive-deps */
 import styles from "../../../../styles/sass/pages/FoodPage/secFilter/secSelect/select.module.scss"
 import dArr from "../../../../public/img/FoodPage/secFilter/dArr.svg"
@@ -132,7 +133,7 @@ const Select = () => {
                     <div className={styles.select} tabIndex={1} onBlur={blur}>
                         <div className={styles.forSelect} onClick={toggleModal}>
                             <div className={styles.allCategory}>{activeCategoryNameFood == "" ?  `${translate.ShopPageAllCategory[lang]}` : activeCategoryNameFood}</div>
-                            <div className={modal ? styles.uArr : styles.dArr}><Image alt="arrow" src={dArr}/></div>
+                            <div className={modal ? styles.uArr : styles.dArr}><img alt="arrow" src="/img/map/secSelect/dArr.svg"/></div>
                         </div>
                         <div className={modal ? styles.dropDown : styles.dropDownNo}>
                         <div className={styles.AllCaregoriesItem} onClick={() =>{
@@ -163,7 +164,7 @@ const Select = () => {
                     <div tabIndex={0} onBlur={blur}>
                         <div className={styles.floor} onClick={floorToggleModal}>
                             <div className={styles.allFloors}>{activeFloorName == "" || activeFloorName == null ?  `${translate.ShopPageAllFloors[lang]}` : activeFloorName}</div>
-                            <div className={floorModal ? styles.upArr : styles.dArr}><Image alt="arrow" src={dArr}/></div>
+                            <div className={floorModal ? styles.upArr : styles.dArr}><img alt="arrow" src="/img/map/secSelect/dArr.svg"/></div>
                         </div>
                         <div className={floorModal ? styles.floorDropDown : styles.floorDropDownClose}>
                             <div onClick={() => searchByFloor(null)}>{translate.ShopPageAllFloors[lang]}</div>

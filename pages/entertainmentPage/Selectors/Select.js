@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
+
 import styles from "../../../styles/sass/pages/entertainmentPage/secSelect/select.module.scss"
-import dArr from "../../../public/img/entertainmentPage/secSelect/dArr.svg"
 import Image from "next/image"
 import { useState ,useEffect} from "react"
-import Search from "../../../public/img/entertainmentPage/secSelect/Search.svg"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import axios from "axios"
 import { translate } from "../../../translations"
@@ -20,8 +20,52 @@ const Select = () => {
     })
 
     useEffect(() => {
+        const searchData = async(floor,search)=> {
+            let searchForKeys = new Object()
+            if(floor != null && floor != `${translate.ShopPageAllFloors[lang]}`){
+                console.log(floor,"kkkkk");
+                searchForKeys.floor = floor
+                SetInitialData({...initialData,floor:floor})
+            }else if(initialData.floor != null && floor == null && floor != `${translate.ShopPageAllFloors[lang]}`){
+                searchForKeys.floor = initialData.floor
+            }else{
+                SetInitialData({
+                    floor:null,
+                    search:null
+                })
+            }
+            if(search!=null){
+                SetInitialData({...initialData,search:search});
+                searchForKeys.search=`${search}`;
+            }
+            try {
+                const response = await axios({
+                    url:HOST_API + "entertianment",
+                    method: "POST",
+                    headers: {
+                        'content-type': 'application/json',
+                      },
+                      data:JSON.stringify(searchForKeys)
+                });
+                console.log(response);
+                if(response.data.length && response.status == 200){
+                    SetEntertainmentData({
+                        data: response.data,
+                        loading: true
+                    })
+                }else if(response.data.length == 0 && response.status == 200){
+                    SetEntertainmentData({
+                        data: [],
+                        loading: true
+                    })
+                }
+            } catch (error) {
+                console.log(error);
+            }
+        }
         searchData()
-    },[searchData])
+    },[HOST_API, SetEntertainmentData, initialData, lang])
+    
     useEffect(() => {
 
     },[entertainmentData.loading])
@@ -37,49 +81,7 @@ const Select = () => {
 
     
 
-    const searchData = async(floor,search)=> {
-        let searchForKeys = new Object()
-        if(floor != null && floor != `${translate.ShopPageAllFloors[lang]}`){
-            console.log(floor,"kkkkk");
-            searchForKeys.floor = floor
-            SetInitialData({...initialData,floor:floor})
-        }else if(initialData.floor != null && floor == null && floor != `${translate.ShopPageAllFloors[lang]}`){
-            searchForKeys.floor = initialData.floor
-        }else{
-            SetInitialData({
-                floor:null,
-                search:null
-            })
-        }
-        if(search!=null){
-            SetInitialData({...initialData,search:search});
-            searchForKeys.search=`${search}`;
-        }
-        try {
-            const response = await axios({
-                url:HOST_API + "entertianment",
-                method: "POST",
-                headers: {
-                    'content-type': 'application/json',
-                  },
-                  data:JSON.stringify(searchForKeys)
-            });
-            console.log(response);
-            if(response.data.length && response.status == 200){
-                SetEntertainmentData({
-                    data: response.data,
-                    loading: true
-                })
-            }else if(response.data.length == 0 && response.status == 200){
-                SetEntertainmentData({
-                    data: [],
-                    loading: true
-                })
-            }
-        } catch (error) {
-            console.log(error);
-        }
-    }
+    
     const searchByFloor = (floor) => {
         searchData(floor,null)
         SetFloorModal(false);
@@ -105,7 +107,7 @@ const Select = () => {
                     <div tabIndex={0} onBlur={blur}>
                         <div className={styles.floor} onClick={floorToggleModal}>
                             <div className={styles.allFloors}>{activeFloorName == "" || activeFloorName == null ? `${translate.ShopPageAllFloors[lang]}` : activeFloorName}</div>
-                            <div className={floorModal ? styles.upArr : styles.dArr}><Image alt="arrow" src={dArr}/></div>
+                            <div className={floorModal ? styles.upArr : styles.dArr}><img alt="arrow" src="/img/map/secSelect/dArr.svg"/></div>
                         </div>
                         <div className={floorModal ? styles.floorDropDown : styles.floorDropDownClose}>
                         <div onClick={() => searchByFloor(`${translate.ShopPageAllFloors[lang]}`)}>{translate.ShopPageAllFloors[lang]}</div>
@@ -122,7 +124,7 @@ const Select = () => {
                          onKeyUp={(e)=>{
                            SearchByInput(e.target.value)}}
                            onChange={(e)=>SetSearchInputValueEntertainment(e.target.value)}/>
-                        <div className={styles.searchIcon}><Image alt="search" src={Search} width={16.5} height={17.5}/></div>
+                        <div className={styles.searchIcon}><Image alt="search" src="/img/entertainmentPage/secSelect/Search.svg" width={16.5} height={17.5}/></div>
                 </div>
             </div> 
         </div>

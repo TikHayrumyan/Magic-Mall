@@ -1,6 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/careerPage/SecCareer/SuccessAppForm.module.scss"
-import success from "../../../public/img/careerPage/successForm/success.svg"
-import Image from "next/image"
 import { translate } from "../../../translations"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 
@@ -15,7 +14,7 @@ const SuccessAppForm = props => {
             <div className={styles.SuccessAppForm}>
                 <div className={styles.close} onClick={() =>props.onClose("close")}>&times;</div>
                 <div className={styles.container}>
-                    <div className={styles.successImg}><Image alt="success" src={success}/></div>
+                    <div className={styles.successImg}><img alt="success" src="/img/careerPage/successForm/success.svg"/></div>
                     <div className={styles.thanks}>{translate.thanks[lang]}</div>
                     <div className={styles.MessageSend}>{translate.MessageHasBeenSent[lang]}</div>
                     <button className={styles.button} onClick={() =>props.onClose("close")}>{translate.buttonContinue[lang]}</button>

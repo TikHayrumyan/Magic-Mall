@@ -31,9 +31,9 @@ const SecMain = ({data}) => {
                                         {data.phone && <div className={styles.number}><a className={styles.number}href={`tel:${data.phone}`}>{data.phone}</a></div>}
                                     </div>
                                     <div className={styles.networkBlock}>
-                                        { data.linkedin && <div className={styles.Linkdin}><Link href={data.linkedin}><a  target="_blank"><Image alt="Linkdin" src={Linkdin}/></a></Link></div>}
-                                        {data.facebook && <div className={styles.Facebook}><Link href={data.facebook}><a target="_blank"><Image alt="Facebook" src={facebook}/></a></Link></div>}
-                                        {data.instagram &&  <div className={styles.Instagram}><Link href={data.instagram}><a  target="_blank"><Image alt="Instagram" src={instagram}/></a></Link></div>}
+                                        { data.linkedin && <div className={styles.Linkdin}><Link href={data.linkedin}><a  target="_blank"><Image alt="Linkdin" src="/img/icons/Linkdin.svg"/></a></Link></div>}
+                                        {data.facebook && <div className={styles.Facebook}><Link href={data.facebook}><a target="_blank"><Image alt="Facebook" src="/img/icons/Facebook.svg"/></a></Link></div>}
+                                        {data.instagram &&  <div className={styles.Instagram}><Link href={data.instagram}><a  target="_blank"><Image alt="Instagram" src="/img/icons/Instagram.svg"/></a></Link></div>}
                                     </div>
                                 </div>
                             </div>

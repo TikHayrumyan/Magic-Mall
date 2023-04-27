@@ -1,8 +1,7 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image"
 import { useEffect, useState } from "react"
 import styles from "../../styles/sass/pages/careerPage/SecCareer/career.module.scss"
-import backgroundPattern from "../../public/img/careerPage/backgroundPattern.svg"
+
 import ApplicationForm from "./secCareer/ApplicationForm"
 import SuccessAppForm from "./secCareer/SuccessAppForm"
 import { useGlobalProvider } from "../../components/Providers/GlobalProvider"
@@ -43,7 +42,7 @@ const Career = () => {
 
         return(<>
         {careerData.loading == true ? <div className={styles.Career}>
-            <div className={styles.backgroundPattern}><img alt="backgroundPattern" src={backgroundPattern}/></div>
+            <div className={styles.backgroundPattern}><img alt="backgroundPattern" src="/img/careerPage/backgroundPattern.svg"/></div>
             <div className={styles.titleContainer}>
                     <div className={styles.titleBlock}>
                         <div className={styles.title}>{translate.CareerPageTitle[lang]}</div>

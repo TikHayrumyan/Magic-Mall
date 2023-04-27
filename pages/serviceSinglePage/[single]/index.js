@@ -85,9 +85,9 @@ const SinglePage = () => {
                             <div className={styles.contactBlock}>
                                 {activeSinglePage.data.service?.phone &&  <div className={styles.phoneIcon}><Image alt="phoneIcon" src={phoneIcon}/></div>}
                                {activeSinglePage.data.service?.phone && <div><a className={styles.number}  href={`tel:${activeSinglePage.data.service?.phone}`}>{activeSinglePage.data.service?.phone}</a></div>}
-                            {activeSinglePage.data.service?.linkedin && <div className={styles.Linkedin}><Link href={activeSinglePage.data.service?.linkedin}><a  target="_blank"><Image alt="Linkdin" src={Linkdin}/></a></Link></div>}
-                            {activeSinglePage.data.service?.facebook && <div className={styles.Facebook}><Link  href={activeSinglePage.data.service?.facebook}><a target="_blank"><Image alt="Facebook" src={Facebook}/></a></Link></div>}
-                            {activeSinglePage.data.service?.instagram && <div className={styles.Instagram}><Link href={activeSinglePage.data.service?.instagram}><a  target="_blank"><Image alt="Instagram" src={Instagram}/></a></Link></div>}
+                            {activeSinglePage.data.service?.linkedin && <div className={styles.Linkedin}><Link href={activeSinglePage.data.service?.linkedin}><a  target="_blank"><Image alt="Linkdin" src="/img/icons/Linkdin.svg"/></a></Link></div>}
+                            {activeSinglePage.data.service?.facebook && <div className={styles.Facebook}><Link  href={activeSinglePage.data.service?.facebook}><a target="_blank"><Image alt="Facebook" src="/img/icons/Facebook.svg"/></a></Link></div>}
+                            {activeSinglePage.data.service?.instagram && <div className={styles.Instagram}><Link href={activeSinglePage.data.service?.instagram}><a  target="_blank"><Image alt="Instagram" src="/img/icons/Instagram.svg"/></a></Link></div>}
                             </div>
                         </div>
                         <div className={styles.imgs}>

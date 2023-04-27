@@ -1,14 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/blogPage/otherBlogs/otherBlogs.module.scss"
-import calendarIcon from "../../../public/img/blogPage/otherBlog/calendarIcon.svg"
-import arrow from "../../../public/img/blogPage/otherBlog/arrow.svg"
-import Image from "next/image"
 import Link from "next/link"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import axios from "axios"
 import { useState,useEffect } from "react"
 import InfiniteScroll from 'react-infinite-scroll-component';
-import load from "../../../public/img/specialOffersPage/newSpecialOffers/load.svg"
 import { translate } from "../../../translations"
 
 const OtherBlogs = () => {
@@ -106,26 +102,27 @@ const OtherBlogs = () => {
                         dataLength={blogPageData.data.length} //This is important field to render the next data
                         next={LoadMore}
                         hasMore={disableMobileScroll  ? true : false}
-                        loader={<div className={styles.loading}><img alt="load" src={load.src}/></div>}
+                        loader={<div className={styles.loading}><img alt="load" src="/img/specialOffersPage/newSpecialOffers/load.svg"/></div>}
                         style={{display: 'flex', flexWrap: 'wrap',gap:'3vw'}}
                         >
                 {
                     blogPageData.data.map(({id,title,title_am,title_ru,thumbnail,date},index) => {
 
-                        return(index != 0 && <Link  key={id} href={`/singleBlogPage/${id}`}><a>
+                        return(index != 0 && <Link  key={id} href={`/singleBlogPage/${id}`}>
+                           
                             <div className={styles.blogs}>
                                 <div><img className={styles.img} alt="blogImg" src={HOST_API_IMG+thumbnail}/></div>
                                 <div className={styles.description}>{lang == "en" ? shorten(title,79) : lang == "ru" ?shorten(title_ru,79) : shorten(title_am,79)}</div>
                                 <div className={styles.dateBlock}>
-                                    <div><img alt="calendarIcon" src={calendarIcon}/></div>
+                                    <div><img alt="calendarIcon" src="/img/blogPage/otherBlog/calendarIcon.svg"/></div>
                                     <div className={styles.date}>{date}</div>
                                 </div>
                                 <div className={styles.btnBlock}>
                                         <button className={styles.button}>{translate.buttonRead[lang]}</button>
-                                        <div className={styles.arrow}><img alt="arrow" src={arrow}/></div>
+                                        <div className={styles.arrow}><img alt="arrow" src="/img/blogPage/otherBlog/arrow.svg"/></div>
                                 </div>
                             </div>  
-                            </a>
+                           
                             </Link>
                         )
                     })
@@ -141,7 +138,7 @@ const OtherBlogs = () => {
                         dataLength={blogPageData.data.length} //This is important field to render the next data
                         next={LoadMore}
                         hasMore={disableMobileScroll  ? true : false}
-                        loader={<div className={styles.loading}><img alt="load" src={load.src}/></div>}
+                        loader={<div className={styles.loading}><img alt="load" src="/img/specialOffersPage/newSpecialOffers/load.svg"/></div>}
                         // endMessage={
                         //     <div style={{ textAlign: 'center' }}>
                         //     <div>Yay! You have seen it all</div>
@@ -151,20 +148,21 @@ const OtherBlogs = () => {
                         {
                             blogPageData.data.map(({id,title,title_am,title_ru,thumbnail,date},index) => {
 
-                                return(index != 0 && <Link key={id}  href={`/singleBlogPage/${id}`}><a>
+                                return(index != 0 && <Link key={id}  href={`/singleBlogPage/${id}`}>
+                                    
                                     <div className={styles.blogsMobile}>
                                         <div><img className={styles.img} alt="blogImg" src={HOST_API_IMG+thumbnail}/></div>
                                         <div className={styles.description}>{lang == "en" ? shorten(title,65) : lang == "ru" ?shorten(title_ru,65) : shorten(title_am,60)}</div>
                                         <div className={styles.dateBlock}>
-                                            <div><img alt="calendarIcon" src={calendarIcon}/></div>
+                                            <div><img alt="calendarIcon" src="/img/blogPage/otherBlog/calendarIcon.svg"/></div>
                                             <div className={styles.date}>{date}</div>
                                         </div>
                                         <div className={styles.btnBlock}>
                                                 <button className={styles.button}>{translate.buttonRead[lang]}</button>
-                                                <div className={styles.arrow}><img alt="arrow" src={arrow}/></div>
+                                                <div className={styles.arrow}><img alt="arrow" src="/img/blogPage/otherBlog/arrow.svg"/></div>
                                         </div>
                                     </div>  
-                                    </a>
+                                    
                                     </Link>
                                 )
                     })

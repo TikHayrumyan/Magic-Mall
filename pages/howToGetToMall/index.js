@@ -1,4 +1,3 @@
-import FreeRoute from "./freeRoute/FreeRoute"
 import MicroBus from "./microBus/MicroBus"
 import SecBus from "./secBus/SecBus"
 import SecMain from "./secMain"
