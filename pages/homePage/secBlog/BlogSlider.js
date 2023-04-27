@@ -6,11 +6,9 @@ import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel"), {ssr: false});
 import styles from "../../../styles/sass/pages/HomePage/secBlog/blogSlider.module.scss"
 
-import calendarIcon from "../../../public/img/homePage/secBlog/calendarIcon.svg"
-import arrRight from  "../../../public/img/homePage/secBlog/arrRight.svg"
+
 import Image from "next/image";
-import navPrev from "../../../public/img/homePage/sectionBestBrands/slider/navPrev.svg"
-import navNext from "../../../public/img/homePage/sectionBestBrands/slider/navNext.svg"
+
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider";
 import Link from "next/link";
 import { translate } from "../../../translations";
@@ -65,7 +63,7 @@ const BlogSLider = () => {
     return(<>
         {blogSliderData.loading && <div  className={styles.blogSLider}>
             <div className={styles.container}>
-                <OwlCarousel {...settings} className="owl-theme owl-blogSlider" nav dots={false} items={3} margin={10} loop navSpeed={1500} navText={ [`<img src='${navPrev.src}'>`,`<img src='${navNext.src}'>`]}>
+                <OwlCarousel {...settings} className="owl-theme owl-blogSlider" nav dots={false} items={3} margin={10} loop navSpeed={1500} navText={ [`<img src='/img/homePage/sectionBestBrands/slider/navPrev.svg' alt='' />`,`<img src='/img/homePage/sectionBestBrands/slider/navNext.svg' alt='' />`]}>
                     
                     {
                         blogSliderData.data?.map(({id,title,thumbnail,date,type,title_am,title_ru}) => {
@@ -76,12 +74,12 @@ const BlogSLider = () => {
                                         <img className={styles.img} alt="img" src={HOST_API_IMG+thumbnail} />
                                         <p className={styles.description}>{lang == "en" ? shorten(title,60) : lang == "ru" ? shorten(title_ru,65) : shorten(title_am,60)}</p>
                                         <div className={styles.dateBlock}>
-                                            <div className={styles.calendarIcon}><Image alt="iconCalendar" src={calendarIcon}/></div>
+                                            <div className={styles.calendarIcon}><img alt="iconCalendar" src="/img/homePage/secBlog/calendarIcon.svg" /></div>
                                             <span className={styles.date}>{date}</span>
                                         </div>
                                         <div className={styles.hoverBlock}>
                                             <button className={styles.button}>{translate.buttonRead[lang]}</button>
-                                            <div className={styles.buttonIcon}><Image alt="arrRight" src={arrRight} width={40}/></div>
+                                            <div className={styles.buttonIcon}><img alt="arrRight" src="/img/homePage/secBlog/arrRight.svg" /></div>
                                         </div>
                                     </div>
                             </Link>

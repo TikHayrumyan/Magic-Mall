@@ -1,11 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/entertainmentSinglePage/secEntertainment/secEntertainment.module.scss"
 import Link from "next/link"
 import Image from "next/image"
-import RightArrow from "../../../public/img/entertainmentSinglePage/secEntertainment/Rarrow.svg"
-import phoneIcon from "../../../public/img/entertainmentSinglePage/secMain/phoneIcon.svg"
-import facebook from "../../../public/img/icons/Facebook.svg"
-import instagram from "../../../public/img/icons/Instagram.svg"
-import Linkdin from  "../../../public/img/entertainmentSinglePage/secMain/Linkdin.svg"
 import {useRouter} from "next/router"
 import { useEffect, useState } from "react"
 import  axios from "axios"
@@ -15,7 +11,6 @@ import SecMap from "../secMap/secMap"
 import SimilarEntertainment from "../similarEntertainment/similarEntertainment"
 import CardSubscribe from "../../homePage/secCardSubscribe/CardSubscribe"
 import parse from "html-react-parser"
-import mobilePattern from "../../../public/img/entertainmentSinglePage/secEntertainment/mobilePattern.svg"
 import { translate } from "../../../translations"
 
 const SecEntertainment = () =>{
@@ -61,7 +56,7 @@ const SecEntertainment = () =>{
                         <Link href="/entertainmentPage">
                         <a>
                         <div className={styles.forHover}>
-                            <div className={styles.arrow}><Image alt="arrow" width={32} height={18} src={RightArrow}/></div>
+                            <div className={styles.arrow}><Image alt="arrow" width={32} height={18} src="/img/entertainmentSinglePage/secEntertainment/Rarrow.svg"/></div>
                             <div className={styles.goBack}>{translate.headerMenuEntertainment[lang]}</div>
                         </div>
                         </a>
@@ -69,7 +64,7 @@ const SecEntertainment = () =>{
                 </div>
                 <div className={styles.MobileSecMain} style={{backgroundImage:`url(${HOST_API_IMG+activeSinglePage.data.entertainment?.thumbnail})`}}><div className={styles.gradientt}></div>
                     <div className={styles.MobileTitleAndPattern}>
-                        <div className={styles.mobilePattern}><Image alt="mobilePattern" src={mobilePattern}/></div>
+                        <div className={styles.mobilePattern}><img alt="mobilePattern" src="/img/entertainmentSinglePage/secEntertainment/mobilePattern.svg"/></div>
                         <div className={styles.mobileTitle}>{lang == "en" ? activeSinglePage.data.entertainment?.name : lang == "ru" ? activeSinglePage.data.entertainment?.name_ru : activeSinglePage.data.entertainment?.name_am}</div>
                     </div>
                     {/* <img className={styles.MobileBackground} alt="background" src={HOST_API_IMG+activeSinglePage.data.entertainment?.thumbnail}/> */}
@@ -81,13 +76,13 @@ const SecEntertainment = () =>{
                 </div>
                 <div className={styles.contactBlock}>
                     <div className={styles.numberBlock}>
-                        {activeSinglePage.data?.entertainment.phone && <div className={styles.phoneIcon}><Image alt="phoneIcon" src={phoneIcon}/> </div>}
+                        {activeSinglePage.data?.entertainment.phone && <div className={styles.phoneIcon}><img alt="phoneIcon" src="/img/entertainmentSinglePage/secMain/phoneIcon.svg"/> </div>}
                         {activeSinglePage.data?.entertainment.phone && <div className={styles.number}><a className={styles.number}href={`tel:${activeSinglePage.data.entertainment.phone}`}>{activeSinglePage.data.entertainment.phone}</a></div>}
                     </div>
                     <div className={styles.networkBlock}>
-                        {activeSinglePage.data.entertainment.linkedin && <div className={styles.Linkdin}><Link href={activeSinglePage.data.entertainment.linkedin}><a  target="_blank"><Image alt="Linkdin" src="/img/icons/Linkdin.svg"/></a></Link></div>}
-                        {activeSinglePage.data?.entertainment.facebook && <div className={styles.Facebook}><Link href={activeSinglePage.data.entertainment.facebook}><a target="_blank"><Image alt="Facebook" src="/img/icons/Facebook.svg"/></a></Link></div>}
-                        {activeSinglePage.data?.entertainment.instagram &&  <div className={styles.Instagram}><Link href={activeSinglePage.data.entertainment.instagram}><a  target="_blank"><Image alt="Instagram" src="/img/icons/Instagram.svg"/></a></Link></div>}
+                        {activeSinglePage.data.entertainment.linkedin && <div className={styles.Linkdin}><Link href={activeSinglePage.data.entertainment.linkedin}><a  target="_blank"><img alt="Linkdin" src="/img/icons/Linkdin.svg"/></a></Link></div>}
+                        {activeSinglePage.data?.entertainment.facebook && <div className={styles.Facebook}><Link href={activeSinglePage.data.entertainment.facebook}><a target="_blank"><img alt="Facebook" src="/img/icons/Facebook.svg"/></a></Link></div>}
+                        {activeSinglePage.data?.entertainment.instagram &&  <div className={styles.Instagram}><Link href={activeSinglePage.data.entertainment.instagram}><a  target="_blank"><img alt="Instagram" src="/img/icons/Instagram.svg"/></a></Link></div>}
                     </div>
                 </div>
             </div>

@@ -3,6 +3,7 @@ import styles from "../../../styles/sass/pages/blogPage/secBlog/secBlog.module.s
 import Link from "next/link"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import { translate } from "../../../translations"
+import Image from "next/image"
 
 
 
@@ -32,7 +33,7 @@ const SecBlog = () =>{
                 {blogPageData.loading && <Link  href={`/singleBlogPage/${id}`} key={id}>
                     
                         <div className={styles.summerTrend}>
-                            <div ><img className={styles.img} alt="img" src={HOST_API_IMG+thumbnail} width={749} height={481}/></div>
+                            <div ><Image className={styles.img} alt="img" src={HOST_API_IMG+thumbnail} width={749} height={481}/></div>
                             <div className={styles.aboutTrends}>
                                 <div className={styles.title}>{lang == "en" ? shorten(title,80) : lang == "ru" ? shorten(title_ru,65) : shorten(title_am,66)}</div>
                                 <div className={styles.dateBLock}>

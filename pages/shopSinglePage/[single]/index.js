@@ -70,12 +70,12 @@ const SingleShop = () => {
                     <div className={styles.mainBlock}>
                         <div className={styles.forMobileContainer}>
                             <div className={styles.logoBlock}>
-                                <div className={styles.Logo}><Image className={styles.Logo} alt="logo" src={logo} /></div>
+                                <div className={styles.Logo}><img className={styles.Logo} alt="logo" src={logo} /></div>
                                 <div className={styles.brandName}>{lang == "en" ? activeSinglePage.data.shop?.name : lang == "ru" ? activeSinglePage.data.shop?.name_ru : activeSinglePage.data.shop?.name_am}</div>
                             </div>
                             <div className={styles.imgsMobile}>
                                 <div className={styles.imgsBlockMobile}>
-                                    <div className={styles.patternMobile}><Image alt="pattern" src={pattern} /></div>
+                                    <div className={styles.patternMobile}><img alt="pattern" src={pattern} /></div>
                                     <div><img className={styles.brandLogoMobile} alt="brandLogo" src={HOST_API_IMG + activeSinglePage.data.shop?.logo} /></div>
                                     <div><img className={styles.accessoriesMobile} alt="accessories" src={HOST_API_IMG + activeSinglePage.data.shop?.imgSmall} /></div>
                                     <div><img className={styles.burgerMobile} alt="burger" src={HOST_API_IMG + activeSinglePage.data.shop?.imgBig} /></div>
@@ -85,16 +85,16 @@ const SingleShop = () => {
                                 <div className={styles.description}>{lang == "en" ? parse(activeSinglePage.data.shop?.content) : lang == "ru" ? parse(activeSinglePage.data.shop?.content_ru) : parse(activeSinglePage.data?.shop.content_am)}</div>
                             </div>
                             <div className={styles.contactBlock}>
-                                {activeSinglePage.data.shop?.phone && <div className={styles.phoneIcon}><Image alt="phoneIcon" src={phoneIcon} /></div>}
+                                {activeSinglePage.data.shop?.phone && <div className={styles.phoneIcon}><img alt="phoneIcon" src={phoneIcon} /></div>}
                                 {activeSinglePage.data.shop?.phone && <div><a className={styles.number} href={`tel:${activeSinglePage.data.shop?.phone}`}>{activeSinglePage.data.shop?.phone}</a></div>}
-                                {activeSinglePage.data.shop?.linkedin && <div className={styles.Linkdin}><Link href={activeSinglePage.data.shop?.linkedin}><a target="_blank"><Image alt="Linkdin" src="/img/icons/Linkdin.svg" /></a></Link></div>}
-                                {activeSinglePage.data.shop?.facebook && <div className={styles.Facebook}><Link href={activeSinglePage.data.shop?.facebook}><a target="_blank"><Image alt="Facebook" src="/img/icons/Facebook.svg" /></a></Link></div>}
-                                {activeSinglePage.data.shop?.instagram && <div className={styles.Instagram}><Link href={activeSinglePage.data.shop?.instagram}><a target="_blank"><Image alt="Instagram" src="/img/icons/Instagram.svg" /></a></Link></div>}
+                                {activeSinglePage.data.shop?.linkedin && <div className={styles.Linkdin}><Link href={activeSinglePage.data.shop?.linkedin}><a target="_blank"><img alt="Linkdin" src="/img/icons/Linkdin.svg" /></a></Link></div>}
+                                {activeSinglePage.data.shop?.facebook && <div className={styles.Facebook}><Link href={activeSinglePage.data.shop?.facebook}><a target="_blank"><img alt="Facebook" src="/img/icons/Facebook.svg" /></a></Link></div>}
+                                {activeSinglePage.data.shop?.instagram && <div className={styles.Instagram}><Link href={activeSinglePage.data.shop?.instagram}><a target="_blank"><img alt="Instagram" src="/img/icons/Instagram.svg" /></a></Link></div>}
                             </div>
                         </div>
                         <div className={styles.imgs}>
                             <div className={styles.imgsBlock}>
-                                <div className={styles.pattern}><Image alt="pattern" src={pattern} /></div>
+                                <div className={styles.pattern}><img alt="pattern" src={pattern} /></div>
                                 <div><img className={styles.brandLogo} alt="brandLogo" src={HOST_API_IMG + activeSinglePage.data.shop?.logo} /></div>
                                 <div><img className={styles.accessories} alt="accessories" src={HOST_API_IMG + activeSinglePage.data.shop?.imgSmall} /></div>
                                 <div><img className={styles.burger} alt="burger" src={HOST_API_IMG + activeSinglePage.data.shop?.imgBig} /></div>

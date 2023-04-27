@@ -1,5 +1,4 @@
 import styles from "../../../styles/sass/pages/HomePage/secNews/news.module.scss"
-import Pattern from "../../../public/img/homePage/secBlog/firstPattern.svg"
 import Image from "next/image"
 import NewsSlider from "./newsSlider"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
@@ -14,7 +13,7 @@ const News = () =>{
     return(<div className={styles.news}>
                 <div className={styles.container}>
                     <div className={styles.titleBlock}>
-                        <div className={styles.pattern}><Image alt="pattern" src={Pattern}/></div>
+                        <div className={styles.pattern}><Image alt="pattern" src="/img/homePage/secBlog/firstPattern.svg"/></div>
                         <div className={styles.title}>{translate.headerMenuSpecialOffers[lang]}</div>
                     </div>
                     <NewsSlider/>

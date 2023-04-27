@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image"
 import styles from "../../../styles/sass/pages/HomePage/secFirstOutletMall/firstOutletMall.module.scss"
-import Pattern from "../../../public/img/homePage/secBlog/firstPattern.svg"
 import {useGlobalProvider} from "../../../components/Providers/GlobalProvider"
 import { useEffect } from "react"
 import { translate } from "../../../translations"
@@ -23,7 +22,7 @@ const FirstOutletMall = () => {
         {firstMallData.loading && <div className={styles.firstOutletMall}>
             <div className={styles.container}>
                 <div className={styles.titleBlock}>
-                    <div className={styles.pattern}><Image alt="pattern" src={Pattern}/></div>
+                    <div className={styles.pattern}><img alt="pattern" src="/img/homePage/secBlog/firstPattern.svg"/></div>
                     <div className={styles.titleDescripBlock}>
                         <div className={styles.title}>{lang == "en" ? firstMallData.data.title : lang == "am" ? firstMallData.data.title_am : firstMallData.data.title_ru}</div>
                         <div className={styles.descrip}>
@@ -40,7 +39,7 @@ const FirstOutletMall = () => {
                 </div>
                 {/* <div className={styles.hoverBlock}>
                         <button className={styles.button}>{translate.buttonSeeMore[lang]}</button>
-                        <div className={styles.buttonIcon}><Image alt="arrRight" src={arrRight}/></div>
+                        <div className={styles.buttonIcon}><img alt="arrRight" src={arrRight}/></div>
                 </div> */}
             </div>
     </div>}

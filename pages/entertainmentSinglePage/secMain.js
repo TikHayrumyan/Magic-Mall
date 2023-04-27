@@ -1,11 +1,7 @@
 import styles from "../../styles/sass/pages/entertainmentSinglePage/secMain/secMain.module.scss"
-import pattern from "../../public/img/entertainmentSinglePage/secMain/pattern.svg"
 import Image from "next/image"
 import Link from 'next/link'
-import phoneIcon from "../../public/img/entertainmentSinglePage/secMain/phoneIcon.svg"
-import facebook from "../../public/img/icons/Facebook.svg"
-import instagram from "../../public/img/icons/Instagram.svg"
-import Linkdin from  "../../public/img/entertainmentSinglePage/secMain/Linkdin.svg"
+
 import { useGlobalProvider } from "../../components/Providers/GlobalProvider"
 
 const SecMain = ({data}) => {
@@ -18,7 +14,7 @@ const SecMain = ({data}) => {
             <div className={styles.container}>
                 <div className={styles.background} style={{backgroundImage:`url(${HOST_API_IMG+data.coverPhoto})`}}><div className={styles.gradientt}></div>
                     <div className={styles.patternAndTitle}>
-                        <div><Image alt="pattern" src={pattern} width={170} height={170}/></div>
+                        <div><Image alt="pattern" src="/img/entertainmentSinglePage/secMain/pattern.svg" width={170} height={170}/></div>
                         <div className={styles.title}>{lang == "en" ? data.name : lang == "ru" ? data.name_ru : data.name_am}</div>
                     </div>
                     {/* <div className={styles.infoCard}>

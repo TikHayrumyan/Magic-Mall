@@ -4,8 +4,6 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel"), {ssr: false});
-import navPrev from "../../../public/img/homePage/sectionBestBrands/slider/navPrev.svg"
-import navNext from "../../../public/img/homePage/sectionBestBrands/slider/navNext.svg"
 import styles from "../../../styles/sass/pages/HomePage/secNews/newsSlider.module.scss"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider";
 import Link from "next/link";
@@ -56,7 +54,7 @@ const NewsSlider = () =>{
             <>
             {specialOffersSliderData.loading && <div className={styles.newsSlider}>
                 <div className={styles.container}>
-                <OwlCarousel {...settings} className=".owl-carousel owl-theme owl-newsSlider" nav dots={false} items={2} margin={4} loop navText={ [`<img src='${navPrev.src}'>`,`<img src='${navNext.src}'>`]}>
+                <OwlCarousel {...settings} className=".owl-carousel owl-theme owl-newsSlider" nav dots={false} items={2} margin={4} loop navText={ [`<img src='/img/homePage/sectionBestBrands/slider/navPrev.svg' alt='' />`,`<img src='/img/homePage/sectionBestBrands/slider/navNext.svg' alt='' />`]}>
                     {
                         specialOffersSliderData.data.map(({id,image,image_am,image_ru,logo,title,title_am,title_ru,link,link_am,link_ru}) => {
                            return <Link  key={id} href={lang == "en" ? link : lang == "ru" ? link_ru : link_am}>

@@ -3,6 +3,7 @@ import styles from "../../styles/sass/pages/footerComponents/footerAbout.module.
 import Link from 'next/link'
 import { translate } from "../../translations"
 import { useGlobalProvider } from "../Providers/GlobalProvider"
+import Image from "next/image"
 
 const FooterAboutMap = () => {
 
@@ -47,20 +48,20 @@ const FooterAboutMap = () => {
             <div className={styles.iconsBlock}>
                 <div className={styles.location}>
                     <>
-                        <img alt="locationIcon" src="/img/icons/location.svg" width={20} height={20} />
+                        <Image alt="locationIcon" src="/img/icons/location.svg" width={20} height={20} />
                         <p className={styles.location_text}>
                             {translate.contactPageAddres[lang]}
                         </p>
                     </>
                 </div>
                 <div className={styles.phone}>
-                    <img alt="phoneIcon" src="/img/icons/bluePhone.svg" width={20} height={20} />
+                    <Image alt="phoneIcon" src="/img/icons/bluePhone.svg" width={20} height={20} />
                     <Link href="tel:+374 11 880 888">
                         +374 11 880 888
                     </Link>
                 </div>
                 <div className={styles.oclock}>
-                    <img alt="Oclock" src="/img/icons/blueTime.svg" width={20} height={20} />
+                    <Image alt="Oclock" src="/img/icons/blueTime.svg" width={20} height={20} />
                     10։00 - 22։00
                 </div>
             </div>

@@ -1,8 +1,8 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/HomePage/secCardSubscribe/cardSubscribe.module.scss"
-import background from "../../../public/img/homePage/secCardSubscribe/background.jpg"
 // import svarovski from "../../../public/img/homePage/secCardSubscribe/svarovski.svg"
-import Image from "next/image"
-import button from "../../../public/img/homePage/secCardSubscribe/button.svg"
+
+
 import { useEffect, useState } from "react"
 import axios from "axios";
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
@@ -78,7 +78,7 @@ const CardSubscribe = () =>{
     return(
         <div className={styles.cardSubscribe}>
             <div className={styles.container}>
-                <div className={styles.cardBackground} style={{backgroundImage:`url(${background.src})`}}>
+                <div className={styles.cardBackground} style={{backgroundImage:`/img/homePage/secCardSubscribe/background.jpg`}}>
                     {/* <div className={styles.title}><Image alt="name" src={svarovski}/></div> */}
                     {/* <div className={styles.info}>ԲԱՑՈՒՄԸ ՇՈՒՏՈՎ</div> */}
                 </div>
@@ -93,7 +93,7 @@ const CardSubscribe = () =>{
                         onChange={(e) => SetEmail(e.target.value)}
                         />
                         <button className={styles.button} >
-                            <Image alt="button" src={button}/>
+                            <img alt="button" src="/img/homePage/secCardSubscribe/button.svg"/>
                         </button>
                     </form >
                     <div>

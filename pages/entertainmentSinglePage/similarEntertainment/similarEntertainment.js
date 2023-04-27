@@ -1,6 +1,5 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/entertainmentSinglePage/similarEntertainment/similarEntertainment.module.scss"
-import background from "../../../public/img/entertainmentSinglePage/secSimilar/imgR.svg"
-import Arrow from "../../../public/img/entertainmentPage/secFilter/Arrow.svg"
 import Image from "next/image"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import Link from "next/link"
@@ -35,7 +34,7 @@ const SimilarEntertainment = ({related,loading}) => {
                                     <div className={styles.cardContentContainer}>  
                                         <div className={styles.title}>{lang == "en" ? name : lang == "ru" ? name_ru : name_am}</div>
                                         <div className={styles.description}>{lang == "en" ? shorten(description,80) : lang == "ru" ? shorten(description_ru,80) : shorten(description_am,80)}</div>
-                                        <div className={styles.arrowBlock}><Image alt="arrow" src={Arrow}/></div>
+                                        <div className={styles.arrowBlock}><img alt="arrow" src="/img/entertainmentPage/secFilter/Arrow.svg"/></div>
                                     </div> 
                                     </div>
                                 </div>

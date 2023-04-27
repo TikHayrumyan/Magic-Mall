@@ -39,14 +39,14 @@ const News = () => {
                                             <div className={styles.descriptionBlock}>
                                                 <div className={styles.description}>{lang == "en" ? description : lang == "ru" ? description_ru : description_am}</div>
                                             </div>
-                                            <div><img className={styles.imgMobile} alt="img" src={HOST_API_IMG+thumbnail} width={764} height={589}/></div>
+                                            <div><Image className={styles.imgMobile} alt="img" src={HOST_API_IMG+thumbnail} width={764} height={589}/></div>
                                             <div className={styles.btnBlock}>
                                                 <button className={styles.button}>{translate.buttonSeeMore[lang]}</button>
                                                 <div className={styles.arrow}><Image alt="arrow" src={arrow}/></div>
                                                 <div className={styles.patternMobile}><Image alt="pattern" src={pattern}/></div>
                                             </div>
                                         </div>
-                                        <div><img className={styles.img} alt="img" src={HOST_API_IMG+thumbnail} width={764} height={589}/></div>
+                                        <div><Image className={styles.img} alt="img" src={HOST_API_IMG+thumbnail} width={764} height={589}/></div>
                                     </div>
                                 </div>
                                 </a>

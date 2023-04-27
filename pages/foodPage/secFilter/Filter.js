@@ -1,20 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/FoodPage/secFilter/filter.module.scss"
 import Select from "./Selectors/Select"
-import cutPattern from "../../../public/img/FoodPage/secFilter/cutPattern.svg"
 import Image from "next/image"
-import iconBook from "../../../public/img/FoodPage/secFilter/iconBook.svg"
-import MainBackground from "../../../public/img/FoodPage/secFilter/MainBackground.jpg"
 import CardSubscribe from "../../homePage/secCardSubscribe/CardSubscribe"
-import whitPhoneIcon from "../../../public/img/icons/whitPhoneIcon.svg"
-import Facebook from "../../../public/img/icons/Facebook.svg"
-import Instagram from "../../../public/img/icons/Instagram.svg"
 import Link from "next/link"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import { translate } from "../../../translations"
 import { useEffect, useState } from "react"
 import InfiniteScroll from 'react-infinite-scroll-component';
-import load from "../../../public/img/specialOffersPage/newSpecialOffers/load.svg"
 
 const SecFilter = () => {
     const [initialCount,SetInitialCount] = useState(8)
@@ -39,7 +32,7 @@ const SecFilter = () => {
                     dataLength={initialCount} //This is important field to render the next data
                     next={ShowData}
                     hasMore={searchFoodResult.data.length >= initialCount ? true : false}
-                    loader={<div className={styles.loading}><img alt="load" src={load.src}/></div>}
+                    loader={<div className={styles.loading}><img alt="load" src="/img/specialOffersPage/newSpecialOffers/load.svg" /></div>}
                     style={{display: 'flex', flexWrap: 'wrap',gap:'2.2vw'}}
                     >
                     {
@@ -50,7 +43,7 @@ const SecFilter = () => {
                             return (<a key={id} href={`/foodSinglePage/${id}`}>
                                     <div className={styles.first} style={{backgroundImage:`url(${HOST_API_IMG+thumbnail})`}}>
                                         <div className={styles.patternBlock}>
-                                            <div className={styles.patternBackground}  style={{backgroundImage:`url(${cutPattern.src})`}}>
+                                            <div className={styles.patternBackground}  style={{backgroundImage:`/img/FoodPage/secFilter/cutPattern.svg)`}}>
                                                 <div className={styles.title}>
                                                     <span className={styles.number}>{floor}</span>
                                                     <span className={styles.floor}>{translate.MallMapPageFloor[lang]}</span>
@@ -62,25 +55,25 @@ const SecFilter = () => {
                                              <img className={styles.logoBackground} alt="logo" src={HOST_API_IMG+logo}/>   
                                             </div>
                                             {phone && <div className={styles.phonBlock}>
-                                                <div className={styles.phoneIcon}><Image alt="phoneIcon" src={whitPhoneIcon}/></div>
+                                                <div className={styles.phoneIcon}><img alt="phoneIcon" src="/img/icons/whitPhoneIcon.svg"/></div>
                                                 <div><a className={styles.number} href={`tel:${phone}`}>{phone}</a></div>
                                             </div>}
                                             <div className={styles.networkBlock}>
-                                                {facebook && <div className={styles.facebook}><Link href={facebook}><a target="_blank"><Image alt="facebook" src="/img/icons/Facebook.svg"/></a></Link></div>}
-                                               {instagram && <div className={styles.instagram}><Link href={instagram}><a  target="_blank"><Image alt="instagram" src="/img/icons/Instagram.svg"/></a></Link></div>}
+                                                {facebook && <div className={styles.facebook}><Link href={facebook}><a target="_blank"><img alt="facebook" src="/img/icons/Facebook.svg"/></a></Link></div>}
+                                               {instagram && <div className={styles.instagram}><Link href={instagram}><a  target="_blank"><img alt="instagram" src="/img/icons/Instagram.svg"/></a></Link></div>}
 
                                             </div>
                                         </div>
                                         <div className={styles.brandBook}>
                                             <div className={styles.brand}>{lang == "en" ? name : lang == "ru" ? name_ru : name_am}</div>
-                                            <div className={styles.iconBook}><Image alt="iconBook" src={iconBook}/></div>
+                                            <div className={styles.iconBook}><img alt="iconBook" src="/img/FoodPage/secFilter/iconBook.svg"/></div>
                                         </div>
                                     </div>
                                     </a>
                                     )}
                         })
                         : !waitData ? <div className={styles.loaderContainer}>
-                        <div className={styles.loading}><img alt="load" src={load.src}/></div>
+                        <div className={styles.loading}><img alt="load" src="/img/specialOffersPage/newSpecialOffers/load.svg"/></div>
                         </div> : <div>
                         <div className={styles.searchResult}>{translate.SearchResult[lang]} - <span>{searchInputValueFood}</span></div>
                         <div className={styles.searchResultNotFound}>{translate.SearchNotResult[lang]}</div>

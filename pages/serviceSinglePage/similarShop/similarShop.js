@@ -44,23 +44,23 @@ const SimilarShop = ({related,loading}) =>{
                                             </div>
                                         </div>
                                         <div className={styles.bankLogoBlock}>
-                                            {/* <div className={styles.bankLogo}><Image alt="bankLogo"  src={background}/></div> */}
+                                            {/* <div className={styles.bankLogo}><img alt="bankLogo"  src={background}/></div> */}
                                             <img className={styles.bankLogo} alt="Logo" src={HOST_API_IMG+logo}/>
                                         </div>
                                         
                                         <div className={styles.hoverBlock}>
                                             
                                             {phone && <div className={styles.phonBlock}>
-                                                <div className={styles.phoneIcon}><Image alt="phoneIcon" src={whitPhoneIcon}/></div>
+                                                <div className={styles.phoneIcon}><img alt="phoneIcon" src={whitPhoneIcon}/></div>
                                                 <div><a className={styles.number} href={`tel:${phone}`}>{phone}</a></div>
                                             </div>}
                                             <div className={styles.networkBlock}>
-                                                {facebook && <div className={styles.facebook}><Link href={facebook}><a target="_blank"><Image alt="facebook" src="/img/icons/Facebook.svg"/></a></Link></div>}
-                                               {instagram && <div className={styles.instagram}><Link href={instagram}><a  target="_blank"><Image alt="instagram" src="/img/icons/Instagram.svg"/></a></Link></div>}
+                                                {facebook && <div className={styles.facebook}><Link href={facebook}><a target="_blank"><img alt="facebook" src="/img/icons/Facebook.svg"/></a></Link></div>}
+                                               {instagram && <div className={styles.instagram}><Link href={instagram}><a  target="_blank"><img alt="instagram" src="/img/icons/Instagram.svg"/></a></Link></div>}
                                             </div>
                                         </div>
                                         <div className={styles.brandBook}>
-                                                    <div className={styles.iconBook}><Image alt="iconBook" src={iconBook}/></div>
+                                                    <div className={styles.iconBook}><img alt="iconBook" src={iconBook}/></div>
                                         </div>
                                     </div>
                                     </a>

@@ -5,12 +5,9 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel"), {ssr: false});
 import styles from "../../styles/sass/pages/HomePage/mainSliderHomePage.module.scss"
-import navPrev from "../../public/img/homePage/sectionMainSlider/nav-prev.svg"
-import navNext from "../../public/img/homePage/sectionMainSlider/nav-next.svg"
 import { useGlobalProvider } from "../../components/Providers/GlobalProvider";
 import Link from "next/link";
 import { translate } from "../../translations";
-import { useRouter } from "next/router";
 const settings = {
     autoplayTimeout:4000,
     autoplay: true,
@@ -33,7 +30,7 @@ const MainSlider = () => {
         SetForLanguage(lang)
     },[lang])
          
-    return(mainSliderData.loading && <OwlCarousel {...settings} className='owl-theme home-owl' items={1} loop  margin={0} navText={ [`<img src='${navPrev.src}'>`,`<img src='${navNext.src}'>`]} nav >
+    return(mainSliderData.loading && <OwlCarousel {...settings} className='owl-theme home-owl' items={1} loop  margin={0} navText={ [`<img src='/img/homePage/sectionMainSlider/nav-prev.svg' alt='' />`,`<img src='/img/homePage/sectionMainSlider/nav-next.svg' alt='' />`]} nav >
         {
             mainSliderData.loading && mainSliderData.data?.map(({id,image,image_am,image_ru,title,title_am,title_ru,description,description_am,description_ru,link,link_am,link_ru}) => {
                 

@@ -6,6 +6,7 @@ import { useEffect, useState } from "react"
 import { useGlobalProvider } from "../../../../components/Providers/GlobalProvider"
 import axios  from "axios"
 import { translate } from "../../../../translations"
+import Image from "next/image"
 
 
 const Select = () => {
@@ -88,7 +89,7 @@ const Select = () => {
       if(category!=null ){
         setInitialSearchParams({...initialSearchParams,category:category});
         searchData.category=category;
-      }else if(initialSearchParams.category!=null && category==null && resetData != true){
+      }else if(initialSearchParams?.category!=null && category==null && resetData != true){
         searchData.category=initialSearchParams.category
       }
       if(floor!==null){
@@ -225,7 +226,7 @@ const Select = () => {
                         onChange={(e)=>SetSearchInputValue(e.target.value)}
                          
                           />
-                        <div className={styles.searchIcon}><img alt="search" src="/img/shopPage/secFilter/Search.svg" width={16.5} height={17.5}/></div>
+                        <div className={styles.searchIcon}><Image alt="search" src="/img/shopPage/secFilter/Search.svg" width={16.5} height={17.5}/></div>
                 </div>
             </div> 
         </div>

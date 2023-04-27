@@ -24,7 +24,7 @@ const Blog = () => {
                             <Link  href={`/singleBlogPage/${id}`} key={id}>
                                 <a>
                                     <div className={styles.summerTrend}>
-                                        <div ><img className={styles.img} alt="img" src={HOST_API_IMG+thumbnail} width={749} height={481}/></div>
+                                        <div ><Image className={styles.img} alt="img" src={HOST_API_IMG+thumbnail} width={749} height={481}/></div>
                                         <div className={styles.aboutTrends}>
                                             <div className={styles.title}>{lang == "en" ? title : lang == "ru" ? title_ru : title_am}</div>
                                             <div className={styles.dateBLock}>

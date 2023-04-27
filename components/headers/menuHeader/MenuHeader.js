@@ -6,6 +6,7 @@ import { useGlobalProvider } from "../../Providers/GlobalProvider";
 import { useEffect, useState } from "react";
 import { useRouter } from "next/router";
 import { translate } from "../../../translations";
+import Image from "next/image";
 
 
 const MenuHeader = () => {
@@ -196,7 +197,7 @@ const MenuHeader = () => {
                                 value={SearchValue}
                                 onChange={(e) => SetSearchValue(e.target.value)}
                             />
-                            <div className={styles.search}><img alt="search" src="/img/icons/search.svg" width={40} height={40} onClick={SearchInput} /></div>
+                            <div className={styles.search}><Image alt="search" src="/img/icons/search.svg" width={40} height={40} onClick={SearchInput} /></div>
                         </div>
                     </div>
                     <ul className={styles.ulMenuMobile} onClick={() => SetToggleMobileMenu(false)}>
