@@ -50,7 +50,7 @@ const SecEntertainment = () =>{
         GetSingleData(single)
     },[HOST_API, single])
 
-    console.log(single,"asas");
+
 
     return(
         <>
