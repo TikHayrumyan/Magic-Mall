@@ -42,7 +42,7 @@ const SliderBestBrands = () => {
                             <div className={styles.itemOne} style={{backgroundImage:`url(${HOST_API_IMG+firstImage})`}}>
                                {link && <Link href={lang == "en" ? link : lang == "ru" ? link_ru : link_am}>
                                     <a>
-                                        <div className={styles.nameBlock} style={{backgroundImage:`/img/homePage/sectionBestBrands/slider/nameBlock.svg`}}>
+                                        <div className={styles.nameBlock} style={{backgroundImage:`url(/img/homePage/sectionBestBrands/slider/nameBlock.svg)`}}>
                                             <div className={styles.nameBlockTitle}>{lang == "en" ? title : lang == "ru" ? title_ru : title_am}</div>
                                             <div className={styles.arrRight}><img alt="arrow" src="/img/homePage/sectionBestBrands/slider/arrRight.svg"/></div>
                                         </div>
@@ -52,7 +52,7 @@ const SliderBestBrands = () => {
                             <div className={styles.items}>
                                 <div className={styles.itemTwo} style={{backgroundImage:`url(${HOST_API_IMG+secondImage})`}}>
                                 {link && <Link href={lang == "en" ? secondLink : lang == "ru" ? secondLink_ru : secondLink_am}><a>
-                                    <div className={styles.NameBlock} style={{backgroundImage:`/img/homePage/sectionBestBrands/slider/miniNameBlock.svg`}}>
+                                    <div className={styles.NameBlock} style={{backgroundImage:`url(/img/homePage/sectionBestBrands/slider/miniNameBlock.svg)`}}>
                                     <div className={styles.nameBlockTitleTwo}>{lang == "en" ? secondTitle : lang == "ru" ? secondTitle_ru : secondTitle_am}</div>
                                         <div className={styles.arrRight}><img alt="arrow" src="/img/homePage/sectionBestBrands/slider/arrRight.svg"/></div>
                                     </div>
@@ -61,7 +61,7 @@ const SliderBestBrands = () => {
                                 </div>
                                 <div className={styles.itemThree}  style={{backgroundImage:`url(${HOST_API_IMG+thirthImage})`}}>
                                 {link && <Link href={lang == "en" ? thirthLink : lang == "ru" ? thirthLink_ru : thirthLink_am}><a>
-                                    <div className={styles.NameBlock} style={{backgroundImage:`/img/homePage/sectionBestBrands/slider/miniNameBlock.svg`}}>
+                                    <div className={styles.NameBlock} style={{backgroundImage:`url(/img/homePage/sectionBestBrands/slider/miniNameBlock.svg)`}}>
                                     <div className={styles.nameBlockTitleThree}>{lang == "en" ? thirthTitle : lang == "ru" ? thirthTitle_ru : thirthTitle_am}</div>
                                         <div className={styles.arrRight}><img alt="arrow" src="/img/homePage/sectionBestBrands/slider/arrRight.svg"/></div>
                                     </div>

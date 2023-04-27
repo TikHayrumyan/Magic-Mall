@@ -29,7 +29,7 @@ const SimilarShop = ({ related, loading }) => {
                                 return <Link key={id} href={`/serviceSinglePage/${id}`}><a>
                                     <div className={styles.first}>
                                         <div className={styles.patternBlock}>
-                                            <div className={styles.patternBackground} style={{ backgroundImage: `/img/serviceSinglePage/similarShop/cutPattern.svg` }}>
+                                            <div className={styles.patternBackground} style={{ backgroundImage: `url(/img/serviceSinglePage/similarShop/cutPattern.svg)` }}>
                                                 <div className={styles.title}>
                                                     <span className={styles.number}>{floor}</span>
                                                     <span className={styles.floor}>հարկ</span>

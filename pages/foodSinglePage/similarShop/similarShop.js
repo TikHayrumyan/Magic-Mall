@@ -22,7 +22,7 @@ const SimilarShop = ({ related, loading }) => {
                             return <Link key={id} href={`/foodSinglePage/${id}`}><a>
                                 <div className={styles.first} style={{ backgroundImage: `url(${HOST_API_IMG + thumbnail})` }}>
                                     <div className={styles.patternBlock}>
-                                        <div className={styles.patternBackground} style={{ backgroundImage: `/img/shopSinglePage/similarShops/cutPattern.svg)` }}>
+                                        <div className={styles.patternBackground} style={{ backgroundImage: `url(/img/shopSinglePage/similarShops/cutPattern.svg)` }}>
                                             <div className={styles.title}>
                                                 <span className={styles.number}>{floor}</span>
                                                 <span className={styles.floor}>{translate.MallMapPageFloor[lang]}</span>

@@ -25,7 +25,7 @@ const Services = () => {
                             <a>
                             <div key={id} className={styles.first}>
                                 <div className={styles.patternBlock}>
-                                    <div className={styles.patternBackground}  style={{backgroundImage:`/img/servicePage/secFilter/cutPattern.svg`}}>
+                                    <div className={styles.patternBackground}  style={{backgroundImage:`url(/img/servicePage/secFilter/cutPattern.svg)`}}>
                                         <div className={styles.title}>
                                             <span className={styles.number}>{floor}</span>
                                             <span className={styles.floor}>{translate.MallMapPageFloor[lang]}</span>

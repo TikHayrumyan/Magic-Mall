@@ -22,19 +22,19 @@ const Shop = () => {
                                 <Link key={id} href={`/shopSinglePage/${id}`}><a>
                                     <div className={styles.first} style={{ backgroundImage: `url(${HOST_API_IMG + thumbnail})` }}>
                                         <div className={styles.patternBlock}>
-                                            {sale && <div className={styles.salePattern} style={{ backgroundImage: `/img/shopPage/secFilter/salePattern.svg` }}>
+                                            {sale && <div className={styles.salePattern} style={{ backgroundImage: `url(/img/shopPage/secFilter/salePattern.svg)` }}>
                                                 <div className={styles.titleSale}>
                                                     <div className={styles.sale}>{translate.sale[lang]}</div>
                                                     <div className={styles.saleUntil}>{lang == "en" ? sale : lang == "ru" ? sale_ru : sale_am}</div>
                                                 </div>
                                             </div>}
-                                            {sale && <div className={styles.salePatternMobile} style={{ backgroundImage: `/img/shopPage/secFilter/salePatternMobile.svg` }}>
+                                            {sale && <div className={styles.salePatternMobile} style={{ backgroundImage: `url(/img/shopPage/secFilter/salePatternMobile.svg)` }}>
                                                 <div className={styles.titleSaleMobile}>
                                                     <div className={styles.saleMobile}>{translate.sale[lang]}</div>
                                                     <div className={styles.saleUntilMobile}>{lang == "en" ? sale : lang == "ru" ? sale_ru : sale_am}</div>
                                                 </div>
                                             </div>}
-                                            <div className={styles.patternBackground} style={{ backgroundImage: `/img/shopPage/secFilter/cutPattern.svg` }}>
+                                            <div className={styles.patternBackground} style={{ backgroundImage: `url(/img/shopPage/secFilter/cutPattern.svg)` }}>
                                                 <div className={styles.title}>
                                                     <span className={styles.number}>{floor}</span>
                                                     <span className={styles.floor}>{translate.MallMapPageFloor[lang]}</span>

@@ -10,7 +10,7 @@ const SecMain = () =>{
     return(
         <div className={styles.secMain}>
         <div className={styles.container}>
-            <div className={styles.background} style={{backgroundImage:`/img/FAQpage/secMain/background.jpeg`}}><div className={styles.gradientt}></div>
+            <div className={styles.background} style={{backgroundImage:`url(/img/FAQpage/secMain/background.jpeg)`}}><div className={styles.gradientt}></div>
                 <div className={styles.patternAndTitle}>
                     <img className={styles.pattern} alt="pattern" src="/img/FAQpage/secMain/pattern.svg"/>
                     <div className={styles.title}>{translate.FooterMenuFAQ[lang]}</div>

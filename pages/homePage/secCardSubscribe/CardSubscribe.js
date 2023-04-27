@@ -78,7 +78,7 @@ const CardSubscribe = () =>{
     return(
         <div className={styles.cardSubscribe}>
             <div className={styles.container}>
-                <div className={styles.cardBackground} style={{backgroundImage:`/img/homePage/secCardSubscribe/background.jpg`}}>
+                <div className={styles.cardBackground} style={{ backgroundImage: 'url(/img/homePage/secCardSubscribe/background.jpg)'}}>
                     {/* <div className={styles.title}><Image alt="name" src={svarovski}/></div> */}
                     {/* <div className={styles.info}>ԲԱՑՈՒՄԸ ՇՈՒՏՈՎ</div> */}
                 </div>
