@@ -5,7 +5,6 @@ import { useEffect,useState } from "react"
 import Link from "next/link"
 import axios from "axios"
 import InfiniteScroll from 'react-infinite-scroll-component';
-import load from "../../../public/img/specialOffersPage/newSpecialOffers/load.svg"
 import { translate } from "../../../translations"
 
 
@@ -133,7 +132,7 @@ const NewOffers = () => {
                         dataLength={specialOffersData.data.length} //This is important field to render the next data
                         next={loadMore}
                         hasMore={disableMobileScroll  ? true : false}
-                        loader={<div className={styles.loading}><img alt="load" src={load.src}/></div>}
+                        loader={<div className={styles.loading}><img alt="load" src="/img/specialOffersPage/newSpecialOffers/load.svg"/></div>}
                         style={{display: 'flex', flexWrap: 'wrap',gap:'1vw'}}
                     >
                         {
@@ -168,7 +167,7 @@ const NewOffers = () => {
                         dataLength={specialOffersData.data.length} //This is important field to render the next data
                         next={loadMore}
                         hasMore={disableMobileScroll  ? true : false}
-                        loader={<div className={styles.loading}><img alt="load" src={load.src}/></div>}
+                        loader={<div className={styles.loading}><img alt="load" src="/img/specialOffersPage/newSpecialOffers/load.svg"/></div>}
                        
                     >
                         {

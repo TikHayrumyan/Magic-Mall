@@ -3,8 +3,7 @@ import { useGlobalProvider } from "../../components/Providers/GlobalProvider"
 import Image from "next/image"
 import { translate } from "../../translations"
 import Link from "next/link"
-import arrow from "../../public/img/entertainmentPage/secFilter/Arrow.svg"
-import cardContent from "../../public/img/entertainmentPage/secFilter/cardContent.svg"
+
 
 
 const Entertainment = () => {
@@ -24,11 +23,11 @@ const Entertainment = () => {
                             return(
                                 <Link key={id} href={`/entertainmentSinglePage/${id}`}><a>
                                     <div className={styles.background} style={{backgroundImage:`url(${HOST_API_IMG+thumbnail})`}}>
-                                        <div className={styles.cardContent} style={{backgroundImage:`url(${cardContent.src})`}}>
+                                        <div className={styles.cardContent} style={{backgroundImage:`/img/entertainmentPage/secFilter/cardContent.svg`}}>
                                         <div className={styles.cardContentContainer}>  
                                             <div className={styles.title}>{lang == "en" ? name : lang == "ru" ? name_ru : name_am}</div>
                                             <div className={styles.description}>{lang == "en" ? description : lang == "ru" ? description_ru : description_am}</div>
-                                            <div className={styles.arrowBlock}><Image alt="arrow" src={arrow}/></div>
+                                            <div className={styles.arrowBlock}><Image alt="arrow" src="/img/entertainmentPage/secFilter/Arrow.svg"/></div>
                                         </div> 
                                         </div>
                                 </div>

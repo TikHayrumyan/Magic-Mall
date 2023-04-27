@@ -4,11 +4,7 @@ import Image from "next/image"
 import { translate } from "../../translations"
 import Link from "next/link"
 import styles from "../../styles/sass/pages/Search/service.module.scss"
-import iconBook from "../../public/img/servicePage/secFilter/iconBook.svg"
-import whitPhoneIcon from "../../public/img/icons/whitPhoneIcon.svg"
-import Facebook from "../../public/img/icons/Facebook.svg"
-import Instagram from "../../public/img/icons/Instagram.svg"
-import cutPattern from "../../public/img/servicePage/secFilter/cutPattern.svg"
+
 
 const Services = () => {
     
@@ -29,7 +25,7 @@ const Services = () => {
                             <a>
                             <div key={id} className={styles.first}>
                                 <div className={styles.patternBlock}>
-                                    <div className={styles.patternBackground}  style={{backgroundImage:`url(${cutPattern.src})`}}>
+                                    <div className={styles.patternBackground}  style={{backgroundImage:`/img/servicePage/secFilter/cutPattern.svg`}}>
                                         <div className={styles.title}>
                                             <span className={styles.number}>{floor}</span>
                                             <span className={styles.floor}>{translate.MallMapPageFloor[lang]}</span>
@@ -43,17 +39,17 @@ const Services = () => {
                                 <div className={styles.hoverBlock}>
                                     
                                     {phone && <div className={styles.phonBlock}>
-                                        <div className={styles.phoneIcon}><img alt="phoneIcon" src={whitPhoneIcon}/></div>
+                                        <div className={styles.phoneIcon}><img alt="phoneIcon" src="/img/icons/whitPhoneIcon.svg"/></div>
                                         <div><a className={styles.number} href={`tel:${phone}`}>{phone}</a></div>
                                     </div>}
                                     <div className={styles.networkBlock}>
-                                        {facebook && <div className={styles.facebook}><Link href={facebook}><a target="_blank"><img alt="facebook" src="/img/icons/Facebook.svg"/></a></Link></div>}
-                                        {instagram && <div className={styles.instagram}><Link href={instagram}><a  target="_blank"><img alt="instagram" src="/img/icons/Instagram.svg"/></a></Link></div>}
+                                        {facebook && <div className={styles.facebook}><Link href={"#"}><a target="_blank"><img alt="facebook" src="/img/icons/Facebook.svg"/></a></Link></div>}
+                                        {instagram && <div className={styles.instagram}><Link href={"#"}><a  target="_blank"><img alt="instagram" src="/img/icons/Instagram.svg"/></a></Link></div>}
 
                                     </div>
                                 </div>
                                 <div className={styles.brandBook}>
-                                    <div className={styles.iconBook}><img alt="iconBook" src={iconBook}/></div>
+                                    <div className={styles.iconBook}><img alt="iconBook" src="/img/servicePage/secFilter/iconBook.svg"/></div>
                                 </div>
                             </div>
                             </a>

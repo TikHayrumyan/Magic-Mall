@@ -4,9 +4,6 @@ import { useGlobalProvider } from "../../components/Providers/GlobalProvider"
 import Image from "next/image"
 import { translate } from "../../translations"
 import Link from "next/link"
-import calendarIcon from "../../public/img/blogPage/secBlog/calendarIcon.svg"
-import arrow from "../../public/img/blogPage/secBlog/arrow.svg"
-import pattern from "../../public/img/blogPage/secBlog/pattern.svg"
 
 const Blog = () => {
 
@@ -28,15 +25,15 @@ const Blog = () => {
                                         <div className={styles.aboutTrends}>
                                             <div className={styles.title}>{lang == "en" ? title : lang == "ru" ? title_ru : title_am}</div>
                                             <div className={styles.dateBLock}>
-                                                <div><img alt="calendarIcon" src={calendarIcon}/></div>
+                                                <div><img alt="calendarIcon" src="/img/blogPage/secBlog/calendarIcon.svg"/></div>
                                                 <div className={styles.date}>{date}</div>
                                             </div>
                                             <div className={styles.descrip}>{lang == "en" ? description : lang == "ru" ? description_ru : description_am}</div>
                                             <div className={styles.btnBlock}> 
                                                 <button className={styles.button}>{translate.buttonRead[lang]}</button>
-                                                <div className={styles.arrow}><img alt="arrow" src={arrow}/></div>
+                                                <div className={styles.arrow}><img alt="arrow" src="/img/blogPage/secBlog/arrow.svg"/></div>
                                             </div>
-                                            <div className={styles.pattern}><img className="pattern" src={pattern} alt="pattern"/></div>
+                                            <div className={styles.pattern}><img className="pattern" src="/img/blogPage/secBlog/pattern.svg" alt="pattern"/></div>
                                         </div>
                                     </div>
                             </a>

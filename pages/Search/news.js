@@ -4,9 +4,6 @@ import { useGlobalProvider } from "../../components/Providers/GlobalProvider"
 import Image from "next/image"
 import { translate } from "../../translations"
 import Link from "next/link"
-import pattern from "../../public/img/newsPage/secNews/pattern.svg"
-import calendar from "../../public/img/newsPage/secNews/calendar.svg"
-import arrow from "../../public/img/newsPage/secNews/arrow.svg"
 
 const News = () => {
 
@@ -28,9 +25,9 @@ const News = () => {
                                 <div className={styles.pagination} >
                                     <div className={index % 2 == 1 ? styles.PaginationContainer : styles.PaginationContainerReverse}>
                                         <div className={styles.descripBlock}>
-                                            <div className={styles.pattern}><Image alt="pattern" src={pattern}/></div>
+                                            <div className={styles.pattern}><img alt="pattern" src="/img/newsPage/secNews/pattern.svg"/></div>
                                             <div className={styles.dateBlock}>
-                                                <div className={styles.calendar}><Image alt="calendar" src={calendar}/></div>
+                                                <div className={styles.calendar}><img alt="calendar" src="/img/newsPage/secNews/calendar.svg"/></div>
                                                 <div className={styles.date}>{date}</div>
                                             </div>
                                             <div className={styles.descripTitleBlock}>
@@ -42,8 +39,8 @@ const News = () => {
                                             <div><Image className={styles.imgMobile} alt="img" src={HOST_API_IMG+thumbnail} width={764} height={589}/></div>
                                             <div className={styles.btnBlock}>
                                                 <button className={styles.button}>{translate.buttonSeeMore[lang]}</button>
-                                                <div className={styles.arrow}><Image alt="arrow" src={arrow}/></div>
-                                                <div className={styles.patternMobile}><Image alt="pattern" src={pattern}/></div>
+                                                <div className={styles.arrow}><img alt="arrow" src="/img/newsPage/secNews/arrow.svg"/></div>
+                                                <div className={styles.patternMobile}><img alt="pattern" src="/img/newsPage/secNews/pattern.svg"/></div>
                                             </div>
                                         </div>
                                         <div><Image className={styles.img} alt="img" src={HOST_API_IMG+thumbnail} width={764} height={589}/></div>

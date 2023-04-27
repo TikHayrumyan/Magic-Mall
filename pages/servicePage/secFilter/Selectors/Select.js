@@ -1,10 +1,10 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react-hooks/exhaustive-deps */
 import styles from "../../../../styles/sass/pages/servicePage/secFilter/secSelect/select.module.scss"
-import dArr from "../../../../public/img/servicePage/secFilter/dArr.svg"
+
 import Image from "next/image"
 import { useEffect, useState } from "react"
-import Search from "../../../../public/img/servicePage/secFilter/Search.svg"
+
 import axios from "axios"
 import { useGlobalProvider } from "../../../../components/Providers/GlobalProvider"
 import { translate } from "../../../../translations"
@@ -125,7 +125,7 @@ const Select = () => {
                          onKeyUp={(e)=>{
                            SearchByInput(e.target.value)}}
                            onChange={(e)=>SetSearchInputValueService(e.target.value)}/>
-                        <div className={styles.searchIcon}><Image alt="search" src={Search} width={16.5} height={17.5}/></div>
+                        <div className={styles.searchIcon}><Image alt="search" src="/img/servicePage/secFilter/Search.svg" width={16.5} height={17.5}/></div>
                 </div>
             </div> 
         </div>

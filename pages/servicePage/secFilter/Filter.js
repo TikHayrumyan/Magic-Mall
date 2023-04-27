@@ -1,20 +1,15 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/servicePage/secFilter/filter.module.scss"
 import Select from "./Selectors/Select"
-import cutPattern from "../../../public/img/servicePage/secFilter/cutPattern.svg"
-import Image from "next/image"
-import iconBook from "../../../public/img/servicePage/secFilter/iconBook.svg"
-import bankLogo from "../../../public/img/servicePage/secFilter/bankLogo.svg"
+
 import CardSubscribe from "../../homePage/secCardSubscribe/CardSubscribe"
-import whitPhoneIcon from "../../../public/img/icons/whitPhoneIcon.svg"
-import Facebook from "../../../public/img/icons/Facebook.svg"
-import Instagram from "../../../public/img/icons/Instagram.svg"
+
 import Link from "next/link"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import { translate } from "../../../translations"
 import { useEffect, useState } from "react"
 import InfiniteScroll from 'react-infinite-scroll-component';
-import load from "../../../public/img/specialOffersPage/newSpecialOffers/load.svg"
+
 
 
 const SecFilter = () => {
@@ -40,7 +35,7 @@ const SecFilter = () => {
                 dataLength={initialCount} //This is important field to render the next data
                 next={ShowData}
                 hasMore={servicesData.data.length >= initialCount ? true : false}
-                loader={<div className={styles.loading}><img alt="load" src={load.src}/></div>}
+                loader={<div className={styles.loading}><img alt="load" src="/img/specialOffersPage/newSpecialOffers/load.svg"/></div>}
                 style={{display: 'flex', flexWrap: 'wrap',gap:'2vw'}}
                 >
                     {
@@ -54,7 +49,7 @@ const SecFilter = () => {
                                     <a key={id} href={`/serviceSinglePage/${id}`}>
                                     <div key={id} className={styles.first}>
                                         <div className={styles.patternBlock}>
-                                            <div className={styles.patternBackground}  style={{backgroundImage:`url(${cutPattern.src})`}}>
+                                            <div className={styles.patternBackground}  style={{backgroundImage:`/img/servicePage/secFilter/cutPattern.svg`}}>
                                                 <div className={styles.title}>
                                                     <span className={styles.number}>{floor}</span>
                                                     <span className={styles.floor}>{translate.MallMapPageFloor[lang]}</span>
@@ -68,7 +63,7 @@ const SecFilter = () => {
                                         <div className={styles.hoverBlock}>
                                             
                                             {phone && <div className={styles.phonBlock}>
-                                                        <div className={styles.phoneIcon}><img alt="phoneIcon" src={whitPhoneIcon}/></div>
+                                                        <div className={styles.phoneIcon}><img alt="phoneIcon" src="/img/icons/whitPhoneIcon.svg"/></div>
                                                         <div className={styles.numberPhone}><a className={styles.numberPhone} href={`tel:${phone}`}>+374 11 880 888</a></div>
                                                     </div>}
                                             <div className={styles.networkBlock}>
@@ -77,13 +72,13 @@ const SecFilter = () => {
                                             </div>
                                         </div>
                                         <div className={styles.brandBook}>
-                                            <div className={styles.iconBook}><img alt="iconBook" src={iconBook}/></div>
+                                            <div className={styles.iconBook}><img alt="iconBook" src="/img/servicePage/secFilter/iconBook.svg"/></div>
                                         </div>
                                     </div>
                                     </a>
                               )}
                         }) : !waitData ? <div className={styles.loaderContainer}>
-                        <div className={styles.loading}><img alt="load" src={load.src}/></div>
+                        <div className={styles.loading}><img alt="load" src="/img/specialOffersPage/newSpecialOffers/load.svg"/></div>
                         </div> :  <div>
                         <div className={styles.searchResult}>{translate.SearchResult[lang]} - <span>{searchInputValueService}</span></div>
                         <div className={styles.searchResultNotFound}>{translate.SearchNotResult[lang]}</div>

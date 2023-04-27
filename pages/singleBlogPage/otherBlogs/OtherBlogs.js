@@ -1,8 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/singleBlogPage/otherBlogs/otherBlogs.module.scss"
-import calendarIcon from "../../../public/img/singleBlogPage/otherBlogs/calendarIcon.svg"
-import arrow from "../../../public/img/singleBlogPage/otherBlogs/arrow.svg"
-import Image from "next/image"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import Link from "next/link"
 import "owl.carousel/dist/assets/owl.carousel.css";
@@ -50,12 +47,12 @@ const OtherBlogs = ({related,loading}) => {
                                 <div><img className={styles.img} alt="blogImg" src={HOST_API_IMG+thumbnail}/></div>
                                 <div className={styles.description}>{lang == "en" ? shorten(title,79) : lang == "ru" ? shorten(title_ru,79) : shorten(title_am,79)}</div>
                                 <div className={styles.dateBlock}>
-                                    <div><Image alt="calendarIcon" src={calendarIcon}/></div>
+                                    <div><img alt="calendarIcon" src="/img/singleBlogPage/otherBlogs/calendarIcon.svg"/></div>
                                     <div className={styles.date}>{date}</div>
                                 </div>
                                 <div className={styles.btnBlock}>
                                         <button className={styles.button}>{translate.buttonRead[lang]}</button>
-                                        <div className={styles.arrow}><Image alt="arrow" src={arrow}/></div>
+                                        <div className={styles.arrow}><img alt="arrow" src="/img/singleBlogPage/otherBlogs/arrow.svg"/></div>
                                 </div>
                             </div>  
                             </a></Link>
@@ -75,12 +72,12 @@ const OtherBlogs = ({related,loading}) => {
                                     <div><img className={styles.imgMobile} alt="blogImg" src={HOST_API_IMG+thumbnail}/></div>
                                     <div className={styles.descriptionMobile}>{title}</div>
                                     <div className={styles.dateBlockMobile}>
-                                        <div><Image alt="calendarIcon" src={calendarIcon}/></div>
+                                        <div><img alt="calendarIcon" src="/img/singleBlogPage/otherBlogs/calendarIcon.svg"/></div>
                                         <div className={styles.dateMobile}>{date}</div>
                                     </div>
                                     <div className={styles.btnBlockMobile}>
                                             <button className={styles.buttonMobile}>{translate.buttonRead[lang]}</button>
-                                            <div className={styles.arrowMobile}><Image alt="arrow" src={arrow}/></div>
+                                            <div className={styles.arrowMobile}><img alt="arrow" src="/img/singleBlogPage/otherBlogs/arrow.svg"/></div>
                                     </div>
                                 </div>  
                                 </a></Link>

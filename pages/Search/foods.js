@@ -1,14 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "../../styles/sass/pages/Search/foods.module.scss"
 import { useGlobalProvider } from "../../components/Providers/GlobalProvider"
-import Image from "next/image"
 import { translate } from "../../translations"
 import Link from "next/link"
-import iconBook from "../../public/img/FoodPage/secFilter/iconBook.svg"
-import whitPhoneIcon from "../../public/img/icons/whitPhoneIcon.svg"
-import Facebook from "../../public/img/icons/Facebook.svg"
-import Instagram from "../../public/img/icons/Instagram.svg"
-import cutPattern from "../../public/img/FoodPage/secFilter/cutPattern.svg"
+
 
 const Foods = () => {
 
@@ -26,7 +21,7 @@ const Foods = () => {
                                 <Link key={id} href={`/foodSinglePage/${id}`}><a>
                                     <div className={styles.first} style={{backgroundImage:`url(${HOST_API_IMG+thumbnail})`}}>
                                         <div className={styles.patternBlock}>
-                                            <div className={styles.patternBackground}  style={{backgroundImage:`url(${cutPattern.src})`}}>
+                                            <div className={styles.patternBackground}  style={{backgroundImage:`/img/FoodPage/secFilter/cutPattern.svg`}}>
                                                 <div className={styles.title}>
                                                     <span className={styles.number}>{floor}</span>
                                                     <span className={styles.floor}>{translate.MallMapPageFloor[lang]}</span>
@@ -38,7 +33,7 @@ const Foods = () => {
                                              <img className={styles.logoBackground} alt="logo" src={HOST_API_IMG+logo}/>   
                                             </div>
                                             {phone && <div className={styles.phonBlock}>
-                                                <div className={styles.phoneIcon}><img alt="phoneIcon" src={whitPhoneIcon}/></div>
+                                                <div className={styles.phoneIcon}><img alt="phoneIcon" src="/img/icons/whitPhoneIcon.svg"/></div>
                                                 <div><a className={styles.number} href={`tel:${phone}`}>{phone}</a></div>
                                             </div>}
                                             <div className={styles.networkBlock}>
@@ -49,7 +44,7 @@ const Foods = () => {
                                         </div>
                                         <div className={styles.brandBook}>
                                             <div className={styles.brand}>{lang == "en" ? name : lang == "ru" ? name_ru : name_am}</div>
-                                            <div className={styles.iconBook}><img alt="iconBook" src={iconBook}/></div>
+                                            <div className={styles.iconBook}><img alt="iconBook" src="/img/FoodPage/secFilter/iconBook.svg"/></div>
                                         </div>
                                     </div>
                                     </a>

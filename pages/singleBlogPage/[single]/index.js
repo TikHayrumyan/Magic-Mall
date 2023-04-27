@@ -2,8 +2,6 @@
 import styles from "../../../styles/sass/pages/singleBlogPage/secBlog/secBlog.module.scss"
 import Link from "next/link"
 import Image from "next/image"
-import RightArrow from "../../../public/img/singleBlogPage/secBlog/Rarrow.svg"
-import calendarIcon from "../../../public/img/singleBlogPage/secBlog/calendarIcon.svg"
 import { useEffect,useState } from "react"
 import axios from "axios"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
@@ -74,7 +72,7 @@ const SecBlog = () => {
                     <Link href="/blogPage">
                         <a>
                             <div className={styles.forHover}>
-                                <div className={styles.arrow}><Image alt="arrow" width={32} height={18} src={RightArrow}/></div>
+                                <div className={styles.arrow}><Image alt="arrow" width={32} height={18} src="/img/singleBlogPage/secBlog/Rarrow.svg"/></div>
                                 <div className={styles.goBack}>{translate.buttonBack[lang]}</div>
                             </div>
                         </a>
@@ -82,7 +80,7 @@ const SecBlog = () => {
                 </div>
                 <div className={styles.title}>{lang == "en" ? activeSinglePage.loading && activeSinglePage.data.blog?.title : lang == "ru" ? activeSinglePage.loading && activeSinglePage.data.blog?.title_ru : activeSinglePage.loading && activeSinglePage.data.blog?.title_am}</div>
                 <div className={styles.dateBlock}>
-                    <div><Image alt="calendarIcon" src={calendarIcon}/></div>
+                    <div><img alt="calendarIcon" src="/img/singleBlogPage/secBlog/calendarIcon.svg"/></div>
                     <div className={styles.date}>{activeSinglePage.data.blog?.date}</div>
                 </div>
                

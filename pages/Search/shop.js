@@ -3,14 +3,6 @@ import { useGlobalProvider } from "../../components/Providers/GlobalProvider"
 import styles from "../../styles/sass/pages/Search/shop.module.scss"
 import { translate } from "../../translations"
 import Link from "next/link"
-import cutPattern from "../../public/img/shopPage/secFilter/cutPattern.svg"
-import whitPhoneIcon from "../../public/img/icons/whitPhoneIcon.svg"
-import Facebook from "../../public/img/icons/Facebook.svg"
-import Instagram from "../../public/img/icons/Instagram.svg"
-import iconBook from "../../public/img/shopPage/secFilter/iconBook.svg"
-
-import salePattern from "../../public/img/shopPage/secFilter/salePattern.svg"
-import salePatternMobile from "../../public/img/shopPage/secFilter/salePatternMobile.svg"
 
 
 const Shop = () => {
@@ -30,19 +22,19 @@ const Shop = () => {
                                 <Link key={id} href={`/shopSinglePage/${id}`}><a>
                                     <div className={styles.first} style={{ backgroundImage: `url(${HOST_API_IMG + thumbnail})` }}>
                                         <div className={styles.patternBlock}>
-                                            {sale && <div className={styles.salePattern} style={{ backgroundImage: `url(${salePattern.src})` }}>
+                                            {sale && <div className={styles.salePattern} style={{ backgroundImage: `/img/shopPage/secFilter/salePattern.svg` }}>
                                                 <div className={styles.titleSale}>
                                                     <div className={styles.sale}>{translate.sale[lang]}</div>
                                                     <div className={styles.saleUntil}>{lang == "en" ? sale : lang == "ru" ? sale_ru : sale_am}</div>
                                                 </div>
                                             </div>}
-                                            {sale && <div className={styles.salePatternMobile} style={{ backgroundImage: `url(${salePatternMobile.src})` }}>
+                                            {sale && <div className={styles.salePatternMobile} style={{ backgroundImage: `/img/shopPage/secFilter/salePatternMobile.svg` }}>
                                                 <div className={styles.titleSaleMobile}>
                                                     <div className={styles.saleMobile}>{translate.sale[lang]}</div>
                                                     <div className={styles.saleUntilMobile}>{lang == "en" ? sale : lang == "ru" ? sale_ru : sale_am}</div>
                                                 </div>
                                             </div>}
-                                            <div className={styles.patternBackground} style={{ backgroundImage: `url(${cutPattern.src})` }}>
+                                            <div className={styles.patternBackground} style={{ backgroundImage: `/img/shopPage/secFilter/cutPattern.svg` }}>
                                                 <div className={styles.title}>
                                                     <span className={styles.number}>{floor}</span>
                                                     <span className={styles.floor}>{translate.MallMapPageFloor[lang]}</span>
@@ -54,7 +46,7 @@ const Shop = () => {
                                                 <img className={styles.logoBackground} alt="logo" src={HOST_API_IMG + logo} />
                                             </div>
                                             {phone && <div className={styles.phonBlock}>
-                                                <div className={styles.phoneIcon}><img alt="phoneIcon" src={whitPhoneIcon} /></div>
+                                                <div className={styles.phoneIcon}><img alt="phoneIcon" src="/img/icons/whitPhoneIcon.svg" /></div>
                                                 <div><a className={styles.number} href={`tel:${phone}`}>{phone}</a></div>
                                             </div>}
                                             <div className={styles.networkBlock}>
@@ -65,7 +57,7 @@ const Shop = () => {
                                         </div>
                                         <div className={styles.brandBook}>
                                             <div className={styles.brand}>{name}</div>
-                                            <div className={styles.iconBook}><img alt="iconBook" src={iconBook} /></div>
+                                            <div className={styles.iconBook}><img alt="iconBook" src="/img/shopPage/secFilter/iconBook.svg" /></div>
                                         </div>
                                     </div>
                                 </a>

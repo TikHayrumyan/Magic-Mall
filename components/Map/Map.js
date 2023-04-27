@@ -9,21 +9,21 @@ const Map = ({ data, changeFloor }) => {
   const numSecond = data.data[2];
   
   function getDoorName(num) {
-    let result = numFirst.filter(({ door }) => {
+    let result = numFirst?.filter(({ door }) => {
       return door == num;
     });
 
     return result[0]?.name;
   }
   function getDoorId(num) {
-    let result = numFirst.filter(({ door }) => {
+    let result = numFirst?.filter(({ door }) => {
       return door == num;
     });
 
     return result[0]?.id;
   }
   function getType(num) {
-    let result = numFirst.filter(({ door }) => {
+    let result = numFirst?.filter(({ door }) => {
       return door == num;
     });
 
