@@ -1,13 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image"
 import styles from "../../../styles/sass/pages/NewsPage/secNews/secNews.module.scss"
-import calendar from "../../../public/img/newsPage/secNews/calendar.svg"
-import arrow from "../../../public/img/newsPage/secNews/arrow.svg"
-import pattern from "../../../public/img/newsPage/secNews/pattern.svg"
-import prev from "../../../public/img/newsPage/secNews/prev.svg"
-import next from "../../../public/img/newsPage/secNews/next.svg"
+
 import Link from "next/link"
-import dArr from "../../../public/img/newsPage/secNews/dArr.svg"
+
 import { useEffect, useState,useRef } from "react"
 import axios from "axios"
 import {useGlobalProvider} from "../../../components/Providers/GlobalProvider"
@@ -145,9 +141,9 @@ const SecNews = () => {
                             <div className={styles.pagination} >
                                 <div className={index % 2 != 1 ? styles.PaginationContainerReverse : styles.PaginationContainer}>
                                     <div className={styles.descripBlock}>
-                                        <div className={styles.pattern}><img alt="pattern" src={pattern}/></div>
+                                        <div className={styles.pattern}><img alt="pattern" src="/img/newsPage/secNews/pattern.svg"/></div>
                                         <div className={styles.dateBlock}>
-                                            <div className={styles.calendar}><img alt="calendar" src={calendar}/></div>
+                                            <div className={styles.calendar}><img alt="calendar" src="/img/newsPage/secNews/calendar.svg"/></div>
                                             <div className={styles.date}>{date}</div>
                                         </div>
                                         <div className={styles.descripTitleBlock}>
@@ -159,8 +155,8 @@ const SecNews = () => {
                                         <div><Image className={styles.imgMobile} alt="img" src={HOST_API_IMG+thumbnail} width={764} height={589}/></div>
                                         <div className={styles.btnBlock}>
                                             <button className={styles.button}>{translate.buttonSeeMore[lang]}</button>
-                                            <div className={styles.arrow}><img alt="arrow" src={arrow}/></div>
-                                            <div className={styles.patternMobile}><img alt="pattern" src={pattern}/></div>
+                                            <div className={styles.arrow}><img alt="arrow" src="/img/newsPage/secNews/arrow.svg"/></div>
+                                            <div className={styles.patternMobile}><img alt="pattern" src="/img/newsPage/secNews/pattern.svg"/></div>
                                         </div>
                                     </div>
                                     <div><Image className={styles.img} alt="img" src={HOST_API_IMG+thumbnail} width={764} height={589}/></div>
@@ -175,11 +171,11 @@ const SecNews = () => {
                 {/* <PaginatedItems itemsPerPage={3}/> */}
                 <ReactPaginate
                     breakLabel="..."
-                    nextLabel={<img alt="prev" src={next.src} onClick={() => {handleScroll(myRef.current)}}/>}
+                    nextLabel={<img alt="prev" src="/img/newsPage/secNews/next.svg" onClick={() => {handleScroll(myRef.current)}}/>}
                     onPageChange={handlePageClick}
                     pageRangeDisplayed={2}
                     pageCount={pageCount}
-                    previousLabel={<img alt="prev" src={prev.src} onClick={() => {handleScroll(myRef.current)}}/>}
+                    previousLabel={<img alt="prev" src="/img/newsPage/secNews/prev.svg" onClick={() => {handleScroll(myRef.current)}}/>}
                     renderOnZeroPageCount={null}
                     breakClassName={styles.ellipsis}
                     activeClassName={styles.activePage}

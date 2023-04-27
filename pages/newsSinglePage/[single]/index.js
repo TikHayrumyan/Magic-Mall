@@ -1,10 +1,6 @@
 import Image from "next/image"
 import styles from "../../../styles/sass/pages/newsSinglePage/singlePage/singlePage.module.scss"
-import RightArrow from "../../../public/img/newsSinglePage/singlePage/Rarrow.svg"
-import calendarIcon from "../../../public/img/newsSinglePage/singlePage/calendarIcon.svg"
-import Facebook from "../../../public/img/newsSinglePage/singlePage/Facebook.svg"
-import Instagram from "../../../public/img/newsSinglePage/singlePage/Instagram.svg"
-import Linkdin from "../../../public/img/newsSinglePage/singlePage/Linkdin.svg"
+
 import Link from "next/link"
 import OtherNews from "../otherNews/OtherNews"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
@@ -64,7 +60,7 @@ const SinglePage = () => {
                         <Link href="/newsPage">
                         <a>
                         <div className={styles.forHover}>
-                            <div className={styles.arrow}><Image alt="arrow" src={RightArrow}/></div>
+                            <div className={styles.arrow}><Image alt="arrow" src="/img/newsSinglePage/singlePage/Rarrow.svg"/></div>
                             <div className={styles.goBack}>{translate.buttonBack[lang]}</div>
                         </div>
                         </a>
@@ -72,7 +68,7 @@ const SinglePage = () => {
                     </div>
                     <div className={styles.title}>{lang == "en" ? activeSinglePage.data?.news.title : lang == "ru" ? activeSinglePage.data?.news.title_ru : activeSinglePage.data?.news.title_am}</div>
                     <div className={styles.dateBlock}>
-                        <div><Image alt="calendarIcon" src={calendarIcon}/></div>
+                        <div><Image alt="calendarIcon" src="/img/newsSinglePage/singlePage/calendarIcon.svg"/></div>
                         <div className={styles.date}>{activeSinglePage.data?.news.date}</div>
                     </div>
                     <div className={styles.descrip}>{lang == "en" ? parse(activeSinglePage.data.news.content) : lang == "ru" ? parse(activeSinglePage.data.news.content_ru) : parse(activeSinglePage.data.news.content_am)}</div>

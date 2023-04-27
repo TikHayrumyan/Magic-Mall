@@ -1,7 +1,7 @@
+/* eslint-disable @next/next/no-img-element */
 import Image from "next/image"
 import styles from "../../../styles/sass/pages/howToGetToMall/freeRoute/freeRoute.module.scss"
-import pattern from "../../../public/img/howToGetToMall/freeRoute/pattern.svg"
-import bus from "../../../public/img/howToGetToMall/freeRoute/bus.svg"
+
 import arrow from "../../../public/img/howToGetToMall/freeRoute/arrow.svg"
 import marker from "../../../public/img/howToGetToMall/freeRoute/marker.svg"
 import location from "../../../public/img/howToGetToMall/freeRoute/location.svg"
@@ -117,8 +117,8 @@ const FreeRoute = () => {
                 <div className={styles.title}>{translate.mainHeaderFreeShuttle[lang]}</div>
                 <div className={styles.description}>{translate.HowToGetToMall[lang]}</div>
                 <div className={styles.routeTitleBlock}>
-                    <div className={styles.pattern}><Image alt="pattern" src={pattern}/></div>
-                    <div className={styles.bus}><Image alt="bus" src={bus}/></div>
+                    <div className={styles.pattern}><img alt="pattern" src="/img/howToGetToMall/freeRoute/pattern.svg"/></div>
+                    <div className={styles.bus}><img alt="bus" src="/img/howToGetToMall/freeRoute/bus.svg"/></div>
                     <div className={styles.routeTitle} onClick={toggleData}>Նորաշեն թաղամաս - 1-ին հեռուստաընկերություն</div>
                     <div className={showRouteData ? styles.minus : styles.minusNone} onClick={toggleData}>-</div>
                     <div className={showRouteData ? styles.plusNone : styles.plus} onClick={toggleData}>+</div>
@@ -131,7 +131,7 @@ const FreeRoute = () => {
 
                             return(
                                 <div className={styles.data} key={id}>
-                                    <div className={styles.patternsArrow}><Image alt="arrow" src={img}/></div>
+                                    <div className={styles.patternsArrow}><img alt="arrow" src={img} /></div>
                                     <div className={styles.route}>{route}</div>
                                 </div>
                             )

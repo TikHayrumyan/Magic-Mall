@@ -1,10 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import Image from "next/image"
 import styles from "../../../styles/sass/pages/newsSinglePage/otherNews/otherNews.module.scss"
-import calendar from "../../../public/img/newsSinglePage/otherNews/calendar.svg"
-import arrow from "../../../public/img/newsSinglePage/otherNews/arrow.svg"
-import leftPattern from "../../../public/img/newsSinglePage/otherNews/leftPattern.svg"
-import rightPattern from "../../../public/img/newsSinglePage/otherNews/rightPattern.svg"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
@@ -44,15 +39,15 @@ const OtherNews = ({related,loading}) => {
                                                 <div className={styles.bottomBlock}>
                                                     <div className={styles.descrip}>{lang == "en" ? title : lang == "ru" ? title_ru : title_am} </div>
                                                     <div className={styles.dateBlock}>
-                                                        <div className={styles.calendar}><Image alt="calendar" src={calendar}/></div>
+                                                        <div className={styles.calendar}><img alt="calendar" src="/img/newsSinglePage/otherNews/calendar.svg"/></div>
                                                         <div className={styles.date}>{date}</div>
                                                     </div>
                                                     <div className={styles.btnBlock}>
                                                         <button className={styles.button}>{translate.buttonSeeMore[lang]}</button>
-                                                        <div className={styles.arrow}><Image alt="arrow" src={arrow}/></div>
+                                                        <div className={styles.arrow}><img alt="arrow" src="/img/newsSinglePage/otherNews/arrow.svg"/></div>
                                                     </div>
-                                                    <div className={styles.leftPattern}><Image alt="leftPattern" src={leftPattern}/></div>
-                                                    <div className={styles.rightPattern}><Image alt="rightPattern" src={rightPattern}/></div>
+                                                    <div className={styles.leftPattern}><img alt="leftPattern" src="/img/newsSinglePage/otherNews/leftPattern.svg"/></div>
+                                                    <div className={styles.rightPattern}><img alt="rightPattern" src="/img/newsSinglePage/otherNews/rightPattern.svg"/></div>
                                                 </div>
                                             </div>
                                         </div>
@@ -76,15 +71,15 @@ const OtherNews = ({related,loading}) => {
                                         <div className={styles.bottomBlockMobile}>
                                             <div className={styles.descripMobile}>{lang == "en" ? title : lang == "ru" ? title_ru : title_am} </div>
                                             <div className={styles.dateBlockMobile}>
-                                                <div className={styles.calendarMobile}><Image alt="calendar" src={calendar}/></div>
+                                                <div className={styles.calendarMobile}><img alt="calendar" src="/img/newsSinglePage/otherNews/calendar.svg"/></div>
                                                 <div className={styles.dateMobile}>{date}</div>
                                             </div>
                                             <div className={styles.btnBlockMobile}>
                                                 <button className={styles.buttonMobile}>{translate.buttonSeeMore[lang]}</button>
-                                                <div className={styles.arrowMobile}><Image alt="arrow" src={arrow}/></div>
+                                                <div className={styles.arrowMobile}><img alt="arrow" src="/img/newsSinglePage/otherNews/arrow.svg"/></div>
                                             </div>
-                                            <div className={styles.leftPatternMobile}><Image alt="leftPattern" src={leftPattern}/></div>
-                                            <div className={styles.rightPatternMobile}><Image alt="rightPattern" src={rightPattern}/></div>
+                                            <div className={styles.leftPatternMobile}><img alt="leftPattern" src="/img/newsSinglePage/otherNews/leftPattern.svg"/></div>
+                                            <div className={styles.rightPatternMobile}><img alt="rightPattern" src="/img/newsSinglePage/otherNews/rightPattern.svg"/></div>
                                         </div>
                                     </div>
                                 </div>

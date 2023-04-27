@@ -1,19 +1,18 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/howToGetToMall/microBus/microBus.module.scss"
-import pattern from "../../../public/img/howToGetToMall/microBus/pattern.svg"
-import bus from "../../../public/img/howToGetToMall/microBus/bus.svg"
+
+
 import arrow from "../../../public/img/howToGetToMall/microBus/arrow.svg"
 import marker from "../../../public/img/howToGetToMall/microBus/marker.svg"
 import location from "../../../public/img/howToGetToMall/microBus/location.svg"
+
 import GoogleMap from "./Map"
-import busFirst from "../../../public/img/howToGetToMall/microBus/busFirst.svg"
-import busSecond from "../../../public/img/howToGetToMall/microBus/busSecond.svg"
-import busThird from "../../../public/img/howToGetToMall/microBus/busThird.svg"
-import busFour from "../../../public/img/howToGetToMall/microBus/busFour.svg"
-import busFive from "../../../public/img/howToGetToMall/microBus/busFive.svg"
-import busSix from "../../../public/img/howToGetToMall/microBus/busSix.svg"
+
+
+
+
 
 import { useState } from "react"
-import Image from "next/image"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import { translate } from "../../../translations"
 
@@ -358,8 +357,8 @@ const MicroBus = () => {
                 <div className={styles.title}>{translate.MicroBus[lang]}</div>
 
                 <div className={styles.routeTitleBlock}>
-                    <div className={styles.pattern}><Image alt="pattern" src={pattern}/></div>
-                    <div className={styles.bus}><Image alt="bus" src={busFirst}/></div>
+                    <div className={styles.pattern}><img alt="pattern" src="/img/howToGetToMall/microBus/pattern.svg"/></div>
+                    <div className={styles.bus}><img alt="bus" src="/img/howToGetToMall/microBus/busFirst.svg"/></div>
                     <div className={styles.routeTitle} onClick={() => toggleData(1)}>գ. Գետամեջ-Աբովյան</div>
                     <div className={showRouteData == 1 ? styles.minus : styles.minusNone} onClick={() => toggleData(1)}>-</div>
                     <div className={showRouteData == 1 ? styles.plusNone : styles.plus} onClick={() => toggleData(1)}>+</div>
@@ -371,7 +370,7 @@ const MicroBus = () => {
 
                             return(
                                 <div className={styles.data} key={id}>
-                                    <div className={styles.patternsArrow}><Image alt="arrow" src={img}/></div>
+                                    <div className={styles.patternsArrow}><img alt="arrow" src={img}/></div>
                                     {id == 4 ? <div className={styles.routeMultiOutletMall}>{route}</div> : <div className={styles.route}>{route}</div>}
                                 </div>
                             )
@@ -381,8 +380,8 @@ const MicroBus = () => {
                 </div>
 
                 <div className={styles.routeTitleBlock}>
-                    <div className={styles.pattern}><Image alt="pattern" src={pattern}/></div>
-                    <div className={styles.bus}><Image alt="bus" src={busSecond}/></div>
+                    <div className={styles.pattern}><img alt="pattern" src="/img/howToGetToMall/microBus/pattern.svg"/></div>
+                    <div className={styles.bus}><img alt="bus" src="/img/howToGetToMall/microBus/busSecond.svg"/></div>
                     <div className={styles.routeTitle} onClick={() => toggleData(2)}>Աբովյան-գ. Առինջ-Երևան</div>
                     <div className={showRouteData == 2 ? styles.minus : styles.minusNone} onClick={() => toggleData(2)}>-</div>
                     <div className={showRouteData == 2 ? styles.plusNone : styles.plus} onClick={() => toggleData(2)}>+</div>
@@ -394,7 +393,7 @@ const MicroBus = () => {
 
                             return(
                                 <div className={styles.data} key={id}>
-                                    <div className={styles.patternsArrow}><Image alt="arrow" src={img}/></div>
+                                    <div className={styles.patternsArrow}><img alt="arrow" src={img}/></div>
                                     {id == 10 ? <div className={styles.routeMultiOutletMall}>{route}</div> : <div className={styles.route}>{route}</div>}
                                 </div>
                             )
@@ -404,8 +403,8 @@ const MicroBus = () => {
                 </div>
 
                 <div className={styles.routeTitleBlock}>
-                    <div className={styles.pattern}><Image alt="pattern" src={pattern}/></div>
-                    <div className={styles.bus}><Image alt="bus" src={busThird}/></div>
+                    <div className={styles.pattern}><img alt="pattern" src="/img/howToGetToMall/microBus/pattern.svg"/></div>
+                    <div className={styles.bus}><img alt="bus" src="/img/howToGetToMall/microBus/busThird.svg"/></div>
                     <div className={styles.routeTitle} onClick={() => toggleData(3)}>Բյուրեղավան-Երևան</div>
                     <div className={showRouteData == 3 ? styles.minus : styles.minusNone} onClick={() => toggleData(3)}>-</div>
                     <div className={showRouteData == 3 ? styles.plusNone : styles.plus} onClick={() => toggleData(3)}>+</div>
@@ -417,7 +416,7 @@ const MicroBus = () => {
 
                             return(
                                 <div className={styles.data} key={id}>
-                                    <div className={styles.patternsArrow}><Image alt="arrow" src={img}/></div>
+                                    <div className={styles.patternsArrow}><img alt="arrow" src={img}/></div>
                                     {id == 5 ? <div className={styles.routeMultiOutletMall}>{route}</div> : <div className={styles.route}>{route}</div>}
                                 </div>
                             )
@@ -427,8 +426,8 @@ const MicroBus = () => {
                 </div>
 
                 <div className={styles.routeTitleBlock}>
-                    <div className={styles.pattern}><Image alt="pattern" src={pattern}/></div>
-                    <div className={styles.bus}><Image alt="bus" src={busFour}/></div>
+                    <div className={styles.pattern}><img alt="pattern" src="/img/howToGetToMall/microBus/pattern.svg"/></div>
+                    <div className={styles.bus}><img alt="bus" src="/img/howToGetToMall/microBus/busFour.svg"/></div>
                     <div className={styles.routeTitle} onClick={() => toggleData(4)}>Հրազդան-Երևան</div>
                     <div className={showRouteData == 4 ? styles.minus : styles.minusNone} onClick={() => toggleData(4)}>-</div>
                     <div className={showRouteData == 4 ? styles.plusNone : styles.plus} onClick={() => toggleData(4)}>+</div>
@@ -440,7 +439,7 @@ const MicroBus = () => {
 
                             return(
                                 <div className={styles.data} key={id}>
-                                    <div className={styles.patternsArrow}><Image alt="arrow" src={img}/></div>
+                                    <div className={styles.patternsArrow}><img alt="arrow" src={img}/></div>
                                     {id == 6 ? <div className={styles.routeMultiOutletMall}>{route}</div> : <div className={styles.route}>{route}</div>}
                                 </div>
                             )
@@ -450,8 +449,8 @@ const MicroBus = () => {
                 </div>
 
                 <div className={styles.routeTitleBlock}>
-                    <div className={styles.pattern}><Image alt="pattern" src={pattern}/></div>
-                    <div className={styles.bus}><Image alt="bus" src={busFive}/></div>
+                    <div className={styles.pattern}><img alt="pattern" src="/img/howToGetToMall/microBus/pattern.svg"/></div>
+                    <div className={styles.bus}><img alt="bus" src="/img/howToGetToMall/microBus/busFive.svg"/></div>
                     <div className={styles.routeTitle} onClick={() => toggleData(5)}>Չարենցավան - Երևան</div>
                     <div className={showRouteData == 5 ? styles.minus : styles.minusNone} onClick={() => toggleData(5)}>-</div>
                     <div className={showRouteData == 5 ? styles.plusNone : styles.plus} onClick={() => toggleData(5)}>+</div>
@@ -463,7 +462,7 @@ const MicroBus = () => {
 
                             return(
                                 <div className={styles.data} key={id}>
-                                    <div className={styles.patternsArrow}><Image alt="arrow" src={img}/></div>
+                                    <div className={styles.patternsArrow}><img alt="arrow" src={img}/></div>
                                     {id == 5 ? <div className={styles.routeMultiOutletMall}>{route}</div> : <div className={styles.route}>{route}</div>}
                                 </div>
                             )
@@ -473,8 +472,8 @@ const MicroBus = () => {
                 </div>
 
                 <div className={styles.routeTitleBlock}>
-                    <div className={styles.pattern}><Image alt="pattern" src={pattern}/></div>
-                    <div className={styles.bus}><Image alt="bus" src={busSix}/></div>
+                    <div className={styles.pattern}><img alt="pattern" src="/img/howToGetToMall/microBus/pattern.svg"/></div>
+                    <div className={styles.bus}><img alt="bus" src="/img/howToGetToMall/microBus/busSix.svg"/></div>
                     <div className={styles.routeTitle} onClick={() => toggleData(6)}>Ծաղկաձոր-Երևան</div>
                     <div className={showRouteData == 6 ? styles.minus : styles.minusNone} onClick={() => toggleData(6)}>-</div>
                     <div className={showRouteData == 6 ? styles.plusNone : styles.plus} onClick={() => toggleData(6)}>+</div>
@@ -486,7 +485,7 @@ const MicroBus = () => {
 
                             return(
                                 <div className={styles.data} key={id}>
-                                    <div className={styles.patternsArrow}><Image alt="arrow" src={img}/></div>
+                                    <div className={styles.patternsArrow}><img alt="arrow" src={img}/></div>
                                     {id == 5 ? <div className={styles.routeMultiOutletMall}>{route}</div> : <div className={styles.route}>{route}</div>}
                                 </div>
                             )
