@@ -36,8 +36,8 @@ const GlobalProvider = ({ children }) => {
     const [giftCardHomePageData, SetGiftCardHomePageData] = useState({ data: [], loading: false })
     const [firstMallData, SetFirstMallData] = useState({ data: {}, loading: false })
     const [globalSearchResult, SetGlobalSearchResult] = useState({ data: {}, loading: false, searchWord: "" })
-    const HOST_API = "http://apimall.weflex.am/api/";
-    const HOST_API_IMG = "http://apimall.weflex.am";
+    const HOST_API = "https://apimall.weflex.am/api/";
+    const HOST_API_IMG = "https://apimall.weflex.am";
     // this state serves for loading until data is received in Shops,Services,Entertainment and Food pages
     const [waitData, SetWaitData] = useState(false)
 

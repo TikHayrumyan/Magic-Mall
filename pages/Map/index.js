@@ -14,7 +14,7 @@ const MapPage = () => {
   const GetMapData = async() => {
     try {
         const response = await axios({
-            url: "http://apimall.weflex.am/api/map",
+            url: "https://apimall.weflex.am/api/map",
             method: "GET"
         })
         // console.log(response,"mapData");
@@ -51,7 +51,7 @@ const MapPage = () => {
 // export async function getStaticProps() {
     
     
-//          const res = await fetch("http://apimall.weflex.am/api/map")
+//          const res = await fetch("https://apimall.weflex.am/api/map")
 //          const data = await res.json()
     
 

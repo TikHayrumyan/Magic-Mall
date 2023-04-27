@@ -76,17 +76,17 @@ const SinglePage = () => {
                     <div className={styles.shareBlock}>
                         <div className={styles.share}>{translate.ShareWithFriends[lang]}</div>
                         <div className={styles.Facebook}>
-                            <FacebookShareButton url={"http://www.test.weflex.am"+router.asPath}>
+                            <FacebookShareButton url={"https://www.test.weflex.am"+router.asPath}>
                             <FacebookIcon size={33} round/>
                             </FacebookShareButton>
                         </div>
                         <div>
-                            <TwitterShareButton url={"http://www.test.weflex.am"+router.asPath}>
+                            <TwitterShareButton url={"https://www.test.weflex.am"+router.asPath}>
                             <TwitterIcon size={33} round/>
                             </TwitterShareButton>
                         </div>
                         <div>
-                            <LinkedinShareButton url={"http://www.test.weflex.am/"+router.asPath}>
+                            <LinkedinShareButton url={"https://www.test.weflex.am/"+router.asPath}>
                                 <LinkedinIcon size={33} round/>
                             </LinkedinShareButton>
                         </div>

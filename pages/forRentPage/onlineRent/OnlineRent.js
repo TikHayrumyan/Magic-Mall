@@ -55,7 +55,7 @@ const OnlineRent = () => {
                 <div className={styles.descrip}>{translate.RentPageRentOnline[lang]}</div>
                 <div className={styles.title}>{translate.RentPageDownloadApplicationForm[lang]}</div>
                 <div className={styles.pdfBlock}>
-                  <Link href="http://test.weflex.am/hayt.docx"><a target="_blank">
+                  <Link href="https://test.weflex.am/hayt.docx"><a target="_blank">
                     <div><img alt="pdf" type="file" src="/img/forRentPage/onlineRent/pdf.svg"/></div>
                     <div className={styles.applicationPaper}>{translate.RentPageApplicationForm[lang]}</div>
                     </a>
