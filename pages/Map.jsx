@@ -1,7 +1,7 @@
-import Map from "../../components/Map/Map"
-import SecMain from "../../components/Map/secMain"
-import Select from "../../components/Map/Select/Select"
-import CardSubscribe from "../homePage/secCardSubscribe/CardSubscribe"
+import Map from "../components/Map/Map"
+import SecMain from "../components/Map/secMain"
+import Select from "../components/Map/Select/Select"
+import CardSubscribe from "./homePage/secCardSubscribe/CardSubscribe"
 import { useState } from "react"
 
 
