@@ -32,7 +32,7 @@ const GlobalProvider = ({ children }) => {
     const [specialOffersSliderData, SetSpecialOffersSliderData] = useState({ data: [], loading: false })
     const [financialReportsData, SetFinancialReportsData] = useState({ data: [], loading: false })
     const [careerData, SetCareerData] = useState({ data: [], loading: false })
-    const [giftCardData, SetGiftCardData] = useState({ data: {}, loading: false })
+    
     const [giftCardHomePageData, SetGiftCardHomePageData] = useState({ data: [], loading: false })
     const [firstMallData, SetFirstMallData] = useState({ data: {}, loading: false })
     const [globalSearchResult, SetGlobalSearchResult] = useState({ data: {}, loading: false, searchWord: "" })
@@ -427,23 +427,7 @@ const GlobalProvider = ({ children }) => {
 
     // gift card section
 
-    const GetGiftCardData = async () => {
-        try {
-            const response = await axios({
-                url: HOST_API + "giftCard",
-                method: "GET"
-            })
-            console.log(response, "giftCard");
-            if (response.data && response.status == 200) {
-                SetGiftCardData({
-                    data: response.data,
-                    loading: true
-                })
-            }
-        } catch (error) {
-            console.log(error);
-        }
-    }
+    
 
 
     // translations
@@ -570,8 +554,7 @@ const GlobalProvider = ({ children }) => {
         SetSearchInputValue,
         GetCareerPageData,
         careerData,
-        GetGiftCardData,
-        giftCardData,
+
         lang,
         giftCardHomePageData,
         GetHomePageGiftCardData,
