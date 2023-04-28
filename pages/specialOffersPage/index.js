@@ -1,6 +1,6 @@
 import SecMain from "./SecMain"
 import NewOffers from "./secNewOffers/NewOffers"
-import CardSubscribe from "../homePage/secCardSubscribe/CardSubscribe"
+import CardSubscribe from "../homePage/CardSubscribe"
 
 
 

@@ -1,7 +1,7 @@
 import OnlineRent from "./onlineRent/OnlineRent"
 import PremisesRent from "./PremisesRent/PremisesRent"
 import SecMain from "./secMain"
-import CardSubscribe from "../homePage/secCardSubscribe/CardSubscribe"
+import CardSubscribe from "../homePage/CardSubscribe"
 
 
 

@@ -1,7 +1,7 @@
 import OtherBlogs from "./otherBlogs/OtherBlogs"
 import SecBlog from "./secBlog/SecBlog"
 import SecMain from "./secMain"
-import CardSubscribe from "../homePage/secCardSubscribe/CardSubscribe"
+import CardSubscribe from "../homePage/CardSubscribe"
 import { useGlobalProvider } from "../../components/Providers/GlobalProvider"
 import { useEffect } from "react"
 

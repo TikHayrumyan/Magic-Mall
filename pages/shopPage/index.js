@@ -5,7 +5,7 @@ import Image from "next/image"
 import stylesSecMain from "../../styles/sass/pages/shopPage/secMain/secMain.module.scss"
 import styles from "../../styles/sass/pages/shopPage/secFilter/filter.module.scss"
 import Select from "./Select"
-import CardSubscribe from "../homePage/secCardSubscribe/CardSubscribe"
+import CardSubscribe from "../homePage/CardSubscribe"
 import Link from "next/link"
 import InfiniteScroll from 'react-infinite-scroll-component';
 import { useEffect, useState } from "react"

@@ -7,7 +7,7 @@ import Foods from "./foods"
 import News from "./news"
 import Services from "./service"
 import Shop from "./shop"
-import CardSubscribe from "../homePage/secCardSubscribe/CardSubscribe"
+import CardSubscribe from "../homePage/CardSubscribe"
 import { translate } from "../../translations"
 
 

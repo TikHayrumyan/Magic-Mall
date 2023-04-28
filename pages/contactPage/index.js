@@ -1,7 +1,7 @@
 import ContactUs from "./contactUs/ContactUs"
 import SecContact from "./secContact/SecContact"
 import SecMain from "./secMain"
-import CardSubscribe from "../homePage/secCardSubscribe/CardSubscribe"
+import CardSubscribe from "../homePage/CardSubscribe"
 
 
 

@@ -1,5 +1,5 @@
 import Link from "next/link"
-import CardSubscribe from "./homePage/secCardSubscribe/CardSubscribe"
+import CardSubscribe from "./homePage/CardSubscribe"
 import { useGlobalProvider } from "../components/Providers/GlobalProvider"
 import styles from "../styles/sass/pages/aboutUsPage/firstOutletMall/firstOutletMall.module.scss"
 import { translate } from "../translations"

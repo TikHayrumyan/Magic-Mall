@@ -1,7 +1,7 @@
 import MicroBus from "./microBus/MicroBus"
 import SecBus from "./secBus/SecBus"
 import SecMain from "./secMain"
-import CardSubscribe from "../homePage/secCardSubscribe/CardSubscribe"
+import CardSubscribe from "../homePage/CardSubscribe"
 
 
 

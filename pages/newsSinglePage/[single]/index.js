@@ -7,7 +7,7 @@ import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import { useState,useEffect } from "react"
 import {useRouter} from "next/router"
 import  axios from "axios"
-import CardSubscribe from "../../homePage/secCardSubscribe/CardSubscribe"
+import CardSubscribe from "../../homePage/CardSubscribe"
 import SecMain from "../SecMain"
 import { FacebookShareButton,
     FacebookIcon,

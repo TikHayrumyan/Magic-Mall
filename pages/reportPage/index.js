@@ -1,5 +1,5 @@
 import SecMain from "./SecMain"
-import CardSubscribe from "../homePage/secCardSubscribe/CardSubscribe"
+import CardSubscribe from "../homePage/CardSubscribe"
 
 
 

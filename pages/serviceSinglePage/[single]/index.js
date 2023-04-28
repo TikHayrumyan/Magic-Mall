@@ -8,7 +8,7 @@ import  axios from "axios"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import SecMap from "../secMap/SecMap"
 import SimilarShop from "../similarShop/similarShop"
-import CardSubscribe from "../../homePage/secCardSubscribe/CardSubscribe"
+import CardSubscribe from "../../homePage/CardSubscribe"
 import { translate } from "../../../translations"
 
 const SinglePage = () => {

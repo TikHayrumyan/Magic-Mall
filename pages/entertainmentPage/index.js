@@ -1,7 +1,7 @@
 import Filter from "./secFilter/Filter"
 import SecMain from "./SecMain"
 import Select from "./Selectors/Select"
-import CardSubscribe from "../homePage/secCardSubscribe/CardSubscribe"
+import CardSubscribe from "../homePage/CardSubscribe"
 
 
 

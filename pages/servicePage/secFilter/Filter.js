@@ -2,7 +2,7 @@
 import styles from "../../../styles/sass/pages/servicePage/secFilter/filter.module.scss"
 import Select from "./Selectors/Select"
 
-import CardSubscribe from "../../homePage/secCardSubscribe/CardSubscribe"
+import CardSubscribe from "../../homePage/CardSubscribe"
 
 import Link from "next/link"
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"

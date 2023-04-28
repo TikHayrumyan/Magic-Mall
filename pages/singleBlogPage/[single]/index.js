@@ -8,7 +8,7 @@ import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import {useRouter} from "next/router"
 import OtherBlogs from "../otherBlogs/OtherBlogs"
 import SecMain from "../secMain"
-import CardSubscribe from "../../homePage/secCardSubscribe/CardSubscribe"
+import CardSubscribe from "../../homePage/CardSubscribe"
 import { FacebookShareButton,
     FacebookIcon,
     TwitterShareButton,

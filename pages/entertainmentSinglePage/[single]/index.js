@@ -9,7 +9,7 @@ import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import SecMain from "../secMain"
 import SecMap from "../secMap/secMap"
 import SimilarEntertainment from "../similarEntertainment/similarEntertainment"
-import CardSubscribe from "../../homePage/secCardSubscribe/CardSubscribe"
+import CardSubscribe from "../../homePage/CardSubscribe"
 import parse from "html-react-parser"
 import { translate } from "../../../translations"
 

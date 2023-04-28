@@ -1,7 +1,7 @@
 import SecMain from "./SecMain"
 import Career from "./Career"
 import SecCv from "./secCv/SecCv"
-import CardSubscribe from "../homePage/secCardSubscribe/CardSubscribe"
+import CardSubscribe from "../homePage/CardSubscribe"
 
 
 
