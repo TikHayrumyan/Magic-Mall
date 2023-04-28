@@ -25,6 +25,7 @@ const MenuHeader = () => {
         }
     }, [toggleMobileMenu])
     const [SearchValue, SetSearchValue] = useState("")
+    
     const { GetCategory,
         shopCategoryData,
         foodCategoryData,
