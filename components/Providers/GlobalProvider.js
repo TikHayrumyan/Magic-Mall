@@ -27,7 +27,7 @@ const GlobalProvider = ({ children }) => {
     const [blogSliderData, SetBlogSliderData] = useState({ data: [], loading: false })
     const [blogPageData, SetBlogPageData] = useState({ data: [], loading: false, initialOffset: 1 })
     const [FAQdata, SetFAQdata] = useState({ data: [], loading: false })
-    const [AboutUsData, SetAboutUsData] = useState({ data: {}, loading: false })
+
     const [specialOffersData, SetSpecialOffersData] = useState({ data: [], loading: false, initialOffset: 0 })
     const [specialOffersSliderData, SetSpecialOffersSliderData] = useState({ data: [], loading: false })
     const [financialReportsData, SetFinancialReportsData] = useState({ data: [], loading: false })
@@ -294,25 +294,7 @@ const GlobalProvider = ({ children }) => {
     }
     // about Us
 
-    const GetAboutUsPageData = async () => {
-        try {
-            const response = await axios({
-                url: HOST_API + "aboutUs",
-                method: "GET"
-            })
-            console.log(response, "response AboutUss");
-
-            if (response.data && response.status == 200) {
-                SetAboutUsData({
-                    data: response.data,
-                    loading: true
-                })
-            }
-
-        } catch (error) {
-            console.log(error);
-        }
-    }
+    
 
     // special offers
 
@@ -541,8 +523,8 @@ const GlobalProvider = ({ children }) => {
         GetFaqPageData,
         FAQdata,
         SetFAQdata,
-        GetAboutUsPageData,
-        AboutUsData,
+
+
         GetSpecialOffersData,
         specialOffersData,
         SetSpecialOffersData,
