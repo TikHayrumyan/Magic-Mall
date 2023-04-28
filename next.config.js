@@ -4,37 +4,40 @@ const webpack = require("webpack");
 
 const nextConfig = {
     images: {
-        remotePatterns: [
-            {
-                protocol: "https",
-                hostname: "**",
-            },
-            {
-                protocol: 'https',
-                hostname: '**.weflex.am',
-                port: '',
-                pathname: '/**',
-            },
-            {
-                protocol: 'http',
-                hostname: 'apimall.weflex.am',
-                port: '',
-                pathname: '/images/**',
-            },
-            {
-                protocol: 'https',
-                hostname: 'apimall.weflex.am',
-                port: '',
-                pathname: '/images/**',
-            },
-            {
-                protocol: 'http',
-                hostname: 'weflex.am',
-                port: '',
-                pathname: '/**',
-            },
-        ],
-    },
+        domains: ['apimall.weflex.am'],
+      },
+    // images: {
+    //     remotePatterns: [
+    //         {
+    //             protocol: "https",
+    //             hostname: "**",
+    //         },
+    //         {
+    //             protocol: 'https',
+    //             hostname: '**.weflex.am',
+    //             port: '',
+    //             pathname: '/**',
+    //         },
+    //         {
+    //             protocol: 'http',
+    //             hostname: 'apimall.weflex.am',
+    //             port: '',
+    //             pathname: '/images/**',
+    //         },
+    //         {
+    //             protocol: 'https',
+    //             hostname: 'apimall.weflex.am',
+    //             port: '',
+    //             pathname: '/images/**',
+    //         },
+    //         {
+    //             protocol: 'http',
+    //             hostname: 'weflex.am',
+    //             port: '',
+    //             pathname: '/**',
+    //         },
+    //     ],
+    // },
 
     reactStrictMode: true,
     webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {

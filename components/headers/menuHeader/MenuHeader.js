@@ -24,7 +24,7 @@ const MenuHeader = () => {
         }
     }, [toggleMobileMenu])
     const [SearchValue, SetSearchValue] = useState("")
-    
+
     const { GetCategory,
         shopCategoryData,
         foodCategoryData,
@@ -99,7 +99,9 @@ const MenuHeader = () => {
             <div className={styles.container}>
                 <div className={styles.blockLogo}>
                     <Link href="/">
-                        <img className={styles.logo} alt="Logo" src="/img/icons/Logo.svg" />
+                        <a>
+                            <Image className={styles.logo} alt="Logo" src="/img/icons/Logo.svg" width={201} height={73}/>
+                        </a>
                     </Link>
                 </div>
                 <div className={styles.menuContainer}>
@@ -188,7 +190,7 @@ const MenuHeader = () => {
                         <div className={styles.languageBlock} onClick={() => SetToggleMobileMenu(false)}>
                             <div onClick={() => changeLanguage(router.locale == "en" ? "am" : "en")}>EN</div>
                             <div onClick={() => changeLanguage(router.locale == "en" ? "am" : "en")}>AM</div>
-                            <div onClick={() => changeLanguage(router.locale == "ru" ? "am" : "ru")}>RU</div>
+                            {/* <div onClick={() => changeLanguage(router.locale == "ru" ? "am" : "ru")}>RU</div> */}
                         </div>
                         <div>
                             <div className={styles.inputBoxActive}>
@@ -257,7 +259,7 @@ const MenuHeader = () => {
                         <div className={styles.leftContainer}>
                             <div className={styles.forFlex}>
                                 <div className={styles.iconPhone}><img alt="Phone" src="/img/icons/phoneIcon.svg" /></div>
-                                <div><Link className={styles.number} href="tel:+374 11 880 888">+374 11 880 888</Link></div>
+                                <div><Link href="tel:+374 11 880 888"><a className={styles.number}>+374 11 880 888</a></Link></div>
                             </div>
                             <div className={styles.forFlex}>
                                 <div className={styles.iconOclock}><img alt="O'clock" src="/img/icons/oclock.svg" /></div>

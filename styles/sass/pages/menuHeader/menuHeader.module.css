@@ -72,7 +72,7 @@
   list-style: none;
   font-family: "arm-bold", "montserrat-ru-bold";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.9722222222vw;
   line-height: 1.1805555556vw;
   color: #224660;
@@ -81,7 +81,7 @@
 .ulMenu .specialOffer {
   font-family: "arm-bold", "montserrat-ru-bold";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.9722222222vw;
   line-height: 1.1805555556vw;
   color: #EA1313;
@@ -101,7 +101,7 @@
   list-style: none;
   font-family: "arm-bold", "montserrat-ru-bold";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.9722222222vw;
   line-height: 1.1805555556vw;
   color: #224660;
@@ -109,7 +109,7 @@
 .ulMenuEN .specialOffer {
   font-family: "arm-bold", "montserrat-ru-bold";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.9722222222vw;
   line-height: 1.1805555556vw;
   color: #EA1313;
@@ -127,7 +127,7 @@
   list-style: none;
   font-family: "arm-bold", "montserrat-ru-bold";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.9722222222vw;
   line-height: 1.1805555556vw;
   color: #224660;
@@ -135,7 +135,7 @@
 .ulMenuEN .specialOffer {
   font-family: "arm-bold", "montserrat-ru-bold";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.9722222222vw;
   line-height: 1.1805555556vw;
   color: #EA1313;
@@ -497,7 +497,7 @@
     margin-right: 3vw;
     font-family: "arm-bold", "montserrat-ru-bold";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 3.8647342995vw;
     line-height: 4.8309178744vw;
     color: #FFFFFF;
@@ -514,7 +514,7 @@
     list-style: none;
     font-family: "arm-bold", "montserrat-ru-bold";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 4.1062801932vw;
     line-height: 4.5893719807vw;
     color: white;
@@ -523,7 +523,7 @@
   .MobileMenuContainer .ulMenuMobile .specialOfferMobile {
     font-family: "arm-bold", "montserrat-ru-bold";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 4.1062801932vw;
     line-height: 4.5893719807vw;
     color: #EA1313;
@@ -579,7 +579,7 @@
     margin-right: 1.7578125vw;
     font-family: "arm-bold", "montserrat-ru-bold";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 3.8647342995vw;
     line-height: 4.8309178744vw;
   }
@@ -592,7 +592,7 @@
     color: #fff;
     font-family: "arm-bold", "montserrat-ru-bold";
     font-style: normal;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 3.8647342995vw;
     line-height: 4.8309178744vw;
   }

@@ -25,6 +25,9 @@
         cursor: pointer;
         width: get-vw(196px,1440 );
         height: get-vw(73px,1440 );
+        display: flex;
+        justify-content: center;
+        align-items: center;
         .logo{
             width: get-vw(196px,1440 )!important;
             height: auto!important;
@@ -50,7 +53,7 @@
             list-style: none;
             font-family: "arm-bold",'montserrat-ru-bold';
             font-style: normal;
-            font-weight: 700;
+            font-weight: 400;
             font-size: get-vw(14px,1440 );
             line-height: get-vw(17px,1440 );
             color: #224660;
@@ -60,7 +63,7 @@
         .specialOffer{
             font-family: 'arm-bold','montserrat-ru-bold';
             font-style: normal;
-            font-weight: 700;
+            font-weight: 400;
             font-size: get-vw(14px,1440 );
             line-height: get-vw(17px,1440 );
             color:#EA1313;
@@ -81,7 +84,7 @@
         list-style: none;
         font-family: "arm-bold",'montserrat-ru-bold';
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         font-size: get-vw(14px,1440 );
         line-height: get-vw(17px,1440 );
         color: #224660;
@@ -90,7 +93,7 @@
     .specialOffer{
         font-family: 'arm-bold','montserrat-ru-bold';
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         font-size: get-vw(14px,1440 );
         line-height: get-vw(17px,1440 );
         color:#EA1313;
@@ -111,7 +114,7 @@
         list-style: none;
         font-family: "arm-bold",'montserrat-ru-bold';
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         font-size: get-vw(14px,1440 );
         line-height: get-vw(17px,1440 );
         color: #224660;
@@ -120,7 +123,7 @@
     .specialOffer{
         font-family: 'arm-bold','montserrat-ru-bold';
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         font-size: get-vw(14px,1440 );
         line-height: get-vw(17px,1440 );
         color:#EA1313;
@@ -478,7 +481,7 @@
                 margin-right: 3vw;
                 font-family: 'arm-bold','montserrat-ru-bold';
                 font-style: normal;
-                font-weight: 700;
+                font-weight: 400;
                 font-size: get-vw(16px,414 );
                 line-height: get-vw(20px,414 );
                 color: #FFFFFF;
@@ -498,7 +501,7 @@
                     list-style: none;
                     font-family: "arm-bold",'montserrat-ru-bold';
                     font-style: normal;
-                    font-weight: 700;
+                    font-weight: 400;
                     font-size: get-vw(17px,414 );
                     line-height: get-vw(19px,414 );
                     color: white;
@@ -508,7 +511,7 @@
                 .specialOfferMobile{
                     font-family: 'arm-bold','montserrat-ru-bold';
                     font-style: normal;
-                    font-weight: 700;
+                    font-weight: 400;
                     font-size: get-vw(17px,414 );
                     line-height: get-vw(19px,414 );
                     color:#EA1313;
@@ -564,7 +567,7 @@
         margin-right: 1.7578125vw;
         font-family: 'arm-bold','montserrat-ru-bold';
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         font-size: get-vw(16px,414 );
         line-height: get-vw(20px,414 );
     }
@@ -577,7 +580,7 @@
         color: #fff;
         font-family: 'arm-bold','montserrat-ru-bold';
         font-style: normal;
-        font-weight: 700;
+        font-weight: 400;
         font-size: get-vw(16px,414 );
         line-height: get-vw(20px,414 );
     }

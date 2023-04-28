@@ -6,6 +6,7 @@ import FooterAboutMap from "./footerComponents/FooterAboutMap"
 import Link from "next/link"
 import { translate } from "../translations"
 import { useGlobalProvider } from "./Providers/GlobalProvider"
+import Image from "next/image"
 
 const Footer = () => {
 
@@ -17,7 +18,7 @@ const Footer = () => {
             <div className={style.logoTitle}>
                 <div className={style.logoBlock}>
                     <Link href="/">
-                            <img className={style.logo} alt="Logo" src="/img/icons/footerLogo.svg" />
+                            <Image className={style.logo} alt="Logo" src="/img/icons/footerLogo.svg" width={151.8} height={170.7}/>
                     </Link>
                 </div>
                 <div>

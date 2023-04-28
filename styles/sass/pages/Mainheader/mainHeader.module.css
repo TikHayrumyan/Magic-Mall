@@ -23,7 +23,7 @@
   margin-right: 1.7578125vw;
   font-family: "arm-bold", "montserrat-ru-bold";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.0416666667vw;
   line-height: 1.3020833333vw;
   display: flex;
@@ -42,7 +42,7 @@
   color: #fff;
   font-family: "arm-bold", "montserrat-ru-bold";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 1.0416666667vw;
   line-height: 1.3020833333vw;
   display: flex;
@@ -60,7 +60,7 @@
   margin-right: 1.4322916667vw;
   font-family: "arm-bold", "montserrat-ru-bold";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 0.78125vw;
   line-height: 0.9765625vw;
 }
@@ -75,7 +75,7 @@
   color: #fff;
   font-family: "arm-bold", "montserrat-ru-bold";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 0.78125vw;
   line-height: 0.9765625vw;
   margin-right: 1.171875vw;
@@ -85,7 +85,7 @@
 .middleContainer .freeTransport {
   font-family: "arm-bold", "montserrat-ru-bold";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 0.78125vw;
   line-height: 0.9765625vw;
   color: #fff;
@@ -117,7 +117,7 @@
   color: #fff;
   font-family: "arm-semiBold", "montserrat-ru-semiBold";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 0.78125vw;
   line-height: 0.9765625vw;
   margin-right: 0.3255208333vw;
@@ -154,7 +154,7 @@
   color: #224660;
   cursor: pointer;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.9722222222vw;
   line-height: 1.0416666667vw;
   font-family: "arm-semiBold", "montserrat-ru-semiBold";
@@ -167,7 +167,7 @@
   font-family: "arm-semiBold", "montserrat-ru-semiBold";
   cursor: pointer;
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   font-size: 0.8333333333vw;
   line-height: 1.0416666667vw;
 }
