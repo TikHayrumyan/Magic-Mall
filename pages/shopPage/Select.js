@@ -1,11 +1,11 @@
 /* eslint-disable @next/next/no-img-element */
 /* eslint-disable react-hooks/exhaustive-deps */
-import styles from "../../../../styles/sass/pages/shopPage/secFilter/secSelect/select.module.scss"
+import styles from "../../styles/sass/pages/shopPage/secFilter/secSelect/select.module.scss"
 
 import { useEffect, useState } from "react"
-import { useGlobalProvider } from "../../../../components/Providers/GlobalProvider"
+import { useGlobalProvider } from "../../components/Providers/GlobalProvider"
 import axios from "axios"
-import { translate } from "../../../../translations"
+import { translate } from "../../translations"
 import Image from "next/image"
 
 
