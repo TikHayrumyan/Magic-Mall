@@ -106,8 +106,8 @@ const HomePage = ({ mainSliderData, brandsSliderData }) => {
     return (
         <div>
             {/* <MainSlider/> */}
-            {mainSliderData.loading && <OwlCarousel {...settingsMain} className='owl-theme home-owl' items={1} loop margin={0} navText={[`<img src='/img/homePage/sectionMainSlider/nav-prev.svg' alt='' />`, `<img src='/img/homePage/sectionMainSlider/nav-next.svg' alt='' />`]} nav >
-                {mainSliderData.loading && mainSliderData.data?.map(({ id, image, image_am, image_ru, title, title_am, title_ru, description, description_am, description_ru, link, link_am, link_ru }) => {
+            {mainSliderData?.loading && <OwlCarousel {...settingsMain} className='owl-theme home-owl' items={1} loop margin={0} navText={[`<img src='/img/homePage/sectionMainSlider/nav-prev.svg' alt='' />`, `<img src='/img/homePage/sectionMainSlider/nav-next.svg' alt='' />`]} nav >
+                {mainSliderData?.loading && mainSliderData?.data?.map(({ id, image, image_am, image_ru, title, title_am, title_ru, description, description_am, description_ru, link, link_am, link_ru }) => {
 
                     return (
                         <div key={id} className={stylesMainSliderHomePage.itemOne}><div className={stylesMainSliderHomePage.gradient}></div>
@@ -129,7 +129,7 @@ const HomePage = ({ mainSliderData, brandsSliderData }) => {
             <div className={stylesBrandsSlide.brandsSlide}>
                 <div className={stylesBrandsSlide.sliderContainer}>
                     <Slider {...settingsBrand}>
-                        {brandsSliderData.loading && brandsSliderData.data?.map(({ id, image, link }) => {
+                        {brandsSliderData?.loading && brandsSliderData.data?.map(({ id, image, link }) => {
                             return (
                                 <Link href={link} key={id}>
                                     <div className="itemOne">
