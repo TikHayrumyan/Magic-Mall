@@ -12,8 +12,8 @@ const GlobalProvider = ({ children }) => {
     const [activeCategoryName, SetActiveCategoryName] = useState("")
     const [searchResult, setSearchResult] = useState({ data: [], loading: false, initialData: false });
     const [searchInputValue, SetSearchInputValue] = useState(null)
-    const [mainSliderData, SetMainSliderData] = useState({ data: [], loading: false })
-    const [brandsSliderData, SetBrandsSliderData] = useState({ data: [], loading: false })
+    
+
     const [bestBrandsSlider, SetBestBrandsSlider] = useState({ data: [], loading: false })
     const [interestedData, SetInterestedData] = useState({ data: [], loading: false })
     const [foodCategoryData, SetFoodCategoryData] = useState({ data: [], loading: false })
@@ -60,39 +60,8 @@ const GlobalProvider = ({ children }) => {
 
     };
 
-    const GetMainSlider = async () => {
-        try {
-            const response = await axios({
-                url: HOST_API + "slider",
-                method: "GET",
-            });
-            if (response.data.length && response.status == 200) {
-                SetMainSliderData({
-                    data: response.data,
-                    loading: true
-                })
-            }
-
-        } catch (err) {
-            console.log(err);
-        }
-    };
-    const GetBrandsSlider = async () => {
-        try {
-            const response = await axios({
-                url: HOST_API + "slider/logo",
-                method: "GET"
-            });
-            if (response.data.length && response.status == 200) {
-                SetBrandsSliderData({
-                    data: response.data,
-                    loading: true
-                })
-            }
-        } catch (error) {
-            console.log(error);
-        }
-    }
+    
+    
     // home page brands slider
     const GetBestBrandsSlider = async () => {
         try {
@@ -487,10 +456,10 @@ const GlobalProvider = ({ children }) => {
         SetSearchInputValue,
         searchResult,
         setSearchResult,
-        GetMainSlider,
-        mainSliderData,
-        GetBrandsSlider,
-        brandsSliderData,
+
+
+
+
         GetBestBrandsSlider,
         bestBrandsSlider,
         GetInterested,
