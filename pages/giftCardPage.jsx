@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-import CardSubscribe from "./homePage/secCardSubscribe/CardSubscribe"
+import CardSubscribe from "./homePage/CardSubscribe"
 import stylesSecGiftCard from "../styles/sass/pages/GiftCardPage/secGiftCard/giftCard.module.scss"
 import stylesSecQuestion from "../styles/sass/pages/GiftCardPage/secQuestion/secQuestion.module.scss"
 import { translate } from "../translations"

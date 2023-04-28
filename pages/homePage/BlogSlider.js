@@ -4,14 +4,14 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import dynamic from "next/dynamic";
 const OwlCarousel = dynamic(import("react-owl-carousel"), {ssr: false});
-import styles from "../../../styles/sass/pages/HomePage/secBlog/blogSlider.module.scss"
+import styles from "../../styles/sass/pages/HomePage/secBlog/blogSlider.module.scss"
 
 
 import Image from "next/image";
 
-import { useGlobalProvider } from "../../../components/Providers/GlobalProvider";
+import { useGlobalProvider } from "../../components/Providers/GlobalProvider";
 import Link from "next/link";
-import { translate } from "../../../translations";
+import { translate } from "../../translations";
 const settings = {
     autoplayTimeout:4000,
     autoplay: true,

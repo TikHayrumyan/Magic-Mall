@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import Image from "next/image"
 import styles from "../../../styles/sass/pages/HomePage/secFirstOutletMall/firstOutletMall.module.scss"
-import {useGlobalProvider} from "../../../components/Providers/GlobalProvider"
+import {useGlobalProvider} from "../../components/Providers/GlobalProvider"
 import { useEffect } from "react"
-import { translate } from "../../../translations"
+import { translate } from "../../translations"
 
 const FirstOutletMall = () => {
 

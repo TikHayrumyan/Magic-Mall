@@ -1,12 +1,12 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from "../../../styles/sass/pages/HomePage/secCardSubscribe/cardSubscribe.module.scss"
+import styles from "../../styles/sass/pages/HomePage/secCardSubscribe/cardSubscribe.module.scss"
 // import svarovski from "../../../public/img/homePage/secCardSubscribe/svarovski.svg"
 
 
 import { useEffect, useState } from "react"
 import axios from "axios";
-import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
-import { translate } from "../../../translations"
+import { useGlobalProvider } from "../../components/Providers/GlobalProvider"
+import { translate } from "../../translations"
 
 const CardSubscribe = () =>{
     const {HOST_API,lang} = useGlobalProvider()

@@ -15,7 +15,7 @@ const GlobalProvider = ({ children }) => {
     
 
     const [bestBrandsSlider, SetBestBrandsSlider] = useState({ data: [], loading: false })
-    const [interestedData, SetInterestedData] = useState({ data: [], loading: false })
+
     const [foodCategoryData, SetFoodCategoryData] = useState({ data: [], loading: false })
     const [activeCategoryNameFood, SetActiveCategoryNameFood] = useState("")
     const [searchInputValueFood, SetSearchInputValueFood] = useState(null)
@@ -33,7 +33,6 @@ const GlobalProvider = ({ children }) => {
     const [financialReportsData, SetFinancialReportsData] = useState({ data: [], loading: false })
     const [careerData, SetCareerData] = useState({ data: [], loading: false })
     
-    const [giftCardHomePageData, SetGiftCardHomePageData] = useState({ data: [], loading: false })
     const [firstMallData, SetFirstMallData] = useState({ data: {}, loading: false })
     const [globalSearchResult, SetGlobalSearchResult] = useState({ data: {}, loading: false, searchWord: "" })
     const HOST_API = "https://apimall.weflex.am/api/";
@@ -80,22 +79,7 @@ const GlobalProvider = ({ children }) => {
         }
     }
     // interested page
-    const GetInterested = async () => {
-        try {
-            const response = await axios({
-                url: HOST_API + "interested",
-                method: "GET"
-            });
-            if (response.data.length && response.status == 200) {
-                SetInterestedData({
-                    data: response.data,
-                    loading: true
-                })
-            }
-        } catch (error) {
-            console.log(error);
-        }
-    }
+    
     // food filter
     const GetFoodCategory = async () => {
         try {
@@ -388,25 +372,7 @@ const GlobalProvider = ({ children }) => {
     const lang = locale === "en" ? "en" : locale === "ru" ? "ru" : "am"
 
 
-    // homePage GiftCard Data
 
-    const GetHomePageGiftCardData = async () => {
-        try {
-            const response = await axios({
-                url: HOST_API + "home/giftCard",
-                method: "GET"
-            })
-            console.log(response, "giftCardHomePage");
-            if (response.data && response.status == 200) {
-                SetGiftCardHomePageData({
-                    data: response.data,
-                    loading: true
-                })
-            }
-        } catch (error) {
-            console.log(error);
-        }
-    }
 
     // global search
 
@@ -462,8 +428,7 @@ const GlobalProvider = ({ children }) => {
 
         GetBestBrandsSlider,
         bestBrandsSlider,
-        GetInterested,
-        interestedData,
+
         GetFoodCategory,
         foodCategoryData,
         searchInputValueFood,
@@ -507,8 +472,8 @@ const GlobalProvider = ({ children }) => {
         careerData,
 
         lang,
-        giftCardHomePageData,
-        GetHomePageGiftCardData,
+
+
         GetFirstOutletMallData,
         firstMallData,
         GlobalSearchData,
