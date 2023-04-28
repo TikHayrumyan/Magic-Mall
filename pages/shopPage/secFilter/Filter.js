@@ -1,13 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
-import styles from "../../../styles/sass/pages/shopPage/secFilter/filter.module.scss"
-import Select from "./Selectors/Select"
+// import styles from "../../../styles/sass/pages/shopPage/secFilter/filter.module.scss"
+// import Select from "./Selectors/Select"
 import CardSubscribe from "../../homePage/secCardSubscribe/CardSubscribe"
 
-import Link from "next/link"
-import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
-import { translate } from "../../../translations"
-import { useEffect, useState } from "react"
-import InfiniteScroll from 'react-infinite-scroll-component';
+// import Link from "next/link"
+// import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
+// import { translate } from "../../../translations"
+// import { useEffect, useState } from "react"
+// import InfiniteScroll from 'react-infinite-scroll-component';
 
 const SecFilter = () => {
     const [initialCount, SetInitialCount] = useState(16)
@@ -21,6 +21,7 @@ const SecFilter = () => {
             SetWaitData(true)
         }, 10000);
     }, [SetWaitData, searchResult.loading])
+
     return (
         <div className={styles.filter}>
             <div className={styles.container}>
