@@ -1,5 +1,5 @@
-/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable @next/next/no-img-element */
+
 import styles from "../../../styles/sass/pages/shopSinglePage/singleShop/singleShop.module.scss"
 import Link from "next/link"
 

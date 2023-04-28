@@ -22,7 +22,7 @@ const SliderBestBrands = () => {
     const [forLanguage,SetForLanguage] = useState(lang)
     useEffect(() => {
         GetBestBrandsSlider()
-    },[GetBestBrandsSlider])
+    },[])
     useEffect(() => {
         // console.log(HOST_API_IMG+bestBrandsSlider.data[1].secondImage,"asas");
     },[bestBrandsSlider.loading])

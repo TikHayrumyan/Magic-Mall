@@ -13,7 +13,7 @@ const FirstOutletMall = () => {
 
     useEffect(() => {
         GetFirstOutletMallData()
-    },[GetFirstOutletMallData])
+    },[])
     useEffect(() => {
         
     },[firstMallData.loading])

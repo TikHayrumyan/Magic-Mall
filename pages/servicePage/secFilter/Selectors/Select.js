@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-/* eslint-disable react-hooks/exhaustive-deps */
 import styles from "../../../../styles/sass/pages/servicePage/secFilter/secSelect/select.module.scss"
 
 import Image from "next/image"

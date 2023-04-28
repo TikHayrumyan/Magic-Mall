@@ -43,7 +43,7 @@ const NewsSlider = () =>{
 
     useEffect(() => {
         GetSpecialOffersSliderData()
-    },[GetSpecialOffersSliderData])
+    },[])
     useEffect(() => {
         
     },[specialOffersSliderData.loading])

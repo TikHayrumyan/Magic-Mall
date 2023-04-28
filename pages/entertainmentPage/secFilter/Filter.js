@@ -25,7 +25,7 @@ const Filter = () => {
         setTimeout(() => {
             SetWaitData(true)
         }, 7000);
-    }, [SetWaitData, entertainmentData.loading])
+    }, [entertainmentData.loading])
 
     return (
         <div className={styles.filter}>

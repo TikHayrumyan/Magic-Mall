@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../styles/sass/pages/specialOffersPage/secMain/secMain.module.scss"
 import Image from "next/image"
 import {useGlobalProvider} from "../../components/Providers/GlobalProvider"
@@ -12,7 +13,7 @@ const SecMain = () => {
             <div className={styles.container}>
                 <div className={styles.background} style={{backgroundImage:`url(/img/specialOffersPage/secMain/background.jpeg)`}}><div className={styles.gradientt}></div>
                     <div className={styles.patternAndTitle}>
-                        <div className={styles.pattern}><Image alt="pattern" src="/img/specialOffersPage/secMain/pattern.svg" /></div>
+                        <div className={styles.pattern}><img alt="pattern" src="/img/specialOffersPage/secMain/pattern.svg" /></div>
                         <div className={styles.title}>{translate.headerMenuSpecialOffers[lang]}</div>
                     </div>
                 </div>

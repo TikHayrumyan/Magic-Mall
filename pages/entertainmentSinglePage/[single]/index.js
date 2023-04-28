@@ -24,28 +24,27 @@ const SecEntertainment = () =>{
     })
 
     useEffect(() => {
-        const GetSingleData = async(params) => {
-            try {
-                const response = await axios({
-                    url: HOST_API+`entertianment/${params}`,
-                    method:"GET"
-                })
-                console.log(response,"datanaaa");
-                if(Object.keys(response.data).length && response.status == 200){
-                    SetActiveSinglePage({
-                        data:response.data,
-                        loading:true
-                    })
-                }
-            } catch (error) {
-                console.log(error);
-            }
-        
-        }
         GetSingleData(single)
-    },[HOST_API, single])
+    },[single])
 
-
+    const GetSingleData = async(params) => {
+        try {
+            const response = await axios({
+                url: HOST_API+`entertianment/${params}`,
+                method:"GET"
+            })
+            console.log(response,"datanaaa");
+            if(Object.keys(response.data).length && response.status == 200){
+                SetActiveSinglePage({
+                    data:response.data,
+                    loading:true
+                })
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    
+    }
 
     return(
         <>

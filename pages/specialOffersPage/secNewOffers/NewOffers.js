@@ -44,7 +44,7 @@ const NewOffers = () => {
 
         useEffect(() => {
             GetSpecialOffersData()   
-        },[GetSpecialOffersData])
+        },[])
 
         useEffect(() => {
             

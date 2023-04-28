@@ -20,7 +20,7 @@ const SecFilter = () => {
         setTimeout(() => {
             SetWaitData(true)
         }, 7000);
-      },[SetWaitData, searchFoodResult.loading])
+      },[searchFoodResult.loading])
 
     
     return(

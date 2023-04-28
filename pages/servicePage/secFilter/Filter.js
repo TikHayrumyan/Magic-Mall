@@ -24,7 +24,7 @@ const SecFilter = () => {
         setTimeout(() => {
             SetWaitData(true)
         }, 7000);
-      },[SetWaitData, servicesData.loading])
+      },[servicesData.loading])
     return(
         <div className={styles.filter}>
             <div className={styles.container}>

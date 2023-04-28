@@ -25,7 +25,7 @@ const SpecialOffer = ({ SpecialOffer, loading }) => {
 
     useEffect(() => {
         GetSpecialOffersData()
-    }, [GetSpecialOffersData])
+    }, [])
 
     useEffect(() => {
 

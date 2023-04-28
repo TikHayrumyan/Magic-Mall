@@ -33,7 +33,7 @@ const Career = () => {
 
     useEffect(() => {
         GetCareerPageData()
-    },[GetCareerPageData])
+    },[])
 
     useEffect(() => {
 

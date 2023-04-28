@@ -1,5 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
-/* eslint-disable react-hooks/exhaustive-deps */
+
 import styles from "../../styles/sass/pages/shopPage/secFilter/secSelect/select.module.scss"
 
 import { useEffect, useState } from "react"

@@ -20,51 +20,8 @@ const Select = () => {
     })
 
     useEffect(() => {
-        const searchData = async(floor,search)=> {
-            let searchForKeys = new Object()
-            if(floor != null && floor != `${translate.ShopPageAllFloors[lang]}`){
-                console.log(floor,"kkkkk");
-                searchForKeys.floor = floor
-                SetInitialData({...initialData,floor:floor})
-            }else if(initialData.floor != null && floor == null && floor != `${translate.ShopPageAllFloors[lang]}`){
-                searchForKeys.floor = initialData.floor
-            }else{
-                SetInitialData({
-                    floor:null,
-                    search:null
-                })
-            }
-            if(search!=null){
-                SetInitialData({...initialData,search:search});
-                searchForKeys.search=`${search}`;
-            }
-            try {
-                const response = await axios({
-                    url:HOST_API + "entertianment",
-                    method: "POST",
-                    headers: {
-                        'content-type': 'application/json',
-                      },
-                      data:JSON.stringify(searchForKeys)
-                });
-                console.log(response);
-                if(response.data.length && response.status == 200){
-                    SetEntertainmentData({
-                        data: response.data,
-                        loading: true
-                    })
-                }else if(response.data.length == 0 && response.status == 200){
-                    SetEntertainmentData({
-                        data: [],
-                        loading: true
-                    })
-                }
-            } catch (error) {
-                console.log(error);
-            }
-        }
         searchData()
-    },[HOST_API, SetEntertainmentData, initialData, lang])
+    },[])
     
     useEffect(() => {
 
@@ -79,7 +36,49 @@ const Select = () => {
         SetFloorModal(false)
     }
 
-    
+    const searchData = async(floor,search)=> {
+        let searchForKeys = new Object()
+        if(floor != null && floor != `${translate.ShopPageAllFloors[lang]}`){
+            console.log(floor,"kkkkk");
+            searchForKeys.floor = floor
+            SetInitialData({...initialData,floor:floor})
+        }else if(initialData.floor != null && floor == null && floor != `${translate.ShopPageAllFloors[lang]}`){
+            searchForKeys.floor = initialData.floor
+        }else{
+            SetInitialData({
+                floor:null,
+                search:null
+            })
+        }
+        if(search!=null){
+            SetInitialData({...initialData,search:search});
+            searchForKeys.search=`${search}`;
+        }
+        try {
+            const response = await axios({
+                url:HOST_API + "entertianment",
+                method: "POST",
+                headers: {
+                    'content-type': 'application/json',
+                  },
+                  data:JSON.stringify(searchForKeys)
+            });
+            console.log(response);
+            if(response.data.length && response.status == 200){
+                SetEntertainmentData({
+                    data: response.data,
+                    loading: true
+                })
+            }else if(response.data.length == 0 && response.status == 200){
+                SetEntertainmentData({
+                    data: [],
+                    loading: true
+                })
+            }
+        } catch (error) {
+            console.log(error);
+        }
+    }
 
     
     const searchByFloor = (floor) => {

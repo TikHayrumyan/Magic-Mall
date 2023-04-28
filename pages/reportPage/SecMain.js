@@ -12,7 +12,7 @@ const SecMain = () => {
 
     useEffect(() => {
         GetFinancialReportData()
-    }, [GetFinancialReportData])
+    }, [])
     useEffect(() => {
 
     }, [financialReportsData.loading])

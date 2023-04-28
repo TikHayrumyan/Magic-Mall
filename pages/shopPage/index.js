@@ -25,7 +25,7 @@ const ShopPage = () => {
         setTimeout(() => {
             SetWaitData(true)
         }, 10000);
-    }, [SetWaitData, searchResult.loading])
+    }, [searchResult.loading])
 
 
 

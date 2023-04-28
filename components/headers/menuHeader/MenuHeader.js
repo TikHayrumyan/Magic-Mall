@@ -1,5 +1,4 @@
 /* eslint-disable @next/next/no-img-element */
-/* eslint-disable react-hooks/exhaustive-deps */
 import styles from "../../../styles/sass/pages/menuHeader/menuHeader.module.scss"
 import Link from "next/link"
 import { useGlobalProvider } from "../../Providers/GlobalProvider";
@@ -49,8 +48,8 @@ const MenuHeader = () => {
     const changeLanguage = e => router.push(router.asPath, router.asPath, { locale: e })
 
     useEffect(() => {
-        // GetCategory()
-        // GetFoodCategory()
+        GetCategory()
+        GetFoodCategory()
     }, [])
 
     useEffect(() => {
