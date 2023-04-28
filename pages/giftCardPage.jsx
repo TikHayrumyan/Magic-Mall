@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
-import CardSubscribe from "../homePage/secCardSubscribe/CardSubscribe"
-import stylesSecGiftCard from "../../styles/sass/pages/GiftCardPage/secGiftCard/giftCard.module.scss"
-import stylesSecQuestion from "../../styles/sass/pages/GiftCardPage/secQuestion/secQuestion.module.scss"
-import { translate } from "../../translations"
-import { useGlobalProvider } from "../../components/Providers/GlobalProvider"
+import CardSubscribe from "./homePage/secCardSubscribe/CardSubscribe"
+import stylesSecGiftCard from "../styles/sass/pages/GiftCardPage/secGiftCard/giftCard.module.scss"
+import stylesSecQuestion from "../styles/sass/pages/GiftCardPage/secQuestion/secQuestion.module.scss"
+import { translate } from "../translations"
+import { useGlobalProvider } from "../components/Providers/GlobalProvider"
 import { useState } from "react"
 
 
