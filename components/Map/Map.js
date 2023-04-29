@@ -60,7 +60,7 @@ const Map = ({ data, changeFloor }) => {
                 <img alt="door" src="/img/map/map/door.svg" />
               </div>
               <div className={styles.stairs}>
-                <img alt="stairs" src="/img/map/map/stairs.svg" />
+                <img alt="stairs" src="/img/map/map/Stairs.svg" />
               </div>
             </div>
             <div className={styles.mapDesign}>
@@ -221,7 +221,7 @@ const Map = ({ data, changeFloor }) => {
                 <img alt="doors" src="/img/map/map/door.svg" />
               </div>
               <div className={styles.stairs}>
-                <img alt="stairs" src="stairs" />
+                <img alt="stairs" src="/img/map/map/Stairs.svg" />
               </div>
             </div>
             <div className={styles.mapSecondDesign}>

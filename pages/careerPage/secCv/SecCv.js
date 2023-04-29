@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/careerPage/secCv/secCv.module.scss"
 import Image from "next/image"
 import ApplicationForm from "../secCareer/ApplicationForm"
@@ -32,7 +33,7 @@ const SecCv = props => {
     return(<div className={styles.forDarkShadow}>
         <div className={styles.SecCv}> 
             <div className={styles.container}>
-                <div className={styles.pattern}><Image alt="pattern" src="/img/careerPage/secCv/pattern.svg"/></div>
+                <div className={styles.pattern}><img alt="pattern" src="/img/careerPage/secCv/pattern.svg"/></div>
                 <div>
                     <div className={styles.descrip}>{translate.SecCVdescription[lang]}</div>
                     <button className={styles.apply} onClick={() => openPopUp({position: `${translate.applicationFormPosition[lang]}`})}>{translate.CareerPageApply[lang]}</button>

@@ -65,7 +65,7 @@ const MainHeader = () => {
                         type="text"
                         value={SearchValue}
                         onChange={(e) => SetSearchValue(e.target.value)} />
-                    <div className={styles.search}><Image alt="search" src="/img/icons/search.svg" width={50} height={50} onClick={openInput} /></div>
+                    <div className={styles.search}><Image alt="search" src="/img/icons/Search.svg" width={50} height={50} onClick={openInput} /></div>
                 </form>
                 <div className={styles.languageBlock}>
                     <div className={styles.language}>

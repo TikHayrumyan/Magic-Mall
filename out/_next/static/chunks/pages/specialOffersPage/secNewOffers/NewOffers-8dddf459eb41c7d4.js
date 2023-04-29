@@ -1,0 +1,1 @@
+(self.webpackChunk_N_E=self.webpackChunk_N_E||[]).push([[2379],{7001:function(e,n,f){(window.__NEXT_P=window.__NEXT_P||[]).push(["/specialOffersPage/secNewOffers/NewOffers",function(){return f(7970)}])}},function(e){e.O(0,[2021,9774,2888,179],(function(){return n=7001,e(e.s=n);var n}));var n=e.O();_N_E=n}]);

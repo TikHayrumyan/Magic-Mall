@@ -1,9 +1,9 @@
 /* eslint-disable @next/next/no-img-element */
 import styles from "../../../styles/sass/pages/howToGetToMall/secBus/secBus.module.scss"
 
-import arrow from "../../../public/img/howToGetToMall/secBus/arrow.svg"
-import marker from "../../../public/img/howToGetToMall/secBus/marker.svg"
-import location from "../../../public/img/howToGetToMall/secBus/location.svg"
+const arrow = "/img/howToGetToMall/secBus/arrow.svg"
+const marker = "/img/howToGetToMall/secBus/marker.svg"
+const location = "/img/howToGetToMall/secBus/location.svg"
 import { useState } from "react"
 
 import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"

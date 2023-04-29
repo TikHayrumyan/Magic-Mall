@@ -57,6 +57,8 @@ const nextConfig = {
         defaultLocale: 'am',
         localeDetection: false
     },
+    // output: 'export',
+    // distDir: 'dist',
 
 
 

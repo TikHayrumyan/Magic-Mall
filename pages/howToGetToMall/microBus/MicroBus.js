@@ -2,9 +2,9 @@
 import styles from "../../../styles/sass/pages/howToGetToMall/microBus/microBus.module.scss"
 
 
-import arrow from "../../../public/img/howToGetToMall/microBus/arrow.svg"
-import marker from "../../../public/img/howToGetToMall/microBus/marker.svg"
-import location from "../../../public/img/howToGetToMall/microBus/location.svg"
+const arrow = "/img/howToGetToMall/microBus/arrow.svg"
+const marker = "/img/howToGetToMall/microBus/marker.svg"
+const location = "/img/howToGetToMall/microBus/location.svg"
 
 import GoogleMap from "./Map"
 
