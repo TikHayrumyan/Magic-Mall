@@ -159,14 +159,15 @@ const SecNews = () => {
                                                     <div className={styles.descriptionBlock}>
                                                         <div className={styles.description}>{lang == "en" ? description : lang == "ru" ? description_ru : description_am}</div>
                                                     </div>
-                                                    <div><Image className={styles.imgMobile} alt="img" src={"https://apimall.weflex.am" + thumbnail} width={764} height={589} /></div>
+                                                    <div><img className={styles.imgMobile} alt="img" src={"https://apimall.weflex.am" + thumbnail}  /></div>
                                                     <div className={styles.btnBlock}>
                                                         <button className={styles.button}>{translate.buttonSeeMore[lang]}</button>
-                                                        <div className={styles.arrow}><img alt="arrow" src="/img/newsPage/secNews/arrow.svg" /></div>
+                                                        <div className={styles.arrow}>
+                                                            <img alt="arrow" src="/img/newsPage/secNews/arrow.svg" /></div>
                                                         <div className={styles.patternMobile}><img alt="pattern" src="/img/newsPage/secNews/pattern.svg" /></div>
                                                     </div>
                                                 </div>
-                                                <div><Image className={styles.img} alt="img" src={"https://apimall.weflex.am" + thumbnail} width={764} height={589} /></div>
+                                                <div><img className={styles.img} alt="img" src={"https://apimall.weflex.am" + thumbnail}  /></div>
                                             </div>
                                         </div>
                                     </a>

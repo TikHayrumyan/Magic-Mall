@@ -1,229 +1,219 @@
-@function get-vw($size, $width){
-    $vw-context: $width * 0.01 * 1px;
-    @return $size / $vw-context * 1vw;
-    @return $size;
+@function get-vw($size, $width) {
+  $vw-context: $width * 0.01 * 1px;
+  @return $size / $vw-context * 1vw;
+  @return $size;
 }
 
+.GiftCard {
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  margin-top: 7vw;
+  margin-bottom: 10vw;
+}
 
-.GiftCard{
-    width: 100vw;
+.container {
+  width: 90.6vw;
+}
+.title {
+  font-family: "cosi-arm", "montserrat-ru-semibold";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3.125vw;
+  line-height: 140%;
+  text-transform: uppercase;
+  color: #224660;
+  display: flex;
+  gap: 2vw;
+  .titleCard {
+    font-family: "cosi-arm", "montserrat-ru-semibold";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 3.125vw;
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #224660;
+  }
+}
+.titleForGift {
+  font-family: "arm-regular", "montserrat-ru-regular";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.0416666666666667vw;
+  line-height: 140%;
+  color: #224660;
+  margin-top: 1vw;
+}
+
+.giftCardBlock {
+  display: flex;
+  justify-content: space-between;
+  gap: 8vw;
+  .descripBlock {
+    width: 41.666666666666664vw;
+    margin-top: 5vw;
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.171875vw;
+    line-height: 160%;
+    color: #224660;
+  }
+  .ImgBlock {
+    display: flex;
+    position: relative;
+    height: 27.473958333333332vw;
+    width: 39.84375vw;
+
+
+    .bag {
+      position: absolute;
+      top: 0vw;
+      left: 0vw;
+      width: 33.854166666666664vw;
+      height: 25.455729166666668vw;
+
+    }
+    .card {
+      position: absolute;
+
+      bottom: 0vw;
+      right: 0vw;
+      width: 18.5546875vw;
+      height: 12.369791666666666vw;
+      // box-shadow: 0px 20px 30px rgba(10, 10, 10, 0.2);
+      .img {
+        border-radius: 3px;
+        box-shadow: 0px 20px 30px rgba(10, 10, 10, 0.2);
+      }
+    }
+  }
+}
+.buttonBlock {
+  width: 90.6;
+  display: flex;
+  justify-content: center;
+  margin-top: 10vw;
+  .btn {
+    background: #a6cce5;
+    border-radius: 26.041666666666668vw;
+    border: none;
+    padding: 0.78125vw 3.90625vw;
+    font-family: "arm-bold", "montserrat-ru-bold";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.9114583333333334vw;
+    line-height: 1.3020833333333333vw;
+    display: flex;
+    align-items: center;
+    color: #224660;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .GiftCard {
+    width: get-vw(414px, 414);
     display: flex;
     justify-content: center;
     margin-top: 7vw;
     margin-bottom: 10vw;
-}
+  }
 
-.container{
-    width: 90.6vw;
-}
-.title{
-        font-family: 'cosi-arm','montserrat-ru-semibold';
-        font-style: normal;
-        font-weight: 500;
-        font-size: 3.125vw;
-        line-height: 140%;
-        text-transform: uppercase;
-        color: #224660;
-        display: flex;
-        gap: 2vw;
-        .titleCard{
-            font-family: 'cosi-arm','montserrat-ru-semibold';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 3.125vw;
-            line-height: 140%;
-            text-transform: uppercase;
-            color: #224660;
-        }
+  .container {
+    width: get-vw(365px, 414);
+  }
+  .title {
+    font-family: "cosi-arm", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 500;
+    font-size: get-vw(31px, 414);
+    line-height: 140%;
+    text-transform: uppercase;
+    color: #224660;
+    display: flex;
+    gap: 2vw;
+    align-items: center;
+    .titleCard {
+      font-family: "cosi-arm", "montserrat-ru-regular";
+      font-style: normal;
+      font-weight: 500;
+      font-size: get-vw(31px, 414);
+      line-height: 140%;
+      text-transform: uppercase;
+      color: #224660;
     }
-.titleForGift{
-        font-family: 'arm-regular','montserrat-ru-regular';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.0416666666666667vw;
-        line-height: 140%;
-        color: #224660;
-        margin-top: 1vw;
-    }
+  }
+  .titleForGift {
+    font-family: "arm-regular", "montserrat-ru-regular";
+    font-style: normal;
+    font-weight: 400;
+    font-size: get-vw(16px, 414);
+    line-height: get-vw(24px, 414);
+    color: #224660;
+    margin-top: 3vw;
+    width: get-vw(340px, 414);
+  }
 
-.giftCardBlock{
-    
+  .giftCardBlock {
     display: flex;
     justify-content: space-between;
-    gap: 8vw;
-    .descripBlock{
-        width: 41.666666666666664vw;
-        margin-top: 5vw;
-        font-family: 'arm-regular','montserrat-ru-regular';
-        font-style: normal;
-        font-weight: 400;
-        font-size: 1.171875vw;
-        line-height: 160%;
-        color: #224660;
-    
+    gap: 0vw;
+    flex-direction: column-reverse;
+    .descripBlock {
+      width: get-vw(365px, 414);
+      margin-top: 5vw;
+      font-family: "arm-regular", "montserrat-ru-regular";
+      font-style: normal;
+      font-weight: 400;
+      font-size: get-vw(16px, 414);
+      line-height: get-vw(24px, 414);
+      color: #224660;
     }
-    .ImgBlock{
-        display: flex;
-        position: relative;
-        height: 27.473958333333332vw;
-        width: 39.84375vw;
+    .ImgBlock {
+      display: flex;
+      position: relative;
+      height: get-vw(340px, 414);
+      width: get-vw(365px, 414);
 
-        .bag{
-            position: absolute;
-            top: 0vw;
-            left: 0vw;
-            width: 33.854166666666664vw;
-            height: 25.455729166666668vw;
-        }
-        .card{
-            position: absolute;
-            bottom: 0vw;
-            right: 0vw;
-            width: 18.5546875vw;
-            height: 12.369791666666666vw;
-            // box-shadow: 0px 20px 30px rgba(10, 10, 10, 0.2);
-            img{
-                border-radius: 3px;
-            box-shadow: 0px 20px 30px rgba(10, 10, 10, 0.2);
-                
-            }
-
-        }
+      .bag {
+        position: absolute;
+        top: 0vw;
+        left: 0vw;
+        width: get-vw(365px, 414);
+        height: get-vw(250px, 414);
+      }
+      .card {
+        position: absolute;
+        bottom: 0vw;
+        right: 0vw;
+        width: get-vw(150px, 414);
+        height: get-vw(150px, 414);
+      }
     }
-}
-.buttonBlock{
-    width: 90.6;
-    display: flex;
-    justify-content: center;
+  }
+  .buttonBlock {
+    width: get-vw(365px, 414);
+    height: get-vw(48px, 414);
     margin-top: 10vw;
-    .btn{
-        background: #A6CCE5;
-        border-radius: 26.041666666666668vw;
-        border: none;
-        padding: 0.78125vw 3.90625vw;
-        font-family: 'arm-bold','montserrat-ru-bold';
-        font-style: normal;
-        font-weight: 700;
-        font-size: 0.9114583333333334vw;
-        line-height: 1.3020833333333333vw;
-        display: flex;
-        align-items: center;
-        color: #224660;
-        cursor: pointer;
-
+    .btn {
+      display: flex;
+      justify-content: center;
+      background: #a6cce5;
+      border-radius: 26.041666666666668vw;
+      border: none;
+      padding: 0.78125vw 3.90625vw;
+      font-family: "arm-bold", "montserrat-ru-bold";
+      font-style: normal;
+      font-weight: 700;
+      font-size: get-vw(14px, 414);
+      line-height: get-vw(19px, 414);
+      display: flex;
+      align-items: center;
+      color: #224660;
+      cursor: pointer;
+      width: get-vw(365px, 414);
+      height: get-vw(48px, 414);
     }
-}
-
-@media only screen and (max-width:600px){
-
-        
-    .GiftCard{
-        width: get-vw(414px,414 );
-        display: flex;
-        justify-content: center;
-        margin-top: 7vw;
-        margin-bottom: 10vw;
-    }
-
-    .container{
-        width: get-vw(365px,414 );
-    }
-    .title{
-            font-family: 'cosi-arm','montserrat-ru-regular';
-            font-style: normal;
-            font-weight: 500;
-            font-size: get-vw(31px,414 );
-            line-height: 140%;
-            text-transform: uppercase;
-            color: #224660;
-            display: flex;
-            gap: 2vw;
-            align-items: center;
-            .titleCard{
-                font-family: 'cosi-arm','montserrat-ru-regular';
-                font-style: normal;
-                font-weight: 500;
-                font-size: get-vw(31px,414 );
-                line-height: 140%;
-                text-transform: uppercase;
-                color: #224660;
-
-                
-            }
-        }
-    .titleForGift{
-            font-family: 'arm-regular','montserrat-ru-regular';
-            font-style: normal;
-            font-weight: 400;
-            font-size: get-vw(16px,414 );
-            line-height: get-vw(24px,414 );
-            color: #224660;
-            margin-top: 3vw;
-            width: get-vw(340px,414 );
-        }
-
-    .giftCardBlock{
-        
-        display: flex;
-        justify-content: space-between;
-        gap: 0vw;
-        flex-direction: column-reverse;
-        .descripBlock{
-            width: get-vw(365px,414 );
-            margin-top: 5vw;
-            font-family: 'arm-regular','montserrat-ru-regular';
-            font-style: normal;
-            font-weight: 400;
-            font-size: get-vw(16px,414 );
-            line-height: get-vw(24px,414 );
-            color: #224660;
-        
-        }
-        .ImgBlock{
-            display: flex;
-            position: relative;
-            height: get-vw(340px,414 );
-            width: get-vw(365px,414 );
-
-            .bag{
-                position: absolute;
-                top: 0vw;
-                left: 0vw;
-                width: get-vw(365px,414 );
-                height: get-vw(250px,414 );
-            }
-            .card{
-                position: absolute;
-                bottom: 0vw;
-                right: 0vw;
-                width: get-vw(150px,414 );
-                height: get-vw(150px,414 );
-
-            }
-        }
-    }
-    .buttonBlock{
-        width: get-vw(365px,414 );
-        height: get-vw(48px,414 );
-        margin-top: 10vw;
-        .btn{
-            display: flex;
-            justify-content: center;
-            background: #A6CCE5;
-            border-radius: 26.041666666666668vw;
-            border: none;
-            padding: 0.78125vw 3.90625vw;
-            font-family: 'arm-bold','montserrat-ru-bold';
-            font-style: normal;
-            font-weight: 700;
-            font-size: get-vw(14px,414 );
-            line-height: get-vw(19px,414 );
-            display: flex;
-            align-items: center;
-            color: #224660;
-            cursor: pointer;
-            width: get-vw(365px,414 );
-            height: get-vw(48px,414 );
-        }
-    }
+  }
 }
