@@ -19,6 +19,7 @@ const MapPage = ({data}) => {
             <SecMain />
             <Select data={data} setFloor={setFloor} changeFloor={changeFloor} floorModal={floorModal} SetFloorModal={SetFloorModal} />
             <Map data={data} changeFloor={changeFloor} />
+            <div style={{marginBottom: "35vw"}}></div>
             <CardSubscribe />
         </div>
     )

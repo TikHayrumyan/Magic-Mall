@@ -3,6 +3,9 @@
 import styles from "../../../styles/sass/pages/shopSinglePage/singleShop/singleShop.module.scss"
 import Link from "next/link"
 
+import Map from "../../../components/Map/Map"
+import Select from "../../../components/Map/Select/Select"
+
 import Image from "next/image"
 
 import HeaderOffer from "../headerOffer/HeaderOffer"
@@ -17,7 +20,15 @@ import { useGlobalProvider } from "../../../components/Providers/GlobalProvider"
 import { translate } from "../../../translations"
 
 
-const SingleShop = () => {
+const SingleShop = ({data}) => {
+    const [floorModal, SetFloorModal] = useState(false)
+    const [changeFloor, SetChangeFloor] = useState(1)
+    const setFloor = (num) => {
+        SetChangeFloor(num == changeFloor ? num : num)
+        SetFloorModal(false)
+    }
+
+
     const parse = require("html-react-parser")
     const { HOST_API, HOST_API_IMG, lang } = useGlobalProvider()
     const router = useRouter()
@@ -100,12 +111,45 @@ const SingleShop = () => {
                     </div>
                 </div>
             </div>}
-            <SecMap />
+            <Select data={data} setFloor={setFloor} changeFloor={changeFloor} floorModal={floorModal} SetFloorModal={SetFloorModal} />
+            <Map data={data} changeFloor={changeFloor} />
+
+            {/* <SecMap /> */}
             {activeSinglePage.loading && <SpecialOffer SpecialOffer={activeSinglePage.data?.specialOffers} loading={activeSinglePage.loading} />}
             {activeSinglePage.loading && <SimilarShop related={activeSinglePage.data?.related} loading={activeSinglePage.loading} />}
             <CardSubscribe />
         </>
     )
+}
+
+
+export async function getStaticPaths() {
+
+
+    return {
+        paths:[],
+        fallback:"blocking"
+    }
+}
+
+
+
+
+export async function getStaticProps() {
+    const mapFetch = await fetch("https://apimall.weflex.am/api/map")
+    const map = await mapFetch.json()
+    console.log('map: ', map);
+    
+
+
+    return {
+        props: {
+            data: {
+                data: map,
+                loading: true
+            }
+        },
+    }
 }
 
 

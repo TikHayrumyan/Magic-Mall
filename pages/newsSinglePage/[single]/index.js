@@ -60,7 +60,7 @@ const SinglePage = () => {
                         <Link href="/newsPage">
                         <a>
                         <div className={styles.forHover}>
-                            <div className={styles.arrow}><Image alt="arrow" src="/img/newsSinglePage/singlePage/Rarrow.svg"/></div>
+                            <div className={styles.arrow}><Image alt="arrow" src="/img/newsSinglePage/singlePage/Rarrow.svg" width={33} height={33}/></div>
                             <div className={styles.goBack}>{translate.buttonBack[lang]}</div>
                         </div>
                         </a>
@@ -68,7 +68,7 @@ const SinglePage = () => {
                     </div>
                     <div className={styles.title}>{lang == "en" ? activeSinglePage.data?.news.title : lang == "ru" ? activeSinglePage.data?.news.title_ru : activeSinglePage.data?.news.title_am}</div>
                     <div className={styles.dateBlock}>
-                        <div><Image alt="calendarIcon" src="/img/newsSinglePage/singlePage/calendarIcon.svg"/></div>
+                        <div><Image alt="calendarIcon" src="/img/newsSinglePage/singlePage/calendarIcon.svg" width={33} height={33}/></div>
                         <div className={styles.date}>{activeSinglePage.data?.news.date}</div>
                     </div>
                     <div className={styles.descrip}>{lang == "en" ? parse(activeSinglePage.data.news.content) : lang == "ru" ? parse(activeSinglePage.data.news.content_ru) : parse(activeSinglePage.data.news.content_am)}</div>
