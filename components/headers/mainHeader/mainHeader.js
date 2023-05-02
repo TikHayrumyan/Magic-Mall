@@ -42,14 +42,20 @@ const MainHeader = () => {
     return (
         <div className={styles.container}>
             <div className={styles.leftContainer}>
-                <div className={styles.iconPhone}><img alt="Phone" src="/img/icons/phoneIcon.svg" /></div>
+                <div className={styles.iconPhone}>
+                    <img alt="Phone" src="/img/icons/phoneIcon.svg" />
+                </div>
                 <div className={styles.numberDiv}><a className={styles.number} href="tel:+374 11 880 888">+374 11 880 888</a></div>
-                <div className={styles.iconOclock}><img alt="O'clock" src="/img/icons/oclock.svg" /></div>
+                <div className={styles.iconOclock}>
+                    <img alt="O'clock" src="/img/icons/oclock.svg" />
+                </div>
                 <div className={styles.oclock}>10:00 - 22:00</div>
             </div>
             <div className={styles.middleContainer}>
                 <Link href="/howToGetToMall">
-                    <div className={styles.locationIcon}><img alt="locationIcon" src="/img/icons/locationIcon.svg" /></div>
+                    <div className={styles.locationIcon}>
+                        <img alt="locationIcon" src="/img/icons/locationIcon.svg" />
+                    </div>
                 </Link>
                 <Link href="/howToGetToMall">
                     <div className={styles.direction}>{translate.mainHeaderHowToGetToMall[lang]}</div>
@@ -65,7 +71,9 @@ const MainHeader = () => {
                         type="text"
                         value={SearchValue}
                         onChange={(e) => SetSearchValue(e.target.value)} />
-                    <div className={styles.search}><Image alt="search" src="/img/icons/Search.svg" width={50} height={50} onClick={openInput} /></div>
+                    <div className={styles.search}>
+                        <Image alt="search" src="/img/icons/Search.svg" width={50} height={50} onClick={openInput} />
+                    </div>
                 </form>
                 <div className={styles.languageBlock}>
                     <div className={styles.language}>

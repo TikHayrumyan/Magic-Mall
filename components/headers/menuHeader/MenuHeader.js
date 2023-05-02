@@ -100,7 +100,7 @@ const MenuHeader = () => {
                 <div className={styles.blockLogo}>
                     <Link href="/">
                         <a>
-                            <Image className={styles.logo} alt="Logo" src="/img/icons/Logo.svg" width={201} height={73}/>
+                            <Image className={styles.logo} alt="Logo" src="/img/icons/Logo.svg" width={201} height={73} />
                         </a>
                     </Link>
                 </div>
@@ -200,7 +200,9 @@ const MenuHeader = () => {
                                     value={SearchValue}
                                     onChange={(e) => SetSearchValue(e.target.value)}
                                 />
-                                <div className={styles.search}><Image alt="search" src="/img/icons/search.svg" width={40} height={40} onClick={SearchInput} /></div>
+                                <div className={styles.search}>
+                                    <Image alt="search" src="/img/icons/Search.svg" width={40} height={40} onClick={SearchInput} />
+                                </div>
                             </div>
                         </div>
                         <ul className={styles.ulMenuMobile} onClick={() => SetToggleMobileMenu(false)}>
