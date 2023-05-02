@@ -312,14 +312,15 @@
                                 .bigPartNew{
                                     width: 38%;
                                     height: 7.15vw;
-                                    background-color: #A6CCE5;
+                                    // background-color: #A6CCE5;
+                                    color: #FFFFFF;
                                     display: flex;
                                     font-family: 'arm-bold';
                                     font-style: normal;
                                     font-weight: 400;
                                     font-size: 0.625vw;
                                     line-height: 160%;
-                                    background-color: #00A652;
+                                    background-color: #224660;
                                     align-items: center;
                                     justify-content: center;
                                     & span{
@@ -439,6 +440,7 @@
                         .AA9{
                             width: 3.5vw;
                             height: 3.5vw;
+                            border-bottom: 1px white solid;
                             background-color: #224660;
                             margin-top: 0.05vw;
                             display: flex;
@@ -488,10 +490,16 @@
                         justify-content: space-between;
                         width: 10.7vw;
                         .AA10left{
-                            width: 3.5vw;
+                            width: 7.1vw;
                             height: 3.5vw;
                             background-color: #224660;
-                            margin-top: 0.05vw;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                            color: #FFFFFF;
+                            font-size: 0.9vw;
+                            // margin-top: 0.05vw;
                         }
                         .AA10bottom{
                             width: 3.5vw;
@@ -500,10 +508,10 @@
                             margin-top: 0.05vw;
                         }
                         .AA12{
-                            width: 3.5vw;
+                            width: 3.55vw;
                             height: 3.5vw;
                             background-color: #224660;
-                            margin-top: 0.05vw;
+                            // margin-top: 0.05vw;
                             display: flex;
                             align-items: center;
                             justify-content: center;

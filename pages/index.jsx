@@ -164,7 +164,7 @@ const HomePage = ({ mainSliderData, brandsSliderData, interestedData, giftCardHo
       <div className={stylesBestBrands.bestBrands}>
         <div className={stylesBestBrands.container}>
           <div className={stylesBestBrands.descAndPatter}>
-            <div className={stylesBestBrands.pattern}><img alt="pattern" src="/img/homePage/sectionBestBrands/pattern.svg" /></div>
+            <div className={stylesBestBrands.pattern}><Image alt="pattern" src="/img/homePage/sectionBestBrands/pattern.svg" width={170} height={170}/></div>
             <div className={stylesBestBrands.descBlock}>
               <div className={stylesBestBrands.descBlockTitle}>{translate.homeBestBrandsTitle[lang]}</div>
               <p>{translate.homeBestBrandsDescription[lang]}</p>
@@ -172,7 +172,7 @@ const HomePage = ({ mainSliderData, brandsSliderData, interestedData, giftCardHo
           </div>
           <div className={stylesBestBrands.descAndPatterMobile}>
             <div className={stylesBestBrands.patternAndTitleMobile}>
-              <div className={stylesBestBrands.patternMobile}><img alt="pattern" src="/img/homePage/sectionBestBrands/pattern.svg" /></div>
+              <div className={stylesBestBrands.patternMobile}><Image alt="pattern" src="/img/homePage/sectionBestBrands/pattern.svg" width={170} height={170} /></div>
               <div className={stylesBestBrands.mobileTitle}>{translate.homeBestBrandsTitle[lang]}</div>
             </div>
             <p className={stylesBestBrands.descBlockMobile}>{translate.homeBestBrandsDescription[lang]}</p>
@@ -231,9 +231,11 @@ const HomePage = ({ mainSliderData, brandsSliderData, interestedData, giftCardHo
       <div className={stylesBlog.blog}>
         <div className={stylesBlog.container}>
           <div className={stylesBlog.titleBlock}>
-            <div className={stylesBlog.patternTitle}><img alt='pattern' src="/img/homePage/secBlog/firstPattern.svg" /></div>
+            <div className={stylesBlog.patternTitle}>
+              <Image alt='pattern' src="/img/homePage/secBlog/firstPattern.svg" width={170} height={170} />
+            </div>
             <div className={stylesBlog.title}>{translate.BlogAndNews[lang]}</div>
-            <div className={stylesBlog.backPattern}><img alt='pattern' src="/img/homePage/secBlog/secondPattern.png" height={900} /></div>
+            <div className={stylesBlog.backPattern}><Image alt='pattern' src="/img/homePage/secBlog/secondPattern.png" height={900} width={737} /></div>
           </div>
           <BlogSLider />
         </div>
@@ -253,7 +255,7 @@ const HomePage = ({ mainSliderData, brandsSliderData, interestedData, giftCardHo
           <div className={stylesGiftCard.aboutBlock}>
             <div className={stylesGiftCard.titleBlock}>
               <h2 className={stylesGiftCard.title}>{translate.headerMenuGiftCard[lang]}</h2>
-              <div className={stylesGiftCard.secondPattern}><img alt="pattern" src="/img/homePage/secBlog/firstPattern.svg" /></div>
+              <div className={stylesGiftCard.secondPattern}><Image alt="pattern" src="/img/homePage/secBlog/firstPattern.svg" width={170} height={170} /></div>
             </div>
             {<div className={stylesGiftCard.descrip}>{parse(lang == "en" ? shorten(giftCardHomePageData.data.content, 425) : lang == "am" ? shorten(giftCardHomePageData.data.content_am, 390) : shorten(giftCardHomePageData.data.content_ru, 390))}</div>}
             <Link href="/giftCardPage">
@@ -271,7 +273,7 @@ const HomePage = ({ mainSliderData, brandsSliderData, interestedData, giftCardHo
       <div className={stylesNews.news}>
         <div className={stylesNews.container}>
           <div className={stylesNews.titleBlock}>
-            <div className={stylesNews.pattern}><img alt="pattern" src="/img/homePage/secBlog/firstPattern.svg" /></div>
+            <div className={stylesNews.pattern}><Image alt="pattern" src="/img/homePage/secBlog/firstPattern.svg" width={170} height={170} /></div>
             <div className={stylesNews.title}>{translate.headerMenuSpecialOffers[lang]}</div>
           </div>
           <NewsSlider />
