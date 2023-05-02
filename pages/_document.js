@@ -8,7 +8,7 @@ const Document = () => {
         <Html lang='en'>
             <Head />
     
-            <body>
+            <body style={{overflowX: 'hidden'}}>
                 <Main />
                 
                 <NextScript />   

@@ -269,6 +269,7 @@ const HomePage = ({ mainSliderData, brandsSliderData, interestedData, giftCardHo
         </div>
       </div>}
       {/* <FirstOutletMall/> */}
+      
       {/* <News /> */}
       <div className={stylesNews.news}>
         <div className={stylesNews.container}>
