@@ -44,7 +44,6 @@ const SecEntertainment = ({ data }) => {
                 url: HOST_API + `entertianment/${params}`,
                 method: "GET"
             })
-            console.log(response, "datanaaa");
             if (Object.keys(response.data).length && response.status == 200) {
                 SetActiveSinglePage({
                     data: response.data,
@@ -125,7 +124,6 @@ export async function getStaticPaths() {
 export async function getStaticProps() {
     const mapFetch = await fetch("https://apimall.weflex.am/api/map")
     const map = await mapFetch.json()
-    console.log('map: ', map);
 
 
 

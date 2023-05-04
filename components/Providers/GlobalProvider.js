@@ -207,7 +207,6 @@ const GlobalProvider = ({ children }) => {
                 },
                 // data:JSON.stringify({initialOffset : 0})
             })
-            console.log(response, "response");
             if (response.data.blog.length && response.status == 200) {
                 SetBlogPageData({
                     data: response.data.blog,
@@ -234,7 +233,6 @@ const GlobalProvider = ({ children }) => {
                 url: HOST_API + "faq",
                 method: "GET"
             })
-            console.log(response, "responseFaq");
             if (response.data.length && response.status == 200) {
                 SetFAQdata({
                     data: response.data,
@@ -261,7 +259,6 @@ const GlobalProvider = ({ children }) => {
                 },
                 //   data:JSON.stringify({initialOffset : 0})
             })
-            console.log(response, "SpecialOffersData");
             if (response.data.so.length && response.status == 200) {
                 SetSpecialOffersData({
                     data: response.data.so,
@@ -289,7 +286,6 @@ const GlobalProvider = ({ children }) => {
                 url: HOST_API + "home/specialOffers",
                 method: "GET"
             })
-            console.log(response, "specialOFferSLider");
             if (response.data.length && response.status == 200) {
                 SetSpecialOffersSliderData({
                     data: response.data,
@@ -309,7 +305,6 @@ const GlobalProvider = ({ children }) => {
                 url: HOST_API + "home/firstMall",
                 method: "GET"
             })
-            console.log(response, "firstOutletMall");
             if (response.data && response.status == 200) {
                 SetFirstMallData({
                     data: response.data,
@@ -329,7 +324,6 @@ const GlobalProvider = ({ children }) => {
                 url: HOST_API + "finance",
                 method: "GET"
             })
-            console.log(response, "finance");
             if (response.data.length && response.status == 200) {
                 SetFinancialReportsData({
                     data: response.data,
@@ -387,7 +381,6 @@ const GlobalProvider = ({ children }) => {
                 },
                 data: JSON.stringify({ search: word })
             })
-            console.log(response, "GlobalSearchData");
             if (response.data && response.status == 200) {
                 let filterResult = Object.values(response.data).filter((element) => element.length)
 

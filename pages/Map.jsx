@@ -30,7 +30,6 @@ export async function getStaticProps() {
 
     const mapFetch = await fetch("https://apimall.weflex.am/api/map")
     const map = await mapFetch.json()
-    console.log('map: ', map);
     
 
 

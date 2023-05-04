@@ -82,7 +82,6 @@ const Select = () => {
                   },
                   data:JSON.stringify(searchForKeys)
             });
-            console.log(response);
             if(response.data.length && response.status == 200){
                 SetServicesData({
                     data: response.data,

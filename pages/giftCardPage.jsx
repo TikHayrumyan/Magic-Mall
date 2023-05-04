@@ -77,7 +77,6 @@ const GiftCardPage = ({ giftCardData }) => {
 export async function getStaticProps(ctx) {
     const giftCardFetch = await fetch("http://apimall.weflex.am/api/giftCard")
     const giftCard = await giftCardFetch.json()
-    console.log("giftCard: ", giftCard)
 
     return {
         props: {

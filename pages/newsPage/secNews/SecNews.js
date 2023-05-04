@@ -71,7 +71,6 @@ const SecNews = () => {
                 },
                 data: JSON.stringify({ ...data })
             })
-            console.log(response, "response News");
             if (response.data.news.length && response.status == 200) {
                 SetNewsData({
                     data: response.data.news,

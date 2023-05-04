@@ -32,7 +32,6 @@ const PremisesRent = () => {
     const {HOST_API,lang} = useGlobalProvider()
 
     const send =async(params) => {
-        console.log(params,"params");
         const emailReg = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
         let  emailTest = emailReg.test(String( mail ))
         if(params == "close"){
@@ -190,7 +189,6 @@ const PremisesRent = () => {
                 headers: {"Content-Type": "multipart/form-data"},
               });
               
-             console.log(response,"ssssss");
              if(Object.keys(response.data).length == 0){
                 SetSuccessFormToggle(true)
                 SetUsername("")

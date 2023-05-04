@@ -35,7 +35,6 @@ const OnlineRent = () => {
                   headers: { "Content-Type": "multipart/form-data" },
                 });
                 
-               console.log(response,"ssssss");
                if(Object.keys(response.data).length == 0){
                 SetFile(null)
                 SetSuccessFormToggle(true)

@@ -63,7 +63,6 @@ const NewOffers = () => {
                 },
                 data: JSON.stringify({ offset: offSet })
             })
-            console.log(response, "SpecialOffersData2");
 
             if (response.data.so.length && response.status == 200) {
                 SetSpecialOffersData({

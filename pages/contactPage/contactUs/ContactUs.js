@@ -50,7 +50,6 @@ const ContactUs = () => {
               headers: { "Content-Type": "multipart/form-data" },
             });
             
-           console.log(response,"ssssss");
                 if(param == "close" && Object.keys(response.data).length == 0){
                     SetSuccessFormToggle(false)
                     SetUsername("")

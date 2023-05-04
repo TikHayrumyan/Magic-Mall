@@ -16,7 +16,6 @@ const SearchResult = () => {
     const {lang,GlobalSearchData,globalSearchResult} = useGlobalProvider()
 
     useEffect(() => {
-        console.log(globalSearchResult.data,'globalSearchResult');
     },[globalSearchResult.loading])
 
 

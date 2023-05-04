@@ -40,7 +40,6 @@ export async function getStaticProps(ctx) {
 
     const aboutUsFetch = await fetch("https://apimall.weflex.am/api/aboutUs")
     const aboutUs = await aboutUsFetch.json()
-    console.log('aboutUs: ', aboutUs);
 
     return {
         props: {

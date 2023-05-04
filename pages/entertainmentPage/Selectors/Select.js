@@ -39,7 +39,6 @@ const Select = () => {
     const searchData = async(floor,search)=> {
         let searchForKeys = new Object()
         if(floor != null && floor != `${translate.ShopPageAllFloors[lang]}`){
-            console.log(floor,"kkkkk");
             searchForKeys.floor = floor
             SetInitialData({...initialData,floor:floor})
         }else if(initialData.floor != null && floor == null && floor != `${translate.ShopPageAllFloors[lang]}`){
@@ -63,7 +62,6 @@ const Select = () => {
                   },
                   data:JSON.stringify(searchForKeys)
             });
-            console.log(response);
             if(response.data.length && response.status == 200){
                 SetEntertainmentData({
                     data: response.data,

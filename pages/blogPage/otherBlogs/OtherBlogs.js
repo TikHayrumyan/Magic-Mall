@@ -43,7 +43,6 @@ const OtherBlogs = () => {
     const LoadMore = async () => {
         const defaultPages = 6;
         let offSet = blogPageData.initialOffset + defaultPages;
-        console.log(offSet, "offset");
         try {
             const response = await axios({
                 url: HOST_API + "blog",
@@ -53,9 +52,7 @@ const OtherBlogs = () => {
                 },
                 data: JSON.stringify({ offset: offSet })
             })
-            console.log(response, "responseOffSet");
             if (response.data.blog.length && response.status == 200) {
-                console.log(response.data.blog, "hn");
                 SetBlogPageData({
                     data: [...blogPageData.data, ...response.data.blog],
                     loading: true,

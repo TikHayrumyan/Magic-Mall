@@ -289,17 +289,15 @@ const HomePage = ({ mainSliderData, brandsSliderData, interestedData, giftCardHo
 export async function getStaticProps(ctx) {
   const sliderFetch = await fetch("https://apimall.weflex.am/api/slider")
   const slider = await sliderFetch.json();
-  // console.log('slider: ', slider);
 
   const sliderLogoFetch = await fetch("https://apimall.weflex.am/api/slider/logo")
   const sliderLogo = await sliderLogoFetch.json();
-  // console.log('sliderLogo: ', sliderLogo);
+
   const interestedFetch = await fetch("https://apimall.weflex.am/api/interested")
   const interested = await interestedFetch.json();
-  // console.log('interested: ', interested);
+  
   const homeGiftCardFetch = await fetch("https://apimall.weflex.am/api/home/giftCard")
   const homeGiftCard = await homeGiftCardFetch.json();
-  // console.log('homeGiftCard: ', homeGiftCard);
 
   return {
     props: {

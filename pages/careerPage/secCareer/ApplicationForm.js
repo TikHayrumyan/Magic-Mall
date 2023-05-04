@@ -42,7 +42,6 @@ const ApplicationForm = props => {
         if (file == null) return SetFileError(true)
         if(checked == false) {
             SetStyleCheck(false)
-            console.log(styleCheck,"styleCheck");
             return SetChecked(false)
         }else{
             SetChecked(true)
@@ -66,7 +65,6 @@ const ApplicationForm = props => {
               headers: { "Content-Type": "multipart/form-data" },
             });
             
-           console.log(response,"ssssss");
            if(Object.keys(response.data).length == 0){
             SetUsername("")
             setPosition("")

@@ -9,7 +9,6 @@ const News = () => {
 
     const {lang,globalSearchResult,HOST_API_IMG} = useGlobalProvider()
 
-    console.log(globalSearchResult.data.food,"globalSearchResult.data.food");
         return(
             <div className={styles.News}>
                 <div className={styles.container}>

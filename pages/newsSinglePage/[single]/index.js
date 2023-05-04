@@ -22,7 +22,6 @@ const SinglePage = () => {
     const parse = require("html-react-parser")
     const {HOST_API,HOST_API_IMG,lang} = useGlobalProvider()
     const router = useRouter()
-    console.log(router.asPath,"router");
     const {single} = router.query
     const [activeSinglePage,SetActiveSinglePage] = useState({
         data:{},
@@ -38,7 +37,6 @@ const SinglePage = () => {
                 url: HOST_API+`news/${params}`,
                 method:"GET"
             })
-            console.log(response,"datanaaa");
             if(Object.keys(response.data).length && response.status == 200){
                 SetActiveSinglePage({
                     data:response.data,
