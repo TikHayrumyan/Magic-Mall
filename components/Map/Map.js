@@ -230,7 +230,18 @@ const Map = ({ data, changeFloor }) => {
             <div className={styles.mapSecondDesign}>
               <div className={styles.leftContainer}>
                 <div className={styles.leftContainerTop}>
-                  <Link href={`/${getTypeTwo(34)}SinglePage/${getDoorIdTwo(34)}`}><div className={styles.S1}><span>{getDoorNameTwo(34)}</span></div></Link>
+                    <div className={styles.S1}>
+                  <Link href={`/${getTypeTwo(60)}SinglePage/${getDoorIdTwo(60)}`}>
+                      <div className={styles.S1Left}>
+                        <span>{getDoorNameTwo(60)}</span>
+                      </div>
+                  </Link>
+                  <Link href={`/${getTypeTwo(34)}SinglePage/${getDoorIdTwo(34)}`}>
+                      <div className={styles.S1Right}>
+                        <span>{getDoorNameTwo(34)}</span>
+                      </div>
+                  </Link>
+                    </div>
                   <Link href={`/${getTypeTwo(35)}SinglePage/${getDoorIdTwo(35)}`}><div className={styles.S2}><span>{getDoorNameTwo(35)}</span></div></Link>
                   <Link href={`/${getTypeTwo(36)}SinglePage/${getDoorIdTwo(36)}`}><div className={styles.S3}><span>{getDoorNameTwo(36)}</span></div></Link>
                   <Link href={`/${getTypeTwo(37)}SinglePage/${getDoorIdTwo(37)}`}><div className={styles.S4}><span>{getDoorNameTwo(37)}</span></div></Link>
@@ -242,7 +253,37 @@ const Map = ({ data, changeFloor }) => {
                   </div>
                 </div>
                 <div className={styles.leftContainerBottom}>
-                  <Link href={`/${getTypeTwo(41)}SinglePage/${getDoorIdTwo(41)}`}><div className={styles.S8}><span>{getDoorNameTwo(41)}</span></div></Link>
+                    <div className={styles.S8New}>
+                  <Link href="#">
+                        <div className={styles.S8_topNew}>
+                          {/* foodCourt */}
+
+                            <span>Food Court</span>
+                        </div>
+                  </Link>
+                      <Link href={`/${getTypeTwo(57)}SinglePage/${getDoorIdTwo(57)}`}>
+                        <div className={styles.S8_CenterNew}>
+                            {/* wonderland play garden */}
+                           <span>{getDoorNameTwo(57)}</span>
+                            
+                        </div>
+                      </Link>
+                        <div className={styles.S8_BottomNew}>
+                      <Link href={`/${getTypeTwo(58)}SinglePage/${getDoorIdTwo(58)}`}>
+                            <div className={styles.S8_BottomNew_leftSide}>
+                           <span>{getDoorNameTwo(58)}</span>
+                              
+                            </div>
+                      </Link>
+                      <Link href={`/${getTypeTwo(59)}SinglePage/${getDoorIdTwo(59)}`}>
+                            <div className={styles.S8_BottomNew_RightSide}>
+                            {/* mandarin */}
+                           <span>{getDoorNameTwo(59)}</span>
+                              
+                            </div>
+                      </Link>
+                        </div>
+                    </div>
                   <div className={styles.LeftContainerBottomEscalator}>
                     <img alt="escalator" src="/img/map/map/Escalator.svg" />
                   </div>
@@ -253,7 +294,21 @@ const Map = ({ data, changeFloor }) => {
                   <Link href={`/${getTypeTwo(42)}SinglePage/${getDoorIdTwo(42)}`}><div className={styles.S9}><span>{getDoorNameTwo(42)}</span></div></Link>
                   <Link href={`/${getTypeTwo(43)}SinglePage/${getDoorIdTwo(43)}`}><div className={styles.S10}><span>{getDoorNameTwo(43)}</span></div></Link>
                   <div className={styles.S11forFlex}>
-                    <Link href={`/${getTypeTwo(44)}SinglePage/${getDoorIdTwo(44)}`}><div className={styles.S11leftPart}><span>{getDoorNameTwo(44)}</span></div></Link>
+                    
+                      <div className={styles.S11leftPart}>
+                  <Link href={`/${getTypeTwo(65)}SinglePage/${getDoorIdTwo(65)}`}>
+                        <div className={styles.S11leftPartTop}>
+                           <span>{getDoorNameTwo(65)}</span>
+                            
+                        </div>
+                    </Link>
+                    <Link href={`/${getTypeTwo(44)}SinglePage/${getDoorIdTwo(44)}`}>
+                        <div className={styles.S11leftPartBottom}>
+                        <span>{getDoorNameTwo(44)}</span>
+                          
+                        </div>
+                    </Link>
+                      </div>
                     <div className={styles.S11RightPart}></div>
                   </div>
                   <Link href={`/${getTypeTwo(45)}SinglePage/${getDoorIdTwo(45)}`}><div className={styles.S12}><span>{getDoorNameTwo(45)}</span></div></Link>
