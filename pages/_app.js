@@ -17,7 +17,6 @@ function App({ Component, pageProps }) {
         <meta name="description" content="magic mall in armenia" />
       </Head>
       <Layout>
-
         <Component {...pageProps} />
         <MessengerChat
           pageId="105030078960631"
