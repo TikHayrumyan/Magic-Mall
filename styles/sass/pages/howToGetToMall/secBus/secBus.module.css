@@ -150,6 +150,7 @@
   }
   .pattern {
     margin-right: 2.4154589372vw;
+    width: 25vw;
   }
   .minus {
     padding: 0px;
@@ -203,5 +204,9 @@
   }
   .routeData .routeDataBlock .data .patternsArrow {
     width: 5.7971014493vw;
+  }
+  .routeData .routeDataBlock .data .patternsArrow img {
+    width: 24px;
+    height: auto;
   }
 }/*# sourceMappingURL=secBus.module.css.map */

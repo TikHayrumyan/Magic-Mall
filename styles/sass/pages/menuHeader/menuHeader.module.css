@@ -46,6 +46,9 @@
   cursor: pointer;
   width: 13.6111111111vw;
   height: 5.0694444444vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .blockLogo .logo {
   width: 13.6111111111vw !important;

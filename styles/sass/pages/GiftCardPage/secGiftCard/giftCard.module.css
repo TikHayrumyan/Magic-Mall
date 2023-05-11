@@ -76,7 +76,7 @@
   width: 18.5546875vw;
   height: 12.3697916667vw;
 }
-.giftCardBlock .ImgBlock .card img {
+.giftCardBlock .ImgBlock .card .img {
   border-radius: 3px;
   box-shadow: 0px 20px 30px rgba(10, 10, 10, 0.2);
 }
@@ -88,7 +88,7 @@
   margin-top: 10vw;
 }
 .buttonBlock .btn {
-  background: #A6CCE5;
+  background: #a6cce5;
   border-radius: 26.0416666667vw;
   border: none;
   padding: 0.78125vw 3.90625vw;
@@ -189,7 +189,7 @@
   .buttonBlock .btn {
     display: flex;
     justify-content: center;
-    background: #A6CCE5;
+    background: #a6cce5;
     border-radius: 26.0416666667vw;
     border: none;
     padding: 0.78125vw 3.90625vw;

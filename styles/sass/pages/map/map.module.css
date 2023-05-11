@@ -2,7 +2,7 @@
   width: 100vw;
   display: flex;
   justify-content: center;
-  margin-bottom: 35vw;
+  margin-bottom: 8vw;
 }
 
 .container {
@@ -295,14 +295,14 @@
 .firstFloor .mapDesign .middleContainer .middleTop .AA1 .AA1forFLex .containerBigPart .bigPartNew {
   width: 38%;
   height: 7.15vw;
-  background-color: #A6CCE5;
+  color: #FFFFFF;
   display: flex;
   font-family: "arm-bold";
   font-style: normal;
   font-weight: 400;
   font-size: 0.625vw;
   line-height: 160%;
-  background-color: #00A652;
+  background-color: #224660;
   align-items: center;
   justify-content: center;
 }
@@ -416,6 +416,7 @@
 .firstFloor .mapDesign .middleContainer .middleBottom .middleCenter .MiddleCenterMid .AA9 {
   width: 3.5vw;
   height: 3.5vw;
+  border-bottom: 1px white solid;
   background-color: #224660;
   margin-top: 0.05vw;
   display: flex;
@@ -465,10 +466,18 @@
   width: 10.7vw;
 }
 .firstFloor .mapDesign .middleContainer .middleBottom .middleCenter .MiddleCenterBottom .AA10left {
-  width: 3.5vw;
+  width: 7.1vw;
   height: 3.5vw;
   background-color: #224660;
-  margin-top: 0.05vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625vw;
+  font-family: "arm-bold";
 }
 .firstFloor .mapDesign .middleContainer .middleBottom .middleCenter .MiddleCenterBottom .AA10bottom {
   width: 3.5vw;
@@ -477,10 +486,9 @@
   margin-top: 0.05vw;
 }
 .firstFloor .mapDesign .middleContainer .middleBottom .middleCenter .MiddleCenterBottom .AA12 {
-  width: 3.5vw;
+  width: 3.55vw;
   height: 3.5vw;
   background-color: #224660;
-  margin-top: 0.05vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -765,10 +773,40 @@
 .secondFloor .mapSecondDesign .leftContainer .leftContainerTop .S1 {
   width: 3.25vw;
   height: 6.9vw;
-  background-color: #224660;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.secondFloor .mapSecondDesign .leftContainer .leftContainerTop .S1 .S1Left {
+  height: 100%;
+  width: 40%;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: #224660;
+  font-family: "arm-bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625vw;
+  line-height: 160%;
+  color: #FFFFFF;
+  margin-right: 1px;
+}
+.secondFloor .mapSecondDesign .leftContainer .leftContainerTop .S1 .S1Left span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
+  rotate: 90deg;
+}
+.secondFloor .mapSecondDesign .leftContainer .leftContainerTop .S1 .S1Right {
+  height: 100%;
+  width: 60%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #224660;
   font-family: "arm-bold";
   font-style: normal;
   font-weight: 400;
@@ -776,8 +814,12 @@
   line-height: 160%;
   color: #FFFFFF;
 }
-.secondFloor .mapSecondDesign .leftContainer .leftContainerTop .S1 span {
-  rotate: 90deg;
+.secondFloor .mapSecondDesign .leftContainer .leftContainerTop .S1 .S1Right span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 100%;
 }
 .secondFloor .mapSecondDesign .leftContainer .leftContainerTop .S2 {
   width: 3.25vw;
@@ -900,11 +942,11 @@
   line-height: 160%;
   color: #FFFFFF;
 }
-.secondFloor .mapSecondDesign .leftContainer .leftContainerBottom .S8 {
+.secondFloor .mapSecondDesign .leftContainer .leftContainerBottom .S8New {
   width: 24.85vw;
   height: 13.15vw;
-  background-color: #224660;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   font-family: "arm-bold";
@@ -914,6 +956,70 @@
   line-height: 160%;
   color: #FFFFFF;
   margin-top: 2.5vw;
+}
+.secondFloor .mapSecondDesign .leftContainer .leftContainerBottom .S8New .S8_topNew {
+  width: 100%;
+  height: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "arm-bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625vw;
+  line-height: 160%;
+  color: #FFFFFF;
+  background-color: #224660;
+  margin-bottom: 1px;
+}
+.secondFloor .mapSecondDesign .leftContainer .leftContainerBottom .S8New .S8_CenterNew {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "arm-bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625vw;
+  line-height: 160%;
+  color: #FFFFFF;
+  background-color: #224660;
+}
+.secondFloor .mapSecondDesign .leftContainer .leftContainerBottom .S8New .S8_BottomNew {
+  display: flex;
+  width: 100%;
+  height: 20%;
+  gap: 1px;
+}
+.secondFloor .mapSecondDesign .leftContainer .leftContainerBottom .S8New .S8_BottomNew .S8_BottomNew_leftSide {
+  width: 85%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "arm-bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625vw;
+  line-height: 160%;
+  color: #FFFFFF;
+  background-color: #224660;
+}
+.secondFloor .mapSecondDesign .leftContainer .leftContainerBottom .S8New .S8_BottomNew .S8_BottomNew_RightSide {
+  width: 15%;
+  height: 98%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "arm-bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625vw;
+  line-height: 160%;
+  color: #FFFFFF;
+  background-color: #224660;
+  margin-top: 1px;
 }
 .secondFloor .mapSecondDesign .leftContainer .LeftContainerBottomEscalator {
   margin-top: 2.5vw;
@@ -969,11 +1075,42 @@
 }
 .secondFloor .mapSecondDesign .middleContainer .middleContainerTop .S11forFlex .S11leftPart {
   width: 4.1vw;
-  height: 4.9vw;
+  height: 8.4vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: space-between;
+  font-family: "arm-bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625vw;
+  line-height: 160%;
+  color: #FFFFFF;
+}
+.secondFloor .mapSecondDesign .middleContainer .middleContainerTop .S11forFlex .S11leftPart .S11leftPartTop {
+  width: 40%;
+  height: 30%;
   background-color: #224660;
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: flex-end;
+  justify-content: center;
+  font-family: "arm-bold";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 0.625vw;
+  line-height: 160%;
+  color: #FFFFFF;
+  margin-right: 1px;
+}
+.secondFloor .mapSecondDesign .middleContainer .middleContainerTop .S11forFlex .S11leftPart .S11leftPartBottom {
+  width: 4.1vw;
+  height: 58.5%;
+  background-color: #224660;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   font-family: "arm-bold";
   font-style: normal;
   font-weight: 400;

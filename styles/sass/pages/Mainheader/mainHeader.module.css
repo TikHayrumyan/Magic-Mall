@@ -124,8 +124,6 @@
 }
 .rightContainer .languageBlock .dArr {
   display: flex;
-  width: 0.611328125vw;
-  height: 1.97318vw;
 }
 
 .languageBlock:hover .hoverLanguageBlock {

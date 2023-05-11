@@ -161,6 +161,7 @@
     
     .pattern{
         margin-right: get-vw(10px,414 );
+        width: 25vw;
     }
 
     .minus{
@@ -213,6 +214,11 @@
                 }
                 .patternsArrow{
                     width: get-vw(24px,414 );
+
+                    img{
+                        width: get-vw(24px,414 );
+                        height: auto;
+                    }
                 }
             }
         }

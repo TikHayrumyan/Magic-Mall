@@ -75,13 +75,7 @@ const settingsBrand = {
 
 };
 
-
-
-
-
 import React, { useEffect, useState } from "react";
-
-
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 const OwlCarousel = dynamic(import("react-owl-carousel"), { ssr: false });
@@ -92,11 +86,6 @@ import stylesYourInterest from "../styles/sass/pages/HomePage/secYourInterest/yo
 import stylesBlog from '../styles/sass/pages/HomePage/secBlog/blog.module.scss'
 import stylesGiftCard from "../styles/sass/pages/HomePage/secGiftCard/giftCard.module.scss"
 import stylesNews from "../styles/sass/pages/HomePage/secNews/news.module.scss"
-
-
-
-
-
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";

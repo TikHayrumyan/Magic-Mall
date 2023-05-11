@@ -431,7 +431,7 @@
     width: 15.2173913043vw;
     height: 13.0434782609vw;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
     margin-right: 16.9082125604vw;
     background-size: cover;
     background-position: center;

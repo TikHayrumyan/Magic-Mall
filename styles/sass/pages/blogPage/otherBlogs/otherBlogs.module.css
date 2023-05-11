@@ -89,7 +89,7 @@
 
 .img {
   width: 25vw;
-  height: 20vw;
+  height: auto;
 }
 
 .buttonBlock {

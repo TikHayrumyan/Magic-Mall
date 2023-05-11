@@ -184,6 +184,18 @@
 }
 
 @media only screen and (max-width: 600px) {
+  .location_text {
+    font-family: "arm-semiBold", "montserrat-ru-semiBold";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2.5vw;
+    line-height: 2.9166666667vw;
+    color: #224660;
+    display: flex;
+    align-items: center;
+    width: 90%;
+    height: 2.0833333333vw;
+  }
   .aboutMap {
     display: flex;
     justify-content: center;
