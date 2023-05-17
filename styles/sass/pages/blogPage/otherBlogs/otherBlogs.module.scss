@@ -169,7 +169,7 @@
         margin-bottom: 20vw;
         .img{
             width: get-vw(365px,414 );
-            height: get-vw(335px,414 );
+            height: auto;
         }
         .description{
             margin-top: 4vw;
@@ -236,7 +236,7 @@
     
     .img{
         width: 25vw;
-        height: 20vw;
+        height: auto;
     }
     
     .buttonBlock{

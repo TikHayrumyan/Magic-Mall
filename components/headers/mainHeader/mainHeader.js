@@ -43,11 +43,11 @@ const MainHeader = () => {
         <div className={styles.container}>
             <div className={styles.leftContainer}>
                 <div className={styles.iconPhone}>
-                    <img alt="Phone" src="/img/icons/phoneIcon.svg" />
+                    <img className={styles.iconPhone} alt="Phone" src="/img/icons/phoneIcon.svg" />
                 </div>
                 <div className={styles.numberDiv}><a className={styles.number} href="tel:+374 11 880 888">+374 11 880 888</a></div>
                 <div className={styles.iconOclock}>
-                    <img alt="O'clock" src="/img/icons/oclock.svg" />
+                    <img className={styles.iconOclock} alt="O'clock" src="/img/icons/oclock.svg" />
                 </div>
                 <div className={styles.oclock}>10:00 - 22:00</div>
             </div>

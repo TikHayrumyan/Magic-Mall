@@ -48,20 +48,20 @@ const FooterAboutMap = () => {
             <div className={styles.iconsBlock}>
                 <div className={styles.location}>
                     <>
-                        <Image alt="locationIcon" src="/img/icons/location.svg" width={20} height={20} />
+                        <img className={styles.location} alt="locationIcon" src="/img/icons/location.svg"  />
                         <p className={styles.location_text}>
                             {translate.contactPageAddres[lang]}
                         </p>
                     </>
                 </div>
                 <div className={styles.phone}>
-                    <Image alt="phoneIcon" src="/img/icons/bluePhone.svg" width={20} height={20} />
+                    <img className={styles.phone} alt="phoneIcon" src="/img/icons/bluePhone.svg" />
                     <Link href="tel:+374 11 880 888">
                         +374 11 880 888
                     </Link>
                 </div>
                 <div className={styles.oclock}>
-                    <Image alt="Oclock" src="/img/icons/blueTime.svg" width={20} height={20} />
+                    <img className={styles.oclock} alt="Oclock" src="/img/icons/blueTime.svg" />
                     10։00 - 22։00
                 </div>
             </div>
@@ -70,17 +70,17 @@ const FooterAboutMap = () => {
                 <div className={styles.network}>
                     <div>
                         <Link target="_blank" href="https://www.facebook.com/multimagicmall">
-                            <img alt="facebook" src="/img/icons/Facebook.svg" />
+                            <img className={styles.facebook} alt="facebook" src="/img/icons/Facebook.svg" />
                         </Link>
                     </div>
                     <div>
                         <Link target="_blank" href="https://www.instagram.com/multimagic_mall/">
-                            <img alt="instagram" src="/img/icons/Instagram.svg" />
+                            <img className={styles.facebook} alt="instagram" src="/img/icons/Instagram.svg" />
                         </Link>
                     </div>
                     <div>
                         <Link target="_blank" href="https://www.linkedin.com/company/multi-outlet-mall/">
-                            <img alt="Linkdin" src="/img/icons/Linkdin.svg" />
+                            <img className={styles.facebook} alt="Linkdin" src="/img/icons/Linkdin.svg" />
                         </Link>
                     </div>
                 </div>

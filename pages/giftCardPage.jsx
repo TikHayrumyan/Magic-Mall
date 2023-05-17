@@ -55,8 +55,9 @@ const GiftCardPage = ({ giftCardData }) => {
                             giftCardData.data.faq.map(({ question, question_am, question_ru, answer, answer_am, answer_ru }, index) => {
                                 return <div className={stylesSecQuestion.mapBlock} key={index}>
                                     <div className={stylesSecQuestion.imgPatternBlock}>
-                                        <div className={stylesSecQuestion.pattern}><span className={answered !== index ? stylesSecQuestion.plus : stylesSecQuestion.minus} onClick={() => toggleAnswerKey(index)}>{answered !== index ? "+" : "-"}</span>
-                                            <img alt="pattern" src="/img/giftCardPage/secQuestion/pattern.svg" />
+                                        <div className={stylesSecQuestion.pattern}>
+                                            <span className={answered !== index ? stylesSecQuestion.plus : stylesSecQuestion.minus} onClick={() => toggleAnswerKey(index)}>{answered !== index ? "+" : "-"}</span>
+                                            <img className={stylesSecQuestion.pattern} alt="pattern" src="/img/giftCardPage/secQuestion/pattern.svg" />
                                         </div>
                                     </div>
                                     <div>

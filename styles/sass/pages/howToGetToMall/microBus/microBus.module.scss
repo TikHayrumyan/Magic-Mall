@@ -134,6 +134,9 @@
         display: flex;
         justify-content: center;
     }
+    .bus{
+        width: get-vw(150px,1440 );
+    }
     
     
     .container{
@@ -173,7 +176,7 @@
     
     .pattern{
         margin-right: get-vw(10px,414 );
-        width: 25vw;
+        width: 15vw;
     }
 
     .minus{
