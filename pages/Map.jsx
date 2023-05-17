@@ -13,7 +13,6 @@ const MapPage = ({data}) => {
         SetFloorModal(false)
     }
 
-
     return (
         <div>
             <SecMain />
