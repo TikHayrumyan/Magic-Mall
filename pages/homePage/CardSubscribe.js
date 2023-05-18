@@ -93,7 +93,7 @@ const CardSubscribe = () =>{
                         onChange={(e) => SetEmail(e.target.value)}
                         />
                         <button className={styles.button} >
-                            <img alt="button" src="/img/homePage/secCardSubscribe/button.svg"/>
+                            <img  alt="button" src="/img/homePage/secCardSubscribe/button.svg"/>
                         </button>
                     </form >
                     <div>

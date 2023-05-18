@@ -336,7 +336,7 @@ const Map = ({ data, changeFloor }) => {
               </div>
               <div className={styles.rightContainer}>
                 <div>
-                  <img alt="stairs" src="/img/map/map/stairs.svg" />
+                  <img alt="stairs" src="/img/map/map/Stairs.svg" />
                 </div>
                 <div className={styles.rightBottom}>
                   <div className={styles.S21Right}></div>

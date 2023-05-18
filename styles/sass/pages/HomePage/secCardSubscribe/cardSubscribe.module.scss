@@ -105,6 +105,12 @@
             background-color: #A6CCE5;
             padding-top: get-vw(5px,1440 );
             cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            img{
+                width: 2vw;
+            }
         }
     }
     .accessBlock{
@@ -286,7 +292,11 @@
             background-color: #A6CCE5;
             padding-top: 0.8333333333vw;
             cursor: pointer;
+            img{
+                width: 3vw;
+            }
         }
+        
     }
     .accessBlock{
         display: flex;
