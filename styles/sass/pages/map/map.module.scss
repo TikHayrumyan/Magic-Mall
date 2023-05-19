@@ -91,7 +91,10 @@
                         color: #FFFFFF;
 
                         & p{
+                            // word-break: break-all;
+                            width: 90%;
                             rotate: 90deg;
+
                         }
                     }
                     
@@ -109,6 +112,8 @@
                         line-height: 160%;
                         color: #FFFFFF;
                         & span{
+                            word-break: break-all;
+                            width: 80%;
                             rotate: 90deg;
                         }
                     }
@@ -189,9 +194,7 @@
                         font-size: 0.625vw;
                         line-height: 160%;
                         color: #FFFFFF;
-                        & span{
-                            rotate: 90deg;
-                        }
+                        
                     }
                     .flexColumn{
                         display: flex;
@@ -242,7 +245,7 @@
                         color: #FFFFFF;
 
                         & span{
-                            rotate: 90deg;
+                           
                         }
                     }
                     
@@ -252,6 +255,7 @@
         .middleContainer{
             .middleTop{
                 display: flex;
+                align-items: flex-end;
                     .AA1{
                         margin-left: 1.25vw;
                         display: flex;
@@ -324,7 +328,8 @@
                                     align-items: center;
                                     justify-content: center;
                                     & span{
-                                        rotate: 90deg;
+                                        word-break: break-all;
+                                        width: 70%;
                                     }
                                 }
                             }
@@ -332,11 +337,11 @@
                     }
                     .AA3{
                         
-                        width: 17.9vw;
+                        width: 12.1vw;
                         height: 7.3vw;
                         background-color: #224660;
                         margin-top: 3.24vw;
-                        margin-left: 0.2vw;
+                        margin-left: 0.1vw;
                         display: flex;
                         align-items: center;
                         justify-content: center;
@@ -346,6 +351,27 @@
                         font-size: 0.625vw;
                         line-height: 160%;
                         color: #FFFFFF;
+                    }
+                    .bigPartNewLast{
+                        width: 12%;
+                        height: 7.3vw;
+                        // background-color: #A6CCE5;
+                        color: #FFFFFF;
+                        display: flex;
+                        font-family: 'arm-bold';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 0.625vw;
+                        line-height: 160%;
+                        background-color: #224660;
+                        align-items: center;
+                        justify-content: center;
+                        margin-left: 0.1vw;
+                        & span{
+                            word-break: break-word;
+                            width: 75%;
+                            text-align: center;
+                        }
                     }
             }
             .middleBottom{
@@ -370,6 +396,7 @@
                         font-size: 0.625vw;
                         line-height: 160%;
                         color: #FFFFFF;
+                        text-align: center;
                     }
                     .AA5{
                         width: 6.99vw;
@@ -857,7 +884,9 @@
                                 align-items: center;
                                 justify-content: center;
                                 height: 100%;
-                                width: 100%;
+                                width: 90%;
+                                rotate: 90deg;
+                                
                             }
                         }
                     }
@@ -1145,6 +1174,10 @@
                                 line-height: 160%;
                                 color: #FFFFFF;
                                 margin-right: 1px;
+
+                                span{
+                                    rotate: 90deg;
+                                }
                             }
 
                             .S11leftPartBottom{
@@ -1161,6 +1194,10 @@
                                 font-size: 0.625vw;
                                 line-height: 160%;
                                 color: #FFFFFF;
+
+                                span{
+                                    rotate: 90deg;
+                                }
                             }
                         }
                         .S11RightPart{
@@ -1182,6 +1219,10 @@
                             font-size: 0.625vw;
                             line-height: 160%;
                             color: #FFFFFF;
+
+                            span{
+                                rotate: 90deg;
+                            }
                     }
                     .S13Flex{
                         display: flex;
@@ -1242,6 +1283,7 @@
                             font-size: 0.625vw;
                             line-height: 160%;
                             color: #FFFFFF;
+                            text-align: center;
                         }
                         .S16{
                             width: 3.2vw;
@@ -1256,6 +1298,8 @@
                             font-size: 0.625vw;
                             line-height: 160%;
                             color: #FFFFFF;
+                            text-align: center;
+
                         }
                         .middleContainerBottomEscalator{
                             margin-left: 3.5vw;
@@ -1294,7 +1338,10 @@
                             font-weight: 400;
                             font-size: 0.625vw;
                             line-height: 160%;
+                            padding: 1vw;
                             color: #FFFFFF;
+                            text-align: center;
+                            word-break: break-all;
                         }
                         .S19{
                             width: 4.99vw;

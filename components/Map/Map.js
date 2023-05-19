@@ -120,6 +120,7 @@ const Map = ({ data, changeFloor }) => {
                       </section>
                     </div>
                   </div>
+                   <Link href={`/${getType(94)}SinglePage/${getDoorId(94)}`}><div className={styles.bigPartNewLast}><span>{getDoorName(94)}</span></div></Link>
                   <Link href={`/${getType(15)}SinglePage/${getDoorId(15)}`}><div className={styles.AA3}>{getDoorName(15)}</div></Link>
                 </div>
                 <div className={styles.middleBottom}>
