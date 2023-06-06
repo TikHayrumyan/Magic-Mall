@@ -382,7 +382,8 @@ const HomePage = ({ mainSliderData, brandsSliderData, interestedData, giftCardHo
   );
 };
 
-export async function getStaticProps(ctx) {
+
+export async function getServerSideProps(ctx) {
   const sliderFetch = await fetch("https://apimall.weflex.am/api/slider");
   const slider = await sliderFetch.json();
 
