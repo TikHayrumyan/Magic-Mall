@@ -156,7 +156,10 @@ const Map = ({ data, changeFloor }) => {
                   </div>
                   <div className={styles.MiddleRight}>
                     <div className={styles.AA3Bottom}></div>
-                    <Link href={`/${getType(24)}SinglePage/${getDoorId(24)}`}><div className={styles.AA13}>{getDoorName(24)}</div></Link>
+                    <div className={styles.newAA13Container}>
+                      <Link href={`/${getType(244)}SinglePage/${getDoorId(244)}`}><div className={styles.AA13TopNew}>{getDoorName(244)}</div></Link>
+                      <Link href={`/${getType(24)}SinglePage/${getDoorId(24)}`}><div className={styles.AA13}>{getDoorName(24)}</div></Link>
+                    </div>
                   </div>
                 </div>
               </div>
