@@ -806,6 +806,7 @@
             margin-top: 2.7vw;
             margin-left: 1.5vw;
         }
+        
         .AA22{
             width: 5vw;
             height: 2.55vw;
@@ -932,9 +933,8 @@
                                 align-items: center;
                                 justify-content: center;
                                 height: 100%;
-                                width: 90%;
-                                rotate: 90deg;
-                                
+                                width: 100%;
+                                writing-mode: vertical-lr;
                             }
                         }
                     }
