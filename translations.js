@@ -481,7 +481,7 @@ export const translate = {
         ru:"Карта сайта" 
     },
     contactPageAddres:{
-        am: "ՀՀ, Կոտայքի մարզ, գ․ Վերին Պտղնի, 5 փ․, 1 փկղ․, 1 Շ (Աբովյան - Երևան մայրուղի)",
+        am: "ՀՀ, Կոտայքի մարզ, գ․ Վերին Պտղնի, 5 փ․, 1 փկղ․, 5 Շ (Աբովյան - Երևան մայրուղի)",
         en:"RA, Kotayk region, village Verin Ptghni,( Abovyan-Yerevan highway), 5th street, 1 bling alley, 5 b.",
         ru:"РА, Котайский район, с. Верин Птгни ( Абовян- Ереван шоссе), 5-ая улица, 1 тупик, 5 д." 
     },
