@@ -15,6 +15,15 @@ function App({ Component, pageProps }) {
         <link rel="shortcut icon" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
         <meta name="description" content="magic mall in armenia" />
+        {/* <!-- Google tag (gtag.js) --> */}
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-CW3RP3M80G"></script>
+      <script>
+    {   ` window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments)}
+        gtag('js', new Date());
+
+        gtag('config', 'G-CW3RP3M80G');`}
+      </script>   
       </Head>
       <Layout>
         <Component {...pageProps} />
